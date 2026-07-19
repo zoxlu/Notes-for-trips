@@ -17,7 +17,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "your-username.github.io/nagoya-trip-wiki",
+    baseUrl: "https://github.com/zoxlu/Notes-for-trips/",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
