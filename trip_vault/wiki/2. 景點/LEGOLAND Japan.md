@@ -23,7 +23,9 @@ tags:
   - district/港區金城ふ頭
   - status/researching
   - priority/nice-to-have
-興致指數:
+aliases:
+  - 樂高樂園
+興致指數: 2
 ---
 
 

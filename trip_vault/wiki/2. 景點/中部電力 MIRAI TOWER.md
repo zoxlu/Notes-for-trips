@@ -23,7 +23,10 @@ tags:
   - district/榮
   - status/researching
   - priority/nice-to-have
-興致指數:
+aliases:
+  - 名古屋テレビ塔
+  - Nagoya TV Tower
+興致指數: 3
 ---
 
 

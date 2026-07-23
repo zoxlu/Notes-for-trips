@@ -8,7 +8,7 @@ location: 35.1825118,136.8765247
 image: https://www.nagoya-info.jp/upload/spots/large/16176073756597606ecf816.jpg
 image_source: 來自名古屋觀光官方網站 nagoya-info.jp
 status: researching
-priority: nice-to-have
+priority: must
 shared_by: "[[繃皮蛇]]"
 raw_note: "[[2026-07-18 水嫂]]"
 source_url: https://www.youtube.com/watch?v=yVUZJShMw40
@@ -23,6 +23,9 @@ tags:
   - district/則武新町
   - status/researching
   - priority/nice-to-have
+aliases:
+  - Toyota Techno Museum
+  - 豐田產業技術紀念館
 興致指數: 5
 ---
 
@@ -54,3 +57,4 @@ tags:
 
 ## 📝 我的備註
 
+繃皮雞：toyota是紡織業起家的，博物管裡面可以看到精彩的紡織與現代科技結合的展覽
