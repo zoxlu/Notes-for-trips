@@ -78,14 +78,24 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
 
     return (
       <nav class={classNames(displayClass, "breadcrumb-container")} aria-label="breadcrumbs">
-        {crumbs.map((crumb, index) => (
-          <div class="breadcrumb-element">
-            <a href={crumb.path}>{crumb.displayName}</a>
-            {index !== crumbs.length - 1 && <p>{` ${options.spacerSymbol} `}</p>}
-          </div>
-        ))}
+        {crumbs.map((crumb, index) => {
+          const isMiddleFolder = index !== 0 && index !== crumbs.length - 1
+          return (
+            <div class="breadcrumb-element">
+              {isMiddleFolder ? (
+                <span class="breadcrumb-folder-label">{crumb.displayName}</span>
+              ) : (
+                <a href={crumb.path}>{crumb.displayName}</a>
+              )}
+              {index !== crumbs.length - 1 && <p>{` ${options.spacerSymbol} `}</p>}
+            </div>
+          )
+        })}
       </nav>
     )
+
+
+
   }
   Breadcrumbs.css = breadcrumbsStyle
 

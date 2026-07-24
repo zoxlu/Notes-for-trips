@@ -1,0 +1,28 @@
+.note-properties {
+  list-style: none;
+  margin: 1rem 0 1.75rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.note-property-item {
+  font-size: 0.92rem;
+  color: var(--darkgray);
+}
+
+.note-property-label {
+  color: var(--gray);
+  min-width: 5.5em;
+  display: inline-block;
+}
+
+.note-property-value {
+  color: var(--dark);
+}
+
+.note-property-item a {
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}

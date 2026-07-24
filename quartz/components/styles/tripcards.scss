@@ -64,13 +64,6 @@
   justify-content: center;
 }
 
-.trip-card-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
 .trip-card-icon {
   font-size: 30px;
 }
@@ -103,4 +96,86 @@
 .trip-pill-must {
   background: var(--highlight);
   color: var(--secondary);
+}
+
+.trip-category-tabs {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.6rem;
+}
+
+.trip-tab {
+  border: none;
+  background: transparent;
+  color: var(--darkgray);
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.3rem 0.5rem;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+
+  &.active {
+    color: var(--secondary);
+    border-bottom-color: var(--secondary);
+  }
+}
+
+.trip-reset {
+  margin-left: auto;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--gray);
+  border-radius: 999px;
+  padding: 0.25rem 0.8rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+
+  &:hover {
+    border-color: var(--tertiary);
+    color: var(--tertiary);
+  }
+
+  &.active {
+    background: var(--secondary);
+    color: var(--light);
+    border-color: var(--secondary);
+  }  
+}
+
+.trip-chip-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  width: 100%;
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.trip-filters {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--light);
+  padding: 0.75rem 0;
+  flex-direction: column;  
+}
+
+.trip-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.trip-intro {
+  margin-bottom: 1.25rem;
+
+  p {
+    margin: 0.3rem 0;
+    color: var(--darkgray);
+  }
 }

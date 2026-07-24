@@ -10,7 +10,7 @@ tags: [index]
 - [[Y.MARKET BREWING KITCHEN]] — 柳橋市場內手工精釀啤酒餐廳（名古屋站前, nice-to-have）
 - [[風来坊 名駅センチュリー豊田ビル店]] — 名古屋名物手羽先（名駅, nice-to-have）
 - [[名古屋三井花園飯店 Premier]] — 車站步行5分鐘，地下街直通（名駅, nice-to-have）
-- [[ノリタケの森（則武之森）]] — 步行15-20分鐘或轉乘巴士（則武新町, nice-to-have）
+- [[ノリタケの森（ 則武之森 ）]] — 步行15-20分鐘或轉乘巴士（則武新町, nice-to-have）
 - [[Tsubame Bread & Milk 名駅店]] — 步行約4分鐘（名駅, nice-to-have）
 - [[コンパル サンロード店]] — Sun Road地下街（名古屋站前, nice-to-have）
 - [[山 名古屋駅店（ワンランク上の世界の山ちゃん）]] — 名駅太閤通口ビル（名駅, nice-to-have）
@@ -44,7 +44,7 @@ tags: [index]
 ## 榮站（地下鐵東山線・名城線）
 - [[中部電力 MIRAI TOWER]] — 徒步3-5分（榮, nice-to-have）
 - [[榮商圈]] — 松坂屋、三越、LACHIC等百貨（榮, must）
-- [[オアシス21（綠洲21）]] — 直通（榮, nice-to-have）
+- [[オアシス21（ 綠洲21 ）]] — 直通（榮, nice-to-have）
 - [[黒豚屋らむちぃ]] — 矢場町駅步行2分鐘（榮, nice-to-have）
 - [[THE ROYAL PARK ICONIC NAGOYA（名古屋皇家公園標誌飯店）]] — 地下通道直通（榮, nice-to-have）
 

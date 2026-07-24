@@ -1,6 +1,18 @@
 {
   "permissions": {
     "allow": [
+      "Bash(curl:*)",
+      "Bash(echo:*)",
+      "Bash(cd:*)",      
+      "Bash(ls:*)",
+      "Bash(mkdir:*)",        
+      "Bash(mv:*)",        
+      "Bash(chmod:*)",  
+      "Bash(cp:*)",        
+      "Bash(python3:*)",
+      "Bash(grep:*)",        
+      "Bash(xarg:*)",                
+      "WebFetch",        
       "WebSearch",
       "WebFetch(domain:www.geocoding.jp)",
       "Bash(cat)",
@@ -40,6 +52,7 @@
       "Bash(curl -sL \"https://www.google.com/maps/search/風来坊+名駅センチュリー豊田ビル店\" -A \"Mozilla/5.0\" -o /tmp/gm.html -w \"%{http_code} %{url_effective}\\\\n\")",
       "Bash(grep -oE '3[45]\\\\.[0-9]{5,7},1[34][0-9]\\\\.[0-9]{5,7}' /tmp/gm.html)",
       "Bash(xargs -0 -I{} sh -c 'echo \"=== {} ===\"; grep -E \"^\\(source_url|shared_by|raw_note|title\\):\" \"{}\"')"
+        
     ]
   }
 }

@@ -1,0 +1,66 @@
+import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+// @ts-ignore
+import styles from "./styles/noteproperties.scss"
+
+const FIELD_LABEL: Record<string, string> = {
+  station: "捷運站",
+  district: "商圈",
+  opening_hours: "營業時間",
+  duration: "停留時間",
+  meal_slot: "餐別",
+  price_range: "價格",
+  nights: "住宿天數",
+  meal_plan: "餐食方案",
+  transport_mode: "交通方式",
+  cost: "費用",
+  shared_by: "分享人",
+  source_url: "來源網站",
+  location: "地圖",
+}
+
+const FIELD_ORDER = [
+  "shared_by", "station", "district", "opening_hours", "duration",
+  "meal_slot", "price_range", "nights", "meal_plan",
+  "transport_mode", "cost", "location", "source_url",
+]
+
+const NoteProperties: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
+  const fm = fileData.frontmatter
+  if (!fm || !fm.type) return null
+
+  const items = FIELD_ORDER
+    .map((key) => ({ key, value: fm[key] }))
+    .filter((i) => i.value !== undefined && i.value !== null && i.value !== "")
+
+  if (items.length === 0) return null
+
+  return (
+    <ul class="note-properties">
+      {items.map((item) => (
+        <li class="note-property-item">
+          <span class="note-property-label">{FIELD_LABEL[item.key]}</span>
+          <span class="note-property-sep">：</span>
+          {item.key === "source_url" ? (
+            <a href={String(item.value)} target="_blank" rel="noopener noreferrer">
+              {String(item.value)}
+            </a>
+          ) : item.key === "location" ? (
+            
+            <a href={ "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent((fm.title as string) ?? "") + "+" + String(item.value) }
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              在 Google Maps 開啟
+            </a>
+          ) : (
+            <span class="note-property-value">{String(item.value)}</span>
+          )}
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+NoteProperties.css = styles
+
+export default (() => NoteProperties) satisfies QuartzComponentConstructor

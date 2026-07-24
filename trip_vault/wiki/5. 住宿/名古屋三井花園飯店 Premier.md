@@ -35,8 +35,6 @@ aliases:
 位於名古屋車站步行約5分鐘（〒450-0002 名古屋市中村區名駅4-11-27 シンフォニー豊田ビル），可透過地下街直通飯店，不畏風雨。地址與「名駅センチュリー豊田ビル」不同棟，兩者相距約130公尺。
 ![代表圖](https://www.gardenhotels.co.jp/assets/images/nagoya-premier/photogallery/Lobby_night_3.jpg)
 
-🗺️ [在 Google Maps 開啟](https://www.google.com/maps?q=35.169905,136.8867198)
-
 ## 交通方式與位置
 JR/新幹線/地下鐵/名鐵/近鐵名古屋站步行約5分鐘，可走地下街直通。電話：052-587-1131。
 

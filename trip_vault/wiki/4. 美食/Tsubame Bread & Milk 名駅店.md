@@ -27,16 +27,12 @@ tags:
   - meal/breakfast
   - status/researching
   - priority/nice-to-have
-興致指數:
+興致指數: 4
 ---
-
-
 ## 簡介／推薦菜色
 主打自家製牛奶吐司（生食パン）的麵包咖啡廳，招牌是奶油厚切吐司、小倉紅豆吐司套餐，適合當作名古屋早餐選項之一，補充 [[名古屋鄉土美食 票選TOP20（總覽）]] 裡的「早餐（喫茶店文化）」類型。地址：名古屋市中村區名駅4丁目26番25號 メイフィス名駅ビル1樓。
 
 ![代表圖](https://tsubamepan.jp/static/img/meieki_img01.jpg)
-
-🗺️ [在 Google Maps 開啟](https://www.google.com/maps?q=35.1692,136.8871)
 
 ## 交通方式
 名古屋站步行約4分鐘（名駅地下街出口約1分鐘）。
@@ -48,7 +44,7 @@ tags:
 - [[名古屋鄉土美食 票選TOP20（總覽）]]
 
 ## 原始連結備註
-> [[2026-07-20 10 Must visit spot in Nagoya]]
+> 來源檔案：2026-07-20 10 Must visit spot in Nagoya
 > [[繃皮蛇]]：（原始素材為YouTube影片時間軸列表，01:59標註「Tsubame Bread & Milk名駅店」。）
 
 ## 📝 我的備註

@@ -34,8 +34,6 @@ aliases:
 
 ![代表圖](https://www.legoland.jp/media/chmftlft/top-fb1200.jpg)
 
-🗺️ [在 Google Maps 開啟](https://www.google.com/maps?q=35.05056,136.84333)
-
 ## 交通方式
 あおなみ線「金城ふ頭」駅徒步約2-3分。
 
@@ -50,12 +48,12 @@ aliases:
 - [[リニア・鉄道館]]
 
 ## 原始連結備註
-> [[2026-07-20 波比]]
+> 來源檔案：2026-07-20 波比
 > [[繃皮蛇]]：（原始素材無文字內容，僅分享網頁連結。）部落格文章列為親子主題樂園之一，「全亞洲第二座」、「日本唯一」，樂高雲霄飛車、迷你城市、SEA LIFE水族館為必看重點。
 
 ---
 
-> [[2026-07-20 10 Must visit spot in Nagoya]]
+> 來源檔案：2026-07-20 10 Must visit spot in Nagoya
 > [[繃皮蛇]]：（原始素材為YouTube影片時間軸列表，22:19標註「LEGOLAND®︎ Japan Resort」。）
 
 ## 📝 我的備註

@@ -44,7 +44,7 @@ tags: [index]
 - [[中部電力 MIRAI TOWER]] — 日本最古電視塔（nice-to-have）
 - [[榮商圈]] — 精品百貨一級戰區（must）
 - [[名古屋市科學館]] — 世界最大天象儀（白川公園內, nice-to-have）
-- [[オアシス21（綠洲21）]] — 玻璃展望甲板（nice-to-have）
+- [[オアシス21（ 綠洲21 ）]] — 玻璃展望甲板（nice-to-have）
 - [[黒豚屋らむちぃ]] — 黑豚味噌豬排（nice-to-have）
 - [[THE ROYAL PARK ICONIC NAGOYA（名古屋皇家公園標誌飯店）]] — 住宿（nice-to-have）
 
@@ -63,7 +63,7 @@ tags: [index]
 
 ## 則武新町
 - [[トヨタ産業技術記念館（Toyota Techno Museum）]] — 豐田產業技術博物館（must）
-- [[ノリタケの森（則武之森）]] — Noritake紅磚園區（nice-to-have）
+- [[ノリタケの森（ 則武之森 ）]] — Noritake紅磚園區（nice-to-have）
 
 ## 犬山城下町
 - [[犬山城]] — 國寶天守，可順遊城下町老街（nice-to-have）

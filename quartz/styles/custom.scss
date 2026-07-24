@@ -1,3 +1,69 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+article {
+  line-height: 1.75;
+
+  h1, h2, h3 {
+    letter-spacing: 0.02em;
+  }
+
+  h1 {
+    border-bottom: 2px solid var(--tertiary);
+    padding-bottom: 0.4rem;
+  }
+
+  blockquote {
+    border-left: 3px solid var(--tertiary);
+    padding-left: 1rem;
+    color: var(--darkgray);
+    font-style: normal;
+  }
+}
+
+article {
+  h1, h2, h3 {
+    margin-top: 2.2rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+.trip-pill, .note-property-pill {
+  border: 1px solid var(--lightgray);
+  background: transparent;
+}
+
+a:not(.trip-card):not(.internal) {
+  text-decoration: none;
+  border-bottom: 1px solid var(--tertiary);
+  transition: border-color 0.15s ease;
+
+  &:hover {
+    border-bottom-width: 2px;
+  }
+}
+
+.page-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--light);
+}
+
+.article-title {
+  border-bottom: 2px solid var(--tertiary);
+  padding-bottom: 0.4rem;
+}
+
+.note-properties {
+  background: var(--lightgray);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+}
+
+article img {
+  border-radius: 8px;
+}

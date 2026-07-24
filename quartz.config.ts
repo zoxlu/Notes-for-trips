@@ -9,7 +9,7 @@ import * as Component from "./quartz/components"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "名古屋家族旅行 2026",
+    pageTitle: "繃皮探險大隊",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -24,21 +24,21 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
+        header: "Noto Sans TC",
+        body: "Noto Sans TC",
         code: "IBM Plex Mono",
-      },
+      },      
       colors: {
         lightMode: {
-          light: "#faf6f2",
-          lightgray: "#ecdfd6",
-          gray: "#c9ad9a",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#993c1d",
-          tertiary: "#d85a30",
-          highlight: "rgba(216, 90, 48, 0.12)",
-          textHighlight: "#fac77588",
+          light: "#fdfaf9",
+          lightgray: "#ede2df",
+          gray: "#c3aba4",
+          darkgray: "#4a3f3c",
+          dark: "#2b2422",
+          secondary: "#8a4a52",
+          tertiary: "#c48a8f",
+          highlight: "rgba(138, 74, 82, 0.10)",
+          textHighlight: "#e8b8bc88",
         },
         darkMode: {
           light: "#1c1614",

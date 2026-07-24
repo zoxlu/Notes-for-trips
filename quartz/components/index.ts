@@ -24,6 +24,8 @@ import Breadcrumbs from "./Breadcrumbs"
 import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
+import NoteProperties from "./NoteProperties"
+import QuickFilters from "./QuickFilters"
 
 export {
   ArticleTitle,
@@ -52,4 +54,6 @@ export {
   Comments,
   Flex,
   ConditionalRender,
+  NoteProperties,  
+  QuickFilters,  
 }

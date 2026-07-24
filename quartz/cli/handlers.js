@@ -411,7 +411,8 @@ export async function handleBuild(argv) {
         res.end()
       }
 
-      let fp = req.url?.split("?")[0] ?? "/"
+//      let fp = req.url?.split("?")[0] ?? "/"
+      let fp = decodeURIComponent(req.url?.split("?")[0] ?? "/")
 
       // handle redirects
       if (fp.endsWith("/")) {

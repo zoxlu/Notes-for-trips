@@ -2,10 +2,15 @@ import { ComponentChildren } from "preact"
 import { htmlToJsx } from "../../util/jsx"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "../types"
 import { resolveRelative } from "../../util/path"
+import NotePropertiesConstructor from "../NoteProperties"
+import ContentMetaConstructor from "../ContentMeta"
 // @ts-ignore
 import tripCardsScript from "../scripts/tripcards.inline"
 // @ts-ignore
 import styles from "../styles/tripcards.scss"
+
+const NotePropertiesComp = NotePropertiesConstructor()
+const ContentMetaComp = ContentMetaConstructor()
 
 type TypeMeta = { icon: string; bg: string; fg: string; label: string }
 
@@ -23,6 +28,17 @@ const PRIORITY_LABEL: Record<string, string> = {
   optional: "選項",
 }
 
+const SCORE_VALUES = ["5", "4", "3", "2", "1", "0"]
+
+/*
+const STATUS_LABEL: Record<string, string> = {
+  researching: "蒐集中",
+  shortlisted: "候選",
+  confirmed: "已確定",
+  rejected: "已剔除",
+}
+*/
+
 const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
   const { fileData, tree, allFiles } = props
 
@@ -31,7 +47,13 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
     const content = htmlToJsx(fileData.filePath!, tree) as ComponentChildren
     const classes: string[] = (fileData.frontmatter?.cssclasses as string[]) ?? []
     const classString = ["popover-hint", ...classes].join(" ")
-    return <article class={classString}>{content}</article>
+    return (
+      <>
+        <NotePropertiesComp {...props} />
+        <ContentMetaComp {...props} />
+        <article class={classString}>{content}</article>
+      </>
+    )
   }
 
   const tripPages = allFiles.filter(
@@ -44,23 +66,66 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
   const districts = Array.from(
     new Set(tripPages.map((f) => f.frontmatter?.district as string).filter(Boolean)),
   ).sort()
+  /*
+  const statuses = Array.from(
+    new Set(tripPages.map((f) => f.frontmatter?.status as string).filter(Boolean)),
+  ).sort()
+  */
+  const CATEGORY_TABS = [
+    { key: "type", label: "類型" },
+    { key: "station", label: "車站" },
+    { key: "district", label: "商圈" },
+    //{ key: "status", label: "確認狀態" },
+    { key: "score", label: "興致指數" }
+  ]
 
+  const introContent = htmlToJsx(fileData.filePath!, tree) as ComponentChildren
   return (
     <div class="trip-home">
+      <div class="trip-intro">{introContent}</div>
       <div class="trip-filters">
-        <button class="trip-chip active" data-filter-key="all" data-filter-value="all">
-          全部
-        </button>
-        {stations.map((s) => (
-          <button class="trip-chip" data-filter-key="station" data-filter-value={s}>
-            {s}
+        <div class="trip-category-tabs">
+          {CATEGORY_TABS.map((c, i) => (
+            <button
+              class={`trip-tab${i === 0 ? " active" : ""}`}
+              data-category-tab={c.key}
+            >
+              {c.label}
+            </button>
+          ))}
+          <button class="trip-reset" data-filter-key="all" data-filter-value="all">
+            顯示全部
           </button>
-        ))}
-        {districts.map((d) => (
-          <button class="trip-chip" data-filter-key="district" data-filter-value={d}>
-            {d}
-          </button>
-        ))}
+        </div>
+
+        <div class="trip-chip-panel" data-category-panel="type">
+          {Object.entries(TYPE_META).map(([key, meta]) => (
+            <button class="trip-chip" data-filter-key="type" data-filter-value={key}>
+              {meta.icon} {meta.label}
+            </button>
+          ))}
+        </div>
+        <div class="trip-chip-panel" data-category-panel="station" hidden>
+          {stations.map((s) => (
+            <button class="trip-chip" data-filter-key="station" data-filter-value={s}>
+              {s}
+            </button>
+          ))}
+        </div>
+        <div class="trip-chip-panel" data-category-panel="district" hidden>
+          {districts.map((d) => (
+            <button class="trip-chip" data-filter-key="district" data-filter-value={d}>
+              {d}
+            </button>
+          ))}
+        </div>
+        <div class="trip-chip-panel" data-category-panel="score" hidden>
+          {SCORE_VALUES.map((s) => (
+            <button class="trip-chip" data-filter-key="score" data-filter-value={s}>
+              {Number(s) > 0 ? "⭐".repeat(Number(s)) : "0（不感興趣）"}
+            </button>
+          ))}
+        </div>       
       </div>
       <div class="trip-grid">
         {tripPages.map((page) => {
@@ -70,14 +135,18 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
           const priority = fm.priority as string | undefined
           const station = (fm.station as string) ?? ""
           const district = (fm.district as string) ?? ""
+          const status = (fm.status as string) ?? ""
           const image = fm.image as string | undefined
-
+          const score = (fm["興致指數"] as string) ?? ""
           return (
             <a
               class="trip-card"
               href={resolveRelative(fileData.slug!, page.slug!)}
+              data-type={type}
               data-station={station}
               data-district={district}
+              data-status={status}
+              data-score={score}
             >
               <div class="trip-card-image" style={{ background: meta.bg }}>
                 {image ? (
@@ -89,7 +158,6 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
               <div class="trip-card-body">
                 <p class="trip-card-title">{fm.title as string}</p>
                 <p class="trip-card-meta">{[station, district].filter(Boolean).join(" · ")}</p>
-                {fm.opening_hours && <p class="trip-card-meta">{fm.opening_hours as string}</p>}
                 {priority && (
                   <span class={`trip-pill trip-pill-${priority}`}>
                     {PRIORITY_LABEL[priority] ?? priority}
