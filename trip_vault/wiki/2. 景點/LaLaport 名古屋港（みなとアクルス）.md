@@ -7,8 +7,8 @@ district: 港區
 location: 35.1086,136.882352
 duration: 2-3小時
 opening_hours: 平日9:00-20:00／週六日、國定假日8:30-21:00（依樓層店舖各異）
-image:
-image_source:
+image: https://jouhou.nagoya/wp-content/uploads/2018/09/lalaport-outview.jpg
+image_source: 名古屋情報通
 status: researching
 priority: nice-to-have
 shared_by: "[[繃皮羊]]"
@@ -27,11 +27,11 @@ aliases:
   - ららぽーと名古屋みなとアクルス
   - みなとアクルス
   - LaLaport名古屋港
-興致指數:
+興致指數: 5
 ---
 ## 簡介
-名古屋港區大型購物中心，鄰近 [[名古屋港水族館]]，交通路線順，可安排同一天順遊。一樓有全日本規模數一數二的複合式 mont-bell 大店，商場室內恆溫、採光佳，適合悠閒選購露營裝備、男女裝與生活雜貨。
-
+名古屋港區大型購物中心，鄰近 [[名古屋港水族館]]，交通路線順，可安排同一天順遊。一樓有全日本規模數一數二的複合式 Mont-bell 大店，商場室內恆溫、採光佳，適合悠閒選購露營裝備、男女裝與生活雜貨。
+![代表網站](https://jouhou.nagoya/wp-content/uploads/2018/09/lalaport-outview.jpg)
 ## 交通方式
 地下鐵名港線「港区役所」駅2號出口步行約2分／「東海通」駅3號出口步行約3分。
 

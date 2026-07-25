@@ -7,8 +7,8 @@ district: 榮
 location: 35.165466,136.905709
 duration: 1-1.5小時
 opening_hours: 10:00-21:00
-image:
-image_source:
+image: https://japanshopping.org/files/shopping_article_contents/solocamp.jpg
+image_source: Japan Shopping Now
 status: researching
 priority: nice-to-have
 shared_by: "[[繃皮羊]]"
@@ -26,11 +26,11 @@ tags:
 aliases:
   - Alpen NAGOYA
   - アルペンアウトドアーズフラッグシップストア名古屋栄店
-興致指數:
+興致指數: 5
 ---
 ## 簡介
 位於[[榮商圈]]納迪亞公園（ナディアパーク）內，全日本最大規模的戶外用品旗艦店，數層樓的露營裝備、帳篷實體展示可盡情尋寶。商圈周邊即是三越、松坂屋等精品百貨。
-
+![代表圖片](https://japanshopping.org/files/shopping_article_contents/solocamp.jpg)
 ## 交通方式
 地下鐵名城線「矢場町」駅步行約4分。
 
