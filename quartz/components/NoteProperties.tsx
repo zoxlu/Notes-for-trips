@@ -1,4 +1,5 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import { resolveRelative } from "../util/path"
 // @ts-ignore
 import styles from "./styles/noteproperties.scss"
 
@@ -24,7 +25,7 @@ const FIELD_ORDER = [
   "transport_mode", "cost", "location", "source_url",
 ]
 
-const NoteProperties: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
+const NoteProperties: QuartzComponent = ({ fileData, allFiles }: QuartzComponentProps) => {
   const fm = fileData.frontmatter
   if (!fm || !fm.type) return null
 
@@ -34,19 +35,40 @@ const NoteProperties: QuartzComponent = ({ fileData }: QuartzComponentProps) => 
 
   if (items.length === 0) return null
 
+  function renderSharedBy(rawValue: string) {
+    // 支援 "[[繃皮蛇]]" 這種 wikilink 寫法，抓出裡面的名字
+    const match = rawValue.match(/^\[\[(.+?)\]\]$/)
+    const name = match ? match[1] : rawValue
+
+    const targetPage = allFiles.find((f) => f.frontmatter?.title === name)
+    if (!targetPage) {
+      return <span class="note-property-value">{name}</span>
+    }
+    return (
+      <a href={resolveRelative(fileData.slug!, targetPage.slug!)}>{name}</a>
+    )
+  }
+
   return (
     <ul class="note-properties">
       {items.map((item) => (
         <li class="note-property-item">
           <span class="note-property-label">{FIELD_LABEL[item.key]}</span>
           <span class="note-property-sep">：</span>
-          {item.key === "source_url" ? (
+          {item.key === "shared_by" ? (
+            renderSharedBy(String(item.value))
+          ) : item.key === "source_url" ? (
             <a href={String(item.value)} target="_blank" rel="noopener noreferrer">
               {String(item.value)}
             </a>
           ) : item.key === "location" ? (
-            
-            <a href={ "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent((fm.title as string) ?? "") + "+" + String(item.value) }
+            <a
+              href={
+                "https://www.google.com/maps/search/?api=1&query=" +
+                encodeURIComponent((fm.title as string) ?? "") +
+                "+" +
+                String(item.value)
+              }
               target="_blank"
               rel="noopener noreferrer"
             >
