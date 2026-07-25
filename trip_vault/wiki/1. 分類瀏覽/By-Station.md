@@ -16,10 +16,6 @@ tags: [index]
 - [[山 名古屋駅店（ワンランク上の世界の山ちゃん）]] — 名駅太閤通口ビル（名駅, nice-to-have）
 - [[矢場とん 名鉄百貨店本店]] — 名鐵名古屋站直通（名駅, nice-to-have）
 - [[麺屋獅子丸]] — ⚠️地點待確認（名古屋站前, optional）
-- [[Nikko Style Nagoya]] — 櫻通口步行約10分鐘（名駅, nice-to-have）
-- [[名古屋JRゲートタワーホテル（Nagoya JR Gate Tower Hotel）]] — 車站直通（名駅, nice-to-have）
-- [[名古屋マリオットアソシアホテル（Nagoya Marriott Associa Hotel）]] — 車站直通（名駅, nice-to-have）
-- [[名鉄グランドホテル（Meitetsu Grand Hotel）]] — 名鐵站直通（名駅, nice-to-have）
 
 ## 名古屋城駅（地下鐵名城線）
 - [[名古屋城]] — 7號出口徒步5分（本丸, must）
@@ -28,9 +24,16 @@ tags: [index]
 - [[金鯱橫丁]] — 徒步約10分鐘（三之丸, nice-to-have）
 - [[矢場とん 名古屋城金鯱橫丁店]] — 金鯱橫丁義直區（三之丸, nice-to-have）
 
+## 大曾根站（地下鐵名城線／JR中央線／名鐵瀨戶線）
+- [[德川園]] — 徒步約10-15分（東區, nice-to-have）
+- [[德川美術館]] — 徒步約10-15分，與德川園相鄰（東區, nice-to-have）
+
 ## 神宮前駅（名鐵）
 - [[熱田神宮]] — 徒步3分（熱田, nice-to-have）
 - [[あつた蓬莱軒 神宮店]] — 地下鐵傳馬町駅徒步3分（熱田, nice-to-have）
+
+## 熱田神宮西站（地下鐵名城線）
+- [[白鳥庭園]] — 4號出口徒步約10分（熱田, nice-to-have）
 
 ## 大須觀音駅
 - [[大須商店街]] — 2號出口（大須, nice-to-have）
@@ -46,7 +49,11 @@ tags: [index]
 - [[榮商圈]] — 松坂屋、三越、LACHIC等百貨（榮, must）
 - [[オアシス21（ 綠洲21 ）]] — 直通（榮, nice-to-have）
 - [[黒豚屋らむちぃ]] — 矢場町駅步行2分鐘（榮, nice-to-have）
-- [[THE ROYAL PARK ICONIC NAGOYA（名古屋皇家公園標誌飯店）]] — 地下通道直通（榮, nice-to-have）
+- [[名古屋皇家公園標誌飯店 THE ROYAL PARK ICONIC NAGOYA|THE ROYAL PARK ICONIC NAGOYA（名古屋皇家公園標誌飯店）]] — 地下通道直通（榮, nice-to-have）
+
+## 矢場町站（地下鐵名城線）
+- [[Alpen Outdoors Flagship Store 名古屋榮店]] — 徒步約4分，位於納迪亞公園內（榮, nice-to-have）
+- [[山本屋總本家 本家]] — 6號出口徒步約6分，味噌煮込みうどん創始名店（榮, nice-to-have）
 
 ## 金城ふ頭駅（あおなみ線）
 - [[LEGOLAND Japan]] — 徒步2-3分（港區金城ふ頭, nice-to-have）
@@ -54,6 +61,9 @@ tags: [index]
 
 ## 名古屋港駅（地下鐵名港線）
 - [[名古屋港水族館]] — 3號出口徒步5分（港區, must）
+
+## 港区役所站（地下鐵名港線）
+- [[LaLaport 名古屋港（みなとアクルス）]] — 2號出口徒步約2分（港區, nice-to-have）
 
 ## 伏見駅（地下鐵鶴舞線・東山線）
 - [[名古屋市科學館]] — 徒步5分（榮／白川公園內, nice-to-have）
@@ -81,5 +91,7 @@ tags: [index]
 - [[名古屋必買伴手禮（總覽）]] — 伴手禮零食清單
 - [[名古屋地下鐵路線圖（景點對照）]] — 全線通用參考地圖
 - [[中部國際機場↔市區交通比較]] — 機場往返市區4種方式比較
+- [[黑豚木曾路]] — ⚠️分店待確認
+- [[鳥開總本家]] — ⚠️分店待確認
 
 « 回 [[index|首頁]]

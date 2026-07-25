@@ -6,7 +6,7 @@ tags: [index]
 
 ## 名古屋站前
 - [[柳橋中央市場]] — 海鮮市場（must）
-- [[柳橋中央市場海鮮早餐食堂|柳橋中央市場 海鮮早餐食堂]] — 市場內早餐（shortlisted）
+- [[柳橋中央市場海鮮早餐食堂|柳橋中央市場 海鮮早餐食堂]] — 地魚の丼 まるみ，市場內海鮮丼早餐（shortlisted）
 - [[Y.MARKET BREWING KITCHEN]] — 手工精釀啤酒餐廳（nice-to-have）
 - [[コンパル サンロード店]] — 喫茶店早餐文化（nice-to-have）
 - [[麺屋獅子丸]] — 拉麵，⚠️地點待確認（optional）
@@ -17,10 +17,6 @@ tags: [index]
 - [[Tsubame Bread & Milk 名駅店]] — 牛奶吐司早餐（nice-to-have）
 - [[山 名古屋駅店（ワンランク上の世界の山ちゃん）]] — 手羽先（nice-to-have）
 - [[矢場とん 名鉄百貨店本店]] — 味噌豬排（nice-to-have）
-- [[Nikko Style Nagoya]] — 住宿（nice-to-have）
-- [[名古屋JRゲートタワーホテル（Nagoya JR Gate Tower Hotel）]] — 住宿（nice-to-have）
-- [[名古屋マリオットアソシアホテル（Nagoya Marriott Associa Hotel）]] — 住宿（nice-to-have）
-- [[名鉄グランドホテル（Meitetsu Grand Hotel）]] — 住宿（nice-to-have）
 
 ## 本丸
 - [[名古屋城]] — 戰國名城，金鯱橫丁美食街（must）
@@ -29,9 +25,14 @@ tags: [index]
 - [[金鯱橫丁]] — 名古屋城美食街（nice-to-have）
 - [[矢場とん 名古屋城金鯱橫丁店]] — 味噌豬排（nice-to-have）
 
+## 東區
+- [[德川園]] — 日式庭園，11月紅葉名所（nice-to-have）
+- [[德川美術館]] — 尾張德川家收藏，國寶源氏物語繪卷（nice-to-have）
+
 ## 熱田
 - [[熱田神宮]] — 日本三大神宮之一（nice-to-have）
 - [[あつた蓬莱軒 神宮店]] — 鰻魚飯三吃（nice-to-have）
+- [[白鳥庭園]] — 熱田神宮旁日式庭園，紅葉倒影（nice-to-have）
 
 ## 大須
 - [[大須商店街]] — 400年歷史商店街，藥妝與古著（nice-to-have）
@@ -46,7 +47,9 @@ tags: [index]
 - [[名古屋市科學館]] — 世界最大天象儀（白川公園內, nice-to-have）
 - [[オアシス21（ 綠洲21 ）]] — 玻璃展望甲板（nice-to-have）
 - [[黒豚屋らむちぃ]] — 黑豚味噌豬排（nice-to-have）
-- [[THE ROYAL PARK ICONIC NAGOYA（名古屋皇家公園標誌飯店）]] — 住宿（nice-to-have）
+- [[名古屋皇家公園標誌飯店 THE ROYAL PARK ICONIC NAGOYA|THE ROYAL PARK ICONIC NAGOYA（名古屋皇家公園標誌飯店）]] — 住宿（nice-to-have）
+- [[Alpen Outdoors Flagship Store 名古屋榮店]] — 全日本最大戶外用品旗艦店（nice-to-have）
+- [[山本屋總本家 本家]] — 味噌煮込みうどん創始名店（nice-to-have）
 
 ## 港區金城ふ頭
 - [[LEGOLAND Japan]] — 樂高主題樂園（nice-to-have）
@@ -54,6 +57,7 @@ tags: [index]
 
 ## 港區
 - [[名古屋港水族館]] — 海豚虎鯨表演（must）
+- [[LaLaport 名古屋港（みなとアクルス）]] — 大型購物中心，mont-bell旗艦店（nice-to-have）
 
 ## 長久手
 - [[吉卜力公園]] — 全預約制主題公園（must）
@@ -79,5 +83,7 @@ tags: [index]
 - [[名古屋必買伴手禮（總覽）]] — 伴手禮零食清單
 - [[名古屋地下鐵路線圖（景點對照）]] — 全線通用參考地圖
 - [[中部國際機場↔市區交通比較]] — 機場往返市區4種方式比較
+- [[黑豚木曾路]] — 黑豚／和牛涮涮鍋，⚠️分店待確認
+- [[鳥開總本家]] — 名古屋交趾雞親子丼，⚠️分店待確認
 
 « 回 [[index|首頁]]

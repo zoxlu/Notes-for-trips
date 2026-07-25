@@ -24,9 +24,14 @@ tags: [index]
 - [[三光稲荷神社]] — 犬山城下町，求姻緣神社（optional）
 - [[オアシス21（ 綠洲21 ）]] — 榮，玻璃展望甲板與巴士總站（nice-to-have）
 - [[金鯱橫丁]] — 三之丸，名古屋城美食街（nice-to-have）
+- [[LaLaport 名古屋港（みなとアクルス）]] — 港區，大型購物中心，mont-bell旗艦店（nice-to-have）
+- [[德川園]] — 東區，日式庭園，11月紅葉名所（nice-to-have）
+- [[德川美術館]] — 東區，尾張德川家收藏，國寶源氏物語繪卷（nice-to-have）
+- [[白鳥庭園]] — 熱田，熱田神宮旁日式庭園，紅葉倒影（nice-to-have）
+- [[Alpen Outdoors Flagship Store 名古屋榮店]] — 榮，全日本最大戶外用品旗艦店（nice-to-have）
 
 ## 美食
-- [[柳橋中央市場海鮮早餐食堂|柳橋中央市場 海鮮早餐食堂]] — 名古屋站前，早餐（shortlisted）
+- [[柳橋中央市場海鮮早餐食堂|柳橋中央市場 海鮮早餐食堂]] — 名古屋站前，地魚の丼 まるみ，海鮮丼早餐（shortlisted）
 - [[Y.MARKET BREWING KITCHEN]] — 名古屋站前，晚餐精釀啤酒（nice-to-have）
 - [[大須鮨]] — 大須，江戶前壽司晚餐（nice-to-have）
 - [[風来坊 名駅センチュリー豊田ビル店]] — 名駅，名古屋名物手羽先（nice-to-have）
@@ -44,17 +49,16 @@ tags: [index]
 - [[名古屋鄉土美食 票選TOP20（總覽）]] — 美食類型靈感清單（optional）
 - [[名古屋美食7大必吃種類與名店（總覽）]] — 美食種類＋名店品牌清單（optional）
 - [[名古屋必買伴手禮（總覽）]] — 伴手禮零食清單（optional）
+- [[山本屋總本家 本家]] — 榮，味噌煮込みうどん創始名店（nice-to-have）
+- [[黑豚木曾路]] — 黑豚／和牛涮涮鍋，⚠️分店待確認（nice-to-have）
+- [[鳥開總本家]] — 名古屋交趾雞親子丼，⚠️分店待確認（nice-to-have）
 
 ## 活動
 - [[豐國神社 九之市]] — 中村公園，每月9/19/29日參道市集（optional）
 
 ## 住宿
 - [[名古屋三井花園飯店 Premier]] — 名駅，車站步行5分鐘（nice-to-have）
-- [[THE ROYAL PARK ICONIC NAGOYA（名古屋皇家公園標誌飯店）]] — 榮，逛街購物方便（nice-to-have）
-- [[名古屋マリオットアソシアホテル（Nagoya Marriott Associa Hotel）]] — 名駅，車站直通頂級飯店（nice-to-have）
-- [[名古屋JRゲートタワーホテル（Nagoya JR Gate Tower Hotel）]] — 名駅，車站直通中價位（nice-to-have）
-- [[名鉄グランドホテル（Meitetsu Grand Hotel）]] — 名駅，名鐵站直通老字號（nice-to-have）
-- [[Nikko Style Nagoya]] — 名駅，車站步行10分鐘（nice-to-have）
+- [[名古屋皇家公園標誌飯店 THE ROYAL PARK ICONIC NAGOYA|THE ROYAL PARK ICONIC NAGOYA（名古屋皇家公園標誌飯店）]] — 榮，逛街購物方便（nice-to-have）
 
 ## 交通
 - [[名古屋地下鐵路線圖（景點對照）]] — 全線通用參考地圖（nice-to-have）
