@@ -27,6 +27,7 @@ tags:
   - priority/nice-to-have
 aliases:
   - 名古屋三井花園飯店Premier
+  - Mitsui Garden Hotel Nagoya Premier
 興致指數: 5
 ---
 
