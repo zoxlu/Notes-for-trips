@@ -27,6 +27,8 @@ tags:
   - meal/breakfast
   - status/researching
   - priority/nice-to-have
+aliases:
+  - つばめパン＆Milk
 興致指數: 4
 ---
 ## 簡介／推薦菜色
