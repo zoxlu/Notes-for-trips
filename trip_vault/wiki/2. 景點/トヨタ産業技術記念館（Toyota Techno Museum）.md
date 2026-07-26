@@ -12,6 +12,8 @@ priority: must
 shared_by: "[[繃皮蛇]]"
 raw_note: "[[2026-07-18 水嫂]]"
 source_url: https://www.youtube.com/watch?v=yVUZJShMw40
+official_url: https://www.tcmit.org/
+source_label: 水嫂分享的名古屋景點影片（國泰航空、Toyota產業技術記念館、犬山城等）
 date_added: 2026-07-18
 day_assigned:
 duration: 2-3小時

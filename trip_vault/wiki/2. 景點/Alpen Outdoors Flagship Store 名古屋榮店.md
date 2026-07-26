@@ -14,6 +14,8 @@ priority: nice-to-have
 shared_by: "[[繃皮羊]]"
 raw_note: "[[2026-07-24 之前找到的一些資料補充]]"
 source_url: https://store.alpen-group.jp/Form/RealShop/ShopDetail.aspx?rsid=5502
+official_url: https://store.alpen-group.jp/Form/RealShop/ShopDetail.aspx?rsid=5502
+source_label: Alpen Group官方門市頁面
 date_added: 2026-07-24
 day_assigned:
 tags:

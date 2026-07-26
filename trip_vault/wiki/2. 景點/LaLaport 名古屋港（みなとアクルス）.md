@@ -14,6 +14,8 @@ priority: nice-to-have
 shared_by: "[[繃皮羊]]"
 raw_note: "[[2026-07-24 之前找到的一些資料補充]]"
 source_url: https://mitsui-shopping-park.com/lalaport/minatoaquls/
+official_url: https://mitsui-shopping-park.com/lalaport/minatoaquls/
+source_label: 三井不動産LaLaport官方網站
 date_added: 2026-07-24
 day_assigned:
 tags:
