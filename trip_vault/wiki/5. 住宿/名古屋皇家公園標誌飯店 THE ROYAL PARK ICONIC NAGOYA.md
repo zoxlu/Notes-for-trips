@@ -12,6 +12,8 @@ priority: nice-to-have
 shared_by: "[[繃皮羊]]"
 raw_note: "[[2026-07-23 名古屋皇家公園標誌飯店]]"
 source_url: https://www.royalparkhotels.co.jp/ic/nagoya/
+official_url: https://www.royalparkhotels.co.jp/ic/nagoya/
+source_label: THE ROYAL PARK ICONIC NAGOYA 飯店官網
 date_added: 2026-07-23
 day_assigned:
 nights:

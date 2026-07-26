@@ -12,6 +12,8 @@ priority: nice-to-have
 shared_by: "[[繃皮蛇]]"
 raw_note: "[[2026-07-18 名古屋三井花園飯店 premier]]"
 source_url: https://sillycoupleblog.tw/japan-nagoya-accommodation-mghnp-2606/
+official_url: https://www.gardenhotels.co.jp/nagoya-premier/
+source_label: 名古屋三井花園飯店Premier住宿心得部落格
 date_added: 2026-07-18
 day_assigned:
 nights:
@@ -61,3 +63,5 @@ JR/新幹線/地下鐵/名鐵/近鐵名古屋站步行約5分鐘，可走地下�
 
 ## 📝 我的備註
 
+### 卷卷南
+泡湯很舒服
