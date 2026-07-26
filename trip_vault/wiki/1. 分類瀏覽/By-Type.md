@@ -20,8 +20,11 @@ tags: [index]
 - [[常滑（陶瓷散步道・招財貓街）]] — 常滑，陶瓷散步道與招財貓街（nice-to-have）
 - [[トヨタ産業技術記念館（Toyota Techno Museum）]] — 則武新町，豐田產業技術博物館（must）
 - [[ノリタケの森（ 則武之森 ）]] — 則武新町，Noritake紅磚園區（nice-to-have）
+- [[AEON MALL Nagoya Noritake Garden（則武之森 AEON商場）]] — 則武新町，則武之森旁大型購物中心（nice-to-have）
 - [[犬山城]] — 犬山城下町，國寶天守（nice-to-have）
 - [[三光稲荷神社]] — 犬山城下町，求姻緣神社（optional）
+- [[明治村]] — 犬山，明治時代建築戶外博物館（nice-to-have）
+- [[有樂苑]] — 犬山，國寶茶室「如庵」日本庭園（nice-to-have）
 - [[オアシス21（ 綠洲21 ）]] — 榮，玻璃展望甲板與巴士總站（nice-to-have）
 - [[金鯱橫丁]] — 三之丸，名古屋城美食街（nice-to-have）
 - [[LaLaport 名古屋港（みなとアクルス）]] — 港區，大型購物中心，mont-bell旗艦店（nice-to-have）
@@ -51,7 +54,9 @@ tags: [index]
 - [[名古屋必買伴手禮（總覽）]] — 伴手禮零食清單（optional）
 - [[山本屋總本家 本家]] — 榮，味噌煮込みうどん創始名店（nice-to-have）
 - [[黑豚木曾路]] — 黑豚／和牛涮涮鍋，⚠️分店待確認（nice-to-have）
-- [[鳥開總本家]] — 名古屋交趾雞親子丼，⚠️分店待確認（nice-to-have）
+- [[鳥開總本家]] — 名駅エスカ店，名古屋交趾雞親子丼（nice-to-have）
+- [[札幌螃蟹本家 名古屋本店]] — 榮，帝王蟹全蟹宴（nice-to-have）
+- [[ぴよりん（小雞布丁蛋糕）]] — 名駅，小雞造型布丁蛋糕伴手禮（nice-to-have）
 
 ## 活動
 - [[豐國神社 九之市]] — 中村公園，每月9/19/29日參道市集（optional）
@@ -63,5 +68,6 @@ tags: [index]
 ## 交通
 - [[名古屋地下鐵路線圖（景點對照）]] — 全線通用參考地圖（nice-to-have）
 - [[中部國際機場↔市區交通比較]] — 機場往返市區4種方式比較（nice-to-have）
+- [[交通儲值卡比較（Manaca／Suica／Icoca）]] — Manaca／Suica／Icoca 儲值卡比較（nice-to-have）
 
 « 回 [[index|首頁]]

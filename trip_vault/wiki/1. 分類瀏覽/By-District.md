@@ -17,6 +17,8 @@ tags: [index]
 - [[Tsubame Bread & Milk 名駅店]] — 牛奶吐司早餐（nice-to-have）
 - [[山 名古屋駅店（ワンランク上の世界の山ちゃん）]] — 手羽先（nice-to-have）
 - [[矢場とん 名鉄百貨店本店]] — 味噌豬排（nice-to-have）
+- [[鳥開總本家]] — 名駅エスカ店，名古屋交趾雞親子丼（nice-to-have）
+- [[ぴよりん（小雞布丁蛋糕）]] — 小雞造型布丁蛋糕伴手禮（nice-to-have）
 
 ## 本丸
 - [[名古屋城]] — 戰國名城，金鯱橫丁美食街（must）
@@ -50,6 +52,7 @@ tags: [index]
 - [[名古屋皇家公園標誌飯店 THE ROYAL PARK ICONIC NAGOYA|THE ROYAL PARK ICONIC NAGOYA（名古屋皇家公園標誌飯店）]] — 住宿（nice-to-have）
 - [[Alpen Outdoors Flagship Store 名古屋榮店]] — 全日本最大戶外用品旗艦店（nice-to-have）
 - [[山本屋總本家 本家]] — 味噌煮込みうどん創始名店（nice-to-have）
+- [[札幌螃蟹本家 名古屋本店]] — 帝王蟹全蟹宴（nice-to-have）
 
 ## 港區金城ふ頭
 - [[LEGOLAND Japan]] — 樂高主題樂園（nice-to-have）
@@ -68,6 +71,7 @@ tags: [index]
 ## 則武新町
 - [[トヨタ産業技術記念館（Toyota Techno Museum）]] — 豐田產業技術博物館（must）
 - [[ノリタケの森（ 則武之森 ）]] — Noritake紅磚園區（nice-to-have）
+- [[AEON MALL Nagoya Noritake Garden（則武之森 AEON商場）]] — 大型購物中心，緊鄰則武之森（nice-to-have）
 
 ## 犬山城下町
 - [[犬山城]] — 國寶天守，可順遊城下町老街（nice-to-have）
@@ -83,7 +87,9 @@ tags: [index]
 - [[名古屋必買伴手禮（總覽）]] — 伴手禮零食清單
 - [[名古屋地下鐵路線圖（景點對照）]] — 全線通用參考地圖
 - [[中部國際機場↔市區交通比較]] — 機場往返市區4種方式比較
+- [[交通儲值卡比較（Manaca／Suica／Icoca）]] — Manaca／Suica／Icoca 儲值卡比較
 - [[黑豚木曾路]] — 黑豚／和牛涮涮鍋，⚠️分店待確認
-- [[鳥開總本家]] — 名古屋交趾雞親子丼，⚠️分店待確認
+- [[明治村]] — 犬山，明治時代建築戶外博物館（需轉乘巴士，非特定商圈）
+- [[有樂苑]] — 犬山，國寶茶室「如庵」日本庭園（近犬山遊園駅，非犬山城下町範圍）
 
 « 回 [[index|首頁]]
