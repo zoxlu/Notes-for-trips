@@ -17,6 +17,8 @@ priority: nice-to-have
 shared_by: "[[繃皮雞]]"
 raw_note: "[[2026-07-18 手工啤酒原創菜餚]]"
 source_url: https://www.nagoya-info.jp/zhtw/gourmet/detail/79/
+official_url: https://craftbeer.nagoya/
+source_label: 名古屋觀光官方網站的手工啤酒餐廳介紹頁
 date_added: 2026-07-18
 day_assigned:
 tags:
