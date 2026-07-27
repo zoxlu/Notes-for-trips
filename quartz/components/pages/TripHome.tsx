@@ -8,6 +8,8 @@ import ContentMetaConstructor from "../ContentMeta"
 import tripCardsScript from "../scripts/tripcards.inline"
 // @ts-ignore
 import styles from "../styles/tripcards.scss"
+// @ts-ignore
+import notePropertiesStyles from "../styles/noteproperties.scss"
 
 const NotePropertiesComp = NotePropertiesConstructor()
 const ContentMetaComp = ContentMetaConstructor()
@@ -172,7 +174,8 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
   )
 }
 
-TripHome.css = styles
+//TripHome.css = styles
+TripHome.css = [styles, notePropertiesStyles]
 // @ts-ignore
 TripHome.afterDOMLoaded = tripCardsScript
 

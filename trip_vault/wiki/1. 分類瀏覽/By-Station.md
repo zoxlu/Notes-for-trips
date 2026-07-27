@@ -4,18 +4,18 @@ tags: [index]
 ---
 ## 名古屋站
 - [[柳橋中央市場]] — 步行5分鐘，海鮮市場（名古屋站前, must）
-- [[柳橋中央市場海鮮早餐食堂|柳橋中央市場 海鮮早餐食堂]] — 市場內早餐（名古屋站前, shortlisted）
+- [[柳橋中央市場 海鮮早餐食堂]] — 市場內早餐（名古屋站前, shortlisted）
 - [[Y.MARKET BREWING KITCHEN]] — 柳橋市場內手工精釀啤酒餐廳（名古屋站前, nice-to-have）
 - [[風来坊 名駅センチュリー豊田ビル店]] — 名古屋名物手羽先（名駅, nice-to-have）
 - [[名古屋三井花園飯店 Premier]] — 車站步行5分鐘，地下街直通（名駅, nice-to-have）
-- [[ノリタケの森（ 則武之森 ）]] — 步行15-20分鐘或轉乘巴士（則武新町, nice-to-have）
+- [[則武之森（ ノリタケの森 ）]] — 步行15-20分鐘或轉乘巴士（則武新町, nice-to-have）
 - [[Tsubame Bread & Milk 名駅店]] — 步行約4分鐘（名駅, nice-to-have）
-- [[コンパル サンロード店]] — Sun Road地下街（名古屋站前, nice-to-have）
+- [[KONPARU コンパル サンロード店]] — Sun Road地下街（名古屋站前, nice-to-have）
 - [[山 名古屋駅店（ワンランク上の世界の山ちゃん）]] — 名駅太閤通口ビル（名駅, nice-to-have）
 - [[矢場とん 名鉄百貨店本店]] — 名鐵名古屋站直通（名駅, nice-to-have）
 - [[麺屋獅子丸]] — ⚠️地點待確認（名古屋站前, optional）
 - [[鳥開總本家]] — 新幹線口地下街Esca內步行1分（名駅, nice-to-have）
-- [[ぴよりん（小雞布丁蛋糕）]] — 名古屋うまいもん通り廣小路口（名駅, nice-to-have）
+- [[小雞布丁蛋糕（ ぴよりん ）]] — 名古屋うまいもん通り廣小路口（名駅, nice-to-have）
 
 ## 名古屋城駅（地下鐵名城線）
 - [[名古屋城]] — 7號出口徒步5分（本丸, must）
@@ -30,7 +30,7 @@ tags: [index]
 
 ## 神宮前駅（名鐵）
 - [[熱田神宮]] — 徒步3分（熱田, nice-to-have）
-- [[あつた蓬莱軒 神宮店]] — 地下鐵傳馬町駅徒步3分（熱田, nice-to-have）
+- [[蓬莱軒 あつた 神宮店]] — 地下鐵傳馬町駅徒步3分（熱田, nice-to-have）
 
 ## 熱田神宮西站（地下鐵名城線）
 - [[白鳥庭園]] — 4號出口徒步約10分（熱田, nice-to-have）
@@ -38,7 +38,7 @@ tags: [index]
 ## 大須觀音駅
 - [[大須商店街]] — 2號出口（大須, nice-to-have）
 - [[大須觀音（大須觀音寺）]] — 2號出口即達（大須, nice-to-have）
-- [[コンパル 大須本店]] — 大須新天地通（大須, nice-to-have）
+- [[KONPARU コンパル 大須本店]] — 大須新天地通（大須, nice-to-have）
 - [[青柳総本家 大須本店]] — 大須商店街內（大須, nice-to-have）
 
 ## 大須觀音站
@@ -47,9 +47,9 @@ tags: [index]
 ## 榮站（地下鐵東山線・名城線）
 - [[中部電力 MIRAI TOWER]] — 徒步3-5分（榮, nice-to-have）
 - [[榮商圈]] — 松坂屋、三越、LACHIC等百貨（榮, must）
-- [[オアシス21（ 綠洲21 ）]] — 直通（榮, nice-to-have）
+- [[綠洲21 ( オアシス21 )]] — 直通（榮, nice-to-have）
 - [[黒豚屋らむちぃ]] — 矢場町駅步行2分鐘（榮, nice-to-have）
-- [[名古屋皇家公園標誌飯店 THE ROYAL PARK ICONIC NAGOYA|THE ROYAL PARK ICONIC NAGOYA（名古屋皇家公園標誌飯店）]] — 地下通道直通（榮, nice-to-have）
+- [[THE ROYAL PARK ICONIC NAGOYA（ 名古屋皇家公園標誌飯店 ）]] — 地下通道直通（榮, nice-to-have）
 
 ## 矢場町站（地下鐵名城線）
 - [[Alpen Outdoors Flagship Store 名古屋榮店]] — 徒步約4分，位於納迪亞公園內（榮, nice-to-have）
@@ -57,13 +57,13 @@ tags: [index]
 
 ## 金城ふ頭駅（あおなみ線）
 - [[LEGOLAND Japan]] — 徒步2-3分（港區金城ふ頭, nice-to-have）
-- [[リニア・鉄道館]] — 徒步約2分（港區金城ふ頭, nice-to-have）
+- [[鉄道館 リニア（SCMAGLEV and Railway Park）]] — 徒步約2分（港區金城ふ頭, nice-to-have）
 
 ## 名古屋港駅（地下鐵名港線）
 - [[名古屋港水族館]] — 3號出口徒步5分（港區, must）
 
 ## 港区役所站（地下鐵名港線）
-- [[LaLaport 名古屋港（みなとアクルス）]] — 2號出口徒步約2分（港區, nice-to-have）
+- [[LaLaport 名古屋港（ みなとアクルス ）]] — 2號出口徒步約2分（港區, nice-to-have）
 
 ## 伏見駅（地下鐵鶴舞線・東山線）
 - [[名古屋市科學館]] — 徒步5分（榮／白川公園內, nice-to-have）
@@ -75,10 +75,10 @@ tags: [index]
 - [[常滑（陶瓷散步道・招財貓街）]] — 陶瓷散步道與招財貓街，名古屋近郊半日遊（常滑, nice-to-have）
 
 ## 栄生駅（名鐵）
-- [[トヨタ産業技術記念館（Toyota Techno Museum）]] — 步行3分鐘，豐田產業技術博物館（則武新町, must）
+- [[豐田産業技術記念館（Toyota Techno Museum）]] — 步行3分鐘，豐田產業技術博物館（則武新町, must）
 
 ## 亀島駅（地下鐵東山線）
-- [[AEON MALL Nagoya Noritake Garden（則武之森 AEON商場）]] — 步行約8分鐘（則武新町, nice-to-have）
+- [[AEON商場 則武之森]] — 步行約8分鐘（則武新町, nice-to-have）
 
 ## 犬山駅（名鐵）
 - [[犬山城]] — 步行約16分，國寶天守（犬山城下町, nice-to-have）

@@ -1,5 +1,5 @@
 ---
-title: AEON MALL Nagoya Noritake Garden（則武之森 AEON商場）
+title: AEON商場 則武之森
 type: place
 region: nagoya-city
 station: 亀島駅（地下鐵東山線）
@@ -31,10 +31,11 @@ aliases:
   - 則武之森AEON
   - Noritake Garden
   - AEON Mall
-興致指數:
+  - AEON MALL Nagoya Noritake Garden
+興致指數: 5
 ---
 ## 簡介
-2021年開幕的大型購物中心，前身為則武（Noritake）總廠舊址，緊鄰[[ノリタケの森（ 則武之森 ）]]，內有蔦屋書店等特色店家。
+2021年開幕的大型購物中心，前身為則武（Noritake）總廠舊址，緊鄰[[則武之森（ ノリタケの森 ）]]，內有蔦屋書店等特色店家。
 
 ![代表圖](https://image-cdn.aeonmall.jp/uploads/cbb1076e-28b8-472e-ae6b-231d3493c102.png)
 
@@ -45,8 +46,8 @@ aliases:
 - 座標來自分享的 Google Maps 連結。
 
 ## 相關筆記
-- [[ノリタケの森（ 則武之森 ）]]
-- [[トヨタ産業技術記念館（Toyota Techno Museum）]]
+- [[則武之森（ ノリタケの森 ）]]
+- [[豐田産業技術記念館（Toyota Techno Museum）]]
 
 ## 原始連結備註
 > 來源檔案：2026-07-26 一些新資訊和討論

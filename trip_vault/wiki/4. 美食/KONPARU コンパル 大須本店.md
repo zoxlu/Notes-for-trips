@@ -1,5 +1,5 @@
 ---
-title: コンパル 大須本店
+title: KONPARU コンパル 大須本店
 type: food
 region: nagoya-city
 station: 大須觀音駅
@@ -29,6 +29,8 @@ tags:
   - meal/breakfast
   - status/researching
   - priority/nice-to-have
+aliases:
+  - コンパル 大須本店
 興致指數: 5
 ---
 ## 簡介／推薦菜色
@@ -37,14 +39,14 @@ tags:
 ![代表圖](https://www.konparu.co.jp/images/shop_osu_l.jpg)
 
 ## 交通方式
-地下鐵鶴舞線「大須觀音」駅／名城線「上前津」駅步行可達，位於大須新天地通。
+地下鐵鶴舞線「[[大須觀音（大須觀音寺）|大須觀音]]」駅／名城線「上前津」駅步行可達，位於大須新天地通。
 
 ## ⚠️ 待確認
 - 營業時間各來源不一致（官網與訂位網站落差約2小時），建議出發前致電確認。
 
 ## 相關筆記
 - [[名古屋美食7大必吃種類與名店（總覽）]]
-- [[コンパル サンロード店]]
+- [[KONPARU コンパル サンロード店]]
 
 ## 原始連結備註
 > 來源檔案：2026-07-20 10 Must visit spot in Nagoya

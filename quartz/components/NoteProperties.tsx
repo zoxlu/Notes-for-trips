@@ -15,6 +15,7 @@ const FIELD_LABEL: Record<string, string> = {
   transport_mode: "交通方式",
   cost: "費用",
   shared_by: "分享人",
+  official_url: "官方網站",
   source_url: "來源網站",
   location: "地圖",
 }
@@ -22,8 +23,16 @@ const FIELD_LABEL: Record<string, string> = {
 const FIELD_ORDER = [
   "shared_by", "station", "district", "opening_hours", "duration",
   "meal_slot", "price_range", "nights", "meal_plan",
-  "transport_mode", "cost", "location", "source_url",
+  "transport_mode", "cost", "location", "official_url", "source_url",
 ]
+
+function getDomain(url: string): string {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "")
+  } catch {
+    return url
+  }
+}
 
 const NoteProperties: QuartzComponent = ({ fileData, allFiles }: QuartzComponentProps) => {
   const fm = fileData.frontmatter
@@ -49,6 +58,16 @@ const NoteProperties: QuartzComponent = ({ fileData, allFiles }: QuartzComponent
     )
   }
 
+  function renderFilterLink(filterKey: string, value: string) {
+    const indexPath = resolveRelative(fileData.slug!, "index" as any)
+    const href = indexPath + "?filterKey=" + filterKey + "&filterValue=" + encodeURIComponent(value)
+    return (
+      <span class="trip-property-link" data-target-href={href}>
+        {value}
+      </span>
+    )
+  }
+
   return (
     <ul class="note-properties">
       {items.map((item) => (
@@ -57,9 +76,17 @@ const NoteProperties: QuartzComponent = ({ fileData, allFiles }: QuartzComponent
           <span class="note-property-sep">：</span>
           {item.key === "shared_by" ? (
             renderSharedBy(String(item.value))
+          ) : item.key === "station" ? (
+            renderFilterLink("station", String(item.value))
+          ) : item.key === "district" ? (
+            renderFilterLink("district", String(item.value))
           ) : item.key === "source_url" ? (
             <a href={String(item.value)} target="_blank" rel="noopener noreferrer">
-              {String(item.value)}
+              {(fm.source_label as string) || String(item.value)}
+            </a>
+          ) : item.key === "official_url" ? (
+            <a href={String(item.value)} target="_blank" rel="noopener noreferrer">
+              {getDomain(String(item.value))}
             </a>
           ) : item.key === "location" ? (
             <a

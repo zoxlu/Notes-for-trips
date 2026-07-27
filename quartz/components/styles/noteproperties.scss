@@ -6,23 +6,24 @@
   flex-direction: column;
   gap: 0.3rem;
 }
-
 .note-property-item {
-  font-size: 0.92rem;
+  font-size: 0.98rem;
   color: var(--darkgray);
 }
-
 .note-property-label {
-  color: var(--gray);
+  color: var(--darkgray);
   min-width: 5.5em;
   display: inline-block;
 }
-
 .note-property-value {
   color: var(--dark);
 }
-
 .note-property-item a {
   word-break: break-all;
   overflow-wrap: anywhere;
+}
+.trip-property-link {
+  color: var(--secondary);
+  text-decoration: underline;
+  cursor: pointer;
 }

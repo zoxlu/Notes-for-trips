@@ -1,5 +1,5 @@
 ---
-title: LaLaport 名古屋港（みなとアクルス）
+title: LaLaport 名古屋港（ みなとアクルス ）
 type: place
 region: nagoya-city
 station: 港区役所站（地下鐵名港線）

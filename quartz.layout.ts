@@ -40,7 +40,7 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.QuickFilters(),
+    //Component.QuickFilters(),
     //Component.Explorer(),
     Component.Explorer({ folderClickBehavior: "collapse" }),
   ],

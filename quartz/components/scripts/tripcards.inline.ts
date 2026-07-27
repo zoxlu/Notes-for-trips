@@ -126,3 +126,21 @@ function setupTripCards() {
 }
 
 document.addEventListener("nav", setupTripCards)
+setupTripCards()
+
+// 商圈/捷運站的篩選連結：用純文字元素 + 手動 JS 跳轉，完全不用 <a> 標籤，
+// 這樣 Quartz 的 SPA 機制（只找 <a> 標籤）從結構上就不可能接管這個點擊。
+function setupPropertyLinks() {
+  document.querySelectorAll<HTMLElement>(".trip-property-link").forEach((el) => {
+    if (el.dataset.tripBound === "true") return
+    el.dataset.tripBound = "true"
+    el.addEventListener("click", () => {
+      const target = el.dataset.targetHref
+      if (target) {
+        window.location.href = target
+      }
+    })
+  })
+}
+document.addEventListener("nav", setupPropertyLinks)
+setupPropertyLinks()

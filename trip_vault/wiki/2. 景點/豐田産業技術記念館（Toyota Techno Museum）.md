@@ -1,5 +1,5 @@
 ---
-title: トヨタ産業技術記念館（Toyota Techno Museum）
+title: 豐田産業技術記念館（Toyota Techno Museum）
 type: place
 region: nagoya-city
 station: 栄生駅（名鐵）
@@ -28,6 +28,7 @@ tags:
 aliases:
   - Toyota Techno Museum
   - 豐田產業技術紀念館
+  - トヨタ産業技術記念館
 興致指數: 5
 ---
 ## 簡介

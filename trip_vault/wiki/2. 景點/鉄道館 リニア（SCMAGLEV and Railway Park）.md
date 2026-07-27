@@ -1,5 +1,5 @@
 ---
-title: リニア・鉄道館（SCMAGLEV and Railway Park）
+title: 鉄道館 リニア（SCMAGLEV and Railway Park）
 type: place
 region: nagoya-city
 station: 金城ふ頭駅（あおなみ線）
@@ -28,6 +28,7 @@ tags:
 aliases:
   - 磁浮鐵道館
   - リニア鉄道館
+  - リニア・鉄道館
   - SCMAGLEV and Railway Park
 興致指數: 3
 ---

@@ -6,9 +6,9 @@ tags: [index]
 
 ## 名古屋站前
 - [[柳橋中央市場]] — 海鮮市場（must）
-- [[柳橋中央市場海鮮早餐食堂|柳橋中央市場 海鮮早餐食堂]] — 地魚の丼 まるみ，市場內海鮮丼早餐（shortlisted）
+- [[柳橋中央市場 海鮮早餐食堂]] — 地魚の丼 まるみ，市場內海鮮丼早餐（shortlisted）
 - [[Y.MARKET BREWING KITCHEN]] — 手工精釀啤酒餐廳（nice-to-have）
-- [[コンパル サンロード店]] — 喫茶店早餐文化（nice-to-have）
+- [[KONPARU コンパル サンロード店]] — 喫茶店早餐文化（nice-to-have）
 - [[麺屋獅子丸]] — 拉麵，⚠️地點待確認（optional）
 
 ## 名駅
@@ -18,7 +18,7 @@ tags: [index]
 - [[山 名古屋駅店（ワンランク上の世界の山ちゃん）]] — 手羽先（nice-to-have）
 - [[矢場とん 名鉄百貨店本店]] — 味噌豬排（nice-to-have）
 - [[鳥開總本家]] — 名駅エスカ店，名古屋交趾雞親子丼（nice-to-have）
-- [[ぴよりん（小雞布丁蛋糕）]] — 小雞造型布丁蛋糕伴手禮（nice-to-have）
+- [[小雞布丁蛋糕（ ぴよりん ）]] — 小雞造型布丁蛋糕伴手禮（nice-to-have）
 
 ## 本丸
 - [[名古屋城]] — 戰國名城，金鯱橫丁美食街（must）
@@ -33,34 +33,34 @@ tags: [index]
 
 ## 熱田
 - [[熱田神宮]] — 日本三大神宮之一（nice-to-have）
-- [[あつた蓬莱軒 神宮店]] — 鰻魚飯三吃（nice-to-have）
+- [[蓬莱軒 あつた 神宮店]] — 鰻魚飯三吃（nice-to-have）
 - [[白鳥庭園]] — 熱田神宮旁日式庭園，紅葉倒影（nice-to-have）
 
 ## 大須
 - [[大須商店街]] — 400年歷史商店街，藥妝與古著（nice-to-have）
 - [[大須觀音（大須觀音寺）]] — 日本三大觀音之一（nice-to-have）
 - [[大須鮨]] — 江戶前壽司老店（nice-to-have）
-- [[コンパル 大須本店]] — 喫茶店早餐文化（nice-to-have）
+- [[KONPARU コンパル 大須本店]] — 喫茶店早餐文化（nice-to-have）
 - [[青柳総本家 大須本店]] — 外郎糕與蛙饅頭（nice-to-have）
 
 ## 榮
 - [[中部電力 MIRAI TOWER]] — 日本最古電視塔（nice-to-have）
 - [[榮商圈]] — 精品百貨一級戰區（must）
 - [[名古屋市科學館]] — 世界最大天象儀（白川公園內, nice-to-have）
-- [[オアシス21（ 綠洲21 ）]] — 玻璃展望甲板（nice-to-have）
+- [[綠洲21 ( オアシス21 )]] — 玻璃展望甲板（nice-to-have）
 - [[黒豚屋らむちぃ]] — 黑豚味噌豬排（nice-to-have）
-- [[名古屋皇家公園標誌飯店 THE ROYAL PARK ICONIC NAGOYA|THE ROYAL PARK ICONIC NAGOYA（名古屋皇家公園標誌飯店）]] — 住宿（nice-to-have）
+- [[THE ROYAL PARK ICONIC NAGOYA（ 名古屋皇家公園標誌飯店 ）]] — 住宿（nice-to-have）
 - [[Alpen Outdoors Flagship Store 名古屋榮店]] — 全日本最大戶外用品旗艦店（nice-to-have）
 - [[山本屋總本家 本家]] — 味噌煮込みうどん創始名店（nice-to-have）
 - [[札幌螃蟹本家 名古屋本店]] — 帝王蟹全蟹宴（nice-to-have）
 
 ## 港區金城ふ頭
 - [[LEGOLAND Japan]] — 樂高主題樂園（nice-to-have）
-- [[リニア・鉄道館]] — 鐵道博物館（nice-to-have）
+- [[鉄道館 リニア（SCMAGLEV and Railway Park）]] — 鐵道博物館（nice-to-have）
 
 ## 港區
 - [[名古屋港水族館]] — 海豚虎鯨表演（must）
-- [[LaLaport 名古屋港（みなとアクルス）]] — 大型購物中心，mont-bell旗艦店（nice-to-have）
+- [[LaLaport 名古屋港（ みなとアクルス ）]] — 大型購物中心，mont-bell旗艦店（nice-to-have）
 
 ## 長久手
 - [[吉卜力公園]] — 全預約制主題公園（must）
@@ -69,9 +69,9 @@ tags: [index]
 - [[常滑（陶瓷散步道・招財貓街）]] — 常滑燒陶瓷散步道與招財貓街（nice-to-have）
 
 ## 則武新町
-- [[トヨタ産業技術記念館（Toyota Techno Museum）]] — 豐田產業技術博物館（must）
-- [[ノリタケの森（ 則武之森 ）]] — Noritake紅磚園區（nice-to-have）
-- [[AEON MALL Nagoya Noritake Garden（則武之森 AEON商場）]] — 大型購物中心，緊鄰則武之森（nice-to-have）
+- [[豐田産業技術記念館（Toyota Techno Museum）]] — 豐田產業技術博物館（must）
+- [[則武之森（ ノリタケの森 ）]] — Noritake紅磚園區（nice-to-have）
+- [[AEON商場 則武之森]] — 大型購物中心，緊鄰則武之森（nice-to-have）
 
 ## 犬山城下町
 - [[犬山城]] — 國寶天守，可順遊城下町老街（nice-to-have）

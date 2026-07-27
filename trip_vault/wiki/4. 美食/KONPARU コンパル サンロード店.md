@@ -1,5 +1,5 @@
 ---
-title: コンパル サンロード店
+title: KONPARU コンパル サンロード店
 type: food
 region: nagoya-city
 station: 名古屋站
@@ -29,10 +29,12 @@ tags:
   - meal/breakfast
   - status/researching
   - priority/nice-to-have
+aliases:
+  - コンパル サンロード店
 興致指數:
 ---
 ## 簡介／推薦菜色
-與 [[コンパル 大須本店]] 同連鎖的分店，位於名古屋站Sun Road地下街，交通更方便。地址：名古屋市中村區名駅4-7-25 サンロード地下街。
+與 [[KONPARU コンパル 大須本店]] 同連鎖的分店，位於名古屋站Sun Road地下街，交通更方便。地址：名古屋市中村區名駅4-7-25 サンロード地下街。
 
 ![代表圖](https://www.konparu.co.jp/images/shop_sunroad_l.jpg)
 
@@ -40,7 +42,7 @@ tags:
 - 座標待補（多次查證仍無法定位到此分店精確座標，Sun Road地下街內店家座標難以單獨定位）。
 
 ## 相關筆記
-- [[コンパル 大須本店]]
+- [[KONPARU コンパル 大須本店]]
 
 ## 原始連結備註
 > 來源檔案：2026-07-20 名古屋比東京好玩十倍
