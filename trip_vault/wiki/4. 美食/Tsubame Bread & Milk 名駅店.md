@@ -1,6 +1,7 @@
 ---
 title: Tsubame Bread & Milk 名駅店
 type: food
+food_category: [點心輕食]
 region: nagoya-city
 station: 名古屋站
 district: 名駅
@@ -23,6 +24,7 @@ date_added: 2026-07-20
 day_assigned:
 tags:
   - type/food
+  - food_category/點心輕食
   - region/nagoya-city
   - station/名古屋站
   - district/名駅
@@ -46,6 +48,7 @@ aliases:
 
 ## 相關筆記
 - [[名古屋鄉土美食 票選TOP20（總覽）]]
+- [[Tsubame Bread & Milk 尼ヶ坂本店]]
 
 ## 原始連結備註
 > 來源檔案：2026-07-20 10 Must visit spot in Nagoya

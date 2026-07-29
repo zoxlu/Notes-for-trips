@@ -1,6 +1,7 @@
 ---
 title: KONPARU コンパル サンロード店
 type: food
+food_category: [點心輕食]
 region: nagoya-city
 station: 名古屋站
 district: 名古屋站前
@@ -23,6 +24,7 @@ date_added: 2026-07-20
 day_assigned:
 tags:
   - type/food
+  - food_category/點心輕食
   - region/nagoya-city
   - station/名古屋站
   - district/名古屋站前
@@ -43,6 +45,7 @@ aliases:
 
 ## 相關筆記
 - [[KONPARU コンパル 大須本店]]
+- [[KONPARU コンパル 栄東店]]
 
 ## 原始連結備註
 > 來源檔案：2026-07-20 名古屋比東京好玩十倍

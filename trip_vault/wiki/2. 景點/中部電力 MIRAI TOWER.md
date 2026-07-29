@@ -1,6 +1,7 @@
 ---
 title: 中部電力 MIRAI TOWER
 type: place
+place_category: [文化古蹟]
 region: nagoya-city
 station: 榮站（地下鐵東山線・名城線）
 district: 榮
@@ -20,6 +21,7 @@ date_added: 2026-07-20
 day_assigned:
 tags:
   - type/place
+  - place_category/文化古蹟
   - region/nagoya-city
   - station/榮站
   - district/榮
@@ -32,7 +34,7 @@ aliases:
 興致指數: 3
 ---
 ## 簡介
-日本最古老的電視塔，位於久屋大通公園內，鄰近[[綠洲21 ( オアシス21 )|綠洲21（Oasis 21）]]，可徒步登頂展望台看夜景。
+日本最古老的電視塔，位於[[久屋大通公園（Hisaya-odori Park）|久屋大通公園]]內，鄰近[[綠洲21 ( オアシス21 )|綠洲21（Oasis 21）]]，可徒步登頂展望台看夜景。塔內另有[[THE TOWER HOTEL NAGOYA]]精品飯店。
 
 ![代表圖](https://www.nagoya-tv-tower.co.jp/cms/wp-content/uploads/2025/09/main.jpg)
 
@@ -44,6 +46,8 @@ aliases:
 
 ## 相關筆記
 - [[綠洲21 ( オアシス21 )]]
+- [[久屋大通公園（Hisaya-odori Park）]]
+- [[THE TOWER HOTEL NAGOYA]]
 
 ## 原始連結備註
 > 來源檔案：2026-07-20 波比
@@ -57,6 +61,10 @@ aliases:
 > 來源檔案：2026-07-20 名古屋比東京好玩十倍
 > 
 > [[繃皮蛇]]：（原始素材為YouTube影片行程列表，Day2提及「中部電視塔」。）
+
+> 來源檔案：2026-07-28 瑪茲一的影片值得看！
+>
+> [[繃皮蛇]]：（原始素材為YouTube影片章節時間軸列表，37:23標註「名古屋電視塔」。）
 
 ## 📝 我的備註
 

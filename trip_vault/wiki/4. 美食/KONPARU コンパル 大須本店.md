@@ -1,6 +1,7 @@
 ---
 title: KONPARU コンパル 大須本店
 type: food
+food_category: [點心輕食]
 region: nagoya-city
 station: 大須觀音駅
 district: 大須
@@ -23,6 +24,7 @@ date_added: 2026-07-20
 day_assigned:
 tags:
   - type/food
+  - food_category/點心輕食
   - region/nagoya-city
   - station/大須觀音駅
   - district/大須
@@ -47,6 +49,7 @@ aliases:
 ## 相關筆記
 - [[名古屋美食7大必吃種類與名店（總覽）]]
 - [[KONPARU コンパル サンロード店]]
+- [[KONPARU コンパル 栄東店]]
 
 ## 原始連結備註
 > 來源檔案：2026-07-20 10 Must visit spot in Nagoya
