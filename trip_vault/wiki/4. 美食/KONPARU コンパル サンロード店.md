@@ -1,11 +1,12 @@
 ---
 title: KONPARU コンパル サンロード店
 type: food
-food_category: [點心輕食]
+food_category:
+  - 點心輕食
 region: nagoya-city
 station: 名古屋站
 district: 名古屋站前
-location:
+location: 35.1687845,136.8841024
 meal_slot: breakfast
 cuisine: 喫茶店（名古屋早餐文化）
 price_range:
@@ -33,7 +34,7 @@ tags:
   - priority/nice-to-have
 aliases:
   - コンパル サンロード店
-興致指數:
+興致指數: 5
 ---
 ## 簡介／推薦菜色
 與 [[KONPARU コンパル 大須本店]] 同連鎖的分店，位於名古屋站Sun Road地下街，交通更方便。地址：名古屋市中村區名駅4-7-25 サンロード地下街。
@@ -41,7 +42,7 @@ aliases:
 ![代表圖](https://www.konparu.co.jp/images/shop_sunroad_l.jpg)
 
 ## ⚠️ 待確認
-- 座標待補（多次查證仍無法定位到此分店精確座標，Sun Road地下街內店家座標難以單獨定位）。
+- 座標已補上：透過 OpenStreetMap（Overpass API）查詢到店名標記為「炸蝦三明治コンパル サンロード店」的節點，位於名駅通，與本分店描述相符。
 
 ## 相關筆記
 - [[KONPARU コンパル 大須本店]]

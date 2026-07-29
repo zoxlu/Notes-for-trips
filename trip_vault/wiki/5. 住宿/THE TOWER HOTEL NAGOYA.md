@@ -4,7 +4,7 @@ type: accommodation
 region: nagoya-city
 station: 榮站（地下鐵東山線・名城線）
 district: 榮
-location: 35.172358,136.908331
+location: 35.172157,136.90773
 image: https://thetowerhotel.jp/cms/wp-content/themes/thetowerhotel_3rdP/assets/img/rooms/image02_1.jpg
 image_source: 來自官網 thetowerhotel.jp
 status: researching
@@ -32,7 +32,7 @@ aliases:
   - Tower Hotel
   - 塔飯店
   - 名古屋塔飯店
-興致指數:
+興致指數: 3
 ---
 ## 簡介
 開設在[[中部電力 MIRAI TOWER]]（原名古屋電視塔）塔身內的精品飯店，全球第一間「電視塔飯店」，2020年由老電視塔整修改建而成，屬 Small Luxury Hotels of the World 會員飯店，僅15間客房，每間房型與東海地區藝術家合作設計、融合塔體鋼構元素。地址：名古屋市中區錦三丁目6-15（[[中部電力 MIRAI TOWER]]內）。

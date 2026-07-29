@@ -1,11 +1,12 @@
 ---
 title: Tsubame Bread & Milk 尼ヶ坂本店
 type: food
-food_category: [點心輕食]
+food_category:
+  - 點心輕食
 region: nagoya-city
 station: 尼ヶ坂駅（名鐵瀨戶線）
 district: 北區
-location: 35.1879353,136.9191903
+location: 35.1872836,136.9176285
 meal_slot: breakfast
 cuisine: 麵包／牛奶吐司專門店
 price_range:
@@ -34,7 +35,7 @@ tags:
 aliases:
   - つばめパン＆Milk 尼ヶ坂本店
   - 燕子吐司
-興致指數:
+興致指數: 3
 ---
 ## 簡介
 自家製牛奶吐司（生食パン）專門店[[Tsubame Bread & Milk 名駅店|Tsubame Bread & Milk]]的本店，地址：名古屋市北區大杉1-18-21 SAKUMACHI商店街，名鐵瀨戶線「尼ヶ坂」駅步行約1分鐘。**只能付現金或PayPay，不收信用卡**。另有分店見 [[Tsubame Bread & Milk 名駅店]]。
@@ -45,7 +46,7 @@ aliases:
 名鐵瀨戶線「尼ヶ坂」駅步行約1分鐘。
 
 ## ⚠️ 待確認
-- 座標為「尼ヶ坂」駅位置（本店步行1分鐘可達），非店面精確座標。
+- 座標已改用 OpenStreetMap（Overpass API）查詢到的「つばめパン」店家標記點更新，較貼近實際店面位置（原先為「尼ヶ坂」駅位置的近似值）。
 
 ## 相關筆記
 - [[Tsubame Bread & Milk 名駅店]]
