@@ -3,7 +3,7 @@ title: 豐田産業技術記念館（Toyota Techno Museum）
 type: place
 place_category: [知性趣味]
 region: nagoya-city
-station: 栄生駅（名鐵）
+station: 榮生站（名鐵）
 district: 則武新町
 location: 35.1825118,136.8765247
 image: https://www.nagoya-info.jp/upload/spots/large/16176073756597606ecf816.jpg
@@ -23,7 +23,7 @@ tags:
   - type/place
   - place_category/知性趣味
   - region/nagoya-city
-  - station/栄生駅
+  - station/榮生站
   - district/則武新町
   - status/researching
   - priority/nice-to-have
@@ -34,7 +34,7 @@ aliases:
 興致指數: 5
 ---
 ## 簡介
-豐田集團創業地改建的產業技術博物館，展示纖維機械（豐田自動織機起家）與汽車製造技術演進，有大量可動態展示的老機械。位於名古屋市西區，名鐵名古屋本線栄生駅步行3分鐘。
+豐田集團創業地改建的產業技術博物館，展示纖維機械（豐田自動織機起家）與汽車製造技術演進，有大量可動態展示的老機械。位於名古屋市西區，名鐵名古屋本線榮生站步行3分鐘。
 
 ![代表圖](https://www.nagoya-info.jp/upload/spots/large/16176073756597606ecf816.jpg)
 

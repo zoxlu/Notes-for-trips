@@ -40,7 +40,7 @@ aliases:
 ![代表圖](https://thetowerhotel.jp/cms/wp-content/themes/thetowerhotel_3rdP/assets/img/rooms/image02_1.jpg)
 
 ## 交通方式
-地下鐵東山線・名城線「榮」駅3號出口步行約5分鐘，位於[[中部電力 MIRAI TOWER]]內。
+地下鐵東山線・名城線「榮」站3號出口步行約5分鐘，位於[[中部電力 MIRAI TOWER]]內。
 
 ## ⚠️ 待確認
 - **本則來源 YouTube 影片《Matsui》無法取得逐字稿（環境未安裝 youtube-transcript MCP）**，分享者原始備註僅提到「他們住塔飯店裡 Tower Hotel」，以下飯店基本資訊為獨立查證官網整理，並非影片逐字內容，需使用者手動補充影片實際開箱重點。

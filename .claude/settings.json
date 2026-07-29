@@ -1,7 +1,7 @@
 {
   "hooks": {
     "PostToolUse": [
-      { "matcher": "Edit|Write", "hooks": [ { "type": "command", "command": "python3 scripts/validate_notes.py" } ] }
+      { "matcher": "Edit|Write", "hooks": [ { "type": "command", "command": "python3 \"${CLAUDE_PROJECT_DIR:-/home/supergulu/NagoyaTrip-QuartzSite/quartz-site}/scripts/validate_notes.py\"" } ] }
     ]
   }
 }

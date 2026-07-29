@@ -3,7 +3,7 @@ title: 鉄道館 リニア（SCMAGLEV and Railway Park）
 type: place
 place_category: [知性趣味]
 region: nagoya-city
-station: 金城ふ頭駅（あおなみ線）
+station: 金城ふ頭站（あおなみ線）
 district: 港區金城ふ頭
 location: 35.049072,136.851006
 duration: 2-2.5小時
@@ -23,7 +23,7 @@ tags:
   - type/place
   - place_category/知性趣味
   - region/nagoya-city
-  - station/金城ふ頭駅
+  - station/金城ふ頭站
   - district/港區金城ふ頭
   - status/researching
   - priority/nice-to-have
@@ -40,7 +40,7 @@ JR東海營運的鐵道博物館，展示39輛實體列車，鐵道迷天堂，�
 ![代表圖](https://museum.jr-central.co.jp/_img/kv_01.jpg)
 
 ## 交通方式
-あおなみ線「金城ふ頭」駅徒步約2分。
+あおなみ線「金城ふ頭」站徒步約2分。
 
 ## 費用/門票
 大人1,000円／國高中小學生500円／3歲以上未就學兒童200円。

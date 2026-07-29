@@ -3,7 +3,7 @@ title: AEON商場 則武之森
 type: place
 place_category: [逛街尋寶]
 region: nagoya-city
-station: 亀島駅（地下鐵東山線）
+station: 龜島站（地下鐵東山線）
 district: 則武新町
 location: 35.1798659,136.8799137
 image: https://image-cdn.aeonmall.jp/uploads/cbb1076e-28b8-472e-ae6b-231d3493c102.png
@@ -23,7 +23,7 @@ tags:
   - type/place
   - place_category/逛街尋寶
   - region/nagoya-city
-  - station/亀島駅
+  - station/龜島站
   - district/則武新町
   - status/researching
   - priority/nice-to-have
@@ -42,7 +42,7 @@ aliases:
 ![代表圖](https://image-cdn.aeonmall.jp/uploads/cbb1076e-28b8-472e-ae6b-231d3493c102.png)
 
 ## 交通方式
-地下鐵東山線「亀島」駅步行約8分鐘；名古屋駅步行約12分鐘。
+地下鐵東山線「龜島」站步行約8分鐘；名古屋站步行約12分鐘。
 
 ## ⚠️ 待確認
 - 座標來自分享的 Google Maps 連結。

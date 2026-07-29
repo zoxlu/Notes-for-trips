@@ -3,7 +3,7 @@ title: LEGOLAND Japan
 type: place
 place_category: [知性趣味]
 region: nagoya-city
-station: 金城ふ頭駅（あおなみ線）
+station: 金城ふ頭站（あおなみ線）
 district: 港區金城ふ頭
 location: 35.05056,136.84333
 duration: 半天至一天（4-6小時）
@@ -23,7 +23,7 @@ tags:
   - type/place
   - place_category/知性趣味
   - region/nagoya-city
-  - station/金城ふ頭駅
+  - station/金城ふ頭站
   - district/港區金城ふ頭
   - status/researching
   - priority/nice-to-have
@@ -37,7 +37,7 @@ aliases:
 ![代表圖](https://www.legoland.jp/media/chmftlft/top-fb1200.jpg)
 
 ## 交通方式
-あおなみ線「金城ふ頭」駅徒步約2-3分。
+あおなみ線「金城ふ頭」站徒步約2-3分。
 
 ## 費用/門票
 1-Day Pass 採尖離峰浮動定價，大人約4,500-7,400円（依日期）。

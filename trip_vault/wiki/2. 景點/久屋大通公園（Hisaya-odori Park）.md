@@ -5,7 +5,7 @@ place_category:
   - 自然漫步
   - 逛街尋寶
 region: nagoya-city
-station: 久屋大通駅（地下鐵櫻通線・名城線）
+station: 久屋大通站（地下鐵櫻通線・名城線）
 district: 榮
 location: 35.1673656,136.9088285
 duration: 1-2小時
@@ -26,7 +26,7 @@ tags:
   - place_category/自然漫步
   - place_category/逛街尋寶
   - region/nagoya-city
-  - station/久屋大通駅
+  - station/久屋大通站
   - district/榮
   - status/researching
   - priority/nice-to-have
@@ -41,7 +41,7 @@ aliases:
 ![代表圖](https://www.nagoya-info.jp/upload/spots/large/20368120235f5f2bd90de30.jpg)
 
 ## 交通方式
-地下鐵櫻通線・名城線「久屋大通」駅步行約1分鐘；或東山線・名城線「榮」駅步行約8分鐘。
+地下鐵櫻通線・名城線「久屋大通」站步行約1分鐘；或東山線・名城線「榮」站步行約8分鐘。
 
 ## 費用/門票
 公園免費開放，商店餐飲消費另計。

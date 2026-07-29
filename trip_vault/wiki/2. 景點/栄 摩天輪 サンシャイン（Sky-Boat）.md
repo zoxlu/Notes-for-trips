@@ -41,7 +41,7 @@ aliases:
 ![代表圖](https://www.nagoya-info.jp/upload/spots/large/10612979685e329adedaa87.jpg)
 
 ## 交通方式
-地下鐵東山線・名城線「榮」駅8號出口直通。
+地下鐵東山線・名城線「榮」站8號出口直通。
 
 ## 費用/門票
 1人600円（3歲以下免費）。

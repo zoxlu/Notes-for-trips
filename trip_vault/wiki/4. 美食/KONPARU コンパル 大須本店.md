@@ -3,7 +3,7 @@ title: KONPARU コンパル 大須本店
 type: food
 food_category: [點心輕食]
 region: nagoya-city
-station: 大須觀音駅
+station: 大須觀音站（地下鐵名城線）
 district: 大須
 location: 35.1594,136.9047
 meal_slot: breakfast
@@ -26,7 +26,7 @@ tags:
   - type/food
   - food_category/點心輕食
   - region/nagoya-city
-  - station/大須觀音駅
+  - station/大須觀音站
   - district/大須
   - meal/breakfast
   - status/researching
@@ -41,7 +41,7 @@ aliases:
 ![代表圖](https://www.konparu.co.jp/images/shop_osu_l.jpg)
 
 ## 交通方式
-地下鐵鶴舞線「[[大須觀音（大須觀音寺）|大須觀音]]」駅／名城線「上前津」駅步行可達，位於大須新天地通。
+地下鐵鶴舞線「[[大須觀音（大須觀音寺）|大須觀音]]」站／名城線「上前津」站步行可達，位於大須新天地通。
 
 ## ⚠️ 待確認
 - 營業時間各來源不一致（官網與訂位網站落差約2小時），建議出發前致電確認。
