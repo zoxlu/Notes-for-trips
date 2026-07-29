@@ -19,6 +19,7 @@ tags: [index]
 - [[矢場とん 名鉄百貨店本店]] — 味噌豬排（nice-to-have）
 - [[鳥開總本家]] — 名駅エスカ店，名古屋交趾雞親子丼（nice-to-have）
 - [[小雞布丁蛋糕（ ぴよりん ）]] — 小雞造型布丁蛋糕伴手禮（nice-to-have）
+- [[ESCA地下街]] — 新幹線口地下街，名古屋鄉土美食餐廳街（optional）
 
 ## 本丸
 - [[名古屋城]] — 戰國名城，金鯱橫丁美食街（must）
@@ -42,6 +43,10 @@ tags: [index]
 - [[大須鮨]] — 江戶前壽司老店（nice-to-have）
 - [[KONPARU コンパル 大須本店]] — 喫茶店早餐文化（nice-to-have）
 - [[青柳総本家 大須本店]] — 外郎糕與蛙饅頭（nice-to-have）
+- [[萬松寺]] — 480年歷史寺院，機關人偶秀（nice-to-have）
+- [[富士淺間神社（大須）]] — 商店街內小型神社（optional）
+- [[覚王山フルーツ大福 弁才天 大須店]] — 水果大福（nice-to-have）
+- [[屋台ラーメン ヤムヤム]] — 昭和復古路邊屋台拉麵（nice-to-have）
 
 ## 榮
 - [[中部電力 MIRAI TOWER]] — 日本最古電視塔（nice-to-have）
@@ -50,9 +55,14 @@ tags: [index]
 - [[綠洲21 ( オアシス21 )]] — 玻璃展望甲板（nice-to-have）
 - [[黒豚屋らむちぃ]] — 黑豚味噌豬排（nice-to-have）
 - [[THE ROYAL PARK ICONIC NAGOYA（ 名古屋皇家公園標誌飯店 ）]] — 住宿（nice-to-have）
+- [[THE TOWER HOTEL NAGOYA]] — 電視塔內精品飯店（nice-to-have）
 - [[Alpen Outdoors Flagship Store 名古屋榮店]] — 全日本最大戶外用品旗艦店（nice-to-have）
 - [[山本屋總本家 本家]] — 味噌煮込みうどん創始名店（nice-to-have）
 - [[札幌螃蟹本家 名古屋本店]] — 帝王蟹全蟹宴（nice-to-have）
+- [[矢場とん 栄セントライズ店]] — 味噌豬排（nice-to-have）
+- [[KONPARU コンパル 栄東店]] — 喫茶店早餐文化（nice-to-have）
+- [[久屋大通公園（Hisaya-odori Park）]] — 公園＋商業設施複合綠地（nice-to-have）
+- [[サンシャイン栄 摩天輪（Sky-Boat）]] — 商場屋頂透明車廂觀覽車（nice-to-have）
 
 ## 港區金城ふ頭
 - [[LEGOLAND Japan]] — 樂高主題樂園（nice-to-have）
@@ -77,9 +87,13 @@ tags: [index]
 - [[犬山城]] — 國寶天守，可順遊城下町老街（nice-to-have）
 - [[三光稲荷神社]] — 求姻緣神社（optional）
 - [[本町茶寮]] — 抹茶甜點咖啡廳（optional）
+- [[木曽川商店（犬山城下町烤香魚）]] — 鹽烤香魚專賣店（nice-to-have）
 
 ## 中村公園
 - [[豐國神社 九之市]] — 每月9/19/29日參道市集（optional）
+
+## 北區
+- [[Tsubame Bread & Milk 尼ヶ坂本店]] — 牛奶吐司本店（nice-to-have）
 
 ## 無特定區域
 - [[名古屋鄉土美食 票選TOP20（總覽）]] — 美食類型靈感清單
