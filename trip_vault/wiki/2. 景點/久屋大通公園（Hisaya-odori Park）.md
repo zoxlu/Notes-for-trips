@@ -1,7 +1,9 @@
 ---
 title: 久屋大通公園（Hisaya-odori Park）
 type: place
-place_category: [自然漫步, 逛街尋寶]
+place_category:
+  - 自然漫步
+  - 逛街尋寶
 region: nagoya-city
 station: 久屋大通駅（地下鐵櫻通線・名城線）
 district: 榮
@@ -31,7 +33,7 @@ tags:
 aliases:
   - Hisaya-odori Park
   - ヒサヤオオドオリパーク
-興致指數:
+興致指數: 3
 ---
 ## 簡介
 南北狹長約1公里的市中心公園，2020年整建為「Hisaya-odori Park」，分為4個區域：一、二區為草坪廣場，三區為咖啡廳／餐廳露台區，四區則含[[中部電力 MIRAI TOWER]]與水邊廣場。園內「RAYARD Hisaya-odori Park」商業設施集結約40間店鋪（22間為名古屋首店），公園與商場融為一體，是逛街野餐兩相宜的市中心綠地。

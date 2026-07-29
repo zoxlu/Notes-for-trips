@@ -1,7 +1,8 @@
 ---
 title: Tsubame Bread & Milk 名駅店
 type: food
-food_category: [點心輕食]
+food_category:
+  - 點心輕食
 region: nagoya-city
 station: 名古屋站
 district: 名駅
@@ -33,7 +34,7 @@ tags:
   - priority/nice-to-have
 aliases:
   - つばめパン＆Milk
-興致指數: 4
+興致指數: 3
 ---
 ## 簡介／推薦菜色
 主打自家製牛奶吐司（生食パン）的麵包咖啡廳，招牌是奶油厚切吐司、小倉紅豆吐司套餐，適合當作名古屋早餐選項之一，補充 [[名古屋鄉土美食 票選TOP20（總覽）]] 裡的「早餐（喫茶店文化）」類型。地址：名古屋市中村區名駅4丁目26番25號 メイフィス名駅ビル1樓。

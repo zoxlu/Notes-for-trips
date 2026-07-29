@@ -62,7 +62,7 @@ tags: [index]
 - [[矢場とん 栄セントライズ店]] — 味噌豬排（nice-to-have）
 - [[KONPARU コンパル 栄東店]] — 喫茶店早餐文化（nice-to-have）
 - [[久屋大通公園（Hisaya-odori Park）]] — 公園＋商業設施複合綠地（nice-to-have）
-- [[サンシャイン栄 摩天輪（Sky-Boat）]] — 商場屋頂透明車廂觀覽車（nice-to-have）
+- [[栄 摩天輪 サンシャイン（Sky-Boat）]] — 商場屋頂透明車廂觀覽車（nice-to-have）
 
 ## 港區金城ふ頭
 - [[LEGOLAND Japan]] — 樂高主題樂園（nice-to-have）

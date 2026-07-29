@@ -1,6 +1,7 @@
 ---
 title: Alpen Outdoors Flagship Store 名古屋榮店
 type: place
+place_category: [逛街尋寶]
 region: nagoya-city
 station: 矢場町站（地下鐵名城線）
 district: 榮
@@ -20,6 +21,7 @@ date_added: 2026-07-24
 day_assigned:
 tags:
   - type/place
+  - place_category/逛街尋寶
   - region/nagoya-city
   - station/矢場町站
   - district/榮

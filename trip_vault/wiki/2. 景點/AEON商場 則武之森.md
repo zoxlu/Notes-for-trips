@@ -1,6 +1,7 @@
 ---
 title: AEON商場 則武之森
 type: place
+place_category: [逛街尋寶]
 region: nagoya-city
 station: 亀島駅（地下鐵東山線）
 district: 則武新町
@@ -20,6 +21,7 @@ duration: 1-2小時
 opening_hours: 專門店10:00-21:00；美食街／餐廳11:00-22:00
 tags:
   - type/place
+  - place_category/逛街尋寶
   - region/nagoya-city
   - station/亀島駅
   - district/則武新町

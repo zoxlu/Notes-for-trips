@@ -1,6 +1,7 @@
 ---
 title: Y.MARKET BREWING KITCHEN
 type: food
+food_category: [美食名店]
 region: nagoya-city
 station: 名古屋站
 district: 名古屋站前
@@ -23,6 +24,7 @@ date_added: 2026-07-18
 day_assigned:
 tags:
   - type/food
+  - food_category/美食名店
   - region/nagoya-city
   - station/名古屋站
   - district/名古屋站前

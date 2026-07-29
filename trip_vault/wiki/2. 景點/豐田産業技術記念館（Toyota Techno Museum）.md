@@ -1,6 +1,7 @@
 ---
 title: 豐田産業技術記念館（Toyota Techno Museum）
 type: place
+place_category: [知性趣味]
 region: nagoya-city
 station: 栄生駅（名鐵）
 district: 則武新町
@@ -20,6 +21,7 @@ duration: 2-3小時
 opening_hours: 9:30-17:00（最終入館16:30）／週一休（遇假日順延）、年末年始休
 tags:
   - type/place
+  - place_category/知性趣味
   - region/nagoya-city
   - station/栄生駅
   - district/則武新町

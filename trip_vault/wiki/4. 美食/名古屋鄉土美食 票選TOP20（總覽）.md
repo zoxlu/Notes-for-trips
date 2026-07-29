@@ -1,6 +1,9 @@
 ---
 title: 名古屋鄉土美食 票選TOP20（總覽）
 type: food
+food_category:
+  - 必吃清單
+  - 名古屋鄉土限定
 region: nagoya-city
 station:
 district:
@@ -23,6 +26,7 @@ booking_required: false
 opening_hours:
 tags:
   - type/food
+  - food_category/必吃清單
   - region/nagoya-city
   - status/researching
   - priority/optional

@@ -1,6 +1,7 @@
 ---
 title: LEGOLAND Japan
 type: place
+place_category: [知性趣味]
 region: nagoya-city
 station: 金城ふ頭駅（あおなみ線）
 district: 港區金城ふ頭
@@ -20,6 +21,7 @@ date_added: 2026-07-20
 day_assigned:
 tags:
   - type/place
+  - place_category/知性趣味
   - region/nagoya-city
   - station/金城ふ頭駅
   - district/港區金城ふ頭

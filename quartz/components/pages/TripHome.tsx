@@ -16,13 +16,30 @@ const ContentMetaComp = ContentMetaConstructor()
 
 type TypeMeta = { icon: string; bg: string; fg: string; label: string }
 
-const TYPE_META: Record<string, TypeMeta> = {
+// 卡片本身沒有代表圖時，用來決定佔位圖示/底色，依 frontmatter 的 type 決定
+const CARD_TYPE_META: Record<string, TypeMeta> = {
   place: { icon: "🏯", bg: "#FAECE7", fg: "#993C1D", label: "景點" },
   food: { icon: "🍣", bg: "#FAEEDA", fg: "#854F0B", label: "美食" },
   accommodation: { icon: "🛌", bg: "#E6F1FB", fg: "#0C447C", label: "住宿" },
-  activity: { icon: "🥾", bg: "#EAF3DE", fg: "#27500A", label: "活動" },
   transport: { icon: "🚃", bg: "#EFEFEF", fg: "#3A3A3A", label: "交通" },
 }
+
+// 「類型」篩選面板的 10 個按鈕：8 個子分類（比對 place_category / food_category 陣列）
+// + 住宿／交通（比對 type 單一值）
+type CategoryChip = { filterKey: "category" | "type"; value: string; icon: string; label: string }
+
+const CATEGORY_CHIPS: CategoryChip[] = [
+  { filterKey: "category", value: "文化古蹟", icon: "🏯", label: "文化古蹟" },
+  { filterKey: "category", value: "逛街尋寶", icon: "🛍️", label: "逛街尋寶" },
+  { filterKey: "category", value: "自然漫步", icon: "🌳", label: "自然漫步" },
+  { filterKey: "category", value: "知性趣味", icon: "🔍", label: "知性趣味" },
+  { filterKey: "category", value: "名古屋鄉土限定", icon: "🍜", label: "名古屋鄉土限定" },
+  { filterKey: "category", value: "美食名店", icon: "🍣", label: "美食名店" },
+  { filterKey: "category", value: "點心輕食", icon: "🍡", label: "點心輕食" },
+  { filterKey: "category", value: "必吃清單", icon: "📋", label: "必吃清單" },
+  { filterKey: "type", value: "accommodation", icon: "🛌", label: "住宿" },
+  { filterKey: "type", value: "transport", icon: "🚃", label: "交通" },
+]
 
 const PRIORITY_LABEL: Record<string, string> = {
   must: "必去",
@@ -93,6 +110,7 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
               data-category-tab={c.key}
             >
               {c.label}
+              <span class="trip-tab-badge" hidden></span>
             </button>
           ))}
           <button class="trip-reset" data-filter-key="all" data-filter-value="all">
@@ -100,10 +118,12 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
           </button>
         </div>
 
+        <div class="trip-active-filters" hidden></div>
+
         <div class="trip-chip-panel" data-category-panel="type">
-          {Object.entries(TYPE_META).map(([key, meta]) => (
-            <button class="trip-chip" data-filter-key="type" data-filter-value={key}>
-              {meta.icon} {meta.label}
+          {CATEGORY_CHIPS.map((c) => (
+            <button class="trip-chip" data-filter-key={c.filterKey} data-filter-value={c.value}>
+              {c.icon} {c.label}
             </button>
           ))}
         </div>
@@ -133,13 +153,17 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
         {tripPages.map((page) => {
           const fm = page.frontmatter!
           const type = (fm.type as string) ?? "place"
-          const meta = TYPE_META[type] ?? TYPE_META.place
+          const meta = CARD_TYPE_META[type] ?? CARD_TYPE_META.place
           const priority = fm.priority as string | undefined
           const station = (fm.station as string) ?? ""
           const district = (fm.district as string) ?? ""
           const status = (fm.status as string) ?? ""
           const image = fm.image as string | undefined
           const score = (fm["興致指數"] as string) ?? ""
+          const categories = [
+            ...((Array.isArray(fm.place_category) ? fm.place_category : []) as string[]),
+            ...((Array.isArray(fm.food_category) ? fm.food_category : []) as string[]),
+          ].join(",")
           return (
             <a
               class="trip-card"
@@ -149,6 +173,7 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
               data-district={district}
               data-status={status}
               data-score={score}
+              data-categories={categories}
             >
               <div class="trip-card-image" style={{ background: meta.bg }}>
                 {image ? (

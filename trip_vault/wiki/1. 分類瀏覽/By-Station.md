@@ -57,7 +57,7 @@ tags: [index]
 - [[THE ROYAL PARK ICONIC NAGOYA（ 名古屋皇家公園標誌飯店 ）]] — 地下通道直通（榮, nice-to-have）
 - [[THE TOWER HOTEL NAGOYA]] — 3號出口步行約5分鐘（榮, nice-to-have）
 - [[KONPARU コンパル 栄東店]] — 榮地下街內，步行約1分鐘（榮, nice-to-have）
-- [[サンシャイン栄 摩天輪（Sky-Boat）]] — 8號出口直通（榮, nice-to-have）
+- [[栄 摩天輪 サンシャイン（Sky-Boat）]] — 8號出口直通（榮, nice-to-have）
 
 ## 矢場町站（地下鐵名城線）
 - [[Alpen Outdoors Flagship Store 名古屋榮店]] — 徒步約4分，位於納迪亞公園內（榮, nice-to-have）

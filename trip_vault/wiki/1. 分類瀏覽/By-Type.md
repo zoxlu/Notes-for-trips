@@ -49,7 +49,7 @@ tags: [index]
 - [[名古屋市科學館]] — 榮，世界最大天象儀（nice-to-have）
 - [[豐田産業技術記念館（Toyota Techno Museum）]] — 則武新町，豐田產業技術博物館（must）
 - [[則武之森（ ノリタケの森 ）]] — 則武新町，Noritake紅磚園區（nice-to-have）
-- [[サンシャイン栄 摩天輪（Sky-Boat）]] — 榮，商場屋頂透明車廂觀覽車（nice-to-have）
+- [[栄 摩天輪 サンシャイン（Sky-Boat）]] — 榮，商場屋頂透明車廂觀覽車（nice-to-have）
 
 ## 美食
 

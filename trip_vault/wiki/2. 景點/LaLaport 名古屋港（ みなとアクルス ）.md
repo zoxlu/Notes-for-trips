@@ -1,6 +1,7 @@
 ---
 title: LaLaport 名古屋港（ みなとアクルス ）
 type: place
+place_category: [逛街尋寶]
 region: nagoya-city
 station: 港区役所站（地下鐵名港線）
 district: 港區
@@ -20,6 +21,7 @@ date_added: 2026-07-24
 day_assigned:
 tags:
   - type/place
+  - place_category/逛街尋寶
   - region/nagoya-city
   - station/港区役所站
   - district/港區
