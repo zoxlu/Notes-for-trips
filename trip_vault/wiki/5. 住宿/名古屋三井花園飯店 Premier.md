@@ -10,7 +10,7 @@ image_source: 來自官網 gardenhotels.co.jp（首頁大圖）
 status: researching
 priority: nice-to-have
 shared_by: "[[繃皮蛇]]"
-raw_note: "[[2026-07-18 名古屋三井花園飯店 premier]]"
+raw_note: ["2026-07-18 名古屋三井花園飯店 premier", "2026-07-29 三井花園 vs 皇家公園"]
 source_url: https://sillycoupleblog.tw/japan-nagoya-accommodation-mghnp-2606/
 official_url: https://www.gardenhotels.co.jp/nagoya-premier/
 source_label: 名古屋三井花園飯店Premier住宿心得部落格

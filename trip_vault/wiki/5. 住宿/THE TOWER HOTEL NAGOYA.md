@@ -10,7 +10,7 @@ image_source: 來自官網 thetowerhotel.jp
 status: researching
 priority: nice-to-have
 shared_by: "[[繃皮蛇]]"
-raw_note: "[[2026-07-28 Matsui]]"
+raw_note: ["2026-07-28 Matsui"]
 source_url: https://www.youtube.com/watch?v=HQfwol-RXAk
 official_url: https://thetowerhotel.jp/
 source_label: 瑪茲一（Matsui）的日本旅遊VLOG頻道

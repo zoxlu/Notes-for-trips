@@ -4,13 +4,13 @@ type: accommodation
 region: nagoya-city
 station:
 district:
-location: 35.168945,136.909457
+location:
 image: https://h7.alamy.com/comp/F1X1Y0/choice-fun-cartoon-style-illustration-the-situation-of-life-F1X1Y0.jpg
 image_source:
 status: researching
 priority: nice-to-have
 shared_by: "[[繃皮羊]]"
-raw_note: "[[2026-07-29 三井花園 vs 皇家公園]]"
+raw_note: ["2026-07-29 三井花園 vs 皇家公園"]
 source_url:
 official_url:
 source_label:
