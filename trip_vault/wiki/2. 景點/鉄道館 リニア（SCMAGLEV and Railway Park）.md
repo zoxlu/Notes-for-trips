@@ -13,7 +13,7 @@ image_source: 來自官網 museum.jr-central.co.jp（JR東海）
 status: researching
 priority: nice-to-have
 shared_by: "[[繃皮蛇]]"
-raw_note: "[[2026-07-20 波比]]"
+raw_note: ["2026-07-20 波比"]
 source_url: https://bobbytravel.tw/nagoya-travel/
 official_url: https://museum.jr-central.co.jp/
 source_label: 波比看世界的名古屋旅遊攻略部落格
