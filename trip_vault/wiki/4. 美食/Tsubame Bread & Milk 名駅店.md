@@ -17,7 +17,7 @@ image_source: 來自官網 tsubamepan.jp
 status: researching
 priority: nice-to-have
 shared_by: "[[繃皮蛇]]"
-raw_note: "[[2026-07-20 10 Must visit spot in Nagoya]]"
+raw_note: ["2026-07-20 10 Must visit spot in Nagoya"]
 source_url: https://www.youtube.com/watch?v=VwphIyvKQ9s
 official_url: https://tsubamepan.jp/
 source_label: 10個名古屋必去景點介紹影片（含大須、名古屋城、榮商圈等時間軸）

@@ -17,7 +17,7 @@ image_source: 來自官網 konparu.co.jp
 status: researching
 priority: nice-to-have
 shared_by: "[[繃皮蛇]]"
-raw_note: "[[2026-07-20 名古屋比東京好玩十倍]]"
+raw_note: ["2026-07-20 名古屋比東京好玩十倍"]
 source_url: https://www.youtube.com/watch?v=-HxTWE2QjjA
 official_url: https://www.konparu.co.jp/
 source_label: 名古屋跟團8天行程實測影片（含吉卜力公園、犬山城等）

@@ -13,7 +13,7 @@ image_source:
 status: researching
 priority: optional
 shared_by: "[[繃皮雞]]"
-raw_note: "[[2026-07-18 名古屋的票選美食]]"
+raw_note: ["2026-07-18 名古屋的票選美食"]
 source_url: https://nagoya-meshi.jp/nagoyameshi02_han.html
 official_url:
 source_label: 名古屋鄉土美食票選網站
@@ -32,8 +32,6 @@ tags:
   - priority/optional
 興致指數: 5
 ---
-
-
 ## 簡介
 名古屋美食網站舉辦的網路票選（2015年8-10月，共11,794票），選出當地人心目中最具代表性的20種「なごやめし」鄉土美食類型（非特定店家）：
 

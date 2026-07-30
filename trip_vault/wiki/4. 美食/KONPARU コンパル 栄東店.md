@@ -17,7 +17,7 @@ image_source: 來自官網 konparu.co.jp
 status: researching
 priority: nice-to-have
 shared_by: "[[繃皮蛇]]"
-raw_note: "[[2026-07-28 波妞實境秀]]"
+raw_note: ["2026-07-28 波妞實境秀"]
 source_url: https://www.youtube.com/watch?v=GUXefNDp9rA
 official_url: https://www.konparu.co.jp/
 source_label: 波妞（YouTube旅遊頻道）名古屋實境秀VLOG
