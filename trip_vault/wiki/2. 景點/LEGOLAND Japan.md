@@ -13,7 +13,7 @@ image_source: 來自官網 legoland.jp
 status: researching
 priority: nice-to-have
 shared_by: "[[繃皮蛇]]"
-raw_note: "[[2026-07-20 波比]]"
+raw_note: ["2026-07-20 波比", "2026-07-20 10 Must visit spot in Nagoya"]
 source_url: https://bobbytravel.tw/nagoya-travel/
 official_url: https://www.legoland.jp/
 source_label: 波比看世界的名古屋旅遊攻略部落格
