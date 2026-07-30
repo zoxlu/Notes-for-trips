@@ -13,7 +13,7 @@ image_source: 來自官網 nagoya-tv-tower.co.jp
 status: researching
 priority: nice-to-have
 shared_by: "[[繃皮蛇]]"
-raw_note: "[[2026-07-20 波比]]"
+raw_note: ["2026-07-20 波比", "2026-07-20 名古屋慢旅：別再說它無聊！像東京一樣方便，卻沒那麼累", "2026-07-20 名古屋比東京好玩十倍", "2026-07-28 瑪茲一的影片值得看！"]
 source_url: https://bobbytravel.tw/nagoya-travel/
 official_url: https://www.nagoya-tv-tower.co.jp/
 source_label: 波比看世界的名古屋旅遊攻略部落格

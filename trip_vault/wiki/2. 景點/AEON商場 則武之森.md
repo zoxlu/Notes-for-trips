@@ -11,7 +11,7 @@ image_source: 來自官網 nagoya-noritake-garden.aeonmall.jp
 status: researching
 priority: nice-to-have
 shared_by: "[[繃皮雞]]"
-raw_note: "[[2026-07-26 一些新資訊和討論]]"
+raw_note: ["2026-07-26 一些新資訊和討論"]
 source_url: https://maps.app.goo.gl/PutHytsmgDRxqTr1A
 official_url: https://nagoya-noritake-garden.aeonmall.jp/
 source_label: Google Maps 地點連結
