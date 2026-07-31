@@ -5,12 +5,13 @@ region: nagoya-city
 station: 名古屋站
 district: 名駅
 location: 35.169905,136.891039
-image:
-image_source:
+image: https://pan-designoffice.com/ochi/okura/nagoya/rakuten/img/index/photo01.jpg
+image_source: 來自樂天旅遊飯店頁面 travel.rakuten.co.jp
 status: researching
 priority: nice-to-have
 shared_by: "[[繃皮蛇]]"
-raw_note: ["2026-07-31 名古屋私藏景點"]
+raw_note:
+  - 2026-07-31 名古屋私藏景點
 source_url: https://www.youtube.com/watch?v=rYBRYPrBqeY
 official_url: https://nagoya.nikkostyle.jp/
 source_label: YouTube頻道「Nick」的名古屋私房景點介紹影片
@@ -31,10 +32,12 @@ aliases:
   - Nikko Style Nagoya
   - ニッコースタイル名古屋
   - 日航尚格名古屋
-興致指數:
+興致指數: 4
 ---
 ## 簡介
 大倉日航酒店集團旗下第一間生活風格飯店，2020年8月開業，主打咖啡與音樂體驗、結合有松鳴海絞、金鯱等名古屋在地工藝的現代設計。地址：名古屋市中村區名駅五丁目20番13号。
+
+![代表圖](https://pan-designoffice.com/ochi/okura/nagoya/rakuten/img/index/photo01.jpg)
 
 ## 交通方式
 名古屋站步行約10分鐘（沿錦通往地下鐵伏見站方向，堀川前）；分享者提到附近的伏見站、國際中心站步行更近。
