@@ -22,7 +22,7 @@ tags: [index]
 - [[ESCA地下街]] — 新幹線口地下街，名古屋鄉土美食餐廳街（optional）
 - [[名古屋日航尚格飯店（ Nikko Style Nagoya ）]] — 大倉日航集團生活風格飯店（nice-to-have）
 - [[焼肉＆手打ち冷麺 二郎 柳橋店]] — A5和牛燒肉與手打冷麵（nice-to-have）
-- [[カツレツ MATUMURA 大名古屋ビルヂング店]] — 法式作法味噌豬排，食べログ百名店（nice-to-have）
+- [[MATUMURA カツレツ 大名古屋ビルヂング店]] — 法式作法味噌豬排，食べログ百名店（nice-to-have）
 - [[炭焼うな富士 名駅店]] — 鰻魚三吃（nice-to-have）
 
 ## 本丸
@@ -67,8 +67,14 @@ tags: [index]
 - [[KONPARU コンパル 栄東店]] — 喫茶店早餐文化（nice-to-have）
 - [[久屋大通公園（Hisaya-odori Park）]] — 公園＋商業設施複合綠地（nice-to-have）
 - [[栄 摩天輪 サンシャイン（Sky-Boat）]] — 商場屋頂透明車廂觀覽車（nice-to-have）
-- [[ハーブス 栄本店]] — 水果千層蛋糕名店本店（nice-to-have）
+- [[HARBSハーブス 栄本店]] — 水果千層蛋糕名店本店（nice-to-have）
 - [[山本屋本店 栄本町通店]] — 味噌鍋燒烏龍（nice-to-have）
+- [[中日ビル（中日大樓）]] — 複合商業大樓，樓上為皇家公園標誌飯店（nice-to-have）
+- [[丸明 中日ビル店]] — 飛驒牛燒肉（nice-to-have）
+- [[豚捨 中日ビル店]] — 伊勢牛壽喜燒（nice-to-have）
+- [[MATUMURA カツレツ 中日ビル店]] — 法式作法味噌豬排（nice-to-have）
+- [[文喫 栄]] — 付費看到飽書店（nice-to-have）
+- [[ブルーボトルコーヒー 名古屋栄カフェ]] — 名古屋第一家Blue Bottle Coffee分店（nice-to-have）
 
 ## 港區金城ふ頭
 - [[LEGOLAND Japan]] — 樂高主題樂園（nice-to-have）

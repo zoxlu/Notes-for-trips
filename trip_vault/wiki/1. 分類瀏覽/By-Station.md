@@ -19,7 +19,7 @@ tags: [index]
 - [[ESCA地下街]] — 太閤通口新幹線出口旁地下街（名駅, optional）
 - [[名古屋日航尚格飯店（ Nikko Style Nagoya ）]] — 車站步行約10分鐘（名駅, nice-to-have）
 - [[焼肉＆手打ち冷麺 二郎 柳橋店]] — 各線步行約5分鐘（名駅, nice-to-have）
-- [[カツレツ MATUMURA 大名古屋ビルヂング店]] — 大名古屋ビルヂング3樓（名駅, nice-to-have）
+- [[MATUMURA カツレツ 大名古屋ビルヂング店]] — 大名古屋ビルヂング3樓（名駅, nice-to-have）
 - [[炭焼うな富士 名駅店]] — 名古屋三井ビルディング北館地下1樓（名駅, nice-to-have）
 
 ## 名古屋城站（地下鐵名城線）
@@ -58,9 +58,15 @@ tags: [index]
 - [[THE TOWER HOTEL NAGOYA]] — 3號出口步行約5分鐘（榮, nice-to-have）
 - [[KONPARU コンパル 栄東店]] — 榮地下街內，步行約1分鐘（榮, nice-to-have）
 - [[栄 摩天輪 サンシャイン（Sky-Boat）]] — 8號出口直通（榮, nice-to-have）
-- [[ハーブス 栄本店]] — 「榮」站、「久屋大通」站皆步行約2分（榮, nice-to-have）
+- [[HARBSハーブス 栄本店]] — 「榮」站、「久屋大通」站皆步行約2分（榮, nice-to-have）
 - [[山本屋本店 栄本町通店]] — 8號出口步行約5分（榮, nice-to-have）
 - [[札幌螃蟹本家 名古屋本店]] — 帝王蟹全蟹宴（榮, nice-to-have）
+- [[中日ビル（中日大樓）]] — 地下通道直通（榮, nice-to-have）
+- [[丸明 中日ビル店]] — 中日ビル3樓（榮, nice-to-have）
+- [[豚捨 中日ビル店]] — 中日ビル3樓（榮, nice-to-have）
+- [[MATUMURA カツレツ 中日ビル店]] — 中日ビル3樓（榮, nice-to-have）
+- [[文喫 栄]] — 中日ビル2樓（榮, nice-to-have）
+- [[ブルーボトルコーヒー 名古屋栄カフェ]] — 中日ビル1樓（榮, nice-to-have）
 
 ## 矢場町站（地下鐵名城線）
 - [[Alpen Outdoors Flagship Store 名古屋榮店]] — 徒步約4分，位於納迪亞公園內（榮, nice-to-have）

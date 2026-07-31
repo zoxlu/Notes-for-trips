@@ -1,7 +1,9 @@
 ---
-title: ハーブス 栄本店
+title: HARBS ハーブス 栄本店
 type: food
-food_category: [點心輕食, 美食名店]
+food_category:
+  - 點心輕食
+  - 美食名店
 region: nagoya-city
 station: 榮站
 district: 榮
@@ -16,7 +18,8 @@ image_source: 來自官網 harbs.co.jp
 status: researching
 priority: nice-to-have
 shared_by: "[[繃皮蛇]]"
-raw_note: ["2026-07-31 名古屋美食精選"]
+raw_note:
+  - 2026-07-31 名古屋美食精選
 source_url: https://www.youtube.com/watch?v=lbncwqZanFY#t=5:36
 official_url: https://www.harbs.co.jp/
 source_label: YouTube頻道「Nick」的名古屋美食精選介紹影片

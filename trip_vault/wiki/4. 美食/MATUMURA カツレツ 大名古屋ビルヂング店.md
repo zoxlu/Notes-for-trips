@@ -1,7 +1,8 @@
 ---
-title: カツレツ MATUMURA 大名古屋ビルヂング店
+title: MATUMURA カツレツ 大名古屋ビルヂング店
 type: food
-food_category: [名古屋鄉土限定]
+food_category:
+  - 名古屋鄉土限定
 region: nagoya-city
 station: 名古屋站
 district: 名駅
@@ -16,7 +17,7 @@ image_source: 來自官網 katuretumatumura.jp
 status: researching
 priority: nice-to-have
 shared_by: "[[繃皮蛇]]"
-raw_note: ["2026-07-31 名古屋美食精選"]
+raw_note: ["2026-07-31 名古屋美食精選", "2026-07-31 榮"]
 source_url: https://www.youtube.com/watch?v=lbncwqZanFY#t=1:23
 official_url: https://www.katuretumatumura.jp/
 source_label: YouTube頻道「Nick」的名古屋美食精選介紹影片
@@ -46,11 +47,19 @@ aliases:
 - 入選食べログ百名店，可事先上網預約，能省去排隊時間（YouTube：Nick的名古屋美食精選）
 - 附開胃菜（起司煎黑芝麻）跟餐後甜點（優格義式冰淇淋），走比較高級、法式料理的路線（YouTube：Nick的名古屋美食精選）
 - 白飯選用北海道米，午餐時段可免費續碗（YouTube：Nick的名古屋美食精選）
+- 已在[[中日ビル（中日大樓）]]3樓開設分店「bis」（見[[MATUMURA カツレツ 中日ビル店]]），榮站也吃得到（YouTube：Nick的榮站週末介紹影片）
+
+## 相關筆記
+- [[MATUMURA カツレツ 中日ビル店]]
 
 ## 原始連結備註
 > 來源檔案：2026-07-31 名古屋美食精選
 >
 > [[繃皮蛇]]：（原始素材為YouTube影片「吃這幾家就對了！名古屋美食七選」，分享者僅附上影片連結。影片開場片段介紹了這家以法式手法製作、選用熟成豬的味噌豬排名店。）
+
+> 來源檔案：2026-07-31 榮
+>
+> [[繃皮蛇]]：（原始素材為YouTube影片，分享者僅附上影片連結與早餐相關文字。影片後段分享者提到這家店在[[中日ビル（中日大樓）]]也開了分店。）
 
 ## 📝 我的備註
 
