@@ -17,7 +17,7 @@ image_source: 來自官網 konparu.co.jp
 status: researching
 priority: nice-to-have
 shared_by: "[[繃皮蛇]]"
-raw_note: ["2026-07-28 波妞實境秀"]
+raw_note: ["2026-07-28 波妞實境秀", "2026-07-31 波妞就是吃這個炸蝦三明治"]
 source_url: https://www.youtube.com/watch?v=GUXefNDp9rA
 official_url: https://www.konparu.co.jp/
 source_label: 波妞（YouTube旅遊頻道）名古屋實境秀VLOG
@@ -45,6 +45,11 @@ aliases:
 ## 交通方式
 地下鐵「榮」站步行約1分鐘，位於榮地下街內。
 
+## 🗝️ 武林秘笈
+- 招牌炸蝦三明治用3尾炸蝦搭配滑嫩玉子燒，佐自家工廠特製豬排醬＋塔塔醬雙醬，夾在烤過的白吐司中（官網 konparu.co.jp）
+- 現點現做，從點餐到完成約需15分鐘，建議先電話預約可減少久候（網站：4travel.jp）
+- 傳統老字號喫茶店氛圍，未特別劃分吸菸區（網站：4travel.jp）
+
 ## ⚠️ 待確認
 - 座標已改用日本國土地理院（GSI）地址查詢服務，依店址「栄3-5-12」重新定位（原先為「榮」站位置的近似值）；OpenStreetMap查無此分店個別標記。
 
@@ -56,6 +61,10 @@ aliases:
 > 來源檔案：2026-07-28 波妞實境秀
 >
 > [[繃皮蛇]]：（原始素材為YouTube旅遊VLOG，附住宿與美食景點Google地圖店家頁面清單，「Konparu Sakaehigashiten コンパル 栄東店」為其中一站。）
+
+> 來源檔案：2026-07-31 波妞就是吃這個炸蝦三明治
+>
+> [[繃皮蛇]]：波妞就是吃這個炸蝦三明治，森之地下街
 
 ## 📝 我的備註
 
