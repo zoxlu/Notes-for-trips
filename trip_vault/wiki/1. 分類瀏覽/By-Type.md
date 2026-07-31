@@ -33,6 +33,7 @@ tags: [index]
 - [[則武之森（ ノリタケの森 ）]] — 則武新町，Noritake紅磚園區（nice-to-have）
 - [[久屋大通公園（Hisaya-odori Park）]] — 榮，公園＋商業設施複合綠地（nice-to-have）
 - [[ESCA地下街]] — 名駅，新幹線口地下街，名古屋鄉土美食餐廳街（optional）
+- [[君のハンバーグを食べたい（キミハン）]] — 則武新町，AEON商場則武之森美食街，東京漢堡排名店（nice-to-have）
 
 ### 自然漫步
 - [[熱田神宮]] — 熱田，日本三大神宮之一（nice-to-have）
@@ -76,6 +77,7 @@ tags: [index]
 - [[柳橋中央市場 海鮮早餐食堂]] — 名古屋站前，地魚の丼 まるみ，海鮮丼早餐（shortlisted）
 - [[木曽川商店（犬山城下町烤香魚）]] — 犬山城下町，鹽烤香魚（nice-to-have）
 - [[屋台ラーメン ヤムヤム]] — 大須，昭和復古路邊屋台拉麵（nice-to-have）
+- [[焼肉＆手打ち冷麺 二郎 柳橋店]] — 名駅，A5和牛燒肉與手打冷麵，燒肉百名店（nice-to-have）
 
 ### 點心輕食
 - [[小雞布丁蛋糕（ ぴよりん ）]] — 名駅，小雞造型布丁蛋糕伴手禮（nice-to-have）
@@ -94,8 +96,9 @@ tags: [index]
 
 ## 住宿
 - [[名古屋三井花園飯店 Premier]] — 名駅，車站步行5分鐘（nice-to-have）
-- [[THE ROYAL PARK ICONIC NAGOYA（ 名古屋皇家公園標誌飯店 ）]] — 榮，逛街購物方便（nice-to-have）
+- [[名古屋皇家公園標誌飯店（ THE ROYAL PARK ICONIC NAGOYA ）]] — 榮，逛街購物方便（nice-to-have）
 - [[THE TOWER HOTEL NAGOYA]] — 榮，電視塔內精品飯店（nice-to-have）
+- [[名古屋日航尚格飯店（ Nikko Style Nagoya ）]] — 名駅，大倉日航集團生活風格飯店（nice-to-have）
 
 ## 交通
 - [[名古屋地下鐵路線圖（景點對照）]] — 全線通用參考地圖（nice-to-have）

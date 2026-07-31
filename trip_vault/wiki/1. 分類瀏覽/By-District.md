@@ -20,6 +20,8 @@ tags: [index]
 - [[鳥開總本家]] — 名駅エスカ店，名古屋交趾雞親子丼（nice-to-have）
 - [[小雞布丁蛋糕（ ぴよりん ）]] — 小雞造型布丁蛋糕伴手禮（nice-to-have）
 - [[ESCA地下街]] — 新幹線口地下街，名古屋鄉土美食餐廳街（optional）
+- [[名古屋日航尚格飯店（ Nikko Style Nagoya ）]] — 大倉日航集團生活風格飯店（nice-to-have）
+- [[焼肉＆手打ち冷麺 二郎 柳橋店]] — A5和牛燒肉與手打冷麵（nice-to-have）
 
 ## 本丸
 - [[名古屋城]] — 戰國名城，金鯱橫丁美食街（must）
@@ -54,7 +56,7 @@ tags: [index]
 - [[名古屋市科學館]] — 世界最大天象儀（白川公園內, nice-to-have）
 - [[綠洲21 ( オアシス21 )]] — 玻璃展望甲板（nice-to-have）
 - [[黒豚屋らむちぃ]] — 黑豚味噌豬排（nice-to-have）
-- [[THE ROYAL PARK ICONIC NAGOYA（ 名古屋皇家公園標誌飯店 ）]] — 住宿（nice-to-have）
+- [[名古屋皇家公園標誌飯店（ THE ROYAL PARK ICONIC NAGOYA ）]] — 住宿（nice-to-have）
 - [[THE TOWER HOTEL NAGOYA]] — 電視塔內精品飯店（nice-to-have）
 - [[Alpen Outdoors Flagship Store 名古屋榮店]] — 全日本最大戶外用品旗艦店（nice-to-have）
 - [[山本屋總本家 本家]] — 味噌煮込みうどん創始名店（nice-to-have）
@@ -82,6 +84,7 @@ tags: [index]
 - [[豐田産業技術記念館（Toyota Techno Museum）]] — 豐田產業技術博物館（must）
 - [[則武之森（ ノリタケの森 ）]] — Noritake紅磚園區（nice-to-have）
 - [[AEON商場 則武之森]] — 大型購物中心，緊鄰則武之森（nice-to-have）
+- [[君のハンバーグを食べたい（キミハン）]] — AEON商場則武之森美食街，東京來的漢堡排名店（nice-to-have）
 
 ## 犬山城下町
 - [[犬山城]] — 國寶天守，可順遊城下町老街（nice-to-have）

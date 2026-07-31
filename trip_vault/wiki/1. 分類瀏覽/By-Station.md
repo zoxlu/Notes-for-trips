@@ -17,6 +17,8 @@ tags: [index]
 - [[鳥開總本家]] — 新幹線口地下街Esca內步行1分（名駅, nice-to-have）
 - [[小雞布丁蛋糕（ ぴよりん ）]] — 名古屋うまいもん通り廣小路口（名駅, nice-to-have）
 - [[ESCA地下街]] — 太閤通口新幹線出口旁地下街（名駅, optional）
+- [[名古屋日航尚格飯店（ Nikko Style Nagoya ）]] — 車站步行約10分鐘（名駅, nice-to-have）
+- [[焼肉＆手打ち冷麺 二郎 柳橋店]] — 各線步行約5分鐘（名駅, nice-to-have）
 
 ## 名古屋城站（地下鐵名城線）
 - [[名古屋城]] — 7號出口徒步5分（本丸, must）
@@ -50,7 +52,7 @@ tags: [index]
 - [[榮商圈]] — 松坂屋、三越、LACHIC等百貨（榮, must）
 - [[綠洲21 ( オアシス21 )]] — 直通（榮, nice-to-have）
 - [[黒豚屋らむちぃ]] — 矢場町站步行2分鐘（榮, nice-to-have）
-- [[THE ROYAL PARK ICONIC NAGOYA（ 名古屋皇家公園標誌飯店 ）]] — 地下通道直通（榮, nice-to-have）
+- [[名古屋皇家公園標誌飯店（ THE ROYAL PARK ICONIC NAGOYA ）]] — 地下通道直通（榮, nice-to-have）
 - [[THE TOWER HOTEL NAGOYA]] — 3號出口步行約5分鐘（榮, nice-to-have）
 - [[KONPARU コンパル 栄東店]] — 榮地下街內，步行約1分鐘（榮, nice-to-have）
 - [[栄 摩天輪 サンシャイン（Sky-Boat）]] — 8號出口直通（榮, nice-to-have）
@@ -87,6 +89,7 @@ tags: [index]
 
 ## 龜島站（地下鐵東山線）
 - [[AEON商場 則武之森]] — 步行約8分鐘（則武新町, nice-to-have）
+- [[君のハンバーグを食べたい（キミハン）]] — 位於AEON商場則武之森美食街內（則武新町, nice-to-have）
 
 ## 犬山站（名鐵）
 - [[犬山城]] — 步行約16分，國寶天守（犬山城下町, nice-to-have）
