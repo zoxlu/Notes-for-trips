@@ -11,8 +11,8 @@ cuisine: 味噌豬排（法式作法，使用低溫熟成豬）
 price_range:
 booking_required: true
 opening_hours: 11:00-15:00（L.O.14:00）、17:00-22:00（L.O.21:00）
-image:
-image_source:
+image: https://katuretu-matumura.com/images/convert/katuretu-matumuracom/square_20260213095815.jpg/image.webp
+image_source: 來自品牌官網 katuretu-matumura.com（法式炸豬排料理照，非中日ビル店專屬拍攝）
 status: researching
 priority: nice-to-have
 shared_by: "[[繃皮蛇]]"
@@ -39,11 +39,10 @@ aliases:
 ## 簡介
 [[MATUMURA カツレツ 大名古屋ビルヂング店|カツレツ MATUMURA 大名古屋ビルヂング店]]在[[中日ビル（中日大樓）]]3樓開設的分店（bis），一樣主打低溫熟成豬肉製作的法式味噌豬排。地址：愛知県名古屋市中区栄4-1-1 中日ビル 3F。
 
+![代表圖](https://katuretu-matumura.com/images/convert/katuretu-matumuracom/square_20260213095815.jpg/image.webp)
+
 ## 交通方式
 榮站直通[[中日ビル（中日大樓）]]。
-
-## ⚠️ 待確認
-- 圖片待補：官網為單頁式網站，未能取得可直接引用的餐點代表圖，待使用者確認。
 
 ## 🗝️ 武林秘笈
 - 跟名古屋國民美食味噌豬排名店[[矢場とん 名鉄百貨店本店|矢場とん]]相比，這家價位稍高一點，但豬肉都是低溫熟成處理，肉質軟嫩（YouTube：Nick的榮站週末介紹影片）
