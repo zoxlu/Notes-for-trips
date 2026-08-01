@@ -24,6 +24,8 @@ tags: [index]
 - [[焼肉＆手打ち冷麺 二郎 柳橋店]] — A5和牛燒肉與手打冷麵（nice-to-have）
 - [[MATUMURA カツレツ 大名古屋ビルヂング店]] — 法式作法味噌豬排，食べログ百名店（nice-to-have）
 - [[炭焼うな富士 名駅店]] — 鰻魚三吃（nice-to-have）
+- [[成城石井 名古屋駅広小路口店]] — 名古屋站內精品超市（optional）
+- [[成城石井 大名古屋ビルヂング店]] — 大名古屋ビルヂング地下1樓，超市（optional）
 
 ## 本丸
 - [[名古屋城]] — 戰國名城，金鯱橫丁美食街（must）
@@ -57,6 +59,7 @@ tags: [index]
 - [[富士淺間神社（大須）]] — 商店街內小型神社（optional）
 - [[覚王山フルーツ大福 弁才天 大須店]] — 水果大福（nice-to-have）
 - [[屋台ラーメン ヤムヤム]] — 昭和復古路邊屋台拉麵（nice-to-have）
+- [[生鮮食品館サノヤ]] — 全年無休生鮮超市（optional）
 
 ## 榮
 - [[中部電力 MIRAI TOWER]] — 日本最古電視塔（nice-to-have）
@@ -73,14 +76,16 @@ tags: [index]
 - [[KONPARU コンパル 栄東店]] — 喫茶店早餐文化（nice-to-have）
 - [[久屋大通公園（Hisaya-odori Park）]] — 公園＋商業設施複合綠地（nice-to-have）
 - [[栄 摩天輪 サンシャイン（Sky-Boat）]] — 商場屋頂透明車廂觀覽車（nice-to-have）
-- [[HARBSハーブス 栄本店]] — 水果千層蛋糕名店本店（nice-to-have）
+- [[HARBS ハーブス 栄本店]] — 水果千層蛋糕名店本店（nice-to-have）
 - [[山本屋本店 栄本町通店]] — 味噌鍋燒烏龍（nice-to-have）
 - [[中日ビル（中日大樓）]] — 複合商業大樓，樓上為皇家公園標誌飯店（nice-to-have）
 - [[丸明 中日ビル店]] — 飛驒牛燒肉（nice-to-have）
 - [[豚捨 中日ビル店]] — 伊勢牛壽喜燒（nice-to-have）
 - [[MATUMURA カツレツ 中日ビル店]] — 法式作法味噌豬排（nice-to-have）
 - [[文喫 栄]] — 付費看到飽書店（nice-to-have）
-- [[ブルーボトルコーヒー 名古屋栄カフェ]] — 名古屋第一家Blue Bottle Coffee分店（nice-to-have）
+- [[Blue Bottle Coffee ブルーボトルコーヒー 名古屋栄カフェ]] — 名古屋第一家Blue Bottle Coffee分店（nice-to-have）
+- [[Saison Factory セゾンファクトリー 松坂屋名古屋店]] — 果醬果汁精品店，超市（optional）
+- [[北野Ace 名古屋三越栄店]] — 全國精選食材專門店，超市（optional）
 
 ## 港區金城ふ頭
 - [[LEGOLAND Japan]] — 樂高主題樂園（nice-to-have）
@@ -104,7 +109,7 @@ tags: [index]
 - [[DEL style 名古屋納屋橋]] — Tiffany藍風格設計飯店（nice-to-have）
 
 ## 中部國際機場（セントレア）
-- [[コメダ珈琲店 セントレア店]] — 名古屋發源喫茶店，機場分店（nice-to-have）
+- [[客美多コメダ珈琲店 セントレア店]] — 名古屋發源喫茶店，機場分店（nice-to-have）
 
 ## 則武新町
 - [[豐田産業技術記念館（Toyota Techno Museum）]] — 豐田產業技術博物館（must）
@@ -125,6 +130,26 @@ tags: [index]
 
 ## 北區
 - [[Tsubame Bread & Milk 尼ヶ坂本店]] — 牛奶吐司本店（nice-to-have）
+
+## 瑞穗區
+- [[Sapore サポーレ 瑞穂店]] — 高級超市，生鮮食材與熟食便當（optional）
+
+## 中村區
+- [[Albis アルビス 中村二瀬店]] — Albis愛知首間分店，超市（optional）
+- [[Yamanaka ヤマナカ 則武店]] — 愛知在地連鎖超市（optional）
+
+## 西區
+- [[Valor バロー 中小田井店]] — 平價超市，同棟有無印良品（optional）
+
+## 昭和區
+- [[Valor バロー 高辻店]] — 平價超市（optional）
+- [[加藤商店]] — 在地青果店（optional）
+
+## 千種區
+- [[成城石井 名古屋セントラルガーデン店]] — 精品超市，營業至23點（optional）
+
+## 伏見
+- [[TACHIYA タチヤ 錦二丁目店]] — 生鮮食材激安超市（optional）
 
 ## 無特定區域
 - [[名古屋鄉土美食 票選TOP20（總覽）]] — 美食類型靈感清單

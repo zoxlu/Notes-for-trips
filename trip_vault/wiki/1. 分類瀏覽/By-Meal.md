@@ -11,8 +11,8 @@ tags: [index]
 - [[KONPARU コンパル 大須本店]] — 大須，喫茶店早餐文化（nice-to-have）
 - [[KONPARU コンパル サンロード店]] — 名古屋站前，喫茶店早餐文化（nice-to-have）
 - [[KONPARU コンパル 栄東店]] — 榮，喫茶店早餐文化（nice-to-have）
-- [[コメダ珈琲店 セントレア店]] — 中部國際機場，名古屋發源喫茶店モーニング文化（nice-to-have）
-- [[ブルーボトルコーヒー 名古屋栄カフェ]] — 榮，名古屋第一家Blue Bottle Coffee分店（nice-to-have）
+- [[客美多コメダ珈琲店 セントレア店]] — 中部國際機場，名古屋發源喫茶店モーニング文化（nice-to-have）
+- [[Blue Bottle Coffee ブルーボトルコーヒー 名古屋栄カフェ]] — 榮，名古屋第一家Blue Bottle Coffee分店（nice-to-have）
 
 ## 午餐
 - [[蓬莱軒 あつた 神宮店]] — 熱田，鰻魚飯三吃（nice-to-have）
@@ -24,7 +24,7 @@ tags: [index]
 - [[鳥開總本家]] — 名駅エスカ店，名古屋交趾雞親子丼（nice-to-have）
 - [[焼肉＆手打ち冷麺 二郎 柳橋店]] — 名駅，A5和牛燒肉與手打冷麵（nice-to-have）
 - [[MATUMURA カツレツ 大名古屋ビルヂング店]] — 名駅，法式作法味噌豬排，食べログ百名店（nice-to-have）
-- [[HARBSハーブス 栄本店]] — 榮，水果千層蛋糕名店本店（nice-to-have）
+- [[HARBS ハーブス 栄本店]] — 榮，水果千層蛋糕名店本店（nice-to-have）
 - [[山本屋本店 栄本町通店]] — 榮，味噌鍋燒烏龍（nice-to-have）
 - [[丸明 中日ビル店]] — 榮，飛驒牛燒肉（nice-to-have）
 - [[MATUMURA カツレツ 中日ビル店]] — 榮，法式作法味噌豬排（nice-to-have）

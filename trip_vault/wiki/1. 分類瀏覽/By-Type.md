@@ -101,7 +101,7 @@ tags: [index]
 - [[KONPARU コンパル 栄東店]] — 榮，喫茶店早餐文化（nice-to-have）
 - [[本町茶寮]] — 犬山城下町，抹茶甜點（optional）
 - [[覚王山フルーツ大福 弁才天 大須店]] — 大須，水果大福（nice-to-have）
-- [[HARBSハーブス 栄本店]] — 榮，水果千層蛋糕名店本店（nice-to-have）
+- [[HARBS ハーブス 栄本店]] — 榮，水果千層蛋糕名店本店（nice-to-have）
 - [[客美多コメダ珈琲店 セントレア店]] — 中部國際機場，名古屋發源喫茶店，早餐文化（nice-to-have）
 - [[Blue Bottle Coffee ブルーボトルコーヒー 名古屋栄カフェ]] — 榮，名古屋第一家Blue Bottle Coffee分店（nice-to-have）
 - [[木曽川商店（犬山城下町烤香魚）]] — 犬山城下町，鹽烤香魚（nice-to-have）
@@ -125,5 +125,20 @@ tags: [index]
 - [[名古屋地下鐵路線圖（景點對照）]] — 全線通用參考地圖（nice-to-have）
 - [[中部國際機場↔市區交通比較]] — 機場往返市區4種方式比較（nice-to-have）
 - [[交通儲值卡比較（Manaca／Suica／Icoca）]] — Manaca／Suica／Icoca 儲值卡比較（nice-to-have）
+
+## 超市
+- [[Sapore サポーレ 瑞穂店]] — 瑞穗區，高級超市，生鮮食材與熟食便當（optional）
+- [[Albis アルビス 中村二瀬店]] — 中村區，Albis愛知首間分店（optional）
+- [[Valor バロー 中小田井店]] — 西區，平價超市（optional）
+- [[Saison Factory セゾンファクトリー 松坂屋名古屋店]] — 榮，果醬果汁精品店（optional）
+- [[Yamanaka ヤマナカ 則武店]] — 中村區，愛知在地連鎖超市（optional）
+- [[生鮮食品館サノヤ]] — 大須，全年無休生鮮超市（optional）
+- [[Valor バロー 高辻店]] — 昭和區，平價超市（optional）
+- [[TACHIYA タチヤ 錦二丁目店]] — 伏見，生鮮食材激安超市（optional）
+- [[成城石井 名古屋駅広小路口店]] — 名駅，名古屋站內精品超市（optional）
+- [[成城石井 大名古屋ビルヂング店]] — 名駅，大名古屋ビルヂング地下1樓（optional）
+- [[加藤商店]] — 昭和區，在地青果店（optional）
+- [[北野Ace 名古屋三越栄店]] — 榮，全國精選食材專門店（optional）
+- [[成城石井 名古屋セントラルガーデン店]] — 千種區，營業至23點（optional）
 
 « 回 [[index|首頁]]
