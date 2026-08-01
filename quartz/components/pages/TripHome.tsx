@@ -22,10 +22,11 @@ const CARD_TYPE_META: Record<string, TypeMeta> = {
   food: { icon: "🍣", bg: "#FAEEDA", fg: "#854F0B", label: "美食" },
   accommodation: { icon: "🛌", bg: "#E6F1FB", fg: "#0C447C", label: "住宿" },
   transport: { icon: "🚃", bg: "#EFEFEF", fg: "#3A3A3A", label: "交通" },
+  supermarket: { icon: "🛒", bg: "#E8F5E9", fg: "#2E7D32", label: "超市" },
 }
 
-// 「類型」篩選面板的 10 個按鈕：8 個子分類（比對 place_category / food_category 陣列）
-// + 住宿／交通（比對 type 單一值）
+// 「類型」篩選面板的 11 個按鈕：8 個子分類（比對 place_category / food_category 陣列）
+// + 住宿／交通／超市（比對 type 單一值）
 type CategoryChip = { filterKey: "category" | "type"; value: string; icon: string; label: string }
 
 const CATEGORY_CHIPS: CategoryChip[] = [
@@ -39,6 +40,7 @@ const CATEGORY_CHIPS: CategoryChip[] = [
   { filterKey: "category", value: "必吃清單", icon: "📋", label: "必吃清單" },
   { filterKey: "type", value: "accommodation", icon: "🛌", label: "住宿" },
   { filterKey: "type", value: "transport", icon: "🚃", label: "交通" },
+  { filterKey: "type", value: "supermarket", icon: "🛒", label: "超市" },
 ]
 
 const PRIORITY_LABEL: Record<string, string> = {
