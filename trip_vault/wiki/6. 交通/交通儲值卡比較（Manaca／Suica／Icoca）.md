@@ -7,7 +7,8 @@ district:
 status: researching
 priority: nice-to-have
 shared_by: "[[繃皮雞]]"
-raw_note: "[[2026-07-26 一些新資訊和討論]]"
+raw_note:
+  - 2026-07-26 一些新資訊和討論
 source_url: https://www.meitetsu.co.jp/cht/train/Ticket/manaca/index.html
 official_url: https://www.meitetsu.co.jp/cht/train/Ticket/manaca/index.html
 source_label: 名古屋鐵道（名鐵）官方網站 manaca 介紹頁
