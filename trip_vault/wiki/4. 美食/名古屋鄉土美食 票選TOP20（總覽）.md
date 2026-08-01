@@ -27,6 +27,7 @@ opening_hours:
 tags:
   - type/food
   - food_category/必吃清單
+  - food_category/名古屋鄉土限定
   - region/nagoya-city
   - status/researching
   - priority/optional

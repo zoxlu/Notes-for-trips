@@ -3,7 +3,6 @@ title: HARBS ハーブス 栄本店
 type: food
 food_category:
   - 點心輕食
-  - 美食名店
 region: nagoya-city
 station: 榮站
 district: 榮
@@ -28,7 +27,6 @@ day_assigned:
 tags:
   - type/food
   - food_category/點心輕食
-  - food_category/美食名店
   - region/nagoya-city
   - station/榮站
   - district/榮
