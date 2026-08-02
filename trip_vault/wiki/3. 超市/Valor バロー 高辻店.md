@@ -5,8 +5,8 @@ region: nagoya-city
 station: 金山站（JR・名鐵・地下鐵名城線）
 district: 昭和區
 location: 35.1416501,136.9134705
-image:
-image_source:
+image: https://poiend-pctr.c.yimg.jp/RbvIgEqcLh0WnvgGGwVVgTznkURkbN_CqctDurJdF3SPY4wPQj7WCaU8JHSPKqIJYP5vkyBMAf5h4CM23_z2p-TSTQuJMp06XfQMI8jiko8IWr6auO546j72ZnsW3qO6jJ_7-sWmtRwY18xch7l15GrR1czad34c2jobBh3PS032o5OVNLezBWhMeCdy2b8xxPeY6Nb7dSxCllFgL15WEXPa63nf8fFGxmEJ777PD1s-C8ldypUJ1h-vqiP5ALPGJ9iYfpgwgPnNVlx6Ik0KzSCPXlMmW7muWeJ0dvoI2Qg=
+image_source: 來自 Yahoo!地圖 店家頁面使用者實拍照片
 status: researching
 priority: optional
 shared_by: "[[繃皮雞]]"
@@ -33,8 +33,7 @@ aliases:
 ## 簡介
 連鎖平價超市 Valor（バロー）高辻店。地址：愛知県名古屋市昭和区福江3丁目7-76。
 
-## ⚠️ 待確認
-- 圖片待補
+![代表圖](https://poiend-pctr.c.yimg.jp/RbvIgEqcLh0WnvgGGwVVgTznkURkbN_CqctDurJdF3SPY4wPQj7WCaU8JHSPKqIJYP5vkyBMAf5h4CM23_z2p-TSTQuJMp06XfQMI8jiko8IWr6auO546j72ZnsW3qO6jJ_7-sWmtRwY18xch7l15GrR1czad34c2jobBh3PS032o5OVNLezBWhMeCdy2b8xxPeY6Nb7dSxCllFgL15WEXPa63nf8fFGxmEJ777PD1s-C8ldypUJ1h-vqiP5ALPGJ9iYfpgwgPnNVlx6Ik0KzSCPXlMmW7muWeJ0dvoI2Qg=)
 
 ## 原始連結備註
 > 來源檔案：2026-08-01 超市

@@ -5,8 +5,8 @@ region: nagoya-city
 station: 丸之內站（地下鐵鶴舞線・櫻通線）
 district: 伏見
 location: 35.1713522,136.8993882
-image:
-image_source:
+image: https://poiend-pctr.c.yimg.jp/RbvIgEqcLh0WnvgGGwVVgTznkURkbN_CqctDurJdF3TPq-6wDgw-Ne_nqfUYj6XX7YRSxDLCEiASVH-_jGerqkFkNr_lBgkwJqcGi-skp--KV7WQ3LK8AeB5SFW5GNUJYcVMRhFbguDMt4A3Yzby-mMR4mQdizRrSplc1brkZ2LeMB-rAQZbvwdxKxKp4piem5P5MfPXPBcLgDgOitgScj4QvE1LEI92VwS0WSerkzZMccOzl63tZLSz24V6h7WRsPasoy-nGowZw1n2EK2A_qArFuBb3u2mdDwKNAi01BI=
+image_source: 來自 Yahoo!地圖 店家頁面使用者實拍照片
 status: researching
 priority: optional
 shared_by: "[[繃皮雞]]"
@@ -33,8 +33,7 @@ aliases:
 ## 簡介
 名古屋周邊生鮮食材激安超市 TACHIYA（タチヤ）錦二丁目店，鄰近伏見。地址：愛知県名古屋市中区錦2-7-18。
 
-## ⚠️ 待確認
-- 圖片待補
+![代表圖](https://poiend-pctr.c.yimg.jp/RbvIgEqcLh0WnvgGGwVVgTznkURkbN_CqctDurJdF3TPq-6wDgw-Ne_nqfUYj6XX7YRSxDLCEiASVH-_jGerqkFkNr_lBgkwJqcGi-skp--KV7WQ3LK8AeB5SFW5GNUJYcVMRhFbguDMt4A3Yzby-mMR4mQdizRrSplc1brkZ2LeMB-rAQZbvwdxKxKp4piem5P5MfPXPBcLgDgOitgScj4QvE1LEI92VwS0WSerkzZMccOzl63tZLSz24V6h7WRsPasoy-nGowZw1n2EK2A_qArFuBb3u2mdDwKNAi01BI=)
 
 ## 原始連結備註
 > 來源檔案：2026-08-01 超市

@@ -17,7 +17,9 @@ image_source: 來自官網 katuretumatumura.jp
 status: researching
 priority: nice-to-have
 shared_by: "[[繃皮蛇]]"
-raw_note: ["2026-07-31 名古屋美食精選", "2026-07-31 榮"]
+raw_note:
+  - 2026-07-31 名古屋美食精選
+  - 2026-07-31 榮
 source_url: https://www.youtube.com/watch?v=lbncwqZanFY#t=1:23
 official_url: https://www.katuretumatumura.jp/
 source_label: YouTube頻道「Nick」的名古屋美食精選介紹影片
@@ -35,7 +37,7 @@ tags:
 aliases:
   - 松むら
   - Katuretu Matumura
-興致指數:
+興致指數: 5
 ---
 ## 簡介
 用法式手法製作味噌豬排的專門店，選用「熟成豬」（比熟成牛少見）低溫慢炸，肉質軟嫩、脂肪較少，搭配愛知有名的赤味噌醬汁與味噌湯。入選食べログ百名店。地址：〒450-6403 名古屋市中村区名駅三丁目28番12号 大名古屋ビルヂング3階。

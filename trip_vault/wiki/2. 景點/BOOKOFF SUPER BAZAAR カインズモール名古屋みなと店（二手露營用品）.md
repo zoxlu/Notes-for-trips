@@ -1,7 +1,8 @@
 ---
 title: BOOKOFF SUPER BAZAAR カインズモール名古屋みなと店（二手露營用品）
 type: place
-place_category: [逛街尋寶]
+place_category:
+  - 逛街尋寶
 region: nagoya-city
 station: 稲永站（あおなみ線）
 district: 港區
@@ -11,7 +12,8 @@ image_source: 來自官網 bookoff.co.jp（門市戶外用品宣傳圖）
 status: researching
 priority: optional
 shared_by: "[[繃皮雞]]"
-raw_note: ["2026-08-01 露營用品店"]
+raw_note:
+  - 2026-08-01 露營用品店
 source_url: https://www.bookoff.co.jp/inbound/zhtw/
 official_url: https://www.bookoff.co.jp/shop/shop20423.html
 source_label: BOOKOFF 官方網站免稅購物頁／門市頁面
@@ -31,7 +33,7 @@ aliases:
   - BOOKOFF SUPER BAZAAR 名古屋港店
   - ブックオフ カインズモール名古屋みなと店
   - Bookoff Nagoya Minato
-興致指數:
+興致指數: 5
 ---
 ## 簡介
 BOOKOFF二手連鎖集團旗下的大型複合門市，位於カインズホーム名古屋みなと賣場2樓，以「東海地區最大級」的二手露營／戶外用品賣場聞名，帳篷、天幕、營燈等從復古到近年款式一應俱全，也有高級精品區與收藏玩具模型區，並提供外國旅客免稅服務。

@@ -1,7 +1,8 @@
 ---
-title: ブルーボトルコーヒー 名古屋栄カフェ
+title: Blue Bottle Coffee ブルーボトルコーヒー 名古屋栄カフェ
 type: food
-food_category: [點心輕食]
+food_category:
+  - 點心輕食
 region: nagoya-city
 station: 榮站（地下鐵東山線・名城線）
 district: 榮
@@ -11,12 +12,13 @@ cuisine: 咖啡、輕食、甜點
 price_range: 布丁990円（含稅）
 booking_required: false
 opening_hours: 08:00-20:00
-image: https://www.fashion-press.net/img/news/109725/xMQ.jpg
-image_source: 來自 fashion-press.net 報導照片
+image: https://poiend-pctr.c.yimg.jp/RbvIgEqcLh0WnvgGGwVVgTznkURkbN_CqctDurJdF3Qr278No3mTpigoeZBf4_1-IlkMnudJsRZFZxQBNqkZUbFzOZT2dtHQgF8UfM5Brhc6i4FVW_I7QMuc_nkccPXNLfFJi7P2e2kDOMvk4PhNLvHinOjflD_shVjA9VsQR2qpYlwosK-6jJ96EKBzd-27lKxoqsDGpM4HmKSliXaqkWgjJhpo-dx5K5CNNIQLkZUYhBzE9IjiR6o1ZQVImKrR-bQbLYqnSm0FKE6aUovVtB0be6s5Y4SOp9_CWSh7yOA=
+image_source: 來自 Yahoo!地圖 店家頁面使用者實拍照片（原 fashion-press.net 圖片有防盜連機制，網站上無法顯示，已更換）
 status: researching
 priority: nice-to-have
 shared_by: "[[繃皮蛇]]"
-raw_note: ["2026-07-31 榮"]
+raw_note:
+  - 2026-07-31 榮
 source_url: https://www.youtube.com/watch?v=xHyq_3Ae38Y#t=1:40
 official_url: https://store.bluebottlecoffee.jp/
 source_label: YouTube頻道「Nick」的名古屋榮站週末Staycation介紹影片
@@ -34,12 +36,12 @@ tags:
 aliases:
   - Blue Bottle Coffee 名古屋
   - 藍瓶咖啡 名古屋栄
-興致指數:
+興致指數: 5
 ---
 ## 簡介
 Blue Bottle Coffee在中部地區、名古屋的第一家分店，位於[[中日ビル（中日大樓）]]1樓，緊鄰榮站地下街出入口，開幕後人氣很高。地址：愛知県名古屋市中区栄4-1-1 中日ビル 1F。
 
-![代表圖](https://www.fashion-press.net/img/news/109725/xMQ.jpg)
+![代表圖](https://poiend-pctr.c.yimg.jp/RbvIgEqcLh0WnvgGGwVVgTznkURkbN_CqctDurJdF3Qr278No3mTpigoeZBf4_1-IlkMnudJsRZFZxQBNqkZUbFzOZT2dtHQgF8UfM5Brhc6i4FVW_I7QMuc_nkccPXNLfFJi7P2e2kDOMvk4PhNLvHinOjflD_shVjA9VsQR2qpYlwosK-6jJ96EKBzd-27lKxoqsDGpM4HmKSliXaqkWgjJhpo-dx5K5CNNIQLkZUYhBzE9IjiR6o1ZQVImKrR-bQbLYqnSm0FKE6aUovVtB0be6s5Y4SOp9_CWSh7yOA=)
 
 ## 交通方式
 榮站直通[[中日ビル（中日大樓）]]。

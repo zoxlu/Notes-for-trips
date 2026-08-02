@@ -3,7 +3,6 @@ title: 名古屋鄉土美食 票選TOP20（總覽）
 type: food
 food_category:
   - 必吃清單
-  - 名古屋鄉土限定
 region: nagoya-city
 station:
 district:
@@ -13,7 +12,8 @@ image_source:
 status: researching
 priority: optional
 shared_by: "[[繃皮雞]]"
-raw_note: ["2026-07-18 名古屋的票選美食"]
+raw_note:
+  - 2026-07-18 名古屋的票選美食
 source_url: https://nagoya-meshi.jp/nagoyameshi02_han.html
 official_url:
 source_label: 名古屋鄉土美食票選網站
@@ -27,7 +27,6 @@ opening_hours:
 tags:
   - type/food
   - food_category/必吃清單
-  - food_category/名古屋鄉土限定
   - region/nagoya-city
   - status/researching
   - priority/optional

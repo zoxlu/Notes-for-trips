@@ -5,8 +5,8 @@ region: nagoya-city
 station: 瑞穗區役所站（地下鐵櫻通線）
 district: 瑞穗區
 location: 35.1321614,136.9442827
-image:
-image_source:
+image: https://poiend-pctr.c.yimg.jp/RbvIgEqcLh0WnvgGGwVVgTznkURkbN_CqctDurJdF3QzVNlkcq0W__pRaWgCqCHpHEeYayubk2Qeckb8z4df3kbi5JwNvSprVVPkNYjgH9GCwCD7MI9x82E7PqAGL03eZUgsqSKpM-pvjC4jq_QG-SjnFvOn3ZLX22ilZtKv8NPJAfO5FW-71DG94HqeTMbUh19M9l2jR6UphTix9k27BT-nQ0l14d1JoupLzh9c2U1M-gD8gMtOB0Xyu1-AMR53iNToEBj615oL1q8ZIDRf0IKd5jhUsfGnQYnp_c0X3yU=
+image_source: 來自 Yahoo!地圖 店家頁面使用者實拍照片
 status: researching
 priority: optional
 shared_by: "[[繃皮雞]]"
@@ -33,8 +33,7 @@ aliases:
 ## 簡介
 名古屋當地評價很高的高級超市，以生鮮食材和熟食便當品質著稱。地址：愛知県名古屋市瑞穂区初日町2-57。
 
-## ⚠️ 待確認
-- 圖片待補
+![代表圖](https://poiend-pctr.c.yimg.jp/RbvIgEqcLh0WnvgGGwVVgTznkURkbN_CqctDurJdF3QzVNlkcq0W__pRaWgCqCHpHEeYayubk2Qeckb8z4df3kbi5JwNvSprVVPkNYjgH9GCwCD7MI9x82E7PqAGL03eZUgsqSKpM-pvjC4jq_QG-SjnFvOn3ZLX22ilZtKv8NPJAfO5FW-71DG94HqeTMbUh19M9l2jR6UphTix9k27BT-nQ0l14d1JoupLzh9c2U1M-gD8gMtOB0Xyu1-AMR53iNToEBj615oL1q8ZIDRf0IKd5jhUsfGnQYnp_c0X3yU=)
 
 ## 原始連結備註
 > 來源檔案：2026-08-01 超市

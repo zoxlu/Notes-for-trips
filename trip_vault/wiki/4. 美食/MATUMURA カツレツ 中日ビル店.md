@@ -1,7 +1,8 @@
 ---
 title: MATUMURA カツレツ 中日ビル店
 type: food
-food_category: [名古屋鄉土限定]
+food_category:
+  - 名古屋鄉土限定
 region: nagoya-city
 station: 榮站（地下鐵東山線・名城線）
 district: 榮
@@ -16,7 +17,8 @@ image_source: 來自品牌官網 katuretu-matumura.com（法式炸豬排料理�
 status: researching
 priority: nice-to-have
 shared_by: "[[繃皮蛇]]"
-raw_note: ["2026-07-31 榮"]
+raw_note:
+  - 2026-07-31 榮
 source_url: https://www.youtube.com/watch?v=xHyq_3Ae38Y#t=15:24
 official_url: https://katuretu-matumura.com/menu-matumura-bis/
 source_label: YouTube頻道「Nick」的名古屋榮站週末Staycation介紹影片
@@ -34,7 +36,7 @@ tags:
 aliases:
   - MATUMURA bis
   - 松むら bis
-興致指數:
+興致指數: 5
 ---
 ## 簡介
 [[MATUMURA カツレツ 大名古屋ビルヂング店|カツレツ MATUMURA 大名古屋ビルヂング店]]在[[中日ビル（中日大樓）]]3樓開設的分店（bis），一樣主打低溫熟成豬肉製作的法式味噌豬排。地址：愛知県名古屋市中区栄4-1-1 中日ビル 3F。
