@@ -19,8 +19,7 @@ image_source: 來自官網 harbs.co.jp
 status: researching
 priority: nice-to-have
 shared_by: "[[繃皮蛇]]"
-raw_note:
-  - 2026-07-31 名古屋美食精選
+raw_note: ["2026-07-31 名古屋美食精選", "2026-08-04 美食以及三井開箱"]
 source_url: https://www.youtube.com/watch?v=lbncwqZanFY#t=5:36
 official_url: https://www.harbs.co.jp/
 source_label: YouTube頻道「Nick」的名古屋美食精選介紹影片
@@ -57,6 +56,8 @@ aliases:
 - 蛋糕會隨季節更換口味，秋季限定的栗子蛋糕評價很高；鮮奶油口感綿密、香濃不膩（YouTube：Nick的名古屋美食精選）
 - 外帶不會主動附刀叉餐具，需要自己開口跟店家要（YouTube：Nick的名古屋美食精選）
 - 單點價格逐年調漲，可上官網查最新菜單與價格（YouTube：Nick的名古屋美食精選）
+- 假日中午時段經常大排長龍，曾遇過要等2小時才能入座的情況，不想久候可以考慮改外帶（YouTube：Nick的三井花園開箱影片）
+- 外帶會用保冷袋裝，但保冷袋要另外收費，一個日幣50元（YouTube：Nick的三井花園開箱影片）
 
 ## 原始連結備註
 > 來源檔案：2026-07-31 名古屋美食精選

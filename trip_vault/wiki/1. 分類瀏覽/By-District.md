@@ -17,6 +17,8 @@ tags: [index]
 - [[Tsubame Bread & Milk 名駅店]] — 牛奶吐司早餐（nice-to-have）
 - [[山 名古屋駅店（ワンランク上の世界の山ちゃん）]] — 手羽先（nice-to-have）
 - [[矢場とん 名鉄百貨店本店]] — 味噌豬排（nice-to-have）
+- [[艾許奶油 Échiré エシレ・パティスリー オ ブール名古屋]] — JR名古屋高島屋內，法國エシレ發酵奶油甜點（nice-to-have）
+- [[モーニング喫茶リヨン]] — 三井ビル本館B1，名古屋喫茶モーニング文化（nice-to-have）
 - [[鳥開總本家]] — 名駅エスカ店，名古屋交趾雞親子丼（nice-to-have）
 - [[小雞布丁蛋糕（ ぴよりん ）]] — 小雞造型布丁蛋糕伴手禮（nice-to-have）
 - [[ESCA地下街]] — 新幹線口地下街，名古屋鄉土美食餐廳街（optional）
@@ -60,6 +62,9 @@ tags: [index]
 - [[覚王山フルーツ大福 弁才天 大須店]] — 水果大福（nice-to-have）
 - [[屋台ラーメン ヤムヤム]] — 昭和復古路邊屋台拉麵（nice-to-have）
 - [[生鮮食品館サノヤ]] — 全年無休生鮮超市（optional）
+- [[矢場とん 矢場町本店]] — 味噌豬排，矢場とん本店（nice-to-have）
+- [[手羽先むすめ]] — 多口味手羽先比較（nice-to-have）
+- [[覚王山フルーツ大福 弁才天 上前津店]] — 水果大福（nice-to-have）
 
 ## 榮
 - [[中部電力 MIRAI TOWER]] — 日本最古電視塔（nice-to-have）
@@ -86,6 +91,7 @@ tags: [index]
 - [[Blue Bottle Coffee ブルーボトルコーヒー 名古屋栄カフェ]] — 名古屋第一家Blue Bottle Coffee分店（nice-to-have）
 - [[Saison Factory セゾンファクトリー 松坂屋名古屋店]] — 果醬果汁精品店，超市（optional）
 - [[北野Ace 名古屋三越栄店]] — 全國精選食材專門店，超市（optional）
+- [[ひつまぶし花岡]] — 鰻魚飯，五種吃法＋梅茶漬（nice-to-have）
 
 ## 港區金城ふ頭
 - [[LEGOLAND Japan]] — 樂高主題樂園（nice-to-have）
@@ -101,6 +107,7 @@ tags: [index]
 
 ## 常滑
 - [[常滑（陶瓷散步道・招財貓街）]] — 常滑燒陶瓷散步道與招財貓街（nice-to-have）
+- [[俺の金の焼き芋（足湯カフェ）]] — 足湯咖啡館，常滑燒土管窯烤地瓜（optional）
 
 ## 瀨戶
 - [[瀨戶（陶藝之城）]] — 日本六古窯之一，招財貓與陶藝文化發源地（nice-to-have）
