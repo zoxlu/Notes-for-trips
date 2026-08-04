@@ -57,6 +57,10 @@ function loadGoogleMaps(apiKey: string): Promise<void> {
 // fitBounds() 把地圖拉到街道等級、失去跟周圍的相對位置感
 const CLUSTER_CLICK_MAX_ZOOM = 18
 
+// 地圖初始化時的縮放層級，「回到起點」按鈕會拉回這個值（跟初始化時的 center 一起
+// 構成使用者一開始看到的視角）
+const DEFAULT_ZOOM = 16
+
 // 群聚圓圈的顏色：套件不指定的話預設是 Google 自己的藍色，跟這個地圖其餘標記／膠囊
 // 的暖色系配色不搭，這裡改用跟膠囊（notemap.scss 的 $map-tertiary / $map-dark）
 // 同一組顏色，讓群聚圓圈看起來也是同一套設計語言的一部分，而不是外來的元件
@@ -259,6 +263,24 @@ function createFullscreenButton(canvas: HTMLElement): HTMLElement {
   return button
 }
 
+// 使用者拖曳/縮放地圖找地點後，容易找不回一開始「以自己所在位置為中心」的視角，
+// 提供一個按鈕直接跳回最初的 center/zoom（跟「你在這裡」常駐標籤是同一個座標，
+// 不需要另外記錄，直接沿用初始化時算好的值即可）
+function createHomeButton(
+  map: google.maps.Map,
+  home: { center: google.maps.LatLngLiteral; zoom: number },
+): HTMLElement {
+  const button = document.createElement("button")
+  button.type = "button"
+  button.className = "note-map-home-button"
+  button.textContent = "回到起點"
+  button.addEventListener("click", () => {
+    map.setCenter(home.center)
+    map.setZoom(home.zoom)
+  })
+  return button
+}
+
 // 全站只註冊一次（不要放在 renderMap 裡面，每次換頁重畫地圖都會重新註冊，
 // 舊的監聽器會一直累積、永遠不會被清掉），觸發時掃過目前畫面上所有地圖，
 // 更新各自全螢幕按鈕的文字，並切換滾輪縮放要不要按 Ctrl
@@ -293,7 +315,7 @@ function renderMap(container: HTMLElement, oldCanvas: HTMLElement, payload: Note
   const center: google.maps.LatLngLiteral = { lat: payload.self.lat, lng: payload.self.lng }
   const map = new google.maps.Map(canvas, {
     center,
-    zoom: 16,
+    zoom: DEFAULT_ZOOM,
     styles: MAP_STYLES,
     // 單純瀏覽用途不需要的控制項全部關掉：地圖/衛星切換、Street View 小人拖拉、
     // 鍵盤快捷鍵提示、地圖旋轉、方向平移面板。保留縮放 +/- 按鈕，操作上還是有幫助。
@@ -317,7 +339,14 @@ function renderMap(container: HTMLElement, oldCanvas: HTMLElement, payload: Note
     // 標記/文字顏色是搭配亮色地圖設計的，深色地圖底會對不上
     colorScheme: google.maps.ColorScheme.LIGHT,
   })
-  map.controls[google.maps.ControlPosition.TOP_RIGHT].push(createFullscreenButton(canvas))
+  // 兩顆按鈕包在同一個容器裡上下排列，而不是各自 push() 給 Google Maps 排橫排：
+  // Google 對同一個 ControlPosition 底下多個控制項預設是排成一列，順序也是照它自己
+  // 的內部邏輯（新 push 的會插到前一個的左邊），不好直接控制成「上下疊放」
+  const controls = document.createElement("div")
+  controls.className = "note-map-controls"
+  controls.appendChild(createFullscreenButton(canvas))
+  controls.appendChild(createHomeButton(map, { center, zoom: DEFAULT_ZOOM }))
+  map.controls[google.maps.ControlPosition.TOP_RIGHT].push(controls)
   // 存一份 map 參照在 canvas 節點上，讓全站共用的 fullscreenchange 監聽器可以找到
   // 「現在是哪個地圖進入全螢幕」，藉此切換該地圖的 gestureHandling
   ;(canvas as unknown as { __noteMap?: google.maps.Map }).__noteMap = map
@@ -458,7 +487,7 @@ function renderMap(container: HTMLElement, oldCanvas: HTMLElement, payload: Note
             // 但封頂避免圓圈大到蓋住太多背景地圖
             scale: Math.min(14 + count * 0.6, 22),
           },
-          label: { text: String(count), color: CLUSTER_TEXT, fontSize: "13px", fontWeight: "700" },
+          label: { text: String(count), color: CLUSTER_TEXT, fontSize: "14px", fontWeight: "700" },
           zIndex: 1000 + count,
         }),
     },

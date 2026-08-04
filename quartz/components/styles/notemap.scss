@@ -8,6 +8,10 @@ $map-lightgray: #ede2df;
 $map-gray: #c3aba4;
 $map-dark: #2b2422;
 $map-tertiary: #c48a8f;
+// 只給「你在這裡」標籤用的強調色：故意選跟其他暖色系（$map-tertiary 那組玫瑰色）
+// 對比的藍色，也是 Google 地圖慣用的「目前位置」藍，讓這一顆膠囊能一眼跟其他
+// 同色系的地點膠囊分開，不用靠文字內容才認得出來
+$map-self-accent: #3a6ea5;
 
 .note-map-container {
   margin: 0 0 1.75rem;
@@ -85,7 +89,7 @@ $map-tertiary: #c48a8f;
 .note-map-infowindow-distance {
   margin: 0 0 0.2rem;
   font-weight: 700;
-  font-size: 0.88rem;
+  font-size: 1.05rem;
   color: $map-dark;
   white-space: nowrap;
 }
@@ -98,7 +102,7 @@ $map-tertiary: #c48a8f;
   display: block;
   margin: 0;
   font-weight: 700;
-  font-size: 0.82rem;
+  font-size: 0.98rem;
   white-space: nowrap;
   text-decoration: underline;
 }
@@ -132,46 +136,64 @@ $map-tertiary: #c48a8f;
   transform: translate(-50%, 10px);
   pointer-events: none;
   font-weight: 700;
-  font-size: 0.72rem;
+  font-size: 0.9rem;
   color: $map-light;
   white-space: nowrap;
   background: $map-tertiary;
-  padding: 0.1rem 0.45rem;
+  padding: 0.15rem 0.55rem;
   border-radius: 999px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 }
 
 // 自身標記的常駐標籤（「你在這裡：地點名稱」），用 OverlayView 自己畫、自己控制位置，
 // 不會像 InfoWindow 一樣可以被使用者關掉。pointer-events: none 避免這個純顯示用的
-// 標籤擋住底下地圖的拖曳/點擊操作
+// 標籤擋住底下地圖的拖曳/點擊操作。
+// 底色用 $map-self-accent（藍），跟其他地點的名稱膠囊（$map-tertiary 玫瑰色）明顯不同，
+// 地圖上只有這一顆是「使用者自己」，需要一眼就跟其他一堆同色膠囊分開
 .note-map-self-label {
   position: absolute;
   transform: translate(-50%, calc(-100% - 24px));
   pointer-events: none;
   font-weight: 700;
-  font-size: 0.85rem;
+  font-size: 1.05rem;
   color: $map-light;
   white-space: nowrap;
-  background: $map-tertiary;
-  padding: 0.2rem 0.6rem;
+  background: $map-self-accent;
+  padding: 0.25rem 0.7rem;
   border-radius: 999px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
-.note-map-fullscreen-button {
+.note-map-controls {
   margin: 10px;
-  padding: 0.4rem 0.8rem;
-  border: none;
-  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+// 造型比照地圖上其他膠囊（名稱標籤／你在這裡）的語彙：全圓角＋$map-tertiary 邊框，
+// 讓按鈕跟其他自訂物件看起來是同一套設計，而不是 Google 控制項那種直角方塊。
+// 預設用淺色底＋深色字（跟膠囊的「實心底＋淺色字」反過來），是刻意的：這裡是「可以
+// 點的按鈕」，跟純顯示用的膠囊要有辨識度差異；hover 時反轉成實心 $map-tertiary 底，
+// 呼應膠囊配色之餘也給出清楚的互動回饋
+.note-map-fullscreen-button,
+.note-map-home-button {
+  padding: 0.45rem 0.9rem;
+  border: 1px solid $map-tertiary;
+  border-radius: 999px;
   background: $map-light;
   color: $map-dark;
   font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-size: 0.85rem;
+  font-weight: 700;
   cursor: pointer;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
 
   &:hover {
-    background: $map-lightgray;
+    background: $map-tertiary;
+    color: $map-light;
   }
 }
