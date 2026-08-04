@@ -62,6 +62,7 @@ title:              # 新建立筆記時，名稱順序為「中文 → 英文 �
 type:              # place / food / transport / accommodation / supermarket
 region:             # nagoya-city / transit
 station:            # 最近地鐵站或車站，例如：名古屋站 / 榮站 / 藤が丘站 / 南木曽駅
+lines: []           # 該車站經過的捷運/鐵路路線（可多選陣列），用於首頁「路線」篩選，允許值見下方「路線清單」。同一個站如果是轉乘站（多條路線經過），全部列出來，例如榮站是 [地下鐵東山線, 地下鐵名城線]
 district:           # 商圈/區域，例如：榮、大須、妻籠宿、馬籠宿
 location:           # 經緯度，格式 lat,lng（例如 35.1709,136.8815），給 Obsidian Map View plugin 用，也可轉 Google Maps 連結。transport 類型可略過（起訖點不是單一座標）
 image:              # 代表圖，見下方「代表圖片怎麼抓」規則
@@ -88,6 +89,35 @@ aliases: []        # 這個地點/人物的其他常見稱呼，供交叉連結�
 - `accommodation` 專用：`nights`、`price_per_night`、`meal_plan`、`onsen`
 - `transport` 專用：`transport_mode`、`route_from`、`route_to`、`duration`、`cost`
 - `supermarket` 專用：`opening_hours`（營業時間）。不需要 `place_category`/`food_category`，超市是獨立類型，首頁篩選按鈕直接比對 `type: supermarket`，不用子分類。
+
+### 車站與路線命名規則（`station` / `lines`）
+
+**車站名稱格式**：
+- 一律使用「站」，不使用「駅」或「驛」（例如「榮站」不寫「榮駅」或「榮驛」）
+- 格式為「站名（系統／路線）」，例如「榮站（地下鐵東山線・名城線）」
+- 同一個站如果有多條路線經過，路線資訊用「・」分隔列在同一個括號內，不要為同一個
+  站的不同路線各自建立一個 `station` 值
+- 若車站有改名紀錄（例如市役所站於 2023 年改名為名古屋城站），一律使用**現在的
+  正式站名**，不使用舊站名
+- 新增素材、判斷 `station` 欄位時，處理前先檢查 `wiki/1.分類瀏覽/By-Station.md`
+  是否已經有相同車站的既有寫法，沿用既有寫法，不要自己重新造一個新的寫法版本
+
+**`lines` 欄位（路線，可多選陣列）**：首頁「路線」篩選讀取這個欄位，不是直接讀
+`station` 欄位裡括號內的文字。允許值（路線清單，看到新路線可以擴充，但盡量沿用
+下面已有的寫法，不要自己發明新名稱）：
+
+- 地下鐵東山線 / 地下鐵名城線 / 地下鐵鶴舞線 / 地下鐵櫻通線 / 地下鐵名港線 /
+  地下鐵上飯田線
+- 名鐵名古屋本線 / 名鐵瀬戸線 / 名鐵犬山線 / 名鐵常滑線
+- JR東海道線 / JR中央線
+- あおなみ線
+- Linimo（東部丘陵線）
+
+判斷一個車站屬於哪些路線時，直接對照 `station` 欄位括號內已經寫好的路線資訊即可
+（例如「榮站（地下鐵東山線・名城線）」→ `lines: [地下鐵東山線, 地下鐵名城線]`）；
+如果 `station` 欄位只寫「名鐵」沒有指名哪一條線（例如舊資料留下的「常滑駅（名鐵）」
+這種寫法），要主動查證確認實際路線後才填入 `lines`，不要用籠統的「名鐵」當作
+`lines` 的值。
 
 ### 子分類判斷原則（`place_category` / `food_category`）
 
@@ -209,6 +239,7 @@ aliases: []        # 這個地點/人物的其他常見稱呼，供交叉連結�
 Tag 要跟 frontmatter 欄位對應，方便 Obsidian 標籤面板也能篩選：
 
 - `#station/名古屋站`、`#station/榮站` 等（用實際站名，空格用連字號）
+- `#line/地下鐵東山線`、`#line/名鐵犬山線` 等（僅供 Obsidian 標籤面板篩選用，可多選多個 tag）
 - `#district/榮`、`#district/大須`、`#district/妻籠宿`
 - `#meal/lunch`、`#meal/dinner`（僅美食筆記）
 - `#type/place`、`#type/food`、`#type/supermarket` 等
@@ -221,7 +252,7 @@ Tag 要跟 frontmatter 欄位對應，方便 Obsidian 標籤面板也能篩選�
 以下每個檔案都要在你處理完 raw/ 後**整份重寫**（不是增量修改），內容是分組好的 wikilink 清單，方便家人直接點：
 
 - `Home.md` — 入口頁，簡短說明 + 連到以下所有 index
-- `By-Station.md` — 依 `station` 分組，每個站名一個 `##` 標題，底下列出所有相關筆記連結
+- `By-Station.md` — 依 `station` 分組，每個站名一個 `##` 標題，底下列出所有相關筆記連結（這份 index 頁面仍然依車站分組，跟首頁篩選改用 `lines` 是兩件事——`By-Station.md` 給想找特定車站的人查，首頁篩選則是給瀏覽時快速縮小範圍用）
 - `By-District.md` — 依 `district` 分組
 - `By-Meal.md` — 只列 `type: food` 的筆記，依 `meal_slot` 分組（早餐/午餐/晚餐/點心）
 - `By-Type.md` — 依 `type` 分組（景點/美食/交通/住宿/超市）；`place` 與 `food` 底下再依 `place_category` / `food_category` 各自細分小節（子分類是疊加式的，同一則筆記可能同時出現在多個子分類小節底下）
