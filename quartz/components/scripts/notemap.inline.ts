@@ -16,11 +16,6 @@ type NoteMapPayload = {
   others: NoteMapPoint[]
 }
 
-// 同一顆地圖標記查過一次路線後就快取起來（快取的是完整路線結果，不是只有距離文字，
-// 這樣同一次 Directions API 呼叫可以同時滿足「顯示距離文字」跟「畫出路線」兩個用途），
-// 同一次頁面停留期間重複點擊不會重打 API
-const directionsCache = new Map<number, Promise<google.maps.DirectionsResult | undefined>>()
-
 let googleMapsLoader: Promise<void> | undefined
 
 // InfoWindow 的 DOM 節點不是掛在地圖的 canvas 底下，換頁時就算把 canvas 整個換掉，
@@ -105,9 +100,12 @@ function getWalkingRoute(
   directionsService: google.maps.DirectionsService,
   origin: google.maps.LatLngLiteral,
   destination: google.maps.LatLngLiteral,
+  // 快取本身由呼叫端（renderMap）傳入，見該處註解：快取的生命週期必須綁定單一次
+  // renderMap()（也就是單一次頁面停留），不能是模組層級的全域變數
+  cache: Map<number, Promise<google.maps.DirectionsResult | undefined>>,
   cacheKey: number,
 ): Promise<google.maps.DirectionsResult | undefined> {
-  const cached = directionsCache.get(cacheKey)
+  const cached = cache.get(cacheKey)
   if (cached) return cached
 
   const promise = new Promise<google.maps.DirectionsResult | undefined>((resolve) => {
@@ -118,7 +116,7 @@ function getWalkingRoute(
       },
     )
   })
-  directionsCache.set(cacheKey, promise)
+  cache.set(cacheKey, promise)
   return promise
 }
 
@@ -244,21 +242,66 @@ function buildInfoWindowContent(point: NoteMapPoint): HTMLElement {
   return container
 }
 
+// iOS Safari（手機/平板）完全沒有實作標準 Fullscreen API：Element.requestFullscreen
+// 在 iOS Safari 上不存在，也沒有 webkit 前綴版本可用（iOS 只有 <video> 專屬的
+// webkitEnterFullscreen，不適用一般 <div>）。桌機版 Safari 早期版本則是需要
+// webkit 前綴。用「方法存不存在」偵測，而不是猜 UA，才不會因為瀏覽器更新而失準
+function getFullscreenApi(el: HTMLElement) {
+  // 特意轉型成完全抹掉型別資訊的 Record，不用 HTMLElement/Document 原本的型別：
+  // lib.dom.d.ts 把 requestFullscreen / exitFullscreen 宣告成一定存在的方法（因為
+  // 標準規格是這樣寫的），TypeScript 因此會認定底下的存在性檢查「一定是 true」而
+  // 報錯，但這兩個方法在 iOS Safari 上實際上就是 undefined，檢查是必要的執行期防呆
+  const elAny = el as unknown as Record<string, (() => Promise<void> | void) | undefined>
+  const docAny = document as unknown as Record<
+    string,
+    (() => Promise<void> | void) | Element | undefined
+  >
+
+  const request = elAny.requestFullscreen ?? elAny.webkitRequestFullscreen
+  const exit = docAny.exitFullscreen ?? docAny.webkitExitFullscreen
+  const isActive = () => document.fullscreenElement === el || docAny.webkitFullscreenElement === el
+
+  if (typeof request !== "function" || typeof exit !== "function") return undefined
+  return { request: request.bind(el), exit: exit.bind(document), isActive }
+}
+
+// 進入/退出「偽全螢幕」：不支援 Fullscreen API 的瀏覽器（主要是 iOS Safari）改用
+// CSS position: fixed 把畫布蓋滿整個視窗畫面，視覺效果等同全螢幕，只是不是瀏覽器
+// 原生的全螢幕模式（不會觸發 fullscreenchange 事件，狀態切換得自己手動處理）
+function setPseudoFullscreen(canvas: HTMLElement, map: google.maps.Map, on: boolean) {
+  canvas.classList.toggle("note-map-canvas--pseudo-fullscreen", on)
+  document.documentElement.classList.toggle("note-map-pseudo-fullscreen-lock", on)
+  const button = canvas.querySelector<HTMLButtonElement>(".note-map-fullscreen-button")
+  if (button) button.textContent = on ? "退出全螢幕" : "全螢幕"
+  map.setOptions({ gestureHandling: on ? "greedy" : "cooperative" })
+  // 容器尺寸整個變了（一般大小 ↔ 滿版視窗），觸發 resize 讓地圖重新量測，
+  // 不然畫面會維持切換前的尺寸，直到使用者手動拖曳/縮放才會校正
+  google.maps.event.trigger(map, "resize")
+}
+
 // 自訂文字版全螢幕按鈕，取代 Google 內建那個不夠直覺的小圖示。
 // 用 map.controls[...].push() 加進去（不是外部另外擺一個 <button>）：
 // 這樣按鈕本身是 canvas 的子節點，進入全螢幕後（fullscreen 只會顯示目標元素的子樹）
 // 這顆按鈕還是看得到、按得到，才能在全螢幕模式下自己按退出
-function createFullscreenButton(canvas: HTMLElement): HTMLElement {
+function createFullscreenButton(canvas: HTMLElement, map: google.maps.Map): HTMLElement {
   const button = document.createElement("button")
   button.type = "button"
   button.className = "note-map-fullscreen-button"
   button.textContent = "全螢幕"
   button.addEventListener("click", () => {
-    if (document.fullscreenElement === canvas) {
-      document.exitFullscreen()
-    } else {
-      canvas.requestFullscreen()
+    const api = getFullscreenApi(canvas)
+    if (api) {
+      if (api.isActive()) {
+        api.exit()
+      } else {
+        api.request()
+      }
+      return
     }
+    // 沒有 Fullscreen API 可用，改走偽全螢幕；用 class 本身的狀態判斷目前是否
+    // 已經在偽全螢幕中，不需要另外存一個布林變數
+    const turningOn = !canvas.classList.contains("note-map-canvas--pseudo-fullscreen")
+    setPseudoFullscreen(canvas, map, turningOn)
   })
   return button
 }
@@ -296,6 +339,19 @@ document.addEventListener("fullscreenchange", () => {
   })
 })
 
+// 偽全螢幕不是瀏覽器原生功能，不會觸發 fullscreenchange，也就不會自動響應 Esc，
+// 這裡額外補上：Esc 鍵按下時掃過目前畫面上所有處在偽全螢幕狀態的地圖，一併退出，
+// 使用體驗上跟原生全螢幕（按 Esc 可退出）一致
+document.addEventListener("keydown", (event) => {
+  if (event.key !== "Escape") return
+  document
+    .querySelectorAll<HTMLElement>(".note-map-canvas--pseudo-fullscreen")
+    .forEach((canvas) => {
+      const map = (canvas as unknown as { __noteMap?: google.maps.Map }).__noteMap
+      if (map) setPseudoFullscreen(canvas, map, false)
+    })
+})
+
 function renderMap(container: HTMLElement, oldCanvas: HTMLElement, payload: NoteMapPayload) {
   // Quartz 的 SPA 換頁是用 micromorph 對 DOM 做 diff/patch，不是整頁重建，
   // 這個 canvas 節點很可能是「上一則筆記地圖」留下來、被重複使用的同一個 DOM 元素。
@@ -311,6 +367,10 @@ function renderMap(container: HTMLElement, oldCanvas: HTMLElement, payload: Note
   canvas.style.height = "300px"
   canvas.style.width = "100%"
   oldCanvas.replaceWith(canvas)
+  // 換頁時舊 canvas 節點直接被換掉丟棄，如果換頁當下剛好處在偽全螢幕狀態，
+  // 不會有機會走到 setPseudoFullscreen(false) 那條路徑，鎖住背景捲動的 class
+  // 會一直留在 <html> 上，這裡保險起見在每次重新渲染時都清一次
+  document.documentElement.classList.remove("note-map-pseudo-fullscreen-lock")
 
   const center: google.maps.LatLngLiteral = { lat: payload.self.lat, lng: payload.self.lng }
   const map = new google.maps.Map(canvas, {
@@ -344,7 +404,7 @@ function renderMap(container: HTMLElement, oldCanvas: HTMLElement, payload: Note
   // 的內部邏輯（新 push 的會插到前一個的左邊），不好直接控制成「上下疊放」
   const controls = document.createElement("div")
   controls.className = "note-map-controls"
-  controls.appendChild(createFullscreenButton(canvas))
+  controls.appendChild(createFullscreenButton(canvas, map))
   controls.appendChild(createHomeButton(map, { center, zoom: DEFAULT_ZOOM }))
   map.controls[google.maps.ControlPosition.TOP_RIGHT].push(controls)
   // 存一份 map 參照在 canvas 節點上，讓全站共用的 fullscreenchange 監聽器可以找到
@@ -395,6 +455,11 @@ function renderMap(container: HTMLElement, oldCanvas: HTMLElement, payload: Note
   if (payload.others.length === 0) return
 
   const directionsService = new google.maps.DirectionsService()
+  // 快取一定要在這裡（每次 renderMap 呼叫）重新建立，不能拉到模組層級當全域變數：
+  // 快取 key 只是 otherMarkers 裡的陣列索引（0, 1, 2...），如果整個網站共用同一份
+  // 快取，換到「自己所在位置不同」的另一則筆記時，同樣的索引值會命中上一則筆記
+  // 留下的快取結果，顯示出「起點不是目前這則筆記自己位置」的錯誤路線
+  const directionsCache = new Map<number, Promise<google.maps.DirectionsResult | undefined>>()
   // 點附近地點時順便畫出走路路線（藍色點狀線）。suppressMarkers：路線起訖點不要
   // 再疊一組 Google 預設的紅色圖釘，我們自己的標記已經有了。preserveViewport：
   // 只負責畫線，不要自作主張改變地圖目前的中心點/縮放層級
@@ -448,7 +513,13 @@ function renderMap(container: HTMLElement, oldCanvas: HTMLElement, payload: Note
 
       // 等 Directions API 的結果回來、路線畫完之後，才開資訊視窗（不是點擊當下馬上開、
       // 之後才補資料），讓 InfoWindow.open() 一定是這整個流程最後一步
-      getWalkingRoute(directionsService, center, position, otherMarkers.indexOf(marker)).then(
+      getWalkingRoute(
+        directionsService,
+        center,
+        position,
+        directionsCache,
+        otherMarkers.indexOf(marker),
+      ).then(
         (result) => {
           const leg = result?.routes[0]?.legs[0]
           const distanceEl = content.querySelector<HTMLElement>(".note-map-infowindow-distance")

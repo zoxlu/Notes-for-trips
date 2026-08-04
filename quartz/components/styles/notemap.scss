@@ -29,6 +29,28 @@ $map-self-accent: #3a6ea5;
   background: $map-lightgray;
 }
 
+// 「偽全螢幕」：給不支援 Fullscreen API 的瀏覽器用（主要是 iOS Safari，
+// Element.requestFullscreen 在 iOS Safari 完全不存在），notemap.inline.ts 偵測到
+// 沒有原生 API 可用時，改用這個 class 把畫布用 position: fixed 蓋滿整個視窗畫面，
+// 視覺效果等同全螢幕。!important 是必要的：要蓋掉上面 height: 300px / width: 100%
+// 這組 inline 寫死的尺寸（inline style 的優先權比一般 class 高，一般寫法蓋不掉）
+.note-map-canvas--pseudo-fullscreen {
+  position: fixed !important;
+  inset: 0;
+  z-index: 999;
+  width: 100vw !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  border-radius: 0;
+}
+
+// 偽全螢幕期間背景頁面鎖住不能捲動，體感才會跟瀏覽器原生全螢幕一致
+// （原生全螢幕背後就是離開了一般文件流，本來就滑不到頁面）。
+// notemap.inline.ts 會在進入/退出偽全螢幕時切換這個 class（在 <html> 上）
+html.note-map-pseudo-fullscreen-lock {
+  overflow: hidden;
+}
+
 // 代表圖跟地圖並排：兩者都用同一個固定高度（跟 .note-map-canvas 一致），寬度則各佔一半
 // 由 flex 自然分配。筆記內文欄寬通常落在能讓兩欄接近方形的範圍，不用另外算
 // aspect-ratio——地圖那邊的高度本來就得靠 JS inline style 給固定值（Google Maps
