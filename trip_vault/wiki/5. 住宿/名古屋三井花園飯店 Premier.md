@@ -1,5 +1,6 @@
 ---
 title: 名古屋三井花園飯店 Premier
+map_label: 三井花園飯店 Premier
 type: accommodation
 region: nagoya-city
 station: 名古屋站

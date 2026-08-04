@@ -1,5 +1,6 @@
 ---
 title: Tsubame Bread & Milk 名駅店
+map_label: Tsubame 名駅店
 type: food
 food_category:
   - 點心輕食

@@ -1,5 +1,6 @@
 ---
 title: 鉄道館 リニア（SCMAGLEV and Railway Park）
+map_label: 鉄道館リニア
 type: place
 place_category: [知性趣味]
 region: nagoya-city

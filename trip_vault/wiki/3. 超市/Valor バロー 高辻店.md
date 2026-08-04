@@ -1,5 +1,6 @@
 ---
 title: Valor バロー 高辻店
+map_label: Valor 高辻店
 type: supermarket
 region: nagoya-city
 station: 金山站（JR・名鐵・地下鐵名城線）

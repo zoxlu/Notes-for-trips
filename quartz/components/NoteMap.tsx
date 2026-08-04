@@ -13,12 +13,17 @@ type LatLng = { lat: number; lng: number }
 
 type NoteMapPoint = {
   title: string
+  label: string
   href?: string
   lat: number
   lng: number
   icon: string
-  bg: string
   fg: string
+}
+
+// 地圖上的圖示標籤優先用 map_label（太長的 title 手動取的簡稱），沒填就直接用 title
+function mapLabel(fm: Record<string, unknown> | undefined): string {
+  return (fm?.map_label as string) || (fm?.title as string) || ""
 }
 
 function parseLocation(raw: unknown): LatLng | undefined {
@@ -45,10 +50,10 @@ const NoteMap: QuartzComponent = ({ fileData, allFiles }: QuartzComponentProps) 
   const selfMeta = CARD_TYPE_META[type] ?? CARD_TYPE_META.place
   const self: NoteMapPoint = {
     title: (fm.title as string) ?? "",
+    label: mapLabel(fm),
     lat: selfLoc.lat,
     lng: selfLoc.lng,
     icon: selfMeta.icon,
-    bg: selfMeta.bg,
     fg: selfMeta.fg,
   }
 
@@ -68,11 +73,11 @@ const NoteMap: QuartzComponent = ({ fileData, allFiles }: QuartzComponentProps) 
       return [
         {
           title: (f.frontmatter?.title as string) ?? "",
+          label: mapLabel(f.frontmatter),
           href: resolveRelative(fileData.slug!, f.slug!),
           lat: loc.lat,
           lng: loc.lng,
           icon: meta.icon,
-          bg: meta.bg,
           fg: meta.fg,
         },
       ]

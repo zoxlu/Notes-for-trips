@@ -1,5 +1,6 @@
 ---
 title: Alpen Outdoors Flagship Store 名古屋榮店
+map_label: Alpen Outdoors 榮店
 type: place
 place_category: [逛街尋寶]
 region: nagoya-city

@@ -1,5 +1,6 @@
 ---
 title: TACHIYA タチヤ 錦二丁目店
+map_label: TACHIYA 錦二丁目店
 type: supermarket
 region: nagoya-city
 station: 丸之內站（地下鐵鶴舞線・櫻通線）

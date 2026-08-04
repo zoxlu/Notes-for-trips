@@ -1,5 +1,6 @@
 ---
 title: LaLaport 名古屋港（ みなとアクルス ）
+map_label: LaLaport 名古屋港
 type: place
 place_category: [逛街尋寶]
 region: nagoya-city

@@ -1,5 +1,6 @@
 ---
 title: 久屋大通公園（Hisaya-odori Park）
+map_label: 久屋大通公園
 type: place
 place_category:
   - 自然漫步

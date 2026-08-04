@@ -1,5 +1,6 @@
 ---
 title: 栄 摩天輪 サンシャイン（Sky-Boat）
+map_label: 榮摩天輪
 type: place
 place_category:
   - 知性趣味

@@ -1,5 +1,6 @@
 ---
 title: 中部電力 MIRAI TOWER
+map_label: MIRAI TOWER
 type: place
 place_category: [文化古蹟]
 region: nagoya-city

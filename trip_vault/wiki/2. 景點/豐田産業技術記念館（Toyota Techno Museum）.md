@@ -1,5 +1,6 @@
 ---
 title: 豐田産業技術記念館（Toyota Techno Museum）
+map_label: 豐田産業技術記念館
 type: place
 place_category: [知性趣味]
 region: nagoya-city

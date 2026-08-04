@@ -1,5 +1,6 @@
 ---
 title: Yamanaka ヤマナカ 則武店
+map_label: Yamanaka 則武店
 type: supermarket
 region: nagoya-city
 station: 龜島站（地下鐵東山線）

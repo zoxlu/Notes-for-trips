@@ -2,11 +2,11 @@ import { MarkerClusterer } from "@googlemaps/markerclusterer"
 
 type NoteMapPoint = {
   title: string
+  label: string
   href?: string
   lat: number
   lng: number
   icon: string
-  bg: string
   fg: string
 }
 
@@ -57,6 +57,12 @@ function loadGoogleMaps(apiKey: string): Promise<void> {
 // fitBounds() 把地圖拉到街道等級、失去跟周圍的相對位置感
 const CLUSTER_CLICK_MAX_ZOOM = 18
 
+// 群聚圓圈的顏色：套件不指定的話預設是 Google 自己的藍色，跟這個地圖其餘標記／膠囊
+// 的暖色系配色不搭，這裡改用跟膠囊（notemap.scss 的 $map-tertiary / $map-dark）
+// 同一組顏色，讓群聚圓圈看起來也是同一套設計語言的一部分，而不是外來的元件
+const CLUSTER_FILL = "#c48a8f"
+const CLUSTER_TEXT = "#2b2422"
+
 // 地圖本身的樣式：關掉 Google 自己的 POI／大眾運輸圖示跟文字標籤，只留路名/地形等基本資訊，
 // 避免跟我們自己畫的標記混在一起看不清楚
 const MAP_STYLES: google.maps.MapTypeStyle[] = [
@@ -65,45 +71,25 @@ const MAP_STYLES: google.maps.MapTypeStyle[] = [
   { featureType: "transit", elementType: "labels.icon", stylers: [{ visibility: "off" }] },
 ]
 
-// 用經典 google.maps.Marker（非 AdvancedMarkerElement），不需要額外設定 Map ID 或載入 marker library
-function markerIcon(bg: string, fg: string, scale: number): google.maps.Symbol {
-  return {
-    path: google.maps.SymbolPath.CIRCLE,
-    fillColor: bg,
-    fillOpacity: 1,
-    strokeColor: fg,
-    strokeWeight: 2,
-    scale,
-  }
-}
-
-// 本則筆記自己的標記：跟其他地點的配色反過來（用該類型的深色當底、白色外框、尺寸更大），
-// 不管筆記本身是什麼類型，都會比周圍淡色的標記顯眼很多
-function selfMarkerIcon(fg: string): google.maps.Symbol {
+// 用經典 google.maps.Marker（非 AdvancedMarkerElement），不需要額外設定 Map ID 或載入 marker library。
+// 自己筆記跟其他地點共用同一套「該類型深色實心圓＋白色外框」風格（淺色底之前在地圖底圖上
+// 太不顯眼，實心配白邊在任何底圖上都能跳出來）；自身標記單純用尺寸更大、外框更粗來跟其他
+// 地點拉開視覺份量差距，不用再靠淺色/深色的配色反過來區分
+function solidMarkerIcon(fg: string, scale: number, strokeWeight: number): google.maps.Symbol {
   return {
     path: google.maps.SymbolPath.CIRCLE,
     fillColor: fg,
     fillOpacity: 1,
     strokeColor: "#ffffff",
-    strokeWeight: 3,
-    scale: 18,
+    strokeWeight,
+    scale,
   }
 }
 
-// name 有值時圖示下方會顯示地點名稱（自身標記不需要，已經有常駐的「你在這裡」標籤了）。
-// 名稱疊在圖示「下面」（用換行，不是接在同一行後面）：MarkerLabel 是以標記座標為
-// 中心點置中顯示，同一行的話文字會左右對半展開、蓋住圖示本身；換行變兩行後圖示
-// 還是在最上面、清楚可見。文字顏色用該地點類型的顏色（跟標記圖示同一套配色），
-// 一方面跟 Google 自己的路名／地標文字明顯區分開來，一方面看到顏色就能對應是哪種
-// 類型的地點。不管縮放層級都直接顯示：密集商圈本來就會被 MarkerClusterer 合併成
-// 群聚數字圓圈，不會有一堆名稱擠在一起看不清楚的問題
-function markerLabel(icon: string, fg: string, name?: string): google.maps.MarkerLabel {
-  return {
-    text: name ? `${icon}\n${name}` : icon,
-    fontSize: "13px",
-    color: name ? fg : undefined,
-    className: name ? "note-map-marker-name" : undefined,
-  }
+// 圖示本身只放 emoji，不再把地點名稱塞進同一個 MarkerLabel 裡（名稱改用下面的
+// createPointLabelOverlay 畫成獨立的膠囊，兩者分開才能各自控制樣式／群聚時的顯示邏輯）
+function markerLabel(icon: string): google.maps.MarkerLabel {
+  return { text: icon, fontSize: "13px" }
 }
 
 function formatWalkingDuration(seconds: number): string {
@@ -174,24 +160,82 @@ function createSelfLabelOverlay(
   return new SelfLabelOverlay()
 }
 
-// showTitle 為 false 時（地圖已經放大到街道尺度、圖示旁邊已經有名稱文字了）
-// 就不重複顯示地點名稱，只留下步行距離的膠囊，避免同一個名字連續出現兩次
-// 名稱已經常駐顯示在圖示下方了，這裡不重複顯示地點名稱文字，但距離膠囊本身在有
-// href 時會是一個連結，點下去可以跳到那則筆記——保留「點附近地點可以直接看那則
-// 筆記」這個功能，不會因為拿掉重複文字而跟著消失
+// 其他地點的名稱膠囊，畫在圖示正下方。跟「你在這裡」標籤用同一種 OverlayView 做法，
+// 但這裡要另外處理跟 MarkerClusterer 的同步：MarkerClusterer 是靠直接呼叫
+// marker.setMap(...)（在地圖上放回去 / 收成群聚圓圈時設回 null）來控制個別標記
+// 顯示與否，並不知道我們另外掛了一個 OverlayView，所以膠囊自己得監聽 marker 的
+// "map_changed" 事件，跟著同步顯示/隱藏——不然標記被收進群聚圓圈後，底下的名稱
+// 膠囊會留在原地飄著，看起來像是「圖示消失了但名字還在」的錯誤畫面
+function createPointLabelOverlay(
+  map: google.maps.Map,
+  marker: google.maps.Marker,
+  text: string,
+): google.maps.OverlayView {
+  class PointLabelOverlay extends google.maps.OverlayView {
+    private div: HTMLDivElement | null = null
+
+    onAdd() {
+      this.div = document.createElement("div")
+      this.div.className = "note-map-point-label"
+      this.div.textContent = text
+      this.getPanes()?.floatPane.appendChild(this.div)
+      marker.addListener("map_changed", () => this.syncVisibility())
+      // marker 是否已經被 MarkerClusterer 收進群聚圓圈，在 onAdd() 當下就可能已經
+      // 是最終狀態了（不保證一定會等到我們掛上監聽器之後才觸發 map_changed），
+      // 這裡直接讀一次目前的狀態，不完全依賴監聽器有沒有接住事件
+      this.syncVisibility()
+    }
+
+    syncVisibility() {
+      if (!this.div) return
+      this.div.style.display = marker.getMap() ? "" : "none"
+    }
+
+    draw() {
+      const projection = this.getProjection()
+      const position = marker.getPosition()
+      if (!projection || !this.div || !position) return
+      const point = projection.fromLatLngToDivPixel(position)
+      if (!point) return
+      this.div.style.left = `${point.x}px`
+      this.div.style.top = `${point.y}px`
+    }
+
+    onRemove() {
+      this.div?.remove()
+      this.div = null
+    }
+  }
+
+  const overlay = new PointLabelOverlay()
+  overlay.setMap(map)
+  return overlay
+}
+
+// 名稱已經常駐顯示在圖示下方了，這裡不重複顯示地點名稱文字。內容分兩行：上排是純文字
+// 的步行距離/時間（不是連結，Directions API 回來前後只會更新這一行），下排是「前往
+// 「XXX」」的獨立連結（有 href 才會有這一行）——分成兩個獨立元素，而不是像之前那樣
+// 把整個距離文字包成一個連結，是刻意要讓「資訊」跟「動作」在視覺上一望即知是兩件事
 function buildInfoWindowContent(point: NoteMapPoint): HTMLElement {
   const container = document.createElement("div")
   container.className = "note-map-infowindow"
 
-  const distanceEl = document.createElement(point.href ? "a" : "div")
+  const distanceEl = document.createElement("div")
   distanceEl.className = "note-map-infowindow-distance"
-  if (point.href) {
-    ;(distanceEl as HTMLAnchorElement).href = point.href
-    // 滑鼠移上去顯示原生 tooltip，讓人知道這個膠囊點下去會做什麼（不是只顯示距離而已）
-    distanceEl.title = `前往「${point.title}」頁面`
-  }
   distanceEl.textContent = "步行距離計算中…"
   container.appendChild(distanceEl)
+
+  if (point.href) {
+    const linkEl = document.createElement("a")
+    linkEl.className = "note-map-infowindow-link"
+    linkEl.href = point.href
+    // 連結顏色沿用這個地點類型自己的顏色（跟標記圖示同一套），除了讓連結本身
+    // 更好認出來是「可以點的東西」，也跟地圖上其他膠囊（統一用 $map-tertiary）
+    // 的配色拉開，不會混在一起分不清楚
+    linkEl.style.color = point.fg
+    linkEl.textContent = `前往「${point.label}」→`
+    container.appendChild(linkEl)
+  }
 
   return container
 }
@@ -302,8 +346,8 @@ function renderMap(container: HTMLElement, oldCanvas: HTMLElement, payload: Note
   const selfMarker = new google.maps.Marker({
     map,
     position: center,
-    icon: selfMarkerIcon(payload.self.fg),
-    label: markerLabel(payload.self.icon, payload.self.fg),
+    icon: solidMarkerIcon(payload.self.fg, 18, 3),
+    label: markerLabel(payload.self.icon),
     zIndex: 10,
     title: payload.self.title,
   })
@@ -314,7 +358,7 @@ function renderMap(container: HTMLElement, oldCanvas: HTMLElement, payload: Note
   // Maps SDK 剛啟動）內部行為跟預期不同而拋錯，不能讓它中斷整個 renderMap()、
   // 連累後面的其他標記／群聚／步行距離都不會執行
   try {
-    createSelfLabelOverlay(`你在這裡：${payload.self.title}`, center).setMap(map)
+    createSelfLabelOverlay(`你在這裡：${payload.self.label}`, center).setMap(map)
   } catch (err) {
     console.error("note map: self label overlay failed", err)
   }
@@ -333,10 +377,17 @@ function renderMap(container: HTMLElement, oldCanvas: HTMLElement, payload: Note
       strokeOpacity: 0,
       icons: [
         {
-          // #4285F4 是 Google 自己走路路線慣用的藍色
-          icon: { path: "M 0,-1 0,1", strokeOpacity: 1, strokeColor: "#4285F4", scale: 3 },
+          // 改用實心圓點（而非短線段），比照 Google 地圖原生走路路線那種大顆藍色珠珠的畫法，
+          // 顏色 #4285F4 是 Google 自己走路路線慣用的藍色
+          icon: {
+            path: google.maps.SymbolPath.CIRCLE,
+            fillColor: "#4285F4",
+            fillOpacity: 1,
+            strokeOpacity: 0,
+            scale: 4,
+          },
           offset: "0",
-          repeat: "12px",
+          repeat: "14px",
         },
       ],
     },
@@ -349,10 +400,16 @@ function renderMap(container: HTMLElement, oldCanvas: HTMLElement, payload: Note
 
     const marker = new google.maps.Marker({
       position,
-      icon: markerIcon(point.bg, point.fg, 11),
-      label: markerLabel(point.icon, point.fg, point.title),
+      icon: solidMarkerIcon(point.fg, 11, 2),
+      label: markerLabel(point.icon),
       title: point.title,
     })
+
+    try {
+      createPointLabelOverlay(map, marker, point.label)
+    } catch (err) {
+      console.error("note map: point label overlay failed", err)
+    }
 
     marker.addListener("click", () => {
       // 換頁後這個 container 可能已經被 morph 掉了，避免把資訊視窗開到已經不存在的地圖上
@@ -367,12 +424,9 @@ function renderMap(container: HTMLElement, oldCanvas: HTMLElement, payload: Note
           const leg = result?.routes[0]?.legs[0]
           const distanceEl = content.querySelector<HTMLElement>(".note-map-infowindow-distance")
           if (distanceEl) {
-            const distanceText = leg
+            distanceEl.textContent = leg
               ? `步行約 ${leg.distance?.text ?? ""}．${leg.duration ? formatWalkingDuration(leg.duration.value) : ""}`
               : "無法取得步行距離"
-            // 固定加上箭頭表示「這個可以點下去」，不用靠 hover 才看得出來能點擊
-            // （hover 觸發的動態樣式變化在這個 InfoWindow 裡不安全，見上面的說明）
-            distanceEl.textContent = point.href ? `${distanceText} →` : distanceText
           }
           if (result) directionsRenderer.setDirections(result)
 
@@ -388,6 +442,26 @@ function renderMap(container: HTMLElement, oldCanvas: HTMLElement, payload: Note
   new MarkerClusterer({
     map,
     markers: otherMarkers,
+    // 自訂群聚圓圈的外觀，改用跟其他標記同一套「實心圓＋白色外框」風格＋膠囊配色，
+    // 不用套件內建的藍色圓圈渲染器
+    renderer: {
+      render: ({ count, position }) =>
+        new google.maps.Marker({
+          position,
+          icon: {
+            path: google.maps.SymbolPath.CIRCLE,
+            fillColor: CLUSTER_FILL,
+            fillOpacity: 1,
+            strokeColor: "#ffffff",
+            strokeWeight: 2,
+            // 尺寸依群聚內的地點數量微幅放大，數量差異大時還是有一點視覺區別，
+            // 但封頂避免圓圈大到蓋住太多背景地圖
+            scale: Math.min(14 + count * 0.6, 22),
+          },
+          label: { text: String(count), color: CLUSTER_TEXT, fontSize: "13px", fontWeight: "700" },
+          zIndex: 1000 + count,
+        }),
+    },
     // 套件預設點群聚圓圈是直接 fitBounds() 到圓圈裡所有標記的範圍，如果那些標記彼此
     // 靠得很近，會整個縮放到街道等級、放大到讓人搞不清楚方向。點完之後多檢查一次，
     // 縮放層級超過上限就手動拉回來，保留「點群聚會展開」的效果，但不會近到失去脈絡

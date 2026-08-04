@@ -1,5 +1,6 @@
 ---
 title: Blue Bottle Coffee ブルーボトルコーヒー 名古屋栄カフェ
+map_label: Blue Bottle 榮店
 type: food
 food_category:
   - 點心輕食

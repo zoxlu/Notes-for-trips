@@ -1,5 +1,6 @@
 ---
 title: MATUMURA カツレツ 大名古屋ビルヂング店
+map_label: MATUMURA 大名古屋店
 type: food
 food_category:
   - 名古屋鄉土限定

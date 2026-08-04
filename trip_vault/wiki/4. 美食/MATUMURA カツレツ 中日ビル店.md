@@ -1,5 +1,6 @@
 ---
 title: MATUMURA カツレツ 中日ビル店
+map_label: MATUMURA 中日ビル店
 type: food
 food_category:
   - 名古屋鄉土限定

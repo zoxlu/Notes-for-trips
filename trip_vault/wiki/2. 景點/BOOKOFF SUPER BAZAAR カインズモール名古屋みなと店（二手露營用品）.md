@@ -1,5 +1,6 @@
 ---
 title: BOOKOFF SUPER BAZAAR カインズモール名古屋みなと店（二手露營用品）
+map_label: BOOKOFF 名古屋港店
 type: place
 place_category:
   - 逛街尋寶

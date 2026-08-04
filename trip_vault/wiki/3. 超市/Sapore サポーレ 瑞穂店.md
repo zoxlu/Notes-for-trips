@@ -1,5 +1,6 @@
 ---
 title: Sapore サポーレ 瑞穂店
+map_label: Sapore 瑞穂店
 type: supermarket
 region: nagoya-city
 station: 瑞穗區役所站（地下鐵櫻通線）

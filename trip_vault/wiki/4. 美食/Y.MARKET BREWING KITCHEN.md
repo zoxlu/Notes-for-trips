@@ -1,5 +1,6 @@
 ---
 title: Y.MARKET BREWING KITCHEN
+map_label: Y.MARKET
 type: food
 food_category: [美食名店]
 region: nagoya-city

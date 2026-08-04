@@ -1,5 +1,6 @@
 ---
 title: Tsubame Bread & Milk 尼ヶ坂本店
+map_label: Tsubame 尼ヶ坂店
 type: food
 food_category:
   - 點心輕食

@@ -1,5 +1,6 @@
 ---
 title: KONPARU コンパル サンロード店
+map_label: KONPARU サンロード店
 type: food
 food_category:
   - 點心輕食

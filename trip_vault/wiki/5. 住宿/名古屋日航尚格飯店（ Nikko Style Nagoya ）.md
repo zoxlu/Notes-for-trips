@@ -1,5 +1,6 @@
 ---
 title: 名古屋日航尚格飯店（ Nikko Style Nagoya ）
+map_label: 日航尚格飯店
 type: accommodation
 region: nagoya-city
 station: 名古屋站

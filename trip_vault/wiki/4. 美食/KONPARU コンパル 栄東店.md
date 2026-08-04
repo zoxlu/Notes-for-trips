@@ -1,5 +1,6 @@
 ---
 title: KONPARU コンパル 栄東店
+map_label: KONPARU 栄東店
 type: food
 food_category:
   - 點心輕食

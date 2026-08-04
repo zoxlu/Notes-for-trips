@@ -1,5 +1,6 @@
 ---
 title: HARBS ハーブス 栄本店
+map_label: HARBS 栄本店
 type: food
 food_category:
   - 點心輕食

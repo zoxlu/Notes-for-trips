@@ -1,5 +1,6 @@
 ---
 title: Saison Factory セゾンファクトリー 松坂屋名古屋店
+map_label: Saison Factory 松坂屋店
 type: supermarket
 region: nagoya-city
 station: 矢場町站（地下鐵名城線）

@@ -1,5 +1,6 @@
 ---
 title: KONPARU コンパル 大須本店
+map_label: KONPARU 大須本店
 type: food
 food_category: [點心輕食]
 region: nagoya-city

@@ -1,5 +1,6 @@
 ---
 title: DEL style 名古屋納屋橋
+map_label: DEL style 納屋橋
 type: accommodation
 region: nagoya-city
 station: 伏見站

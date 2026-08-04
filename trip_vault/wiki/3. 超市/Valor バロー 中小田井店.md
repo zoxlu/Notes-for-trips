@@ -1,5 +1,6 @@
 ---
 title: Valor バロー 中小田井店
+map_label: Valor 中小田井店
 type: supermarket
 region: nagoya-city
 station: 上小田井站（名鐵犬山線・地下鐵鶴舞線）

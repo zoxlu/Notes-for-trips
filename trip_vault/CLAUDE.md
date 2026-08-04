@@ -59,6 +59,7 @@
 ```yaml
 ---
 title:              # 新建立筆記時，名稱順序為「中文 → 英文 → 日文」（例如「山本屋總本家 Yamamotoya Sohonke 山本屋総本家」，缺少其中一種語言就省略，順序不變）。此規則僅套用於新建立的筆記，既有筆記標題不用回頭調整。
+map_label:          # 選填。title 太長（超過約12個字）時，給地圖上的圖示標籤用的簡稱，優先用中文名稱，沒有中文的話用英文，都沒有的話取一個能保留分店/地點區隔資訊的簡稱（不要只留品牌名，導致同品牌不同分店在地圖上看起來一樣）。不要用字元規則自動判斷，人工判斷填寫。title 夠短時可以不填，地圖會直接顯示 title。
 type:              # place / food / transport / accommodation / supermarket
 region:             # nagoya-city / transit
 station:            # 最近地鐵站或車站，例如：名古屋站 / 榮站 / 藤が丘站 / 南木曽駅

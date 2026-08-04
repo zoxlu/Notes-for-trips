@@ -1,5 +1,6 @@
 ---
 title: THE TOWER HOTEL NAGOYA
+map_label: TOWER HOTEL
 type: accommodation
 region: nagoya-city
 station: 榮站（地下鐵東山線・名城線）

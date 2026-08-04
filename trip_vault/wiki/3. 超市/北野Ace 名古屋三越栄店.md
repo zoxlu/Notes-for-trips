@@ -1,5 +1,6 @@
 ---
 title: 北野Ace 名古屋三越栄店
+map_label: 北野Ace 三越榮店
 type: supermarket
 region: nagoya-city
 station: 榮站（地下鐵東山線・名城線）

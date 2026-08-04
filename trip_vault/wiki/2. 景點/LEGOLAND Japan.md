@@ -1,5 +1,6 @@
 ---
 title: LEGOLAND Japan
+map_label: LEGOLAND
 type: place
 place_category: [知性趣味]
 region: nagoya-city
