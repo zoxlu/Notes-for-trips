@@ -8,8 +8,8 @@ station:
 lines: []
 district:
 location:
-image:
-image_source:
+image: https://www.nagoya-info.jp/assets/img/nagoyameshi/main_ph001.jpg
+image_source: 來自名古屋市觀光官網 nagoya-info.jp「なごやめし」總覽頁主視覺（多種なごやめし料理合輯，非單一店家/品項照片）
 status: researching
 priority: optional
 shared_by: "[[繃皮雞]]"
@@ -35,6 +35,8 @@ tags:
 ---
 ## 簡介
 名古屋美食網站舉辦的網路票選（2015年8-10月，共11,794票），選出當地人心目中最具代表性的20種「なごやめし」鄉土美食類型（非特定店家）：
+
+![代表圖](https://www.nagoya-info.jp/assets/img/nagoyameshi/main_ph001.jpg)
 
 1. 鰻魚飯三吃 [[蓬莱軒 あつた 神宮店]]
 2. 味噌烏龍麵
@@ -62,7 +64,7 @@ tags:
 ## ⚠️ 待確認
 - 本頁為美食「類型」清單，非單一店家，故未填 location／opening_hours 等欄位。
 - 頁面本身未提供具體店家名稱或地址，需要進一步分享才能建立個別店家筆記。
-- 圖片待補（此為總覽性質，暫不指定代表圖）。
+- 代表圖為官方「なごやめし」總覽合輯圖，涵蓋多種鄉土料理，非單一項目照片。
 
 ## 原始連結備註
 > 來源檔案：2026-07-18 名古屋的票選美食
