@@ -3,6 +3,7 @@ title: 三井花園 vs 皇家公園
 type: accommodation
 region: nagoya-city
 station:
+lines: []
 district:
 location:
 image: https://h7.alamy.com/comp/F1X1Y0/choice-fun-cartoon-style-illustration-the-situation-of-life-F1X1Y0.jpg

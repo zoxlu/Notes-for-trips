@@ -4,6 +4,7 @@ type: food
 food_category: [點心輕食]
 region: nagoya-city
 station: 大須觀音站（地下鐵名城線）
+lines: [地下鐵名城線]
 district: 大須
 location: 35.1594,136.9047
 meal_slot: breakfast
@@ -27,6 +28,7 @@ tags:
   - food_category/點心輕食
   - region/nagoya-city
   - station/大須觀音站
+  - line/地下鐵名城線
   - district/大須
   - meal/breakfast
   - status/researching

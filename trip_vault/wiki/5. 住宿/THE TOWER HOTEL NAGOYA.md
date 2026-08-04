@@ -3,6 +3,7 @@ title: THE TOWER HOTEL NAGOYA
 type: accommodation
 region: nagoya-city
 station: 榮站（地下鐵東山線・名城線）
+lines: [地下鐵東山線, 地下鐵名城線]
 district: 榮
 location: 35.172157,136.90773
 image: https://thetowerhotel.jp/cms/wp-content/themes/thetowerhotel_3rdP/assets/img/rooms/image02_1.jpg
@@ -24,6 +25,8 @@ tags:
   - type/accommodation
   - region/nagoya-city
   - station/榮站
+  - line/地下鐵東山線
+  - line/地下鐵名城線
   - district/榮
   - status/researching
   - priority/nice-to-have

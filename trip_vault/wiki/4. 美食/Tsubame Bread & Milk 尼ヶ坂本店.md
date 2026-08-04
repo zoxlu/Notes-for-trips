@@ -5,6 +5,7 @@ food_category:
   - 點心輕食
 region: nagoya-city
 station: 尼ヶ坂站（名鐵瀬戸線）
+lines: [名鐵瀬戸線]
 district: 北區
 location: 35.1872836,136.9176285
 meal_slot: breakfast
@@ -28,6 +29,7 @@ tags:
   - food_category/點心輕食
   - region/nagoya-city
   - station/尼ヶ坂站
+  - line/名鐵瀬戸線
   - district/北區
   - meal/breakfast
   - status/researching

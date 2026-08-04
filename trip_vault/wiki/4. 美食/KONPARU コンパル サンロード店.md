@@ -5,6 +5,7 @@ food_category:
   - 點心輕食
 region: nagoya-city
 station: 名古屋站
+lines: [JR東海道線, JR中央線, 名鐵名古屋本線, 地下鐵東山線, 地下鐵櫻通線, あおなみ線]
 district: 名古屋站前
 location: 35.1687845,136.8841024
 meal_slot: breakfast
@@ -28,6 +29,12 @@ tags:
   - food_category/點心輕食
   - region/nagoya-city
   - station/名古屋站
+  - line/JR東海道線
+  - line/JR中央線
+  - line/名鐵名古屋本線
+  - line/地下鐵東山線
+  - line/地下鐵櫻通線
+  - line/あおなみ線
   - district/名古屋站前
   - meal/breakfast
   - status/researching

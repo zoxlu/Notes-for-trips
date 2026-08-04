@@ -1,6 +1,6 @@
 // 篩選狀態：以「群組」為單位記住各自選中的條件，
 // 例如 { type: {key: "category", value: "文化古蹟"}, district: {key: "district", value: "名古屋站前"} }
-// 群組名稱對應 .trip-chip-panel 的 data-category-panel（type / station / district / score）。
+// 群組名稱對應 .trip-chip-panel 的 data-category-panel（type / line / district / score）。
 // 卡片顯示與否，是「所有作用中群組的條件」同時成立（AND），
 // 同一個群組內任何時候最多只有一個條件生效（單選，符合現有 tab 底下按鈕的互動習慣）。
 type FilterCondition = { key: string; value: string; label: string }
@@ -27,7 +27,11 @@ function cardMatchesCondition(card: HTMLAnchorElement, condition: FilterConditio
     // place_category / food_category 陣列比對（data-categories 逗號分隔）
     return (card.getAttribute("data-categories") ?? "").split(",").filter(Boolean).includes(value)
   }
-  // 其他 key（type/station/district/score）維持單值比對
+  if (key === "line") {
+    // lines 陣列比對（data-lines 逗號分隔）
+    return (card.getAttribute("data-lines") ?? "").split(",").filter(Boolean).includes(value)
+  }
+  // 其他 key（type/district/score）維持單值比對
   return card.getAttribute(`data-${key}`) === value
 }
 
@@ -99,7 +103,9 @@ function syncUI() {
 function clearGroupFilter(group: string) {
   delete activeFilters[group]
   document
-    .querySelectorAll<HTMLButtonElement>(`.trip-chip-panel[data-category-panel="${group}"] .trip-chip`)
+    .querySelectorAll<HTMLButtonElement>(
+      `.trip-chip-panel[data-category-panel="${group}"] .trip-chip`,
+    )
     .forEach((c) => c.classList.remove("active"))
   syncUI()
 }

@@ -3,6 +3,7 @@ title: Valor バロー 高辻店
 type: supermarket
 region: nagoya-city
 station: 金山站（JR・名鐵・地下鐵名城線）
+lines: [JR東海道線, JR中央線, 名鐵名古屋本線, 地下鐵名城線]
 district: 昭和區
 location: 35.1416501,136.9134705
 image: https://poiend-pctr.c.yimg.jp/RbvIgEqcLh0WnvgGGwVVgTznkURkbN_CqctDurJdF3SPY4wPQj7WCaU8JHSPKqIJYP5vkyBMAf5h4CM23_z2p-TSTQuJMp06XfQMI8jiko8IWr6auO546j72ZnsW3qO6jJ_7-sWmtRwY18xch7l15GrR1czad34c2jobBh3PS032o5OVNLezBWhMeCdy2b8xxPeY6Nb7dSxCllFgL15WEXPa63nf8fFGxmEJ777PD1s-C8ldypUJ1h-vqiP5ALPGJ9iYfpgwgPnNVlx6Ik0KzSCPXlMmW7muWeJ0dvoI2Qg=
@@ -22,6 +23,10 @@ tags:
   - type/supermarket
   - region/nagoya-city
   - station/金山站
+  - line/JR東海道線
+  - line/JR中央線
+  - line/名鐵名古屋本線
+  - line/地下鐵名城線
   - district/昭和區
   - status/researching
   - priority/optional

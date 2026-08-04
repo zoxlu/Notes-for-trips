@@ -3,6 +3,7 @@ title: DEL style 名古屋納屋橋
 type: accommodation
 region: nagoya-city
 station: 伏見站
+lines: [地下鐵鶴舞線, 地下鐵東山線]
 district: 納屋橋
 location: 35.166332,136.8933133
 image: https://www.daiwaroynet.jp/datas/cache/images/2024/12/19/768x1320_ea1e9d427fb5664c32c517a73e421e58_d512b60b5073bf013c113462ae0ef226765815ee.jpg
@@ -24,6 +25,8 @@ tags:
   - type/accommodation
   - region/nagoya-city
   - station/伏見站
+  - line/地下鐵鶴舞線
+  - line/地下鐵東山線
   - district/納屋橋
   - status/researching
   - priority/nice-to-have

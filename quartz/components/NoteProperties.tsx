@@ -21,9 +21,20 @@ const FIELD_LABEL: Record<string, string> = {
 }
 
 const FIELD_ORDER = [
-  "shared_by", "station", "district", "opening_hours", "duration",
-  "meal_slot", "price_range", "nights", "meal_plan",
-  "transport_mode", "cost", "location", "official_url", "source_url",
+  "shared_by",
+  "station",
+  "district",
+  "opening_hours",
+  "duration",
+  "meal_slot",
+  "price_range",
+  "nights",
+  "meal_plan",
+  "transport_mode",
+  "cost",
+  "location",
+  "official_url",
+  "source_url",
 ]
 
 function getDomain(url: string): string {
@@ -38,9 +49,9 @@ const NoteProperties: QuartzComponent = ({ fileData, allFiles }: QuartzComponent
   const fm = fileData.frontmatter
   if (!fm || !fm.type) return null
 
-  const items = FIELD_ORDER
-    .map((key) => ({ key, value: fm[key] }))
-    .filter((i) => i.value !== undefined && i.value !== null && i.value !== "")
+  const items = FIELD_ORDER.map((key) => ({ key, value: fm[key] })).filter(
+    (i) => i.value !== undefined && i.value !== null && i.value !== "",
+  )
 
   if (items.length === 0) return null
 
@@ -53,9 +64,7 @@ const NoteProperties: QuartzComponent = ({ fileData, allFiles }: QuartzComponent
     if (!targetPage) {
       return <span class="note-property-value">{name}</span>
     }
-    return (
-      <a href={resolveRelative(fileData.slug!, targetPage.slug!)}>{name}</a>
-    )
+    return <a href={resolveRelative(fileData.slug!, targetPage.slug!)}>{name}</a>
   }
 
   function renderFilterLink(filterKey: string, value: string) {
@@ -77,7 +86,20 @@ const NoteProperties: QuartzComponent = ({ fileData, allFiles }: QuartzComponent
           {item.key === "shared_by" ? (
             renderSharedBy(String(item.value))
           ) : item.key === "station" ? (
-            renderFilterLink("station", String(item.value))
+            <>
+              <span class="note-property-value">{String(item.value)}</span>
+              {Array.isArray(fm.lines) && (fm.lines as string[]).length > 0 && (
+                <span class="trip-property-lines">
+                  {" "}
+                  {(fm.lines as string[]).map((l, i) => (
+                    <>
+                      {i > 0 && "、"}
+                      {renderFilterLink("line", l)}
+                    </>
+                  ))}
+                </span>
+              )}
+            </>
           ) : item.key === "district" ? (
             renderFilterLink("district", String(item.value))
           ) : item.key === "source_url" ? (

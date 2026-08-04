@@ -3,6 +3,7 @@ title: 交通儲值卡比較（Manaca／Suica／Icoca）
 type: transport
 region: transit
 station:
+lines: []
 district:
 status: researching
 priority: nice-to-have

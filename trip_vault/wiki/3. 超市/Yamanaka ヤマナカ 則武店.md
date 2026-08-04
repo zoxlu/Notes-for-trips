@@ -3,6 +3,7 @@ title: Yamanaka ヤマナカ 則武店
 type: supermarket
 region: nagoya-city
 station: 龜島站（地下鐵東山線）
+lines: [地下鐵東山線]
 district: 中村區
 location: 35.1748433,136.8721926
 image: https://poiend-pctr.c.yimg.jp/RbvIgEqcLh0WnvgGGwVVgTznkURkbN_CqctDurJdF3SfOL5lOM7302yfK_bGHwja0dbl6gtFtGAdqcx-80CfqfyUY7edQ7EZjWeIVA29l0g8HfQWR8xg5tmdBCiDKafPGQakUgT2TQsZXdWYwLUlvnl0dDsk4oZjlpmRTJDvnLOC1R9ryUFgiky5jfUeVw_zsuj_-Y6jinCXLA4gzwEZ7XM5Bk2zAwNnfbutfFSNE6_HZB9y2JjJJGRyszQhg0l1tehKMoxnjDfXxZXaBVY_kDhb8eL8d76EfuxZ2245ESU=
@@ -22,6 +23,7 @@ tags:
   - type/supermarket
   - region/nagoya-city
   - station/龜島站
+  - line/地下鐵東山線
   - district/中村區
   - status/researching
   - priority/optional

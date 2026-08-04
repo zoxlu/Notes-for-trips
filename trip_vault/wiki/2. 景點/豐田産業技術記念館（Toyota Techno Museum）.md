@@ -4,6 +4,7 @@ type: place
 place_category: [知性趣味]
 region: nagoya-city
 station: 榮生站（名鐵）
+lines: [名鐵名古屋本線, 名鐵犬山線]
 district: 則武新町
 location: 35.1825118,136.8765247
 image: https://www.nagoya-info.jp/upload/spots/large/16176073756597606ecf816.jpg
@@ -24,6 +25,8 @@ tags:
   - place_category/知性趣味
   - region/nagoya-city
   - station/榮生站
+  - line/名鐵名古屋本線
+  - line/名鐵犬山線
   - district/則武新町
   - status/researching
   - priority/nice-to-have

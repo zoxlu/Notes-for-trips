@@ -5,6 +5,7 @@ food_category:
   - 必吃清單
 region: nagoya-city
 station:
+lines: []
 district:
 location:
 image:

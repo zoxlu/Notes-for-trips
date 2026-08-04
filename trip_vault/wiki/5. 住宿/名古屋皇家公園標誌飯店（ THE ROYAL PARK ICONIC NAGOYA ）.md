@@ -3,6 +3,7 @@ title: 名古屋皇家公園標誌飯店（ THE ROYAL PARK ICONIC NAGOYA ）
 type: accommodation
 region: nagoya-city
 station: 榮站（地下鐵東山線・名城線）
+lines: [地下鐵東山線, 地下鐵名城線]
 district: 榮
 location: 35.168945,136.909457
 image: https://www.royalparkhotels.co.jp/ic/nagoya/assets/images/about/gallery/standard_room/img_standard_room.png
@@ -24,6 +25,8 @@ tags:
   - type/accommodation
   - region/nagoya-city
   - station/榮站
+  - line/地下鐵東山線
+  - line/地下鐵名城線
   - district/榮
   - status/researching
   - priority/nice-to-have

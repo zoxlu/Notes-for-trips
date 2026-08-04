@@ -3,6 +3,7 @@ title: TACHIYA タチヤ 錦二丁目店
 type: supermarket
 region: nagoya-city
 station: 丸之內站（地下鐵鶴舞線・櫻通線）
+lines: [地下鐵鶴舞線, 地下鐵櫻通線]
 district: 伏見
 location: 35.1713522,136.8993882
 image: https://poiend-pctr.c.yimg.jp/RbvIgEqcLh0WnvgGGwVVgTznkURkbN_CqctDurJdF3TPq-6wDgw-Ne_nqfUYj6XX7YRSxDLCEiASVH-_jGerqkFkNr_lBgkwJqcGi-skp--KV7WQ3LK8AeB5SFW5GNUJYcVMRhFbguDMt4A3Yzby-mMR4mQdizRrSplc1brkZ2LeMB-rAQZbvwdxKxKp4piem5P5MfPXPBcLgDgOitgScj4QvE1LEI92VwS0WSerkzZMccOzl63tZLSz24V6h7WRsPasoy-nGowZw1n2EK2A_qArFuBb3u2mdDwKNAi01BI=
@@ -22,6 +23,8 @@ tags:
   - type/supermarket
   - region/nagoya-city
   - station/丸之內站
+  - line/地下鐵鶴舞線
+  - line/地下鐵櫻通線
   - district/伏見
   - status/researching
   - priority/optional

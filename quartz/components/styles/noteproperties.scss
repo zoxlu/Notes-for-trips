@@ -27,3 +27,10 @@
   text-decoration: underline;
   cursor: pointer;
 }
+.trip-property-lines {
+  font-size: 0.9em;
+  &::before {
+    content: "· ";
+    color: var(--darkgray);
+  }
+}

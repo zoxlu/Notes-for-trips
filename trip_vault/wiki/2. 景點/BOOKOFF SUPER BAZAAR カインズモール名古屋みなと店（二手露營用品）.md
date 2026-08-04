@@ -5,6 +5,7 @@ place_category:
   - 逛街尋寶
 region: nagoya-city
 station: 稲永站（あおなみ線）
+lines: [あおなみ線]
 district: 港區
 location: 35.0917779,136.8637205
 image: https://www.bookoff.co.jp/shop/images/20423_out.png
@@ -26,6 +27,7 @@ tags:
   - place_category/逛街尋寶
   - region/nagoya-city
   - station/稲永站
+  - line/あおなみ線
   - district/港區
   - status/researching
   - priority/optional

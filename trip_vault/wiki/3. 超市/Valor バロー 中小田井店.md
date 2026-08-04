@@ -3,6 +3,7 @@ title: Valor バロー 中小田井店
 type: supermarket
 region: nagoya-city
 station: 上小田井站（名鐵犬山線・地下鐵鶴舞線）
+lines: [名鐵犬山線, 地下鐵鶴舞線]
 district: 西區
 location: 35.2210246,136.8742482
 image: https://poiend-pctr.c.yimg.jp/RbvIgEqcLh0WnvgGGwVVgTznkURkbN_CqctDurJdF3RPuNtW2gA0pYPcPfsnzMvOFDZG55UkL9fqUjFrItSa1_xj-Ul_M195LlvyE5Rug6B-JoPxc2vXAfwrUCju_k06voEHNqB4LIATEl3Bd6T0Qi-sT4KaYwzrcFC3s8cQEtqGORI0iBS7egybTNZJFB6yNi0mN_BK67h_-IRzI399dTUCg5CHgroL5DZ5UNXrGbBuD5QCtwyyWQRvSszkZ3FG3utXl_pBW2XUI7WafHESrMPh_0xrza4jYQSMZIQCdIQ=
@@ -22,6 +23,8 @@ tags:
   - type/supermarket
   - region/nagoya-city
   - station/上小田井站
+  - line/名鐵犬山線
+  - line/地下鐵鶴舞線
   - district/西區
   - status/researching
   - priority/optional

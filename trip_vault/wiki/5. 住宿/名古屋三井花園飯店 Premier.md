@@ -3,6 +3,7 @@ title: 名古屋三井花園飯店 Premier
 type: accommodation
 region: nagoya-city
 station: 名古屋站
+lines: [JR東海道線, JR中央線, 名鐵名古屋本線, 地下鐵東山線, 地下鐵櫻通線, あおなみ線]
 district: 名駅
 location: 35.169905,136.8867198
 image: https://www.gardenhotels.co.jp/assets/images/nagoya-premier/photogallery/Lobby_night_3.jpg
@@ -24,6 +25,12 @@ tags:
   - type/accommodation
   - region/nagoya-city
   - station/名古屋站
+  - line/JR東海道線
+  - line/JR中央線
+  - line/名鐵名古屋本線
+  - line/地下鐵東山線
+  - line/地下鐵櫻通線
+  - line/あおなみ線
   - district/名駅
   - status/researching
   - priority/nice-to-have

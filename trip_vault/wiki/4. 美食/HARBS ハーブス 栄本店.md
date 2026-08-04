@@ -5,6 +5,7 @@ food_category:
   - 點心輕食
 region: nagoya-city
 station: 榮站
+lines: [地下鐵東山線, 地下鐵名城線]
 district: 榮
 location: 35.1718774,136.9077282
 meal_slot: lunch
@@ -29,6 +30,8 @@ tags:
   - food_category/點心輕食
   - region/nagoya-city
   - station/榮站
+  - line/地下鐵東山線
+  - line/地下鐵名城線
   - district/榮
   - meal/lunch
   - status/researching

@@ -3,6 +3,7 @@ title: 北野Ace 名古屋三越栄店
 type: supermarket
 region: nagoya-city
 station: 榮站（地下鐵東山線・名城線）
+lines: [地下鐵東山線, 地下鐵名城線]
 district: 榮
 location: 35.1684344,136.9072618
 image: https://poiend-pctr.c.yimg.jp/RbvIgEqcLh0WnvgGGwVVgTznkURkbN_CqctDurJdF3T-rcn6kOXOAJA191CVO4Nrzr43OYJ4Wt9tjZdVz4ICr-Lg_jihzht0PEXp_by2DQQoKiLaZZSlDwXLyypXSHdn70f3CRX8tHvYsBrSS8nAIGnqYc_jS57fH1A6aWtFAoJMQKxs_9g5riCQzkZEGnwvtlPOniXu63adm0AxHrSPDd9JeYK_2X0gSUQq3WuQX4JDDPWYwNY8GvbZ9JxSE3H26ejuVTMyCibZBec3zJlzOzfsJ4F6IOes2pBEo36RI-s=
@@ -22,6 +23,8 @@ tags:
   - type/supermarket
   - region/nagoya-city
   - station/榮站
+  - line/地下鐵東山線
+  - line/地下鐵名城線
   - district/榮
   - status/researching
   - priority/optional

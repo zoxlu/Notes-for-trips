@@ -88,8 +88,12 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
 
   const tripPages = allFiles.filter((f) => !!f.frontmatter?.type && f.slug !== fileData.slug)
 
-  const stations = Array.from(
-    new Set(tripPages.map((f) => f.frontmatter?.station as string).filter(Boolean)),
+  const lines = Array.from(
+    new Set(
+      tripPages.flatMap((f) =>
+        Array.isArray(f.frontmatter?.lines) ? (f.frontmatter.lines as string[]) : [],
+      ),
+    ),
   ).sort()
   const districts = Array.from(
     new Set(tripPages.map((f) => f.frontmatter?.district as string).filter(Boolean)),
@@ -101,7 +105,7 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
   */
   const CATEGORY_TABS = [
     { key: "type", label: "類型" },
-    { key: "station", label: "車站" },
+    { key: "line", label: "路線" },
     { key: "district", label: "商圈" },
     //{ key: "status", label: "確認狀態" },
     { key: "score", label: "興致指數" },
@@ -133,10 +137,10 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
             </button>
           ))}
         </div>
-        <div class="trip-chip-panel" data-category-panel="station" hidden>
-          {stations.map((s) => (
-            <button class="trip-chip" data-filter-key="station" data-filter-value={s}>
-              {s}
+        <div class="trip-chip-panel" data-category-panel="line" hidden>
+          {lines.map((l) => (
+            <button class="trip-chip" data-filter-key="line" data-filter-value={l}>
+              {l}
             </button>
           ))}
         </div>
@@ -170,12 +174,14 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
             ...((Array.isArray(fm.place_category) ? fm.place_category : []) as string[]),
             ...((Array.isArray(fm.food_category) ? fm.food_category : []) as string[]),
           ].join(",")
+          const cardLines = (Array.isArray(fm.lines) ? fm.lines : []) as string[]
           return (
             <a
               class="trip-card"
               href={resolveRelative(fileData.slug!, page.slug!)}
               data-type={type}
               data-station={station}
+              data-lines={cardLines.join(",")}
               data-district={district}
               data-status={status}
               data-score={score}

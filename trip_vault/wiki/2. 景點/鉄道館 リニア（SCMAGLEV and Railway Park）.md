@@ -4,6 +4,7 @@ type: place
 place_category: [知性趣味]
 region: nagoya-city
 station: 金城ふ頭站（あおなみ線）
+lines: [あおなみ線]
 district: 港區金城ふ頭
 location: 35.049072,136.851006
 duration: 2-2.5小時
@@ -24,6 +25,7 @@ tags:
   - place_category/知性趣味
   - region/nagoya-city
   - station/金城ふ頭站
+  - line/あおなみ線
   - district/港區金城ふ頭
   - status/researching
   - priority/nice-to-have

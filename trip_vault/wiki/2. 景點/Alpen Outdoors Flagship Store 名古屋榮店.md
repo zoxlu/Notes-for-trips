@@ -4,6 +4,7 @@ type: place
 place_category: [逛街尋寶]
 region: nagoya-city
 station: 矢場町站（地下鐵名城線）
+lines: [地下鐵名城線]
 district: 榮
 location: 35.165466,136.905709
 duration: 1-1.5小時
@@ -24,6 +25,7 @@ tags:
   - place_category/逛街尋寶
   - region/nagoya-city
   - station/矢場町站
+  - line/地下鐵名城線
   - district/榮
   - status/researching
   - priority/nice-to-have

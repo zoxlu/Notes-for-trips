@@ -3,6 +3,7 @@ title: Saison Factory セゾンファクトリー 松坂屋名古屋店
 type: supermarket
 region: nagoya-city
 station: 矢場町站（地下鐵名城線）
+lines: [地下鐵名城線]
 district: 榮
 location: 35.1650956,136.9082367
 image: https://corp.saisonfactory.co.jp/store/images_store/store016_matsuzakaya_nagoya.jpg
@@ -22,6 +23,7 @@ tags:
   - type/supermarket
   - region/nagoya-city
   - station/矢場町站
+  - line/地下鐵名城線
   - district/榮
   - status/researching
   - priority/optional

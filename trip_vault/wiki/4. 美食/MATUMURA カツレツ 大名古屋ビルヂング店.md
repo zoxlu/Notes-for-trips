@@ -5,6 +5,7 @@ food_category:
   - 名古屋鄉土限定
 region: nagoya-city
 station: 名古屋站
+lines: [JR東海道線, JR中央線, 名鐵名古屋本線, 地下鐵東山線, 地下鐵櫻通線, あおなみ線]
 district: 名駅
 location: 35.1720523,136.8844986
 meal_slot: lunch
@@ -30,6 +31,12 @@ tags:
   - food_category/名古屋鄉土限定
   - region/nagoya-city
   - station/名古屋站
+  - line/JR東海道線
+  - line/JR中央線
+  - line/名鐵名古屋本線
+  - line/地下鐵東山線
+  - line/地下鐵櫻通線
+  - line/あおなみ線
   - district/名駅
   - meal/lunch
   - status/researching

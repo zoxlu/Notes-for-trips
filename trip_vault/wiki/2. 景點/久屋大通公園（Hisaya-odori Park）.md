@@ -6,6 +6,7 @@ place_category:
   - 逛街尋寶
 region: nagoya-city
 station: 久屋大通站（地下鐵櫻通線・名城線）
+lines: [地下鐵櫻通線, 地下鐵名城線]
 district: 榮
 location: 35.1673656,136.9088285
 duration: 1-2小時
@@ -27,6 +28,8 @@ tags:
   - place_category/逛街尋寶
   - region/nagoya-city
   - station/久屋大通站
+  - line/地下鐵櫻通線
+  - line/地下鐵名城線
   - district/榮
   - status/researching
   - priority/nice-to-have

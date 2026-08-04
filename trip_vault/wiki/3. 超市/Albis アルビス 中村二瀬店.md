@@ -3,6 +3,7 @@ title: Albis アルビス 中村二瀬店
 type: supermarket
 region: nagoya-city
 station: 岩塚站（名鐵名古屋本線）
+lines: [名鐵名古屋本線]
 district: 中村區
 location: 35.1604196,136.8503413
 image: 04-Attachments/Pasted-image-20260803133230.png
@@ -22,6 +23,7 @@ tags:
   - type/supermarket
   - region/nagoya-city
   - station/岩塚站
+  - line/名鐵名古屋本線
   - district/中村區
   - status/researching
   - priority/optional

@@ -5,6 +5,7 @@ place_category:
   - 逛街尋寶
 region: nagoya-city
 station: 名古屋站
+lines: [JR東海道線, JR中央線, 名鐵名古屋本線, 地下鐵東山線, 地下鐵櫻通線, あおなみ線]
 district: 名駅
 location: 35.170307,136.879837
 duration: 1小時
@@ -25,6 +26,12 @@ tags:
   - place_category/逛街尋寶
   - region/nagoya-city
   - station/名古屋站
+  - line/JR東海道線
+  - line/JR中央線
+  - line/名鐵名古屋本線
+  - line/地下鐵東山線
+  - line/地下鐵櫻通線
+  - line/あおなみ線
   - district/名駅
   - status/researching
   - priority/optional

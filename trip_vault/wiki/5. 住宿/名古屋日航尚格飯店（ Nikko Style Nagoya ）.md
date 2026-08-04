@@ -3,6 +3,7 @@ title: 名古屋日航尚格飯店（ Nikko Style Nagoya ）
 type: accommodation
 region: nagoya-city
 station: 名古屋站
+lines: [JR東海道線, JR中央線, 名鐵名古屋本線, 地下鐵東山線, 地下鐵櫻通線, あおなみ線]
 district: 名駅
 location: 35.169905,136.891039
 image: https://pan-designoffice.com/ochi/okura/nagoya/rakuten/img/index/photo01.jpg
@@ -25,6 +26,12 @@ tags:
   - type/accommodation
   - region/nagoya-city
   - station/名古屋站
+  - line/JR東海道線
+  - line/JR中央線
+  - line/名鐵名古屋本線
+  - line/地下鐵東山線
+  - line/地下鐵櫻通線
+  - line/あおなみ線
   - district/名駅
   - status/researching
   - priority/nice-to-have

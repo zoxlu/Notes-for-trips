@@ -4,6 +4,7 @@ type: place
 place_category: [逛街尋寶]
 region: nagoya-city
 station: 港區役所站（地下鐵名港線）
+lines: [地下鐵名港線]
 district: 港區
 location: 35.1086,136.882352
 duration: 2-3小時
@@ -24,6 +25,7 @@ tags:
   - place_category/逛街尋寶
   - region/nagoya-city
   - station/港區役所站
+  - line/地下鐵名港線
   - district/港區
   - status/researching
   - priority/nice-to-have

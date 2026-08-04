@@ -4,6 +4,7 @@ type: place
 place_category: [逛街尋寶]
 region: nagoya-city
 station: 龜島站（地下鐵東山線）
+lines: [地下鐵東山線]
 district: 則武新町
 location: 35.1798659,136.8799137
 image: https://image-cdn.aeonmall.jp/uploads/cbb1076e-28b8-472e-ae6b-231d3493c102.png
@@ -24,6 +25,7 @@ tags:
   - place_category/逛街尋寶
   - region/nagoya-city
   - station/龜島站
+  - line/地下鐵東山線
   - district/則武新町
   - status/researching
   - priority/nice-to-have
