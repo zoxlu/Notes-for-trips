@@ -173,6 +173,15 @@ export function resolveRelative(current: FullSlug, target: FullSlug | SimpleSlug
   return res
 }
 
+// frontmatter 的 image 欄位可能是完整外部網址（直接用），也可能是本機附件的相對路徑
+// （相對於 content 根目錄，例如 "04-Attachments/xxx.png"，不是相對於這則筆記自己的
+// 資料夾）。本機路徑要接上「回到網站根目錄」的相對路徑，才能在任何深度的筆記頁面上
+// 正確指到同一個附件檔案
+export function resolveImagePath(image: string, slug: FullSlug): string {
+  if (/^(https?:)?\/\//.test(image)) return image
+  return joinSegments(pathToRoot(slug), image)
+}
+
 export function splitAnchor(link: string): [string, string] {
   let [fp, anchor] = link.split("#", 2)
   if (fp.endsWith(".pdf")) {

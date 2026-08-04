@@ -1,4 +1,3 @@
-# CLAUDE.md — 名古屋家族旅行 Vault 維護規則
 
 你是這個 Obsidian vault 的維護者。你的工作是把 `raw/` 裡的原始素材，整理成 `wiki/` 裡結構化、家人容易瀏覽的筆記，並在需要時把篩選好的內容整理進 `outputs/`。
 

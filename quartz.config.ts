@@ -1,6 +1,9 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 import * as Component from "./quartz/components"
+import { loadEnvFile } from "./quartz/util/loadEnv"
+
+loadEnvFile()
 
 /**
  * Quartz 4 Configuration
@@ -28,7 +31,7 @@ const config: QuartzConfig = {
         header: "Noto Sans TC",
         body: "Noto Sans TC",
         code: "IBM Plex Mono",
-      },      
+      },
       colors: {
         lightMode: {
           light: "#fdfaf9",
@@ -72,6 +75,10 @@ const config: QuartzConfig = {
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
+      // 要放在 CrawlLinks 之後：img src 的路徑是 CrawlLinks 負責重寫成最終相對路徑的
+      // （例如 "../04-Attachments/xxx.png"），要等它處理完，我們才能拿
+      // resolveImagePath() 算出來的值去正確比對、找到要移除的重複圖片
+      Plugin.RemoveDuplicateCoverImage(),
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
     ],

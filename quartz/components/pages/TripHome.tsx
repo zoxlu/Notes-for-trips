@@ -1,29 +1,25 @@
 import { ComponentChildren } from "preact"
 import { htmlToJsx } from "../../util/jsx"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "../types"
-import { resolveRelative } from "../../util/path"
+import { resolveRelative, resolveImagePath } from "../../util/path"
 import NotePropertiesConstructor from "../NoteProperties"
 import ContentMetaConstructor from "../ContentMeta"
+import NoteMapConstructor from "../NoteMap"
+import { CARD_TYPE_META } from "../tripTypeMeta"
 // @ts-ignore
 import tripCardsScript from "../scripts/tripcards.inline"
 // @ts-ignore
 import styles from "../styles/tripcards.scss"
 // @ts-ignore
 import notePropertiesStyles from "../styles/noteproperties.scss"
+// @ts-ignore
+import noteMapStyles from "../styles/notemap.scss"
+// @ts-ignore
+import noteMapScript from "../scripts/notemap.inline"
 
 const NotePropertiesComp = NotePropertiesConstructor()
 const ContentMetaComp = ContentMetaConstructor()
-
-type TypeMeta = { icon: string; bg: string; fg: string; label: string }
-
-// 卡片本身沒有代表圖時，用來決定佔位圖示/底色，依 frontmatter 的 type 決定
-const CARD_TYPE_META: Record<string, TypeMeta> = {
-  place: { icon: "🏯", bg: "#FAECE7", fg: "#993C1D", label: "景點" },
-  food: { icon: "🍣", bg: "#FAEEDA", fg: "#854F0B", label: "美食" },
-  accommodation: { icon: "🛌", bg: "#E6F1FB", fg: "#0C447C", label: "住宿" },
-  transport: { icon: "🚃", bg: "#EFEFEF", fg: "#3A3A3A", label: "交通" },
-  supermarket: { icon: "🛒", bg: "#E8F5E9", fg: "#2E7D32", label: "超市" },
-}
+const NoteMapComp = NoteMapConstructor()
 
 // 「類型」篩選面板的 11 個按鈕：8 個子分類（比對 place_category / food_category 陣列）
 // + 住宿／交通／超市（比對 type 單一值）
@@ -68,18 +64,29 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
     const content = htmlToJsx(fileData.filePath!, tree) as ComponentChildren
     const classes: string[] = (fileData.frontmatter?.cssclasses as string[]) ?? []
     const classString = ["popover-hint", ...classes].join(" ")
+    const image = fileData.frontmatter?.image as string | undefined
     return (
       <>
         <NotePropertiesComp {...props} />
+        {image ? (
+          <div class="note-media-row">
+            <img
+              src={resolveImagePath(image, fileData.slug!)}
+              alt={fileData.frontmatter?.title as string}
+              class="note-cover-image"
+            />
+            <NoteMapComp {...props} />
+          </div>
+        ) : (
+          <NoteMapComp {...props} />
+        )}
         <ContentMetaComp {...props} />
         <article class={classString}>{content}</article>
       </>
     )
   }
 
-  const tripPages = allFiles.filter(
-    (f) => !!f.frontmatter?.type && f.slug !== fileData.slug,
-  )
+  const tripPages = allFiles.filter((f) => !!f.frontmatter?.type && f.slug !== fileData.slug)
 
   const stations = Array.from(
     new Set(tripPages.map((f) => f.frontmatter?.station as string).filter(Boolean)),
@@ -97,7 +104,7 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
     { key: "station", label: "車站" },
     { key: "district", label: "商圈" },
     //{ key: "status", label: "確認狀態" },
-    { key: "score", label: "興致指數" }
+    { key: "score", label: "興致指數" },
   ]
 
   const introContent = htmlToJsx(fileData.filePath!, tree) as ComponentChildren
@@ -107,10 +114,7 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
       <div class="trip-filters">
         <div class="trip-category-tabs">
           {CATEGORY_TABS.map((c, i) => (
-            <button
-              class={`trip-tab${i === 0 ? " active" : ""}`}
-              data-category-tab={c.key}
-            >
+            <button class={`trip-tab${i === 0 ? " active" : ""}`} data-category-tab={c.key}>
               {c.label}
               <span class="trip-tab-badge" hidden></span>
             </button>
@@ -149,7 +153,7 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
               {Number(s) > 0 ? "⭐".repeat(Number(s)) : "0（不感興趣）"}
             </button>
           ))}
-        </div>       
+        </div>
       </div>
       <div class="trip-grid">
         {tripPages.map((page) => {
@@ -179,7 +183,11 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
             >
               <div class="trip-card-image" style={{ background: meta.bg }}>
                 {image ? (
-                  <img src={image} alt={fm.title as string} class="trip-card-img" />
+                  <img
+                    src={resolveImagePath(image, fileData.slug!)}
+                    alt={fm.title as string}
+                    class="trip-card-img"
+                  />
                 ) : (
                   <span class="trip-card-icon">{meta.icon}</span>
                 )}
@@ -202,8 +210,8 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
 }
 
 //TripHome.css = styles
-TripHome.css = [styles, notePropertiesStyles]
+TripHome.css = [styles, notePropertiesStyles, noteMapStyles]
 // @ts-ignore
-TripHome.afterDOMLoaded = tripCardsScript
+TripHome.afterDOMLoaded = [tripCardsScript, noteMapScript]
 
 export default (() => TripHome) satisfies QuartzComponentConstructor

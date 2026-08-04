@@ -24,6 +24,8 @@ jobs:
         run: npm ci
       - name: Build Quartz
         run: npx quartz build
+        env:
+          GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

@@ -36,6 +36,18 @@ export default (() => {
     )
     const ogImageDefaultPath = `https://${cfg.baseUrl}/static/og-image.png`
 
+    // 筆記自己的 image 欄位優先當作分享用的 og:image（例如 LINE 分享連結時顯示的縮圖）。
+    // 完整外部網址（http/https/protocol-relative）直接用；本機附件路徑
+    // （相對於 content 根目錄，例如 "04-Attachments/xxx.png"）接上 baseUrl 組成完整
+    // 網址——社群平台的爬蟲不會處理相對路徑，一定要是完整 URL。沒有 image 欄位的筆記
+    // 才 fallback 回原本的預設圖
+    const frontmatterImage = fileData.frontmatter?.image as string | undefined
+    const ogImagePath = frontmatterImage
+      ? /^(https?:)?\/\//.test(frontmatterImage)
+        ? frontmatterImage
+        : `https://${cfg.baseUrl}/${frontmatterImage.replace(/^\/+/, "")}`
+      : ogImageDefaultPath
+
     return (
       <head>
         <title>{title}</title>
@@ -64,12 +76,12 @@ export default (() => {
 
         {!usesCustomOgImage && (
           <>
-            <meta property="og:image" content={ogImageDefaultPath} />
-            <meta property="og:image:url" content={ogImageDefaultPath} />
-            <meta name="twitter:image" content={ogImageDefaultPath} />
+            <meta property="og:image" content={ogImagePath} />
+            <meta property="og:image:url" content={ogImagePath} />
+            <meta name="twitter:image" content={ogImagePath} />
             <meta
               property="og:image:type"
-              content={`image/${getFileExtension(ogImageDefaultPath) ?? "png"}`}
+              content={`image/${getFileExtension(ogImagePath) ?? "png"}`}
             />
           </>
         )}

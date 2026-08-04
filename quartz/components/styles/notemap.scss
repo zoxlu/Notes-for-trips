@@ -1,0 +1,159 @@
+// 地圖本身強制鎖定亮色（notemap.inline.ts 有設 colorScheme: LIGHT），疊在地圖上面的
+// 東西（標記文字、資訊視窗、常駐標籤、全螢幕按鈕）如果用網站主題的 CSS 變數
+// （--light/--dark/--tertiary…）取色，深色模式下這些變數的值會整個對調（例如
+// --light 從接近白色變成接近黑色），疊在「永遠是亮色」的地圖上顏色就會不對、看起來
+// 很怪。這裡固定用亮色模式的顏色值，不管網站切到深色模式，地圖上的東西都維持一致
+$map-light: #fdfaf9;
+$map-lightgray: #ede2df;
+$map-gray: #c3aba4;
+$map-dark: #2b2422;
+$map-tertiary: #c48a8f;
+
+.note-map-container {
+  margin: 0 0 1.75rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.note-map-canvas {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $map-lightgray;
+}
+
+// 代表圖跟地圖並排：兩者都用同一個固定高度（跟 .note-map-canvas 一致），寬度則各佔一半
+// 由 flex 自然分配。筆記內文欄寬通常落在能讓兩欄接近方形的範圍，不用另外算
+// aspect-ratio——地圖那邊的高度本來就得靠 JS inline style 給固定值（Google Maps
+// 需要在初始化當下就量到不是 0 的高度，不能依賴外部 CSS 什麼時候載入完成，
+// 詳見 notemap.inline.ts 的說明），乾脆讓代表圖也套用同一個固定高度最簡單可靠
+.note-media-row {
+  display: flex;
+  gap: 0.75rem;
+  margin: 0 0 1.75rem;
+
+  .note-map-container {
+    flex: 1;
+    margin: 0;
+    min-width: 0;
+  }
+
+  // 手機版並排會太擠，改成上下疊
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
+.note-cover-image {
+  flex: 1;
+  min-width: 0;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid var(--lightgray);
+}
+
+.note-map-placeholder {
+  color: $map-gray;
+  font-size: 0.85rem;
+}
+
+.note-map-infowindow {
+  font-family: inherit;
+}
+
+// 「你在這裡」跟步行距離共用同一套膠囊底色樣式，視覺上是同一種「輔助說明標籤」。
+// 步行距離膠囊在有 href 時會是 <a> 標籤（點了跳到那則筆記），這裡把瀏覽器預設／
+// 網站全域的連結底線、連結色都重置掉，看起來還是跟純文字的膠囊一樣，也刻意連
+// hover 狀態的顏色都鎖死不變——這個膠囊活在 Google InfoWindow 裡面，曾經實測過
+// hover 觸發的動態樣式變化在這裡會搞出詭異的渲染錯誤（整個被拉伸變形），
+// 不管 hover 前後都要是同一組樣式，不能有任何變化
+.note-map-infowindow-badge,
+.note-map-infowindow-distance,
+.note-map-infowindow-distance:hover {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: $map-dark;
+  white-space: nowrap;
+  background: $map-tertiary;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.note-map-infowindow-badge {
+  font-size: 0.95rem;
+}
+
+// 實測證實：對 .gm-style-iw-a 加 CSS transform 想讓資訊視窗置中在標記上方，會干擾
+// Google 內部「量測內容尺寸」的邏輯——不是每次都會出事，但整個網站第一次載入、
+// 使用者第一次點擊標記時，容易量出離譜的寬度（9999px），導致資訊視窗的內容被
+// 定位到螢幕外看不到。拿掉這條 transform 後這個問題就穩定消失了，所以這裡刻意
+// 不對 .gm-style-iw-a 加任何 transform，資訊視窗維持 Google 預設的「方框左上角
+// 對齊標記、往右下延伸」位置，犧牲一點精緻的置中效果換取穩定不出錯
+
+// Google InfoWindow 外層容器（.gm-style-iw-c / .gm-style-iw-d）預設會留一圈固定
+// 內距＋保留關閉按鈕的空間，內容短的時候（例如只有步行距離膠囊）看起來會有一大片
+// 不必要的空白，這裡收緊。（這條規則之前一度被誤判是導致上面提到的位置錯亂問題，
+// 拿掉測試過，後來證實真正的原因是 transform，不是這裡，才又加回來）
+.gm-style .gm-style-iw-c {
+  padding: 10px !important;
+}
+.gm-style .gm-style-iw-d {
+  overflow: hidden !important;
+  padding: 0 !important;
+}
+
+// 放大到街道尺度時，圖示下方顯示的地點名稱：文字顏色由 JS 依地點類型動態指定
+// （跟標記圖示同一套配色，這個顏色本身就是固定值，不受深色模式影響），這裡只負責
+// 白色描邊讓文字在任何底色的地圖區塊上都看得清楚。描邊故意設細一點（1.5px）：
+// 太粗會把 emoji 本身的顏色/圖案蓋掉，讓人以為圖示不見了。white-space: pre-line
+// 讓 JS 那邊塞進去的換行字元真的換行（圖示一行、名稱一行），不然純文字裡的 \n
+// 預設不會被當作換行處理
+.note-map-marker-name {
+  font-weight: 700;
+  -webkit-text-stroke: 1.5px $map-light;
+  paint-order: stroke fill;
+  white-space: pre-line;
+  text-align: center;
+  line-height: 1.3;
+}
+
+// 自身標記的常駐標籤（「你在這裡：地點名稱」），用 OverlayView 自己畫、自己控制位置，
+// 不會像 InfoWindow 一樣可以被使用者關掉。pointer-events: none 避免這個純顯示用的
+// 標籤擋住底下地圖的拖曳/點擊操作
+.note-map-self-label {
+  position: absolute;
+  transform: translate(-50%, calc(-100% - 24px));
+  pointer-events: none;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: $map-dark;
+  white-space: nowrap;
+  background: $map-tertiary;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.note-map-fullscreen-button {
+  margin: 10px;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  background: $map-light;
+  color: $map-dark;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    background: $map-lightgray;
+  }
+}

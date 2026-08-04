@@ -37,6 +37,7 @@
   "dependencies": {
     "@clack/prompts": "^0.11.0",
     "@floating-ui/dom": "^1.7.4",
+    "@googlemaps/markerclusterer": "^2.6.2",
     "@myriaddreamin/rehype-typst": "^0.6.0",
     "@napi-rs/simple-git": "0.1.22",
     "@tweenjs/tween.js": "^25.0.0",
@@ -99,6 +100,7 @@
   },
   "devDependencies": {
     "@types/d3": "^7.4.3",
+    "@types/google.maps": "^3.65.4",
     "@types/hast": "^3.0.4",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^25.0.10",

@@ -5,8 +5,8 @@ region: nagoya-city
 station: 岩塚站（名鐵名古屋本線）
 district: 中村區
 location: 35.1604196,136.8503413
-image:
-image_source:
+image: wiki/04-Attachments/Pasted image 20260803133230.png
+image_source: 繃皮雞
 status: researching
 priority: optional
 shared_by: "[[繃皮雞]]"
@@ -32,9 +32,7 @@ aliases:
 ---
 ## 簡介
 北陸系連鎖超市 Albis 在愛知縣的首間分店。地址：愛知県名古屋市中村区二瀬町26-5。
-
-## ⚠️ 待確認
-- 圖片待補
+![[wiki/04-Attachments/Pasted image 20260803133230.png]]
 
 ## 原始連結備註
 > 來源檔案：2026-08-01 超市
@@ -42,3 +40,8 @@ aliases:
 > [[繃皮雞]]：（原始素材為家人分享的名古屋超市名單與 Google Maps 連結，無額外文字說明。）
 
 ## 📝 我的備註
+### 繃皮雞
+似乎看起來很不錯，但好像離市區有點距離
+![[Pasted image 20260803133544.png]]
+![[Pasted image 20260803133557.png]]
+![[Pasted image 20260803133610.png]]
