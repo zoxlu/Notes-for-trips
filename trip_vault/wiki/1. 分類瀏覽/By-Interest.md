@@ -1,6 +1,6 @@
 ---
 title: 依興致指數瀏覽
-tags: [index]
+tags: [index, hide-nav]
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-title: 依餐別瀏覽（美食）
+title: 美食
 tags: [index]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: 依確認狀態瀏覽
-tags: [index]
+tags: [index, hide-nav]
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-title: 依地鐵站/車站瀏覽
+title: 車站
 tags: [index]
 ---
 ## 名古屋站

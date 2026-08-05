@@ -87,7 +87,7 @@ const NoteProperties: QuartzComponent = ({ fileData, allFiles }: QuartzComponent
             renderSharedBy(String(item.value))
           ) : item.key === "station" ? (
             <>
-              <span class="note-property-value">{String(item.value)}</span>
+              {renderFilterLink("station", String(item.value))}
               {Array.isArray(fm.lines) && (fm.lines as string[]).length > 0 && (
                 <span class="trip-property-lines">
                   {" "}
@@ -114,9 +114,7 @@ const NoteProperties: QuartzComponent = ({ fileData, allFiles }: QuartzComponent
             <a
               href={
                 "https://www.google.com/maps/search/?api=1&query=" +
-                encodeURIComponent((fm.title as string) ?? "") +
-                "+" +
-                String(item.value)
+                encodeURIComponent(String(item.value))
               }
               target="_blank"
               rel="noopener noreferrer"

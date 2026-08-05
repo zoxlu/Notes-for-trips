@@ -1,6 +1,6 @@
 // 篩選狀態：以「群組」為單位記住各自選中的條件，
 // 例如 { type: {key: "category", value: "文化古蹟"}, district: {key: "district", value: "名古屋站前"} }
-// 群組名稱對應 .trip-chip-panel 的 data-category-panel（type / line / district / score）。
+// 群組名稱對應 .trip-chip-panel 的 data-category-panel（type / line / station / district / score）。
 // 卡片顯示與否，是「所有作用中群組的條件」同時成立（AND），
 // 同一個群組內任何時候最多只有一個條件生效（單選，符合現有 tab 底下按鈕的互動習慣）。
 type FilterCondition = { key: string; value: string; label: string }
