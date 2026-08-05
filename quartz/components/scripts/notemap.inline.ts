@@ -18,11 +18,6 @@ type NoteMapPayload = {
 
 let googleMapsLoader: Promise<void> | undefined
 
-// InfoWindow 的 DOM 節點不是掛在地圖的 canvas 底下，換頁時就算把 canvas 整個換掉，
-// 舊的 InfoWindow 也不會跟著消失，要自己記住上一次開的是哪個，換頁時手動關掉，
-// 否則舊筆記留下的資訊視窗會一直飄在畫面上，變成看起來「跟標記對不上」的假象
-let activeInfoWindow: google.maps.InfoWindow | undefined
-
 // 動態載入 Google Maps JS API script，整個網站共用一份，SPA 換頁時如果已經載入過就直接沿用
 function loadGoogleMaps(apiKey: string): Promise<void> {
   if (typeof google !== "undefined" && google.maps) return Promise.resolve()
@@ -180,6 +175,12 @@ function createPointLabelOverlay(
       this.div = document.createElement("div")
       this.div.className = "note-map-point-label"
       this.div.textContent = text
+      // 圖示本身太小不好點，讓底下的名稱膠囊也能觸發跟圖示一樣的點擊行為：
+      // pointer-events 蓋掉 CSS 預設的 none，並把點擊轉發給 marker 走同一套
+      // click 監聽邏輯（開資訊視窗／畫路線），不用另外複製一份邏輯
+      this.div.style.cursor = "pointer"
+      this.div.style.pointerEvents = "auto"
+      this.div.addEventListener("click", () => google.maps.event.trigger(marker, "click"))
       this.getPanes()?.floatPane.appendChild(this.div)
       marker.addListener("map_changed", () => this.syncVisibility())
       // marker 是否已經被 MarkerClusterer 收進群聚圓圈，在 onAdd() 當下就可能已經
@@ -218,28 +219,132 @@ function createPointLabelOverlay(
 // 的步行距離/時間（不是連結，Directions API 回來前後只會更新這一行），下排是「前往
 // 「XXX」」的獨立連結（有 href 才會有這一行）——分成兩個獨立元素，而不是像之前那樣
 // 把整個距離文字包成一個連結，是刻意要讓「資訊」跟「動作」在視覺上一望即知是兩件事
-function buildInfoWindowContent(point: NoteMapPoint): HTMLElement {
+function buildPopupContent(point: NoteMapPoint): HTMLElement {
   const container = document.createElement("div")
-  container.className = "note-map-infowindow"
+  container.className = "note-map-popup-card"
 
   const distanceEl = document.createElement("div")
-  distanceEl.className = "note-map-infowindow-distance"
+  distanceEl.className = "note-map-popup-distance"
   distanceEl.textContent = "步行距離計算中…"
   container.appendChild(distanceEl)
 
   if (point.href) {
     const linkEl = document.createElement("a")
-    linkEl.className = "note-map-infowindow-link"
+    linkEl.className = "note-map-popup-link"
     linkEl.href = point.href
     // 連結顏色沿用這個地點類型自己的顏色（跟標記圖示同一套），除了讓連結本身
     // 更好認出來是「可以點的東西」，也跟地圖上其他膠囊（統一用 $map-tertiary）
     // 的配色拉開，不會混在一起分不清楚
     linkEl.style.color = point.fg
-    linkEl.textContent = `前往「${point.label}」→`
+    linkEl.textContent = `前往查看「${point.label}」→`
     container.appendChild(linkEl)
   }
 
   return container
+}
+
+// 步行距離彈出框：取代原本的 google.maps.InfoWindow。原本用 InfoWindow 時實測發現
+// 兩個沒辦法解決的問題——(1) anchorPoint/pixelOffset 對自訂圖示標記完全沒作用，
+// 方框固定是「左上角對齊標記座標、往右下延伸」，小地圖（300px 高）常常讓方框超出
+// 畫布被裁掉；(2) 用 CSS transform 硬改這個位置會干擾 Google 內部量測內容尺寸的
+// 邏輯，導致第一次載入時有機率整個定位到螢幕外（詳見 notemap.scss 的說明）。
+// 兩條路都走不通，乾脆不用 InfoWindow，改用跟「你在這裡」/地點名稱同一套
+// OverlayView 自己畫、自己算位置，才能真正保證彈出框一定夾在目前畫布可視範圍內。
+// 額外的好處：InfoWindow 外層那些容易量錯尺寸的隱形容器（.gm-style-iw-a 等）
+// 也一併不存在了，順便解決了滑鼠移到它附近會吃掉地圖拖曳/縮放事件的問題
+function createInfoPopupOverlay(
+  map: google.maps.Map,
+  canvas: HTMLElement,
+): {
+  open: (position: google.maps.LatLngLiteral, content: HTMLElement) => void
+  close: () => void
+} {
+  class InfoPopupOverlay extends google.maps.OverlayView {
+    div: HTMLDivElement | null = null
+    position: google.maps.LatLngLiteral | null = null
+
+    onAdd() {
+      this.div = document.createElement("div")
+      this.div.className = "note-map-popup"
+      this.div.style.display = "none"
+      this.getPanes()?.floatPane.appendChild(this.div)
+    }
+
+    draw() {
+      const projection = this.getProjection()
+      if (!projection || !this.div || !this.position) return
+
+      const anchorPixel = projection.fromLatLngToDivPixel(new google.maps.LatLng(this.position))
+      if (!anchorPixel) return
+
+      // 量不到彈出框目前的實際尺寸時（例如剛換內容、還沒 reflow）退回一個保守估計值，
+      // 下一次 draw()（拖曳/縮放都會觸發，加上內容更新後手動呼叫一次）會用真實尺寸校正
+      const rect = this.div.getBoundingClientRect()
+      const width = rect.width || 220
+      const height = rect.height || 90
+      const margin = 8
+      // Google 地圖左下角固定貼一條「Map data／Terms」版權列，會佔掉底部一小段
+      // 高度，只留一般的 margin 不夠，貼太下面會被那條列蓋住／擋住，這裡下緣額外
+      // 多留一點
+      const bottomMargin = 28
+      // 大約是標記圖示本身的半徑，讓彈出框不要正好蓋住圖示
+      const markerClearance = 20
+
+      // anchorPixel（以及等一下設的 style.left/top）是相對於這個 div 的定位基準──
+      // floatPane──算的，但 floatPane 的原點不一定跟 canvas（地圖最外層那個 div）
+      // 的左上角重合（實測發現兩者可以差到超過半個畫布的距離）。要「把彈出框夾在
+      // 畫布可視範圍內」，不能直接拿 canvas.clientWidth/clientHeight 當邊界（那是
+      // 以 canvas 左上角為原點的邊界，跟 anchorPixel 的座標系統對不起來），得先量出
+      // canvas 的邊界換算成 floatPane 座標系統下的位置，再拿來當夾取範圍
+      const floatPane = this.div.parentElement as HTMLElement
+      const floatPaneRect = floatPane.getBoundingClientRect()
+      const canvasRect = canvas.getBoundingClientRect()
+      const canvasLeftInPane = canvasRect.left - floatPaneRect.left
+      const canvasTopInPane = canvasRect.top - floatPaneRect.top
+
+      let left = anchorPixel.x - width / 2
+      let top = anchorPixel.y - height - markerClearance
+      const minTop = canvasTopInPane + margin
+      const preferAbove = top >= minTop
+      // 標記本身就在畫布上緣附近、上方放不下時，改貼到標記下方
+      if (!preferAbove) top = anchorPixel.y + markerClearance
+
+      // 跟原本 InfoWindow 最大的差異：不管地圖怎麼拖曳/縮放，直接把彈出框自己的座標
+      // 夾在目前畫布的可視範圍內，保證使用者一定看得到，不依賴 Google 內建 autoPan
+      // （對這種自訂圖示標記量測常常不準）
+      const minLeft = canvasLeftInPane + margin
+      const maxLeft = Math.max(canvasLeftInPane + canvas.clientWidth - width - margin, minLeft)
+      const maxTop = Math.max(canvasTopInPane + canvas.clientHeight - height - bottomMargin, minTop)
+      left = Math.min(Math.max(left, minLeft), maxLeft)
+      top = Math.min(Math.max(top, minTop), maxTop)
+
+      this.div.style.left = `${left}px`
+      this.div.style.top = `${top}px`
+    }
+
+    onRemove() {
+      this.div?.remove()
+      this.div = null
+    }
+  }
+
+  const overlay = new InfoPopupOverlay()
+  overlay.setMap(map)
+
+  return {
+    open(position, content) {
+      overlay.position = position
+      if (overlay.div) {
+        overlay.div.style.display = ""
+        overlay.div.replaceChildren(content)
+      }
+      overlay.draw()
+    },
+    close() {
+      overlay.position = null
+      if (overlay.div) overlay.div.style.display = "none"
+    },
+  }
 }
 
 // iOS Safari（手機/平板）完全沒有實作標準 Fullscreen API：Element.requestFullscreen
@@ -418,19 +523,21 @@ function renderMap(container: HTMLElement, oldCanvas: HTMLElement, payload: Note
   google.maps.event.trigger(map, "resize")
   map.setCenter(center)
 
-  // 換頁時把上一則筆記留下的 InfoWindow 關掉，不然它不會跟著 canvas 一起消失
-  activeInfoWindow?.close()
+  // 上面那次 resize 只處理「剛插入 DOM 當下尺寸可能還沒穩定」這個情境，之後如果
+  // 容器尺寸又變了（例如開發者工具面板打開/關閉、視窗縮放、側邊欄版面改變），
+  // Google Maps 不會自動偵測到，內部的座標投影會停留在舊尺寸，導致疊在地圖上的
+  // OverlayView（步行距離彈出框／你在這裡標籤等）算出來的位置跟畫面實際大小對不上。
+  // 用 ResizeObserver 持續監看，容器尺寸一變就重新觸發 resize，讓 Google 內部
+  // 狀態隨時跟畫面上的真實尺寸同步
+  new ResizeObserver(() => {
+    google.maps.event.trigger(map, "resize")
+  }).observe(canvas)
 
-  // 點附近地點標記時共用同一個 InfoWindow，點別的標記時會自動把前一個關掉，
-  // 畫面比較不會亂。
-  //
-  // 實測發現 anchorPoint / pixelOffset（不管設 0,0 還是自訂值）在這個版本的 InfoWindow
-  // 對自訂圖示標記完全沒有作用，方框永遠是「左上角對齊座標點、往右下延伸」。曾經試過
-  // 用 CSS transform 硬把方框位移置中，但那會干擾 Google 內部量測內容尺寸的邏輯，
-  // 導致第一次點擊時有機率整個沒顯示（詳見 notemap.scss 裡的說明），已經拿掉了，
-  // 犧牲置中的精緻度換取穩定不出錯
-  const infoWindow = new google.maps.InfoWindow()
-  activeInfoWindow = infoWindow
+  // 點附近地點標記時共用同一個彈出框，點別的標記時會自動把前一個換掉內容，
+  // 畫面比較不會亂。彈出框本身是掛在 canvas 底下的 OverlayView（見
+  // createInfoPopupOverlay 的說明），換頁時 canvas 節點整個被換掉，舊的彈出框
+  // 會跟著一起消失，不用像以前的 google.maps.InfoWindow 那樣手動追蹤、手動關閉
+  const popup = createInfoPopupOverlay(map, canvas)
 
   const selfMarker = new google.maps.Marker({
     map,
@@ -506,34 +613,35 @@ function renderMap(container: HTMLElement, oldCanvas: HTMLElement, payload: Note
     }
 
     marker.addListener("click", () => {
-      // 換頁後這個 container 可能已經被 morph 掉了，避免把資訊視窗開到已經不存在的地圖上
+      // 換頁後這個 container 可能已經被 morph 掉了，避免把彈出框開到已經不存在的地圖上
       if (!document.body.contains(container)) return
 
-      const content = buildInfoWindowContent(point)
+      const content = buildPopupContent(point)
+      // 點擊當下就先開啟、顯示「計算中」的預設文字，不用等 Directions API 回來才有
+      // 反應——彈出框是我們自己的 div，重新設定內容/尺寸不會像 Google InfoWindow
+      // 那樣有量測邏輯出錯的風險，可以放心先開再補資料
+      popup.open(position, content)
 
-      // 等 Directions API 的結果回來、路線畫完之後，才開資訊視窗（不是點擊當下馬上開、
-      // 之後才補資料），讓 InfoWindow.open() 一定是這整個流程最後一步
       getWalkingRoute(
         directionsService,
         center,
         position,
         directionsCache,
         otherMarkers.indexOf(marker),
-      ).then(
-        (result) => {
-          const leg = result?.routes[0]?.legs[0]
-          const distanceEl = content.querySelector<HTMLElement>(".note-map-infowindow-distance")
-          if (distanceEl) {
-            distanceEl.textContent = leg
-              ? `步行約 ${leg.distance?.text ?? ""}．${leg.duration ? formatWalkingDuration(leg.duration.value) : ""}`
-              : "無法取得步行距離"
-          }
-          if (result) directionsRenderer.setDirections(result)
+      ).then((result) => {
+        const leg = result?.routes[0]?.legs[0]
+        const distanceEl = content.querySelector<HTMLElement>(".note-map-popup-distance")
+        if (distanceEl) {
+          distanceEl.textContent = leg
+            ? `步行約 ${leg.distance?.text ?? ""}．${leg.duration ? formatWalkingDuration(leg.duration.value) : ""}`
+            : "無法取得步行距離"
+        }
+        if (result) directionsRenderer.setDirections(result)
 
-          infoWindow.setContent(content)
-          infoWindow.open({ map, anchor: marker })
-        },
-      )
+        // 內容尺寸可能因為文字變長/變短而改變，重新開一次讓彈出框依新尺寸
+        // 重新計算並夾在畫布可視範圍內
+        popup.open(position, content)
+      })
     })
 
     return marker
@@ -595,8 +703,7 @@ function initNoteMap(container: HTMLElement) {
   // 監聽器），這個 script 本身「直接呼叫一次＋註冊監聽器」的固定寫法，會導致
   // initNoteMap 在第一次載入時被連續呼叫兩次。如果標記延後到 loadGoogleMaps()
   // resolve 之後才寫入，兩次呼叫都會在標記生效前就通過這個檢查，變成重複渲染
-  // （第二次會渲染在一個已經被換掉、脫離畫面的舊 canvas 節點上，但共用的
-  // activeInfoWindow 還是會被它關掉，導致畫面上真正看得到的資訊視窗被自己關掉）
+  // （多打一次 Google Maps API、多算一次 Directions，都是不必要的浪費）
   if (container.dataset.noteMapInitializedFor === raw) return
   container.dataset.noteMapInitializedFor = raw
 

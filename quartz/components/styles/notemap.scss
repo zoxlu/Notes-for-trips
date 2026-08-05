@@ -87,17 +87,15 @@ html.note-map-pseudo-fullscreen-lock {
   font-size: 0.85rem;
 }
 
-// 實測發現：用 display: flex 排版這裡的兩行文字，會讓 Google 內部「量測內容尺寸」的
-// 邏輯算錯，兩行之間會被撐出一大段不合理的空白（跟這個檔案別處提到的 .gm-style-iw-a
-// transform 會搞壞量測邏輯是同一類問題）。改回單純的區塊堆疊＋ margin 控制間距，
-// 不要再用 flex／grid 排這裡的內容。
+// 內容分兩行：上排是純文字的步行距離/時間（不是連結，Directions API 回來前後只會
+// 更新這一行），下排是「前往查看「XXX」」的獨立連結（有 href 才會有這一行）——分成
+// 兩個獨立元素，而不是像之前那樣把整個距離文字包成一個連結，是刻意要讓「資訊」跟
+// 「動作」在視覺上一望即知是兩件事。
 //
 // 內容本身給一個跟地圖上其他膠囊（你在這裡／地點名稱，統一 $map-tertiary）不同色的
 // 淺色卡片底（$map-light），純文字直接疊在地圖上很難辨識，卡片同時也讓「點下去才
-// 出現的資訊視窗」跟「一直貼在地圖上的常駐標籤」在視覺上不會混在一起。上排是深色
-// 純資訊（步行距離/時間），下排是彩色底線連結（前往哪則筆記），一望即知哪行是資訊、
-// 哪行是可以點的動作
-.note-map-infowindow {
+// 出現的彈出框」跟「一直貼在地圖上的常駐標籤」在視覺上不會混在一起
+.note-map-popup-card {
   font-family: inherit;
   // 用 $map-lightgray（偏暖的米棕色）而不是純白，加上一圈跟膠囊同色的邊框，
   // 卡片本身在地圖的亮色底圖上才會有清楚的邊界，不會跟背景糊在一起
@@ -106,9 +104,12 @@ html.note-map-pseudo-fullscreen-lock {
   border-radius: 8px;
   padding: 0.45rem 0.65rem;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  // 外層 .note-map-popup 定位容器本身 pointer-events: none（見下方說明），
+  // 這裡蓋回 auto，卡片跟裡面的連結才能正常接收點擊
+  pointer-events: auto;
 }
 
-.note-map-infowindow-distance {
+.note-map-popup-distance {
   margin: 0 0 0.2rem;
   font-weight: 700;
   font-size: 1.05rem;
@@ -116,11 +117,9 @@ html.note-map-pseudo-fullscreen-lock {
   white-space: nowrap;
 }
 
-// 連結顏色由 JS 依地點類型動態指定（inline style，見 notemap.inline.ts），這裡只負責
-// 排版；hover 狀態刻意跟一般狀態鎖死同一組樣式不變——這個連結活在 Google InfoWindow
-// 裡面，曾經實測過 hover 觸發的動態樣式變化在這裡會搞出詭異的渲染錯誤（整個被拉伸變形）
-.note-map-infowindow-link,
-.note-map-infowindow-link:hover {
+// 連結顏色由 JS 依地點類型動態指定（inline style，見 notemap.inline.ts），這裡只負責排版
+.note-map-popup-link,
+.note-map-popup-link:hover {
   display: block;
   margin: 0;
   font-weight: 700;
@@ -129,23 +128,19 @@ html.note-map-pseudo-fullscreen-lock {
   text-decoration: underline;
 }
 
-// 實測證實：對 .gm-style-iw-a 加 CSS transform 想讓資訊視窗置中在標記上方，會干擾
-// Google 內部「量測內容尺寸」的邏輯——不是每次都會出事，但整個網站第一次載入、
-// 使用者第一次點擊標記時，容易量出離譜的寬度（9999px），導致資訊視窗的內容被
-// 定位到螢幕外看不到。拿掉這條 transform 後這個問題就穩定消失了，所以這裡刻意
-// 不對 .gm-style-iw-a 加任何 transform，資訊視窗維持 Google 預設的「方框左上角
-// 對齊標記、往右下延伸」位置，犧牲一點精緻的置中效果換取穩定不出錯
-
-// Google InfoWindow 外層容器（.gm-style-iw-c / .gm-style-iw-d）預設會留一圈固定
-// 內距＋保留關閉按鈕的空間，內容短的時候（例如只有步行距離膠囊）看起來會有一大片
-// 不必要的空白，這裡收緊。（這條規則之前一度被誤判是導致上面提到的位置錯亂問題，
-// 拿掉測試過，後來證實真正的原因是 transform，不是這裡，才又加回來）
-.gm-style .gm-style-iw-c {
-  padding: 10px !important;
-}
-.gm-style .gm-style-iw-d {
-  overflow: hidden !important;
-  padding: 0 !important;
+// 步行距離彈出框的定位容器：實際座標計算在 notemap.inline.ts 的
+// createInfoPopupOverlay（自訂 OverlayView，取代原本的 google.maps.InfoWindow——
+// 後者的 anchorPoint/pixelOffset 對自訂圖示標記完全沒作用，方框在小地圖上常常
+// 跳出可視範圍，且外層容器尺寸量測不準，會吃掉附近的地圖拖曳/縮放事件，兩個問題
+// 都無法從 CSS/API 選項解決）。
+// 這裡的 z-index 沿用跟其他常駐/互動元素同一套分層（見 .note-map-point-label、
+// .note-map-self-label 旁的數字），確保彈出框永遠疊在最上面。
+// pointer-events: none 讓容器本身（可能比卡片視覺範圍略大）不擋地圖拖曳，
+// 可點擊的卡片內容在 .note-map-popup-card 那層自己蓋回 auto
+.note-map-popup {
+  position: absolute;
+  z-index: 30;
+  pointer-events: none;
 }
 
 // 其他地點的名稱膠囊，畫在圖示正下方，跟「你在這裡」標籤／步行距離提示用同一套膠囊
@@ -156,7 +151,15 @@ html.note-map-pseudo-fullscreen-lock {
 .note-map-point-label {
   position: absolute;
   transform: translate(-50%, 10px);
+  // 預設 pointer-events: none 只是不擋地圖拖曳/點擊；notemap.inline.ts 的
+  // PointLabelOverlay 會在自己的 DOM 節點上另外把 pointer-events 蓋成 auto，
+  // 讓文字本身可以點擊、轉發成跟圖示一樣的點擊行為（圖示太小不好點）
   pointer-events: none;
+  // 地圖上這些常駐/互動元素沒有明確 z-index 的話，疊放順序純粹看 DOM 加入
+  // 先後（floatPane 裡先加入的在下面），景點多的時候容易讓「你在這裡」被
+  // 後加入的地點名稱膠囊蓋住。這裡明確分層：地點名稱 < 你在這裡 < 彈出框
+  // （見 .note-map-self-label、.note-map-popup 旁的對應數字）
+  z-index: 10;
   font-weight: 700;
   font-size: 0.9rem;
   color: $map-light;
@@ -176,6 +179,9 @@ html.note-map-pseudo-fullscreen-lock {
   position: absolute;
   transform: translate(-50%, calc(-100% - 24px));
   pointer-events: none;
+  // 比其他地點名稱膠囊高一層（見 .note-map-point-label 旁的說明），確保「你在
+  // 這裡」不會被景點多時後加入的名稱膠囊蓋住
+  z-index: 20;
   font-weight: 700;
   font-size: 1.05rem;
   color: $map-light;
