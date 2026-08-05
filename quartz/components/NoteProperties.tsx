@@ -114,7 +114,9 @@ const NoteProperties: QuartzComponent = ({ fileData, allFiles }: QuartzComponent
             <a
               href={
                 "https://www.google.com/maps/search/?api=1&query=" +
-                encodeURIComponent(String(item.value))
+                // 光傳座標的話 Google Maps 只會落一個沒有名字的圖釘（顯示成一串座標數字），
+                // 把店名一起塞進 query 文字裡，用座標當定位提示，才能連去店家本身的地圖頁面
+                encodeURIComponent(`${fm.title as string} ${String(item.value)}`)
               }
               target="_blank"
               rel="noopener noreferrer"

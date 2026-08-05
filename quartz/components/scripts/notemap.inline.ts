@@ -128,6 +128,7 @@ function getWalkingRoute(
 function createSelfLabelOverlay(
   text: string,
   position: google.maps.LatLngLiteral,
+  canvas: HTMLElement,
 ): google.maps.OverlayView {
   class SelfLabelOverlay extends google.maps.OverlayView {
     private div: HTMLDivElement | null = null
@@ -136,6 +137,12 @@ function createSelfLabelOverlay(
       this.div = document.createElement("div")
       this.div.className = "note-map-self-label"
       this.div.textContent = text
+      // 全螢幕模式下使用者滑動地圖找地點後，容易忘記怎麼退出；讓這個常駐文字也能
+      // 點擊退出全螢幕，跟下面 selfMarker 圖示的點擊行為一致。預設 CSS 是
+      // pointer-events: none（純顯示用，見 notemap.scss），這裡蓋成 auto 才能點
+      this.div.style.cursor = "pointer"
+      this.div.style.pointerEvents = "auto"
+      this.div.addEventListener("click", () => exitFullscreen(canvas))
       this.getPanes()?.floatPane.appendChild(this.div)
     }
 
@@ -384,6 +391,21 @@ function setPseudoFullscreen(canvas: HTMLElement, map: google.maps.Map, on: bool
   google.maps.event.trigger(map, "resize")
 }
 
+// 退出全螢幕（不管是原生全螢幕還是偽全螢幕）抽成獨立函式，讓「你在這裡」圖示/文字
+// 的點擊行為可以共用，不用複製一份判斷邏輯。只處理「退出」，不像全螢幕按鈕那樣
+// 兩種狀態互相切換——點「你在這裡」在還沒進全螢幕時什麼都不用做
+function exitFullscreen(canvas: HTMLElement) {
+  const api = getFullscreenApi(canvas)
+  if (api?.isActive()) {
+    api.exit()
+    return
+  }
+  if (canvas.classList.contains("note-map-canvas--pseudo-fullscreen")) {
+    const map = (canvas as unknown as { __noteMap?: google.maps.Map }).__noteMap
+    if (map) setPseudoFullscreen(canvas, map, false)
+  }
+}
+
 // 自訂文字版全螢幕按鈕，取代 Google 內建那個不夠直覺的小圖示。
 // 用 map.controls[...].push() 加進去（不是外部另外擺一個 <button>）：
 // 這樣按鈕本身是 canvas 的子節點，進入全螢幕後（fullscreen 只會顯示目標元素的子樹）
@@ -547,6 +569,8 @@ function renderMap(container: HTMLElement, oldCanvas: HTMLElement, payload: Note
     zIndex: 10,
     title: payload.self.title,
   })
+  // 全螢幕模式下點自己的圖示當作「退出全螢幕」的捷徑，跟下面的常駐文字標籤一致
+  selfMarker.addListener("click", () => exitFullscreen(canvas))
 
   // 常駐標籤，不會因為使用者點別的地方就消失，讓人在全螢幕模式下滑來滑去也不會
   // 忘記自己正在看哪個地點。
@@ -554,7 +578,7 @@ function renderMap(container: HTMLElement, oldCanvas: HTMLElement, payload: Note
   // Maps SDK 剛啟動）內部行為跟預期不同而拋錯，不能讓它中斷整個 renderMap()、
   // 連累後面的其他標記／群聚／步行距離都不會執行
   try {
-    createSelfLabelOverlay(`你在這裡：${payload.self.label}`, center).setMap(map)
+    createSelfLabelOverlay(`你在這裡：${payload.self.label}`, center, canvas).setMap(map)
   } catch (err) {
     console.error("note map: self label overlay failed", err)
   }
