@@ -8,8 +8,8 @@ station: 榮站（地下鐵東山線・名城線）
 lines: [地下鐵東山線, 地下鐵名城線]
 district: 榮
 location: 35.163689,136.907385
-image:
-image_source:
+image: https://upload.wikimedia.org/wikipedia/commons/a/aa/NAGOYA-PARCOMINAMIKAN.JPG
+image_source: 來自 Wikimedia Commons（名古屋PARCO南館外觀）
 status: researching
 priority: nice-to-have
 shared_by: "[[繃皮蛇]]"
@@ -39,6 +39,8 @@ aliases:
 ## 簡介
 1989年開幕的[[榮商圈]]大型百貨，由東館、西館、南館三棟組成（另有較小的midi館），是全日本規模最大的PARCO分店之一，約300家店舖，涵蓋流行服飾、次文化、動漫周邊、餐飲等。地址：愛知県名古屋市中区栄3-29-1。
 
+![代表圖](https://upload.wikimedia.org/wikipedia/commons/a/aa/NAGOYA-PARCOMINAMIKAN.JPG)
+
 ## 交通方式
 地下鐵東山線・名城線「榮」站步行可達。
 
@@ -58,8 +60,8 @@ aliases:
 - 服飾（走成熟氣質風）、藝術用品
 
 ## ⚠️ 待確認
-- 圖片待補：目前找不到適合的官網代表圖或授權圖片，之後可補家人現場拍的照片。
 - 南館部分業種近期有調整，實際樓層內容建議出發前上官網確認。
+- 代表圖僅為南館外觀，東館西館實際樣貌可能略有不同，之後可補家人現場拍的照片。
 
 ## 相關筆記
 - [[榮商圈]]
