@@ -38,6 +38,10 @@ tags: [index]
 - [[円頓寺商店街]] — 円頓寺，明治老字號與新潮小店並存的商店街（nice-to-have）
 - [[瀨戶（陶藝之城）]] — 瀨戶，陶瓷器店與工房散步（nice-to-have）
 - [[BOOKOFF SUPER BAZAAR カインズモール名古屋みなと店（二手露營用品）]] — 港區，東海地區最大級二手露營用品賣場（optional）
+- [[HAERA]] — 榮，2026年新開幕的PARCO×大丸松坂屋精品商場（nice-to-have）
+- [[SAKAE NOVA・スカイル・メルサ]] — 榮，LOFT／GU／Uniqlo等老牌商場群（nice-to-have）
+- [[名古屋PARCO]] — 榮，東西南三館大型百貨（nice-to-have）
+- [[LACHIC]] — 榮，流行服飾與人氣餐廳複合商場（nice-to-have）
 
 ## 自然漫步
 - [[熱田神宮]] — 熱田，日本三大神宮之一（nice-to-have）

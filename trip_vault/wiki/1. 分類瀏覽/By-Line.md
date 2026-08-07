@@ -45,6 +45,12 @@ tags: [index]
 - [[文喫 栄]] — 中日ビル2樓（榮, nice-to-have）
 - [[Blue Bottle Coffee ブルーボトルコーヒー 名古屋栄カフェ]] — 中日ビル1樓（榮, nice-to-have）
 - [[ひつまぶし花岡]] — 8號出口步行約5分（榮, nice-to-have）
+- [[HAERA]] — 榮站直通（榮, nice-to-have）
+- [[SAKAE NOVA・スカイル・メルサ]] — 榮站直通（榮, nice-to-have）
+- [[名古屋PARCO]] — 步行可達（榮, nice-to-have）
+- [[LACHIC]] — 步行可達，或經三越地下道連通（榮, nice-to-have）
+- [[唐吉訶德 栄本店]] — 步行約3分鐘，24小時營業（榮, nice-to-have）
+- [[成城石井 マルエイガレリア店]] — 步行約4分鐘（榮, nice-to-have）
 
 ### 伏見站
 - [[名古屋市科學館]] — 徒步5分（榮／白川公園內, nice-to-have）
@@ -104,6 +110,12 @@ tags: [index]
 - [[文喫 栄]] — 中日ビル2樓（榮, nice-to-have）
 - [[Blue Bottle Coffee ブルーボトルコーヒー 名古屋栄カフェ]] — 中日ビル1樓（榮, nice-to-have）
 - [[ひつまぶし花岡]] — 8號出口步行約5分（榮, nice-to-have）
+- [[HAERA]] — 榮站直通（榮, nice-to-have）
+- [[SAKAE NOVA・スカイル・メルサ]] — 榮站直通（榮, nice-to-have）
+- [[名古屋PARCO]] — 步行可達（榮, nice-to-have）
+- [[LACHIC]] — 步行可達，或經三越地下道連通（榮, nice-to-have）
+- [[唐吉訶德 栄本店]] — 步行約3分鐘，24小時營業（榮, nice-to-have）
+- [[成城石井 マルエイガレリア店]] — 步行約4分鐘（榮, nice-to-have）
 
 ### 矢場町站
 - [[Alpen Outdoors Flagship Store 名古屋榮店]] — 徒步約4分，位於納迪亞公園內（榮, nice-to-have）

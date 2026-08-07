@@ -92,6 +92,12 @@ tags: [index]
 - [[Saison Factory セゾンファクトリー 松坂屋名古屋店]] — 果醬果汁精品店，超市（optional）
 - [[北野Ace 名古屋三越栄店]] — 全國精選食材專門店，超市（optional）
 - [[ひつまぶし花岡]] — 鰻魚飯，五種吃法＋梅茶漬（nice-to-have）
+- [[HAERA]] — 2026年新開幕的PARCO×大丸松坂屋精品商場（nice-to-have）
+- [[SAKAE NOVA・スカイル・メルサ]] — LOFT／GU／Uniqlo等老牌商場群（nice-to-have）
+- [[名古屋PARCO]] — 東西南三館大型百貨（nice-to-have）
+- [[LACHIC]] — 流行服飾與人氣餐廳複合商場（nice-to-have）
+- [[唐吉訶德 栄本店]] — 24小時營業的驚安殿堂（nice-to-have）
+- [[成城石井 マルエイガレリア店]] — 精品超市，冷凍食品／生鮮肉品選擇多（nice-to-have）
 
 ## 港區金城ふ頭
 - [[LEGOLAND Japan]] — 樂高主題樂園（nice-to-have）
