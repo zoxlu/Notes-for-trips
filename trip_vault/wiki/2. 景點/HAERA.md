@@ -7,7 +7,7 @@ region: nagoya-city
 station: 榮站（地下鐵東山線・名城線）
 lines: [地下鐵東山線, 地下鐵名城線]
 district: 榮
-location:
+location: 35.16944,136.90722
 image: https://upload.wikimedia.org/wikipedia/commons/8/80/View_of_the_Landmark_Nagoya_Sakae%2C_Sakae_3-chome%2C_Naka_Ward_Nagoya_City_2026.jpg
 image_source: 來自 Wikimedia Commons（ザ・ランドマーク名古屋栄外觀，HAERA商場位於此大樓B2-4F）
 status: researching
@@ -54,9 +54,6 @@ aliases:
 
 ## 🗝️ 武林秘笈
 - B2美食街的人氣Pizza店下午4點左右常常就已經賣光，建議提早去（家人分享）
-
-## ⚠️ 待確認
-- 座標待補：找不到大樓精確座標，目前留空，之後可依現場GPS或Google Maps連結補上。
 
 ## 相關筆記
 - [[榮商圈]]
