@@ -10,6 +10,7 @@ priority: nice-to-have
 shared_by: "[[繃皮雞]]"
 raw_note:
   - 2026-07-26 一些新資訊和討論
+  - 2026-08-07 繃皮蛇的手寫筆記 01
 source_url: https://www.meitetsu.co.jp/cht/train/Ticket/manaca/index.html
 official_url: https://www.meitetsu.co.jp/cht/train/Ticket/manaca/index.html
 source_label: 名古屋鐵道（名鐵）官方網站 manaca 介紹頁
@@ -42,6 +43,9 @@ aliases:
 2. manaca 在名古屋站的售票機就可以直接購買。
 3. 加值規則：改札外（車站外／一般店家）加值最低金額1000円；改札內（車站內）加值最低金額100円即可。
 
+## 🗝️ 武林秘笈
+- 日本全國主要交通系IC卡除了manaca／Suica／Icoca，還有Pasmo、Suguca、PiTaPa、はやかけん（Hayakaken）、nimoca、Kitaca等，這些卡片彼此互通，全國多數地鐵、公車、便利商店都能通用，不用糾結一定要辦哪一張特定地區發行的卡（家人分享）
+
 ## ⚠️ 待確認
 - 分享者提到「bobby 裡面有詳盡的分享」，指既有素材 [[中部國際機場↔市區交通比較]] 的來源部落格，但該篇文章目前整理內容未特別涵蓋 IC 卡比較，如需更完整比較待家人補充。
 
@@ -53,6 +57,10 @@ aliases:
 > 來源檔案：2026-07-26 一些新資訊和討論
 > 
 > [[繃皮雞]]：名古屋交通；bobby 裡面有詳盡的分享；捷運卡；Manaca/Suica/Icoca；西瓜卡 Suica 的好處：什麼車都可以搭，以這種卡優先；manaca 售票機就可以買（名古屋站）；扎口外儲值最少1000；扎口內儲值100都可以
+
+> 來源檔案：2026-08-07 繃皮蛇的手寫筆記 01
+>
+> [[繃皮蛇]]：（原始素材為手寫筆記列出的日本各地IC卡清單：Suica、Pasmo、Manaco（manaca）、Icoca、Suguca、PiTaPa、Hayakaken、Nimoca、Kitaca，重點已整理進武林秘笈。）
 
 ## 📝 我的備註
 
