@@ -134,5 +134,6 @@ tags: [index, hide-nav]
 - [[LACHIC]]
 - [[唐吉訶德 栄本店]]
 - [[成城石井 マルエイガレリア店]]
+- [[犬山牛太郎（飛驒牛握壽司）Inuyama Gyutaro]]
 
 « 回 [[index|首頁]]
