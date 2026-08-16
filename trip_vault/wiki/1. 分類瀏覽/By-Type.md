@@ -60,5 +60,6 @@ tags: [index]
 - [[則武之森（ ノリタケの森 ）]] — 則武新町，Noritake紅磚園區（nice-to-have）
 - [[栄 摩天輪 サンシャイン（Sky-Boat）]] — 榮，商場屋頂透明車廂觀覽車（nice-to-have）
 - [[文喫 栄]] — 榮，付費看到飽書店（nice-to-have）
+- [[南極觀測船富士號 Fuji 南極観測船ふじ]] — 港區，南極觀測船博物館船（nice-to-have）
 
 « 回 [[index|首頁]]

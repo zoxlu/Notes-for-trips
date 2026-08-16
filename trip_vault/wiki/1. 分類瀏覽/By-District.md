@@ -105,6 +105,7 @@ tags: [index]
 
 ## 港區
 - [[名古屋港水族館]] — 海豚虎鯨表演（must）
+- [[南極觀測船富士號 Fuji 南極観測船ふじ]] — 南極觀測船博物館船，鄰近水族館（nice-to-have）
 - [[LaLaport 名古屋港（ みなとアクルス ）]] — 大型購物中心，mont-bell旗艦店（nice-to-have）
 - [[BOOKOFF SUPER BAZAAR カインズモール名古屋みなと店（二手露營用品）]] — 東海地區最大級二手露營用品賣場（optional）
 
