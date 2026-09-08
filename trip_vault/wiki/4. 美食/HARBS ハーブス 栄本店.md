@@ -19,7 +19,7 @@ image_source: 來自官網 harbs.co.jp
 status: researching
 priority: nice-to-have
 shared_by: "[[繃皮蛇]]"
-raw_note: ["2026-07-31 名古屋美食精選", "2026-08-04 美食以及三井開箱"]
+raw_note: ["2026-07-31 名古屋美食精選", "2026-08-04 美食以及三井開箱", "2026-09-09 更多美食資訊"]
 source_url: https://www.youtube.com/watch?v=lbncwqZanFY#t=5:36
 official_url: https://www.harbs.co.jp/
 source_label: YouTube頻道「Nick」的名古屋美食精選介紹影片
@@ -63,6 +63,10 @@ aliases:
 > 來源檔案：2026-07-31 名古屋美食精選
 >
 > [[繃皮蛇]]：（原始素材為YouTube影片「吃這幾家就對了！名古屋美食七選」，分享者僅附上影片連結。影片中段介紹了這家水果千層蛋糕名店的名古屋本店，並實際點了中午套餐。）
+
+> 來源檔案：2026-09-09 更多美食資訊
+>
+> [[繃皮蛇]]：甜點咖啡☕ HARBS 本店
 
 ## 📝 我的備註
 
