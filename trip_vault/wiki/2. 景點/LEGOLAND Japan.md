@@ -15,7 +15,7 @@ image_source: 來自官網 legoland.jp
 status: researching
 priority: nice-to-have
 shared_by: "[[繃皮蛇]]"
-raw_note: ["2026-07-20 波比", "2026-07-20 10 Must visit spot in Nagoya"]
+raw_note: ["2026-07-20 波比", "2026-07-20 10 Must visit spot in Nagoya", "2026-09-09 更多美食資訊"]
 source_url: https://bobbytravel.tw/nagoya-travel/
 official_url: https://www.legoland.jp/
 source_label: 波比看世界的名古屋旅遊攻略部落格
@@ -48,9 +48,11 @@ aliases:
 ## 🗝️ 武林秘笈
 - 跟隔壁的SEA LIFE水族館合購套票，比分開買門票划算（部落格：波比看世界）
 - 遊樂設施偏溫和，如果小孩超過10歲又不是樂高迷，可能會覺得刺激度不夠（部落格：波比看世界）
+- 有家人分享實際去玩一整天仍意猶未盡，時間安排上可考慮抓一整天而非半天（繃皮蛇分享）
 
 ## ⚠️ 待確認
 - 非全年無休，休園日依官網營運日曆公告，需依實際旅行日期查詢。
+- 影片（醉旅宿 Merry Journey頻道）完全沒有任何語言字幕，無法取得逐字稿，如需影片內詳細介紹需使用者手動補充。
 
 ## 相關筆記
 - [[名古屋港水族館]]
@@ -64,6 +66,10 @@ aliases:
 > 來源檔案：2026-07-20 10 Must visit spot in Nagoya
 > 
 > [[繃皮蛇]]：（原始素材為YouTube影片時間軸列表，22:19標註「LEGOLAND®︎ Japan Resort」。）
+
+> 來源檔案：2026-09-09 更多美食資訊
+>
+> 繃皮蛇：她在legoland玩了一整天還意猶未盡
 
 ## 📝 我的備註
 
