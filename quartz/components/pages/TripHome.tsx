@@ -3,6 +3,7 @@ import { htmlToJsx } from "../../util/jsx"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "../types"
 import { resolveRelative, resolveImagePath } from "../../util/path"
 import NotePropertiesConstructor from "../NoteProperties"
+import NoteRestroomConstructor from "../NoteRestroom"
 import ContentMetaConstructor from "../ContentMeta"
 import NoteMapConstructor from "../NoteMap"
 import { CARD_TYPE_META } from "../tripTypeMeta"
@@ -13,11 +14,14 @@ import styles from "../styles/tripcards.scss"
 // @ts-ignore
 import notePropertiesStyles from "../styles/noteproperties.scss"
 // @ts-ignore
+import noteRestroomStyles from "../styles/noterestroom.scss"
+// @ts-ignore
 import noteMapStyles from "../styles/notemap.scss"
 // @ts-ignore
 import noteMapScript from "../scripts/notemap.inline"
 
 const NotePropertiesComp = NotePropertiesConstructor()
+const NoteRestroomComp = NoteRestroomConstructor()
 const ContentMetaComp = ContentMetaConstructor()
 const NoteMapComp = NoteMapConstructor()
 
@@ -68,6 +72,7 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
     return (
       <>
         <NotePropertiesComp {...props} />
+        <NoteRestroomComp {...props} />
         {image ? (
           <div class="note-media-row">
             <img
@@ -227,7 +232,7 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
 }
 
 //TripHome.css = styles
-TripHome.css = [styles, notePropertiesStyles, noteMapStyles]
+TripHome.css = [styles, notePropertiesStyles, noteRestroomStyles, noteMapStyles]
 // @ts-ignore
 TripHome.afterDOMLoaded = [tripCardsScript, noteMapScript]
 

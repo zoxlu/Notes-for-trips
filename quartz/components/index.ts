@@ -25,6 +25,7 @@ import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import NoteProperties from "./NoteProperties"
+import NoteRestroom from "./NoteRestroom"
 import NoteMap from "./NoteMap"
 import QuickFilters from "./QuickFilters"
 
@@ -56,6 +57,7 @@ export {
   Flex,
   ConditionalRender,
   NoteProperties,
+  NoteRestroom,
   NoteMap,
   QuickFilters,
 }

@@ -1,0 +1,50 @@
+.note-restroom {
+  margin: 0 0 1.75rem;
+  padding: 0.6rem 0.85rem;
+  border-left: 3px solid var(--lightgray);
+  background: var(--highlight);
+  border-radius: 0 4px 4px 0;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--darkgray);
+}
+
+.note-restroom p {
+  margin: 0;
+}
+
+.note-restroom-heading {
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.note-restroom-text {
+  margin-top: 0.2rem !important;
+}
+
+.note-restroom-link {
+  margin-top: 0.25rem !important;
+}
+
+.note-restroom-subheading {
+  margin-top: 0.45rem !important;
+  color: var(--dark);
+}
+
+.note-restroom-nearby {
+  list-style: none;
+  margin: 0.1rem 0 0;
+  padding: 0;
+
+  li {
+    margin: 0.1rem 0;
+  }
+}
+
+.note-restroom-distance {
+  color: var(--gray);
+
+  &::before {
+    content: " · ";
+  }
+}
