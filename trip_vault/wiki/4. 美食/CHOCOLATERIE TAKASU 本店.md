@@ -14,8 +14,8 @@ cuisine: 巧克力專門店
 price_range:
 booking_required: false
 opening_hours: 9:30-19:00（週日・祝日10:00-18:00），週一休
-image:
-image_source:
+image: https://ximg.retty.me/crop/s388x388/q80/das/-/retty/img_repo/2l/01/38657754.jpg
+image_source: 來自Retty店家頁面使用者實拍照片
 status: researching
 priority: nice-to-have
 shared_by: "[[繃皮蛇]]"
@@ -45,8 +45,9 @@ aliases:
 ## 簡介
 名古屋在地發跡、國際獲獎的巧克力專門店，本店位於久屋大通一帶。地址：愛知県名古屋市中区丸の内3-19-14。名古屋另有覚王山店。
 
+![代表圖](https://ximg.retty.me/crop/s388x388/q80/das/-/retty/img_repo/2l/01/38657754.jpg)
+
 ## ⚠️ 待確認
-- 圖片待補：官網頁面無法完整抓取內容，未找到適合的代表圖片連結。
 - 影片逐字稿無法取得（YouTube回應429限流多次重試失敗），僅根據影片說明欄附的官方網站/地圖連結建立本筆記，影片內若有進一步介紹需使用者自行確認。
 
 ## 原始連結備註
