@@ -11,7 +11,7 @@ district: 榮
 location: 35.166916,136.906281
 meal_slot: lunch
 cuisine: 魚介味醂粕漬定食
-price_range:
+price_range: 約1,760円/套餐（午餐）
 booking_required: false
 opening_hours: 用餐 11:00-14:30，賣店 10:00-18:00（週日至14:30 L.O.），年末年始公休
 image: https://www.suzunami.co.jp/img/top_image.jpg
@@ -48,11 +48,11 @@ aliases:
 
 ![代表圖](https://www.suzunami.co.jp/img/top_image.jpg)
 
-## ⚠️ 待確認
-- 影片逐字稿無法取得（YouTube回應429限流多次重試失敗），僅根據影片說明欄附的官方網站/地圖連結建立本筆記，影片內若有進一步介紹需使用者自行確認。
-
 ## 🗝️ 武林秘笈
 - 主打魚介味醂粕漬定食，搭配八丁味噌赤だし及守口漬小鉢，是名古屋一帶特有的發酵美食組合（官網：suzunami.co.jp）
+- 用餐時段（11:00-14:30）非常熱門，建議一開店就到或13:00後再訪，可掃碼登記排隊、用LINE通知叫號，作者實測約排隊20分鐘（YouTube：Nick's Snaps）
+- 白飯用新潟米，另有五穀米選項但常售完；每日更換配菜，並提供類似「口直し」的清口小湯，用來轉換味覺（YouTube：Nick's Snaps）
+- 本店觀光客較少、以當地人居多，在榮地下街、名古屋站也都設有分店，較方便旅客前往（YouTube：Nick's Snaps）
 
 ## 原始連結備註
 > 來源檔案：2026-09-09 更多美食資訊
