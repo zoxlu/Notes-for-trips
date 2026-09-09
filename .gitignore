@@ -1,0 +1,23 @@
+.DS_Store
+.gitignore
+node_modules
+public
+prof
+tsconfig.tsbuildinfo
+.obsidian
+.quartz-cache
+private/
+.replit
+replit.nix
+.env
+
+# vault 內部整理用的資料，不需要公開
+trip_vault/raw/
+trip_vault/personal/
+trip_vault/notesGarage/
+trip_vault/01-Templates/
+trip_vault/outputs/
+
+# 暫存檔案，可能含帳號憑證等敏感資訊，絕不能進版控
+tmp/
+
