@@ -19,6 +19,8 @@ raw_note: ["2026-07-20 波比", "2026-07-20 10 Must visit spot in Nagoya", "2026
 source_url: https://bobbytravel.tw/nagoya-travel/
 official_url: https://www.legoland.jp/
 source_label: 波比看世界的名古屋旅遊攻略部落格
+restroom_info: 官網未列出一般廁所詳細位置清單，僅提及部分廁所隔間備有「尿布替換板」（パンツタイプ尿布用，兼可當更衣台）；哺乳室（デュプロ ベビーケア）位於LEGO City區Brick House Burger漢堡店旁，另在Factory Area置物櫃間內設有3間不分性別哺乳室。官方社群曾公告新增兒童專用廁所（キッズトイレ）3處：Big Shop旁、Lost Kingdom Adventure旁、Observation Tower旁，實際位置建議入園後以現場園區地圖為準。
+floormap_url: https://www.legoland.jp/resort-guide/legoland/resort-map/
 date_added: 2026-07-20
 day_assigned:
 tags:
