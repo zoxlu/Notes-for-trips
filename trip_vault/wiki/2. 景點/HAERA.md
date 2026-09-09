@@ -17,6 +17,8 @@ raw_note: ["2026-08-07 繃皮蛇的手寫筆記 01"]
 source_url: https://haera.parco.jp/
 official_url: https://haera.parco.jp/
 source_label: HAERA官方網站（PARCO×大丸松坂屋百貨店）
+restroom_info: 多目的トイレ（無障礙廁所，含輪椅、オストメイト對應設備）分布於B2F、2F、4F，任何人皆可自由使用。一般廁所詳細位置請參照官網樓層地圖。
+floormap_url: https://en.haera.parco.jp/facilities/
 date_added: 2026-08-07
 day_assigned:
 duration: 1-2小時

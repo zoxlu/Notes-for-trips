@@ -17,6 +17,8 @@ raw_note: ["2026-08-07 繃皮蛇的手寫筆記 01"]
 source_url: https://skyle.jp/
 official_url: https://skyle.jp/
 source_label: SAKAE NOVA・スカイル・メルサ官方網站
+restroom_info: SKYLE棟：RF・11F・10F・9F・8F・7F・2F・B1F（含無障礙設施）・B2F各樓層皆有廁所，6F另設兒童廁所，5F僅女性廁所。SAKAE NOVA棟：8F・7F・6F・4F・B1F皆有廁所，2F僅女性廁所。
+floormap_url: https://skyle.jp/floor/
 date_added: 2026-08-07
 day_assigned:
 duration: 1-2小時

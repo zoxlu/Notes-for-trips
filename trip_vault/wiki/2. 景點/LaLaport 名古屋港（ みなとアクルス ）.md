@@ -19,6 +19,8 @@ raw_note: ["2026-07-24 之前找到的一些資料補充"]
 source_url: https://mitsui-shopping-park.com/lalaport/minatoaquls/
 official_url: https://mitsui-shopping-park.com/lalaport/minatoaquls/
 source_label: 三井不動産LaLaport官方網站
+restroom_info: 設有車椅子優先トイレ、オストメイト對應優先廁所、キッズトイレ（兒童廁所）、おむつ交換室（尿布室）。キッズトイレ分布：1F ガーデンサイドキッチン（餐廳街）旁、2F GU旁、3F ラララキッチン（美食街）旁。
+floormap_url: https://mitsui-shopping-park.com/lalaport/minatoaquls/service/
 date_added: 2026-07-24
 day_assigned:
 tags:

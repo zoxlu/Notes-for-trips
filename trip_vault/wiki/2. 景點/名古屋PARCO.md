@@ -17,6 +17,8 @@ raw_note: ["2026-08-07 繃皮蛇的手寫筆記 01"]
 source_url: https://nagoya.parco.jp/
 official_url: https://nagoya.parco.jp/
 source_label: 名古屋PARCO官方網站
+restroom_info: 多目的トイレ（無障礙廁所）位於西館7F與南館2F，南館2F並配備オストメイト（造口者）對應設備，任何人皆可自由使用。一般廁所詳細位置請參照官網樓層地圖。
+floormap_url: https://nagoya.parco.jp/info/?gcd=facilities
 date_added: 2026-08-07
 day_assigned:
 duration: 1-2小時

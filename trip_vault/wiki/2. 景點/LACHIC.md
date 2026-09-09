@@ -17,6 +17,8 @@ raw_note: ["2026-08-07 繃皮蛇的手寫筆記 01"]
 source_url: https://www.lachic.jp/nagoya.html
 official_url: https://www.lachic.jp/nagoya.html
 source_label: LACHIC官方網站
+restroom_info: 男性化粧室：B1F・2F・4F・6F・7F・8F。女性化粧室：B1F・2F～8F。多機能化粧室（含輪椅、オストメイト設備）：3F・5F・7F・8F。
+floormap_url: https://www.lachic.jp/nagoya/service.html
 date_added: 2026-08-07
 day_assigned:
 duration: 1-2小時
