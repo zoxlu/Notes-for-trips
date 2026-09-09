@@ -17,7 +17,7 @@ source_url: https://maps.app.goo.gl/PutHytsmgDRxqTr1A
 official_url: https://nagoya-noritake-garden.aeonmall.jp/
 source_label: Google Maps 地點連結
 restroom_info:
-floormap_url:
+floormap_url: https://nagoya-noritake-garden.aeonmall.jp/floormap
 date_added: 2026-07-26
 day_assigned:
 duration: 1-2小時
@@ -57,7 +57,7 @@ aliases:
 
 ## ⚠️ 待確認
 - 座標來自分享的 Google Maps 連結。
-- 廁所資訊待補：官網樓層地圖為互動式介面，無法透過工具擷取文字內容，需使用者現場查詢或於官網互動地圖上確認。
+- 廁所文字位置待補：官網樓層地圖為互動式介面，無法透過工具擷取文字內容；已將該互動地圖頁面連結補進`floormap_url`，可自行在官網地圖上查詢廁所位置。
 
 ## 相關筆記
 - [[則武之森（ ノリタケの森 ）]]
