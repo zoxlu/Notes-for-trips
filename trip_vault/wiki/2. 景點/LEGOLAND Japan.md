@@ -29,12 +29,15 @@ nearby_restrooms:
   - name: "公衆トイレ"
     location: 35.051215,136.844935
     distance: 約160m
+    place_id: ChIJC4DeeAB5A2ARYd8S8UNgLeA
   - name: "公衆トイレ"
     location: 35.049924,136.845418
     distance: 約200m
+    place_id: ChIJo5g2BgB5A2ARqnULT5PX8Dc
   - name: "トイレ メイカーズピア内"
     location: 35.051444,136.846979
     distance: 約350m
+    place_id: ChIJl_TJMAB5A2ARZukVDtPWUe0
 date_added: 2026-07-20
 day_assigned:
 tags:

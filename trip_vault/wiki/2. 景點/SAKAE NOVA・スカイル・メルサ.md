@@ -23,18 +23,23 @@ nearby_restrooms:
   - name: "トイレ"
     location: 35.168135,136.908596
     distance: 約210m
+    place_id: ChIJtYVcTQBxA2AR5GZfqOPgQ7M
   - name: "久屋大通公園 公衆トイレ"
     location: 35.169612,136.908276
     distance: 約220m
+    place_id: ChIJYWM5mgFxA2AR1I9_ZOgomqE
   - name: "栄町駅 バリアフリートイレ"
     location: 35.170823,136.908835
     distance: 約340m
+    place_id: ChIJPUZTdwBxA2ARY8NMDKrUCSE
   - name: "バリアフリートイレ"
     location: 35.165051,136.905469
     distance: 約390m
+    place_id: ChIJ_a-kY9JwA2AR3vxY_mYflzk
   - name: "広小路本町(市バス) 5番"
     location: 35.168906,136.901995
     distance: 約390m
+    place_id: ChIJGwedEAB3A2ARn9zlpEl1bjM
 date_added: 2026-08-07
 day_assigned:
 duration: 1-2小時

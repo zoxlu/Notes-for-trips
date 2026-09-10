@@ -28,18 +28,23 @@ nearby_restrooms:
   - name: "広小路本町(市バス) 5番"
     location: 35.168906,136.901995
     distance: 約90m
+    place_id: ChIJGwedEAB3A2ARn9zlpEl1bjM
   - name: "白川公園北川公衆トイレ"
     location: 35.165138,136.901235
     distance: 約350m
+    place_id: ChIJf6xGcwB3A2ARO_I0WQvVfpE
   - name: "伏見駅 公衆トイレ"
     location: 35.169158,136.897911
     distance: 約420m
+    place_id: ChIJ5_gnLyB3A2ARYzX_ncOfD2M
   - name: "バリアフリートイレ"
     location: 35.165051,136.905469
     distance: 約440m
+    place_id: ChIJ_a-kY9JwA2AR3vxY_mYflzk
   - name: "地下鉄伏見駅"
     location: 35.169681,136.897778
     distance: 約450m
+    place_id: ChIJzVw-NQB3A2ARAmLPdEDCmjY
 date_added: 2026-09-09
 day_assigned:
 tags:

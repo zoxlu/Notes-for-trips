@@ -133,6 +133,8 @@ def query_all():
                 continue
             found.append({
                 "name": name, "lat": plat, "lng": plng,
+                # place_id 給 Google Maps 連結用（query_place_id），少了它就只能落座標圖釘
+                "place_id": p.get("id", ""),
                 "dist_m": haversine(n["lat"], n["lng"], plat, plng),
             })
         found.sort(key=lambda x: x["dist_m"])
@@ -155,6 +157,8 @@ def build_block(restrooms):
         lines.append(f'  - name: "{name}"')
         lines.append(f'    location: {r["lat"]:.6f},{r["lng"]:.6f}')
         lines.append(f'    distance: {fmt_distance(r["dist_m"])}')
+        if r.get("place_id"):
+            lines.append(f'    place_id: {r["place_id"]}')
     return "\n".join(lines) + "\n"
 
 

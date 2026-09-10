@@ -20,12 +20,15 @@ nearby_restrooms:
   - name: "仲ノ町公園 公衆トイレ"
     location: 35.164180,136.895480
     distance: 約310m
+    place_id: ChIJ4y7L1mJ3A2ARfBaAaAJnJUo
   - name: "下園公園公衆トイレ"
     location: 35.169902,136.895199
     distance: 約430m
+    place_id: ChIJERKKqUB3A2ARZ6EgUlkkT9U
   - name: "公衆トイレ"
     location: 35.162153,136.894367
     distance: 約470m
+    place_id: ChIJ8y0r_j13A2ARVQdY-WOXaP4
 date_added: 2026-07-31
 day_assigned:
 nights:

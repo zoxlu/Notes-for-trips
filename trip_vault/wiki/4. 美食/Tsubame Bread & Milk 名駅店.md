@@ -27,18 +27,23 @@ nearby_restrooms:
   - name: "女性用公衆トイレ"
     location: 35.170553,136.885945
     distance: 約180m
+    place_id: ChIJVcVnS9x2A2ARmOFJnkUhmwY
   - name: "女性用公衆トイレ"
     location: 35.170382,136.884906
     distance: 約240m
+    place_id: ChIJVVWwvN12A2ARASHo6zzzIrg
   - name: "女子トイレ"
     location: 35.169187,136.883428
     distance: 約330m
+    place_id: ChIJVVX-X-d2A2AR5kqi3xq7hvY
   - name: "男子トイレ"
     location: 35.169188,136.883391
     distance: 約340m
+    place_id: ChIJVVUIYOd2A2ARpWxvZmKIpBk
   - name: "うまいもん通り広小路口 多機能トイレ"
     location: 35.169209,136.883368
     distance: 約340m
+    place_id: ChIJE_ZJTSt3A2AR2DlAvrjbN0M
 date_added: 2026-07-20
 day_assigned:
 tags:

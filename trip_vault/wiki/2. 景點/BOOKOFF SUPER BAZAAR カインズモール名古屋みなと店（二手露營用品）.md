@@ -25,9 +25,11 @@ nearby_restrooms:
   - name: "十一屋川緑地公衆トイレＡ"
     location: 35.092452,136.864640
     distance: 約110m
+    place_id: ChIJj4zRCe95A2ARMYwcBdz7Pgg
   - name: "十一屋川緑地公衆トイレＢ"
     location: 35.091663,136.862079
     distance: 約150m
+    place_id: ChIJ4cpXDPh5A2ARg-9OP936_PE
 date_added: 2026-08-01
 day_assigned:
 duration: 1-2小時

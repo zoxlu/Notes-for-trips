@@ -28,18 +28,23 @@ nearby_restrooms:
   - name: "トイレ"
     location: 35.168135,136.908596
     distance: 約120m
+    place_id: ChIJtYVcTQBxA2AR5GZfqOPgQ7M
   - name: "久屋大通公園 公衆トイレ"
     location: 35.169612,136.908276
     distance: 約130m
+    place_id: ChIJYWM5mgFxA2AR1I9_ZOgomqE
   - name: "栄町駅 バリアフリートイレ"
     location: 35.170823,136.908835
     distance: 約220m
+    place_id: ChIJPUZTdwBxA2ARY8NMDKrUCSE
   - name: "原内科クリニック"
     location: 35.167725,136.911934
     distance: 約260m
+    place_id: ChIJFyufQ_Z3A2ARNWN-qPqqcKM
   - name: "公衆トイレ"
     location: 35.171728,136.909550
     distance: 約310m
+    place_id: ChIJ0e97yAVxA2AR8ATM7qM3p2k
 date_added: 2026-07-31
 day_assigned:
 tags:

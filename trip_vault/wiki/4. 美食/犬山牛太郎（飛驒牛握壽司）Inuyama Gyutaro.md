@@ -29,18 +29,23 @@ nearby_restrooms:
   - name: "公衆トイレ"
     location: 35.381214,136.939475
     distance: 約180m
+    place_id: ChIJG5E8LgAPA2ARTGf5HgVnMjE
   - name: "トイレ"
     location: 35.381066,136.939460
     distance: 約200m
+    place_id: ChIJyaQGwnUPA2ARChcpFWV7LI4
   - name: "針綱神社公衆トイレ"
     location: 35.386486,136.939775
     distance: 約410m
+    place_id: ChIJ89kcGk8PA2AR5HMGgBqAq-I
   - name: "内田防災公園 公衆トイレ"
     location: 35.386233,136.942391
     distance: 約440m
+    place_id: ChIJ657NWo4PA2ARL5Lk9o51AOg
   - name: "犬山丸の内緑地公衆トイレ"
     location: 35.386235,136.936939
     distance: 約470m
+    place_id: ChIJSddLT9oPA2ARMKFZ9hcs0O4
 date_added: 2026-08-12
 day_assigned:
 tags:

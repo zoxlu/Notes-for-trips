@@ -29,18 +29,23 @@ nearby_restrooms:
   - name: "女性用公衆トイレ"
     location: 35.170382,136.884906
     distance: 約190m
+    place_id: ChIJVVWwvN12A2ARASHo6zzzIrg
   - name: "女性用公衆トイレ"
     location: 35.170553,136.885945
     distance: 約210m
+    place_id: ChIJVcVnS9x2A2ARmOFJnkUhmwY
   - name: "女性用公衆トイレ"
     location: 35.171698,136.882084
     distance: 約220m
+    place_id: ChIJVVV-3ud2A2AR2IvYgSaMSRs
   - name: "公衆トイレ"
     location: 35.170356,136.882110
     distance: 約290m
+    place_id: ChIJb8GnAAB3A2ARkDkkC3r_4Tc
   - name: "大東海ビル 地下1階トイレ"
     location: 35.172464,136.887889
     distance: 約310m
+    place_id: ChIJ_SuNdAB3A2ARnLaLIzkAlmE
 date_added: 2026-07-31
 day_assigned:
 tags:

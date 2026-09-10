@@ -29,18 +29,23 @@ nearby_restrooms:
   - name: "新幹線名古屋駅改札内トイレ"
     location: 35.169733,136.881538
     distance: 約170m
+    place_id: ChIJ8YVG_BR3A2ARBXOrccSKSdo
   - name: "公衆トイレ"
     location: 35.170356,136.882110
     distance: 約210m
+    place_id: ChIJb8GnAAB3A2ARkDkkC3r_4Tc
   - name: "女性用公衆トイレ"
     location: 35.171698,136.882084
     distance: 約260m
+    place_id: ChIJVVV-3ud2A2AR2IvYgSaMSRs
   - name: "牧野公園 公衆トイレ"
     location: 35.168335,136.877756
     distance: 約290m
+    place_id: ChIJOTDFWwZ3A2ARHcipu6GzwFM
   - name: "うまいもん通り広小路口 多機能トイレ"
     location: 35.169209,136.883368
     distance: 約340m
+    place_id: ChIJE_ZJTSt3A2AR2DlAvrjbN0M
 date_added: 2026-07-28
 day_assigned:
 tags:

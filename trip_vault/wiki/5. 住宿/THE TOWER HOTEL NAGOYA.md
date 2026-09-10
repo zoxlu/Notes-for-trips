@@ -20,18 +20,23 @@ nearby_restrooms:
   - name: "中部電力 MIRAI TOWER下 公衆トイレ"
     location: 35.172345,136.908338
     distance: 約60m
+    place_id: ChIJz8MPdqRxA2ARJAcT6Su798M
   - name: "久屋大通公園 公衆トイレ"
     location: 35.172536,136.908642
     distance: 約90m
+    place_id: ChIJl6DIKgBxA2ARXoDHJ-KkkkA
   - name: "公衆トイレ"
     location: 35.171728,136.909550
     distance: 約170m
+    place_id: ChIJ0e97yAVxA2AR8ATM7qM3p2k
   - name: "栄町駅 バリアフリートイレ"
     location: 35.170823,136.908835
     distance: 約180m
+    place_id: ChIJPUZTdwBxA2ARY8NMDKrUCSE
   - name: "ツルシゲ通り1 公衆トイレ"
     location: 35.172394,136.905325
     distance: 約220m
+    place_id: ChIJr5cWX0JxA2AR16kz-B6_JT8
 date_added: 2026-07-28
 day_assigned:
 nights:

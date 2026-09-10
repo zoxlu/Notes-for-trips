@@ -29,12 +29,15 @@ nearby_restrooms:
   - name: "公衆トイレ"
     location: 35.049985,136.850883
     distance: 約100m
+    place_id: ChIJK3C5RXx5A2ARx8wBdlRxqv4
   - name: "金城ふ頭中央緑地 公衆トイレ"
     location: 35.046953,136.847078
     distance: 約430m
+    place_id: ChIJ8x14tzZ5A2ARtHjgZp9CZ6c
   - name: "トイレ メイカーズピア内"
     location: 35.051444,136.846979
     distance: 約450m
+    place_id: ChIJl_TJMAB5A2ARZukVDtPWUe0
 date_added: 2026-07-20
 day_assigned:
 tags:

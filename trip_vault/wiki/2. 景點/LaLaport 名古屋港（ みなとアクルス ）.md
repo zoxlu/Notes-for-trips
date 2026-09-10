@@ -33,12 +33,15 @@ nearby_restrooms:
   - name: "港北公園 公衆トイレ"
     location: 35.107253,136.883650
     distance: 約190m
+    place_id: ChIJhb1p06J5A2ARhQu-efgTL-I
   - name: "トイレ"
     location: 35.107737,136.885597
     distance: 約310m
+    place_id: ChIJgbkFNeh5A2ARun5ygxM6XF8
   - name: "港北公園 (東園) 公衆トイレ"
     location: 35.107159,136.886787
     distance: 約430m
+    place_id: ChIJCUOuxRl5A2ARhRIyk6r2svw
 date_added: 2026-07-24
 day_assigned:
 tags:

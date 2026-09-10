@@ -8,6 +8,7 @@ type NearbyRestroom = {
   name?: string
   location?: string
   distance?: string
+  place_id?: string
 }
 
 // 官方平面圖，存在 04-Attachments/。只收錄圖上真的有標廁所圖示的圖
@@ -20,10 +21,13 @@ function trimmedString(value: unknown): string {
   return typeof value === "string" ? value.trim() : ""
 }
 
-function googleMapsHref(name: string, location: string): string {
-  // 光傳座標 Google Maps 只會落一個沒有名字的圖釘，把名稱一起塞進 query 文字裡比較好認
-  const query = [name, location].filter(Boolean).join(" ")
-  return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(query)
+function googleMapsHref(location: string, placeId: string): string {
+  // query 只能放「座標」或「地點名稱」其中一種，兩者混在一起 Google Maps 會當成
+  // 一整串文字去搜而找不到東西。這裡固定用座標（圖釘落點一定正確），地點名稱與
+  // 資訊卡則交給 query_place_id 帶出來；沒有 place_id 時就只落一個座標圖釘。
+  const base =
+    "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(location.trim())
+  return placeId ? base + "&query_place_id=" + encodeURIComponent(placeId) : base
 }
 
 const NoteRestroom: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
@@ -86,11 +90,12 @@ const NoteRestroom: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
               const name = trimmedString(r.name)
               const location = trimmedString(r.location)
               const distance = trimmedString(r.distance)
+              const placeId = trimmedString(r.place_id)
               return (
                 <li>
                   {location ? (
                     <a
-                      href={googleMapsHref(name, location)}
+                      href={googleMapsHref(location, placeId)}
                       target="_blank"
                       rel="noopener noreferrer"
                     >

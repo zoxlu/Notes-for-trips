@@ -23,18 +23,23 @@ nearby_restrooms:
   - name: "トイレ(こども広場)"
     location: 35.089979,136.883774
     distance: 約130m
+    place_id: ChIJG2mrzrp5A2ARpGXwluc7UGg
   - name: "駐車場横トイレ"
     location: 35.090930,136.882276
     distance: 約240m
+    place_id: ChIJw_NlLFR5A2ARhH3rLz7FF-Q
   - name: "トイレ"
     location: 35.091403,136.881313
     distance: 約330m
+    place_id: ChIJecuOwZN5A2ARUGXQ-3JV5SU
   - name: "港橋広場公園 トイレ"
     location: 35.094015,136.882860
     distance: 約410m
+    place_id: ChIJn5V1DCV5A2ARJg7rhgMc5m0
   - name: "公衆トイレ"
     location: 35.091765,136.880460
     distance: 約420m
+    place_id: ChIJSbMZZoZ5A2AR-ERKC-8R6Ss
 date_added: 2026-08-16
 day_assigned:
 duration: 40分鐘-1小時

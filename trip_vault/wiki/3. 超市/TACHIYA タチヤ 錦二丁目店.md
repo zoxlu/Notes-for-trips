@@ -21,18 +21,23 @@ nearby_restrooms:
   - name: "地下鉄伏見駅"
     location: 35.169681,136.897778
     distance: 約240m
+    place_id: ChIJzVw-NQB3A2ARAmLPdEDCmjY
   - name: "伏見駅 公衆トイレ"
     location: 35.169158,136.897911
     distance: 約280m
+    place_id: ChIJ5_gnLyB3A2ARYzX_ncOfD2M
   - name: "広小路本町(市バス) 5番"
     location: 35.168906,136.901995
     distance: 約360m
+    place_id: ChIJGwedEAB3A2ARn9zlpEl1bjM
   - name: "丸の内駅構内トイレ"
     location: 35.174357,136.896877
     distance: 約400m
+    place_id: ChIJ4ZJiCwB3A2ARZhIp9iD9zR0
   - name: "下園公園公衆トイレ"
     location: 35.169902,136.895199
     distance: 約410m
+    place_id: ChIJERKKqUB3A2ARZ6EgUlkkT9U
 date_added: 2026-08-01
 day_assigned:
 opening_hours: 10:00-18:00（週三公休）

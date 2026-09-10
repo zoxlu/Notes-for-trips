@@ -28,18 +28,23 @@ nearby_restrooms:
   - name: "仲ノ町公園 公衆トイレ"
     location: 35.164180,136.895480
     distance: 約190m
+    place_id: ChIJ4y7L1mJ3A2ARfBaAaAJnJUo
   - name: "白川公園 公衆トイレ"
     location: 35.164314,136.898949
     distance: 約250m
+    place_id: ChIJiZLsOSx3A2ARtXW8C9A5t9w
   - name: "伏見駅 公衆トイレ"
     location: 35.169158,136.897911
     distance: 約410m
+    place_id: ChIJ5_gnLyB3A2ARYzX_ncOfD2M
   - name: "白川公園北川公衆トイレ"
     location: 35.165138,136.901235
     distance: 約420m
+    place_id: ChIJf6xGcwB3A2ARO_I0WQvVfpE
   - name: "公衆トイレ"
     location: 35.161873,136.897339
     distance: 約420m
+    place_id: ChIJjfOfIsF3A2ARNU6JoiZtQtE
 date_added: 2026-09-09
 day_assigned:
 tags:

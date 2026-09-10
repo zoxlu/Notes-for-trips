@@ -27,12 +27,15 @@ nearby_restrooms:
   - name: "栄生公園 公衆トイレ"
     location: 35.184386,136.875955
     distance: 約210m
+    place_id: ChIJU2YjppF2A2ARw0qRhZLEaWE
   - name: "トイレ"
     location: 35.182430,136.879955
     distance: 約310m
+    place_id: ChIJBfD3XpR2A2AR_Wiripx0UjU
   - name: "南押切中央公園公衆トイレ"
     location: 35.184693,136.881081
     distance: 約480m
+    place_id: ChIJU7Yf6fF3A2ARlRrkgd66Cyg
 date_added: 2026-07-18
 day_assigned:
 duration: 2-3小時

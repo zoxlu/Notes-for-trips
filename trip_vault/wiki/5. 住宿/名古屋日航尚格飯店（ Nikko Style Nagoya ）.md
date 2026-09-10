@@ -21,12 +21,15 @@ nearby_restrooms:
   - name: "下園公園公衆トイレ"
     location: 35.169902,136.895199
     distance: 約380m
+    place_id: ChIJERKKqUB3A2ARZ6EgUlkkT9U
   - name: "大東海ビル 地下1階トイレ"
     location: 35.172464,136.887889
     distance: 約400m
+    place_id: ChIJ_SuNdAB3A2ARnLaLIzkAlmE
   - name: "女性用公衆トイレ"
     location: 35.170553,136.885945
     distance: 約470m
+    place_id: ChIJVcVnS9x2A2ARmOFJnkUhmwY
 date_added: 2026-07-31
 day_assigned:
 nights:

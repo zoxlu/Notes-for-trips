@@ -23,18 +23,23 @@ nearby_restrooms:
   - name: "トイレ"
     location: 35.168135,136.908596
     distance: 約100m
+    place_id: ChIJtYVcTQBxA2AR5GZfqOPgQ7M
   - name: "久屋大通公園 公衆トイレ"
     location: 35.169612,136.908276
     distance: 約230m
+    place_id: ChIJYWM5mgFxA2AR1I9_ZOgomqE
   - name: "久屋広場西トイレ"
     location: 35.164578,136.908728
     distance: 約350m
+    place_id: ChIJQenhIXlxA2ARfcr3j71P1-0
   - name: "バリアフリートイレ"
     location: 35.165051,136.905469
     distance: 約350m
+    place_id: ChIJ_a-kY9JwA2AR3vxY_mYflzk
   - name: "久屋大通公園 公衆トイレ"
     location: 35.164547,136.909340
     distance: 約370m
+    place_id: ChIJCRngrcVxA2ARq4XmPChdB4g
 date_added: 2026-08-07
 day_assigned:
 duration: 1-2小時

@@ -26,18 +26,23 @@ nearby_restrooms:
   - name: "第1アメ横ビル 2Fトイレ"
     location: 35.159750,136.905377
     distance: 約70m
+    place_id: ChIJacQRNQBxA2ARBH-dIe35XeU
   - name: "裏門前公園公衆トイレ"
     location: 35.161342,136.903833
     distance: 約230m
+    place_id: ChIJ81jiabBxA2ARfJYQVNkdYd4
   - name: "公衆トイレ"
     location: 35.162218,136.904082
     distance: 約320m
+    place_id: ChIJ0b85je1xA2AR31Q7Sc3g1Vc
   - name: "那古野古墳前 公衆トイレ"
     location: 35.159637,136.901104
     distance: 約330m
+    place_id: ChIJcYgaTzF3A2ARMdjJD-zFMqY
   - name: "若宮大通り公園公衆トイレ"
     location: 35.162501,136.905313
     distance: 約350m
+    place_id: ChIJFyvTrnRxA2AR9-hJ8v3sR-o
 date_added: 2026-07-20
 day_assigned:
 tags:

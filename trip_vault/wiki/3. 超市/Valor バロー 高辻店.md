@@ -21,9 +21,11 @@ nearby_restrooms:
   - name: "高辻公園 公衆トイレ"
     location: 35.141737,136.916950
     distance: 約320m
+    place_id: ChIJddIGsKl7A2ARUEUW6I1TE0s
   - name: "桜田公園公衆トイレ"
     location: 35.141193,136.908008
     distance: 約500m
+    place_id: ChIJrUqOompxA2ARQ_ZoJzkF-xg
 date_added: 2026-08-01
 day_assigned:
 opening_hours: 平日10:00-21:00，六日9:30-21:00

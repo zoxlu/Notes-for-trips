@@ -21,9 +21,11 @@ nearby_restrooms:
   - name: "大木曽公園公衆トイレ"
     location: 35.219443,136.875014
     distance: 約190m
+    place_id: ChIJO_07ZvR1A2ARya_5be8qNao
   - name: "トイレ"
     location: 35.218560,136.872761
     distance: 約310m
+    place_id: ChIJT_KEY0d0A2ARQ6OqVbE5HwU
 date_added: 2026-08-01
 day_assigned:
 opening_hours: 平日10:00-20:00，六日9:30-20:00

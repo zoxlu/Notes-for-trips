@@ -28,9 +28,11 @@ nearby_restrooms:
   - name: "大東海ビル 地下1階トイレ"
     location: 35.172464,136.887889
     distance: 約370m
+    place_id: ChIJ_SuNdAB3A2ARnLaLIzkAlmE
   - name: "新道中央公園 公衆トイレ"
     location: 35.179403,136.887440
     distance: 約420m
+    place_id: ChIJJxzICwB3A2ARcYEBNkaJyew
 date_added: 2026-09-09
 day_assigned:
 tags:

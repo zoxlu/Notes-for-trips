@@ -27,15 +27,19 @@ nearby_restrooms:
   - name: "尼ヶ坂公園公衆トイレ"
     location: 35.187621,136.919060
     distance: 約140m
+    place_id: ChIJF9Grj99xA2AR-AyNNY9bKWg
   - name: "大杉公園 公衆トイレ"
     location: 35.189430,136.917149
     distance: 約240m
+    place_id: ChIJr6J6_yNxA2ARvnhnA1dZCpA
   - name: "清水駅公衆トイレ"
     location: 35.187078,136.913602
     distance: 約370m
+    place_id: ChIJMXlHRQBxA2ARSd0gLlqAPD8
   - name: "西杉公園公衆トイレ"
     location: 35.189705,136.914192
     distance: 約410m
+    place_id: ChIJYZ-f0stxA2ARu8xOTLICEjM
 date_added: 2026-07-28
 day_assigned:
 tags:
