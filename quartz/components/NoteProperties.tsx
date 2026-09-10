@@ -37,6 +37,16 @@ const FIELD_ORDER = [
   "source_url",
 ]
 
+function googleMapsHref(location: string, placeId: string): string {
+  // query 只能放「座標」或「地點名稱」其中一種，混在一起 Google Maps 會當成一整串
+  // 文字去搜而找不到東西。座標保證圖釘落點正確，店家本身的地圖頁面則靠
+  // query_place_id 帶出來（place_id 由 scripts/fetch_place_ids.py 批次查詢填入，
+  // 比對不到的筆記留空，連結就只落座標圖釘）。
+  const base =
+    "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(location.trim())
+  return placeId.trim() ? base + "&query_place_id=" + encodeURIComponent(placeId.trim()) : base
+}
+
 function getDomain(url: string): string {
   try {
     return new URL(url).hostname.replace(/^www\./, "")
@@ -112,12 +122,7 @@ const NoteProperties: QuartzComponent = ({ fileData, allFiles }: QuartzComponent
             </a>
           ) : item.key === "location" ? (
             <a
-              href={
-                "https://www.google.com/maps/search/?api=1&query=" +
-                // 光傳座標的話 Google Maps 只會落一個沒有名字的圖釘（顯示成一串座標數字），
-                // 把店名一起塞進 query 文字裡，用座標當定位提示，才能連去店家本身的地圖頁面
-                encodeURIComponent(`${fm.title as string} ${String(item.value)}`)
-              }
+              href={googleMapsHref(String(item.value), String(fm.place_id ?? ""))}
               target="_blank"
               rel="noopener noreferrer"
             >

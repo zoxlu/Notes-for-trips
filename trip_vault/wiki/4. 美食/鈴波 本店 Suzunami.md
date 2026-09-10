@@ -9,6 +9,7 @@ station: 榮站（地下鐵東山線・名城線）
 lines: [地下鐵東山線, 地下鐵名城線]
 district: 榮
 location: 35.166916,136.906281
+place_id: ChIJl_JvtNNwA2ARCeqpIPP757s
 meal_slot: lunch
 cuisine: 魚介味醂粕漬定食
 price_range: 約1,760円/套餐（午餐）

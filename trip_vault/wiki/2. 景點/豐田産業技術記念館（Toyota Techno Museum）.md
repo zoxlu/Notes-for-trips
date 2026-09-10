@@ -8,6 +8,7 @@ station: 榮生站（名鐵）
 lines: [名鐵名古屋本線, 名鐵犬山線]
 district: 則武新町
 location: 35.1825118,136.8765247
+place_id: ChIJ____05N2A2ARK1ejw7VH1KM
 image: https://www.nagoya-info.jp/upload/spots/large/16176073756597606ecf816.jpg
 image_source: 來自名古屋觀光官方網站 nagoya-info.jp
 status: researching

@@ -9,6 +9,7 @@ station: 榮站
 lines: [地下鐵東山線, 地下鐵名城線]
 district: 榮
 location: 35.1718774,136.9077282
+place_id: ChIJX3yZKtRwA2AR6yJ4eXUgQOk
 meal_slot: lunch
 cuisine: 水果千層蛋糕（ミルクレープ）、西式蛋糕
 price_range:

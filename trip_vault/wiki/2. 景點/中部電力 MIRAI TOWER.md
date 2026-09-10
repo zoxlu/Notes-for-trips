@@ -8,6 +8,7 @@ station: 榮站（地下鐵東山線・名城線）
 lines: [地下鐵東山線, 地下鐵名城線]
 district: 榮
 location: 35.172358,136.908331
+place_id: ChIJRQSoYtZwA2ARwpz475VYYeo
 duration: 約1小時
 opening_hours: 平日・週日10:00-21:00（最終入場20:40）／週六10:00-21:40（最終入場21:20）／無固定公休（每年約2天臨時維護休館）
 image: https://www.nagoya-tv-tower.co.jp/cms/wp-content/uploads/2025/09/main.jpg

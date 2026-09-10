@@ -8,6 +8,7 @@ station: 名古屋站
 lines: [JR東海道線, JR中央線, 名鐵名古屋本線, 地下鐵東山線, 地下鐵櫻通線, あおなみ線]
 district: 名駅
 location: 35.170307,136.879837
+place_id: ChIJIcBuO-Z2A2ARqzM9NFSA_wA
 duration: 1小時
 opening_hours: 商店10:00-20:30／餐廳10:00-22:30／咖啡廳7:00-22:30（依個別店舖而異）
 image: https://www.ozmall.co.jp/Content/upload/images/W32VEZ27OSQBNW4VDTAH4DBLTU.jpg

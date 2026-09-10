@@ -7,6 +7,7 @@ station: 名古屋站
 lines: [JR東海道線, JR中央線, 名鐵名古屋本線, 地下鐵東山線, 地下鐵櫻通線, あおなみ線]
 district: 名駅
 location: 35.169905,136.8867198
+place_id: ChIJ6-ipItx2A2ARm1qjuvUqeRA
 image: https://www.gardenhotels.co.jp/assets/images/nagoya-premier/photogallery/Lobby_night_3.jpg
 image_source: 來自官網 gardenhotels.co.jp（首頁大圖）
 status: researching

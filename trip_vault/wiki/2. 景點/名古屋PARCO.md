@@ -8,6 +8,7 @@ station: 榮站（地下鐵東山線・名城線）
 lines: [地下鐵東山線, 地下鐵名城線]
 district: 榮
 location: 35.163689,136.907385
+place_id: ChIJe7YO2c1wA2ARcRKYiy-HcIY
 image: https://upload.wikimedia.org/wikipedia/commons/a/aa/NAGOYA-PARCOMINAMIKAN.JPG
 image_source: 來自 Wikimedia Commons（名古屋PARCO南館外觀）
 status: researching

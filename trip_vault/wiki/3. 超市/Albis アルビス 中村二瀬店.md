@@ -7,6 +7,7 @@ station: 岩塚站（名鐵名古屋本線）
 lines: [名鐵名古屋本線]
 district: 中村區
 location: 35.1604196,136.8503413
+place_id: ChIJl5zqxrt3A2ARCys_RvL9XHQ
 image: 04-Attachments/Pasted-image-20260803133230.png
 image_source: 繃皮雞
 status: researching

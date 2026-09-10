@@ -9,6 +9,7 @@ station: 榮站（地下鐵東山線・名城線）
 lines: [地下鐵東山線, 地下鐵名城線]
 district: 榮
 location: 35.168945,136.909457
+place_id: ChIJW5I2IQBxA2ARIEmr5H7Y_AE
 meal_slot: lunch
 cuisine: 味噌豬排（法式作法，使用低溫熟成豬）
 price_range:

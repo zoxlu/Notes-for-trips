@@ -9,6 +9,7 @@ station: 榮站（地下鐵東山線・名城線）
 lines: [地下鐵東山線, 地下鐵名城線]
 district: 榮
 location: 35.169685,136.906143
+place_id: ChIJA_9ectRwA2ARAkXd4E2mSOQ
 duration: 約0.5小時
 opening_hours: 12:00-22:00（最終搭乘21:45）
 image: https://www.nagoya-info.jp/upload/spots/large/10612979685e329adedaa87.jpg

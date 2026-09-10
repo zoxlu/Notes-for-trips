@@ -9,6 +9,7 @@ station: 國際中心站（地下鐵櫻通線）
 lines: [地下鐵櫻通線]
 district: 円頓寺
 location: 35.175735,136.888412
+place_id: ChIJN0u6ocR2A2ARZ5s23ZxbLA0
 meal_slot: lunch
 cuisine: 手作漢堡
 price_range:

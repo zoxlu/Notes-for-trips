@@ -9,6 +9,7 @@ station: 久屋大通站（地下鐵櫻通線・名城線）
 lines: [地下鐵櫻通線, 地下鐵名城線]
 district: 榮
 location: 35.174271,136.907516
+place_id: ChIJp-7XBipxA2ARA0oYsLt_y6o
 meal_slot: snack
 cuisine: 巧克力專門店
 price_range:

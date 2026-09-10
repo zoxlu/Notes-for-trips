@@ -7,6 +7,7 @@ station: 榮站（地下鐵東山線・名城線）
 lines: [地下鐵東山線, 地下鐵名城線]
 district: 榮
 location: 35.172157,136.90773
+place_id: ChIJIxPGf3RxA2AR311p9yRx41E
 image: https://thetowerhotel.jp/cms/wp-content/themes/thetowerhotel_3rdP/assets/img/rooms/image02_1.jpg
 image_source: 來自官網 thetowerhotel.jp
 status: researching

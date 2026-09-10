@@ -9,6 +9,7 @@ station: 榮站（地下鐵東山線・名城線）
 lines: [地下鐵東山線, 地下鐵名城線]
 district: 榮
 location: 35.168945,136.909457
+place_id: ChIJQ_sxXABxA2ARq7YMw-m1MlI
 meal_slot: breakfast
 cuisine: 咖啡、輕食、甜點
 price_range: 布丁990円（含稅）

@@ -8,6 +8,7 @@ station: 榮站（地下鐵東山線・名城線）
 lines: [地下鐵東山線, 地下鐵名城線]
 district: 榮
 location: 35.167581,136.907766
+place_id: ChIJo_LRKtJwA2ARPzUCvNnXyTU
 image: https://upload.wikimedia.org/wikipedia/commons/1/11/LACHIC_2017.jpg
 image_source: 來自 Wikimedia Commons
 status: researching

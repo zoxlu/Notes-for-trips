@@ -9,6 +9,7 @@ station: 稲永站（あおなみ線）
 lines: [あおなみ線]
 district: 港區
 location: 35.0917779,136.8637205
+place_id: ChIJTZ38B615A2ARKGq0UcAFtbA
 image: https://www.bookoff.co.jp/shop/images/20423_out.png
 image_source: 來自官網 bookoff.co.jp（門市戶外用品宣傳圖）
 status: researching

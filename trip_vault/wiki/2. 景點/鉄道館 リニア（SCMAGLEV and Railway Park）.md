@@ -8,6 +8,7 @@ station: 金城ふ頭站（あおなみ線）
 lines: [あおなみ線]
 district: 港區金城ふ頭
 location: 35.049072,136.851006
+place_id: ChIJ9W5bFM94A2ARkrOUnGq06Ew
 duration: 2-2.5小時
 opening_hours: 10:00-17:30（最終入館為閉館前30分）／公休每週二（遇假日順延翌日）、年末年始12/28-1/1
 image: https://museum.jr-central.co.jp/_img/kv_01.jpg

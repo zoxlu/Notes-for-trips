@@ -8,6 +8,7 @@ station: 港區役所站（地下鐵名港線）
 lines: [地下鐵名港線]
 district: 港區
 location: 35.1086,136.882352
+place_id: ChIJfXvoVD55A2AR1Ewv9iSCRAY
 duration: 2-3小時
 opening_hours: 平日9:00-20:00／週六日、國定假日8:30-21:00（依樓層店舖各異）
 image: https://jouhou.nagoya/wp-content/uploads/2018/09/lalaport-outview.jpg

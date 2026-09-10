@@ -9,6 +9,7 @@ station: 榮站（地下鐵東山線・名城線）
 lines: [地下鐵東山線, 地下鐵名城線]
 district: 榮
 location: 35.168533,136.908096
+place_id: ChIJOcmQdQpxA2ARsSOQu5xc_Do
 meal_slot: breakfast
 cuisine: 喫茶店（名古屋早餐文化）
 price_range:

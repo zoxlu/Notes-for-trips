@@ -8,6 +8,7 @@ station: 金城ふ頭站（あおなみ線）
 lines: [あおなみ線]
 district: 港區金城ふ頭
 location: 35.05056,136.84333
+place_id: ChIJzd5Pasd4A2ARRQZrV29qbmc
 duration: 半天至一天（4-6小時）
 opening_hours: 10:00-18:00（實際時段依季節/日期浮動，需查官網日曆）
 image: https://www.legoland.jp/media/chmftlft/top-fb1200.jpg

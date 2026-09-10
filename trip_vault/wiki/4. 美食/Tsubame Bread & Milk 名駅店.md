@@ -9,6 +9,7 @@ station: 名古屋站
 lines: [JR東海道線, JR中央線, 名鐵名古屋本線, 地下鐵東山線, 地下鐵櫻通線, あおなみ線]
 district: 名駅
 location: 35.1692,136.8871
+place_id: ChIJJX5mDJx3A2ARRkSisgKVHXU
 meal_slot: breakfast
 cuisine: 麵包／牛奶吐司專門店
 price_range: 約500-1,500円/套餐

@@ -7,6 +7,7 @@ station: 名古屋站
 lines: [JR東海道線, JR中央線, 名鐵名古屋本線, 地下鐵東山線, 地下鐵櫻通線, あおなみ線]
 district: 名駅
 location: 35.169905,136.891039
+place_id: ChIJx0a3Lzx3A2ARow2YmRL60HE
 image: https://pan-designoffice.com/ochi/okura/nagoya/rakuten/img/index/photo01.jpg
 image_source: 來自樂天旅遊飯店頁面 travel.rakuten.co.jp
 status: researching

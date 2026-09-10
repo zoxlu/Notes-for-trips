@@ -7,6 +7,7 @@ station: 上小田井站（名鐵犬山線・地下鐵鶴舞線）
 lines: [名鐵犬山線, 地下鐵鶴舞線]
 district: 西區
 location: 35.2210246,136.8742482
+place_id: ChIJ69B9yTF1A2ARwSejb9g-ZlU
 image: https://poiend-pctr.c.yimg.jp/RbvIgEqcLh0WnvgGGwVVgTznkURkbN_CqctDurJdF3RPuNtW2gA0pYPcPfsnzMvOFDZG55UkL9fqUjFrItSa1_xj-Ul_M195LlvyE5Rug6B-JoPxc2vXAfwrUCju_k06voEHNqB4LIATEl3Bd6T0Qi-sT4KaYwzrcFC3s8cQEtqGORI0iBS7egybTNZJFB6yNi0mN_BK67h_-IRzI399dTUCg5CHgroL5DZ5UNXrGbBuD5QCtwyyWQRvSszkZ3FG3utXl_pBW2XUI7WafHESrMPh_0xrza4jYQSMZIQCdIQ=
 image_source: 來自 Yahoo!地圖 店家頁面使用者實拍照片
 status: researching

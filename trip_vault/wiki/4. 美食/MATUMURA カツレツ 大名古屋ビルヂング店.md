@@ -9,6 +9,7 @@ station: 名古屋站
 lines: [JR東海道線, JR中央線, 名鐵名古屋本線, 地下鐵東山線, 地下鐵櫻通線, あおなみ線]
 district: 名駅
 location: 35.1720523,136.8844986
+place_id: ChIJB3AuRN12A2ARsNDGBbtW0MA
 meal_slot: lunch
 cuisine: 味噌豬排（法式作法，使用熟成豬）
 price_range: 午餐約1,500-2,500円／晚餐約2,400-2,800円（未稅）

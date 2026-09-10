@@ -9,6 +9,7 @@ station: 尼ヶ坂站（名鐵瀬戸線）
 lines: [名鐵瀬戸線]
 district: 北區
 location: 35.1872836,136.9176285
+place_id: ChIJF9_6-GRxA2ARAF326QqzWeo
 meal_slot: breakfast
 cuisine: 麵包／牛奶吐司專門店
 price_range:

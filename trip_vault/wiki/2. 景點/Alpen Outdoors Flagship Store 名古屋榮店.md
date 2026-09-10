@@ -8,6 +8,7 @@ station: 矢場町站（地下鐵名城線）
 lines: [地下鐵名城線]
 district: 榮
 location: 35.165466,136.905709
+place_id: ChIJxQm4O_pxA2ARkroPg_ekFzQ
 duration: 1-1.5小時
 opening_hours: 10:00-21:00
 image: https://japanshopping.org/files/shopping_article_contents/solocamp.jpg

@@ -9,6 +9,7 @@ station: 伏見站（地下鐵鶴舞線・東山線）
 lines: [地下鐵鶴舞線, 地下鐵東山線]
 district: 榮
 location: 35.16618,136.898529
+place_id: ChIJ712Qk-Z3A2ARibXf2z4DXOc
 meal_slot: breakfast
 cuisine: 無添加手作麵包
 price_range:

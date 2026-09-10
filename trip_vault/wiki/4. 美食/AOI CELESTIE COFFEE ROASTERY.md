@@ -9,6 +9,7 @@ station: 新栄町站（地下鐵東山線）
 lines: [地下鐵東山線]
 district: 新栄
 location: 35.17094,136.919083
+place_id: ChIJga1_RNdxA2AR8mAQsOmc934
 meal_slot: snack
 cuisine: 精品咖啡・烘豆
 price_range:

@@ -7,6 +7,7 @@ station: 矢場町站（地下鐵名城線）
 lines: [地下鐵名城線]
 district: 榮
 location: 35.1650956,136.9082367
+place_id: ChIJP4gjBc5wA2ARxdAlN3QDU7s
 image: https://corp.saisonfactory.co.jp/store/images_store/store016_matsuzakaya_nagoya.jpg
 image_source: 來自官網 corp.saisonfactory.co.jp
 status: researching

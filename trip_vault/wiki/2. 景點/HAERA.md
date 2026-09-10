@@ -8,6 +8,7 @@ station: 榮站（地下鐵東山線・名城線）
 lines: [地下鐵東山線, 地下鐵名城線]
 district: 榮
 location: 35.16944,136.90722
+place_id: ChIJu1zQAwBxA2ARundjNL9CqbI
 image: https://upload.wikimedia.org/wikipedia/commons/8/80/View_of_the_Landmark_Nagoya_Sakae%2C_Sakae_3-chome%2C_Naka_Ward_Nagoya_City_2026.jpg
 image_source: 來自 Wikimedia Commons（ザ・ランドマーク名古屋栄外觀，HAERA商場位於此大樓B2-4F）
 status: researching

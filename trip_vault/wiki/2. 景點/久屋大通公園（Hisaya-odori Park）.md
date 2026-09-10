@@ -10,6 +10,7 @@ station: 久屋大通站（地下鐵櫻通線・名城線）
 lines: [地下鐵櫻通線, 地下鐵名城線]
 district: 榮
 location: 35.1673656,136.9088285
+place_id: ChIJxfFf3dFwA2ARM8-ff8RXTQ4
 duration: 1-2小時
 opening_hours: 公園全日開放（無休）／園內約40間商店・餐廳各自營業時間不一
 image: https://www.nagoya-info.jp/upload/spots/large/20368120235f5f2bd90de30.jpg

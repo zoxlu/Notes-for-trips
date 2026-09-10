@@ -10,6 +10,7 @@ station: 犬山站（名鐵）
 lines: [名鐵犬山線, 名鐵小牧線]
 district: 犬山城下町
 location: 35.382805,136.939957
+place_id: ChIJCb4HLYoOA2ARi3jX6CK2ipo
 image: https://inuyamania.jp/wp-content/uploads/2020/11/FDCAA48F-C159-48F2-8985-987C12406C91.jpg
 image_source: 來自旅遊部落格 いぬやまにあ（inuyamania.jp）
 meal_slot: snack

@@ -7,6 +7,7 @@ station: 榮站（地下鐵東山線・名城線）
 lines: [地下鐵東山線, 地下鐵名城線]
 district: 榮
 location: 35.168945,136.909457
+place_id: ChIJCwAu67BxA2AROGhuQSK__Ug
 image: https://www.royalparkhotels.co.jp/ic/nagoya/assets/images/about/gallery/standard_room/img_standard_room.png
 image_source: 來自官網 royalparkhotels.co.jp
 status: researching

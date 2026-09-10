@@ -8,6 +8,7 @@ station: 名古屋港站（地下鐵名港線）
 lines: [地下鐵名港線]
 district: 港區
 location: 35.090748,136.884877
+place_id: ChIJGxcnYAp5A2AR817TMEMoYZs
 image: https://upload.wikimedia.org/wikipedia/commons/d/d5/Antarctic_Museum_Fuji.jpg
 image_source: 來自維基百科 Wikimedia Commons（Japanese icebreaker Fuji 條目）
 status: researching

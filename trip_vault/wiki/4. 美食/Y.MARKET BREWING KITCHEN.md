@@ -8,6 +8,7 @@ station: 名古屋站
 lines: [JR東海道線, JR中央線, 名鐵名古屋本線, 地下鐵東山線, 地下鐵櫻通線, あおなみ線]
 district: 名古屋站前
 location: 35.171292,136.889287
+place_id: ChIJhzCa6Nt2A2ARwgEKF2utrDk
 meal_slot: dinner
 cuisine: 手工精釀啤酒／創作名古屋料理
 price_range:

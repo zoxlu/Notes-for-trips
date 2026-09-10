@@ -8,6 +8,7 @@ station: 名古屋站
 lines: [JR東海道線, JR中央線, 名鐵名古屋本線, 地下鐵東山線, 地下鐵櫻通線, あおなみ線]
 district: 名駅
 location: 35.17075,136.883423
+place_id: ChIJMQwNmBt3A2AR-N6J1myWfik
 meal_slot: snack
 cuisine: 法國エシレ發酵奶油甜點、奶油夾心酥餅（サブレサンド）
 price_range:

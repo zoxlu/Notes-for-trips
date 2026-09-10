@@ -8,6 +8,7 @@ station: 大須觀音站（地下鐵名城線）
 lines: [地下鐵名城線]
 district: 大須
 location: 35.1594,136.9047
+place_id: ChIJh2A8fctwA2ARLFVqblDns64
 meal_slot: breakfast
 cuisine: 喫茶店（名古屋早餐文化）
 price_range:

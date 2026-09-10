@@ -8,6 +8,7 @@ station: 榮站（地下鐵東山線・名城線）
 lines: [地下鐵東山線, 地下鐵名城線]
 district: 榮
 location: 35.168527,136.906311
+place_id: ChIJvZjaHjxxA2ARl3QJg8RViBg
 image: https://upload.wikimedia.org/wikipedia/commons/0/0c/View_of_SKYLE_and_Sakae_Intersection%2C_Nishiki_Naka_Ward_Nagoya_2022.jpg
 image_source: 來自 Wikimedia Commons（スカイル外觀，位於榮交差點）
 status: researching

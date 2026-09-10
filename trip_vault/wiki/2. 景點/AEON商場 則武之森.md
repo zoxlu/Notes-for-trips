@@ -7,6 +7,7 @@ station: 龜島站（地下鐵東山線）
 lines: [地下鐵東山線]
 district: 則武新町
 location: 35.1798659,136.8799137
+place_id: ChIJRfCWc-p3A2AR4olIdF_c4V4
 image: https://image-cdn.aeonmall.jp/uploads/cbb1076e-28b8-472e-ae6b-231d3493c102.png
 image_source: 來自官網 nagoya-noritake-garden.aeonmall.jp
 status: researching

@@ -7,6 +7,7 @@ station: 瑞穗區役所站（地下鐵櫻通線）
 lines: [地下鐵櫻通線]
 district: 瑞穗區
 location: 35.1321614,136.9442827
+place_id: ChIJRyU4LfR6A2ARP-bQ7Tpcaac
 image: https://poiend-pctr.c.yimg.jp/RbvIgEqcLh0WnvgGGwVVgTznkURkbN_CqctDurJdF3QzVNlkcq0W__pRaWgCqCHpHEeYayubk2Qeckb8z4df3kbi5JwNvSprVVPkNYjgH9GCwCD7MI9x82E7PqAGL03eZUgsqSKpM-pvjC4jq_QG-SjnFvOn3ZLX22ilZtKv8NPJAfO5FW-71DG94HqeTMbUh19M9l2jR6UphTix9k27BT-nQ0l14d1JoupLzh9c2U1M-gD8gMtOB0Xyu1-AMR53iNToEBj615oL1q8ZIDRf0IKd5jhUsfGnQYnp_c0X3yU=
 image_source: 來自 Yahoo!地圖 店家頁面使用者實拍照片
 status: researching
