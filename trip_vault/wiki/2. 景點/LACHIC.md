@@ -20,6 +20,26 @@ official_url: https://www.lachic.jp/nagoya.html
 source_label: LACHIC官方網站
 restroom_info: 男性化粧室：B1F・2F・4F・6F・7F・8F。女性化粧室：B1F・2F～8F。多機能化粧室（含輪椅、オストメイト設備）：3F・5F・7F・8F。
 floormap_url: https://www.lachic.jp/nagoya/service.html
+floormap_images:
+  - label: B1F
+    file: 04-Attachments/floormap-lachic-b1f.webp
+  - label: 1F
+    file: 04-Attachments/floormap-lachic-1f.webp
+  - label: 2F
+    file: 04-Attachments/floormap-lachic-2f.webp
+  - label: 3F
+    file: 04-Attachments/floormap-lachic-3f.webp
+  - label: 4F
+    file: 04-Attachments/floormap-lachic-4f.webp
+  - label: 5F
+    file: 04-Attachments/floormap-lachic-5f.webp
+  - label: 6F
+    file: 04-Attachments/floormap-lachic-6f.webp
+  - label: 7F
+    file: 04-Attachments/floormap-lachic-7f.webp
+  - label: 8F
+    file: 04-Attachments/floormap-lachic-8f.webp
+floormap_source: 來自官網 lachic.jp
 nearby_restrooms:
   - name: "トイレ"
     location: 35.168135,136.908596
