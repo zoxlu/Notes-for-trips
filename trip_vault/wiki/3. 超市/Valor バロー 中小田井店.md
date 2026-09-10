@@ -17,6 +17,13 @@ raw_note:
 source_url:
 official_url: https://stores.valor.jp/detail/300/
 source_label:
+nearby_restrooms:
+  - name: "大木曽公園公衆トイレ"
+    location: 35.219443,136.875014
+    distance: 約190m
+  - name: "トイレ"
+    location: 35.218560,136.872761
+    distance: 約310m
 date_added: 2026-08-01
 day_assigned:
 opening_hours: 平日10:00-20:00，六日9:30-20:00

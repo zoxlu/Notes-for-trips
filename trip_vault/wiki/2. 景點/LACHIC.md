@@ -19,6 +19,22 @@ official_url: https://www.lachic.jp/nagoya.html
 source_label: LACHIC官方網站
 restroom_info: 男性化粧室：B1F・2F・4F・6F・7F・8F。女性化粧室：B1F・2F～8F。多機能化粧室（含輪椅、オストメイト設備）：3F・5F・7F・8F。
 floormap_url: https://www.lachic.jp/nagoya/service.html
+nearby_restrooms:
+  - name: "トイレ"
+    location: 35.168135,136.908596
+    distance: 約100m
+  - name: "久屋大通公園 公衆トイレ"
+    location: 35.169612,136.908276
+    distance: 約230m
+  - name: "久屋広場西トイレ"
+    location: 35.164578,136.908728
+    distance: 約350m
+  - name: "バリアフリートイレ"
+    location: 35.165051,136.905469
+    distance: 約350m
+  - name: "久屋大通公園 公衆トイレ"
+    location: 35.164547,136.909340
+    distance: 約370m
 date_added: 2026-08-07
 day_assigned:
 duration: 1-2小時

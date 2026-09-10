@@ -23,6 +23,16 @@ floormap_images:
   - label: 館內設備圖
     file: 04-Attachments/floormap-toyota.webp
 floormap_source: 來自官網 tcmit.org
+nearby_restrooms:
+  - name: "栄生公園 公衆トイレ"
+    location: 35.184386,136.875955
+    distance: 約210m
+  - name: "トイレ"
+    location: 35.182430,136.879955
+    distance: 約310m
+  - name: "南押切中央公園公衆トイレ"
+    location: 35.184693,136.881081
+    distance: 約480m
 date_added: 2026-07-18
 day_assigned:
 duration: 2-3小時

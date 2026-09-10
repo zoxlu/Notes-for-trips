@@ -24,6 +24,22 @@ raw_note:
 source_url: https://www.youtube.com/watch?v=3uXk6OyoKbo
 official_url: https://meihokuburger.com/
 source_label: YouTube頻道「Nick's Snaps / Travel in Japan」的名古屋美食精選影片
+nearby_restrooms:
+  - name: "仲ノ町公園 公衆トイレ"
+    location: 35.164180,136.895480
+    distance: 約190m
+  - name: "白川公園 公衆トイレ"
+    location: 35.164314,136.898949
+    distance: 約250m
+  - name: "伏見駅 公衆トイレ"
+    location: 35.169158,136.897911
+    distance: 約410m
+  - name: "白川公園北川公衆トイレ"
+    location: 35.165138,136.901235
+    distance: 約420m
+  - name: "公衆トイレ"
+    location: 35.161873,136.897339
+    distance: 約420m
 date_added: 2026-09-09
 day_assigned:
 tags:

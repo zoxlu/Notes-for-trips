@@ -24,6 +24,22 @@ raw_note:
 source_url: https://www.youtube.com/watch?v=3uXk6OyoKbo
 official_url: https://www.oniku-sugimoto.com/
 source_label: YouTube頻道「Nick's Snaps / Travel in Japan」的名古屋美食精選影片
+nearby_restrooms:
+  - name: "広小路本町(市バス) 5番"
+    location: 35.168906,136.901995
+    distance: 約90m
+  - name: "白川公園北川公衆トイレ"
+    location: 35.165138,136.901235
+    distance: 約350m
+  - name: "伏見駅 公衆トイレ"
+    location: 35.169158,136.897911
+    distance: 約420m
+  - name: "バリアフリートイレ"
+    location: 35.165051,136.905469
+    distance: 約440m
+  - name: "地下鉄伏見駅"
+    location: 35.169681,136.897778
+    distance: 約450m
 date_added: 2026-09-09
 day_assigned:
 tags:

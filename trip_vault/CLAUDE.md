@@ -99,7 +99,7 @@ aliases: []        # 這個地點/人物的其他常見稱呼，供交叉連結�
 - `floormap_url`：官網樓層導覽/館內設施頁面的網址（頁面連結，不是圖片直連）
 - `floormap_images`：存在 `04-Attachments/` 的官方平面圖陣列，每筆含 `label`（樓層或圖名，例如 `1F`、`村內地圖`）與 `file`（例如 `04-Attachments/floormap-lalaport-1f.webp`）。只收錄**圖上真的有廁所圖示**的平面圖
 - `floormap_source`：平面圖來源，例如「來自官網 legoland.jp」
-- `nearby_restrooms`：附近戶外公廁清單（陣列，每筆含 `name`/`location`/`distance`）。這個欄位由另一支一次性批次腳本透過 Google Places API 查詢填入，**不在**標準素材處理流程中手動填寫，處理素材時不用主動建立這個欄位。
+- `nearby_restrooms`：附近戶外公廁清單（陣列，每筆含 `name`/`location`/`distance`）。這個欄位由 `scripts/fetch_nearby_restrooms.py` 透過 Google Places API (New) 批次查詢填入（半徑500m、每則留最近5筆），**不在**標準素材處理流程中手動填寫，處理素材時不用主動建立這個欄位。新增了有座標的筆記之後想補資料，重跑 `python3 scripts/fetch_nearby_restrooms.py --refresh` 即可。
 
 ### 車站與路線命名規則（`station` / `lines`）
 

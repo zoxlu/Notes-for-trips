@@ -17,6 +17,16 @@ raw_note:
 source_url: https://www.youtube.com/watch?v=rYBRYPrBqeY
 official_url: https://nagoya.nikkostyle.jp/
 source_label: YouTube頻道「Nick」的名古屋私房景點介紹影片
+nearby_restrooms:
+  - name: "下園公園公衆トイレ"
+    location: 35.169902,136.895199
+    distance: 約380m
+  - name: "大東海ビル 地下1階トイレ"
+    location: 35.172464,136.887889
+    distance: 約400m
+  - name: "女性用公衆トイレ"
+    location: 35.170553,136.885945
+    distance: 約470m
 date_added: 2026-07-31
 day_assigned:
 nights:

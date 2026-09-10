@@ -17,6 +17,13 @@ raw_note:
 source_url:
 official_url: https://stores.valor.jp/detail/280/
 source_label:
+nearby_restrooms:
+  - name: "高辻公園 公衆トイレ"
+    location: 35.141737,136.916950
+    distance: 約320m
+  - name: "桜田公園公衆トイレ"
+    location: 35.141193,136.908008
+    distance: 約500m
 date_added: 2026-08-01
 day_assigned:
 opening_hours: 平日10:00-21:00，六日9:30-21:00

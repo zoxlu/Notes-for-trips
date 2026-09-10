@@ -19,6 +19,22 @@ official_url: https://skyle.jp/
 source_label: SAKAE NOVA・スカイル・メルサ官方網站
 restroom_info: SKYLE棟：RF・11F・10F・9F・8F・7F・2F・B1F（含無障礙設施）・B2F各樓層皆有廁所，6F另設兒童廁所，5F僅女性廁所。SAKAE NOVA棟：8F・7F・6F・4F・B1F皆有廁所，2F僅女性廁所。
 floormap_url: https://skyle.jp/floor/
+nearby_restrooms:
+  - name: "トイレ"
+    location: 35.168135,136.908596
+    distance: 約210m
+  - name: "久屋大通公園 公衆トイレ"
+    location: 35.169612,136.908276
+    distance: 約220m
+  - name: "栄町駅 バリアフリートイレ"
+    location: 35.170823,136.908835
+    distance: 約340m
+  - name: "バリアフリートイレ"
+    location: 35.165051,136.905469
+    distance: 約390m
+  - name: "広小路本町(市バス) 5番"
+    location: 35.168906,136.901995
+    distance: 約390m
 date_added: 2026-08-07
 day_assigned:
 duration: 1-2小時

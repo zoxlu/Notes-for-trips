@@ -19,6 +19,22 @@ official_url: https://nagoyaaqua.jp/garden-pier/fuji/
 source_label: 詹姆士的YouTube「名古屋港水族館四館套票實測」影片
 restroom_info:
 floormap_url: https://nagoyaaqua.jp/garden-pier/fuji/
+nearby_restrooms:
+  - name: "トイレ(こども広場)"
+    location: 35.089979,136.883774
+    distance: 約130m
+  - name: "駐車場横トイレ"
+    location: 35.090930,136.882276
+    distance: 約240m
+  - name: "トイレ"
+    location: 35.091403,136.881313
+    distance: 約330m
+  - name: "港橋広場公園 トイレ"
+    location: 35.094015,136.882860
+    distance: 約410m
+  - name: "公衆トイレ"
+    location: 35.091765,136.880460
+    distance: 約420m
 date_added: 2026-08-16
 day_assigned:
 duration: 40分鐘-1小時

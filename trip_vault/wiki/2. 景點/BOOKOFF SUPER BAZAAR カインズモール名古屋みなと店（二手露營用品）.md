@@ -21,6 +21,13 @@ official_url: https://www.bookoff.co.jp/shop/shop20423.html
 source_label: BOOKOFF 官方網站免稅購物頁／門市頁面
 restroom_info: 整棟カインズモール名古屋みなと店（含BOOKOFF SUPER BAZAAR、Beisia超市、麥當勞、肯德基等）設有哺乳室與多目的トイレ（無障礙廁所），詳細樓層位置請洽現場服務台。
 floormap_url: https://map.cainz.com/detail/735/
+nearby_restrooms:
+  - name: "十一屋川緑地公衆トイレＡ"
+    location: 35.092452,136.864640
+    distance: 約110m
+  - name: "十一屋川緑地公衆トイレＢ"
+    location: 35.091663,136.862079
+    distance: 約150m
 date_added: 2026-08-01
 day_assigned:
 duration: 1-2小時

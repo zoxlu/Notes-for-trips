@@ -18,6 +18,22 @@ official_url: https://nagoya-noritake-garden.aeonmall.jp/
 source_label: Google Maps 地點連結
 restroom_info:
 floormap_url: https://nagoya-noritake-garden.aeonmall.jp/floormap
+nearby_restrooms:
+  - name: "トイレ"
+    location: 35.182430,136.879955
+    distance: 約290m
+  - name: "トイレ"
+    location: 35.182392,136.883353
+    distance: 約420m
+  - name: "江西公園公衆トイレ"
+    location: 35.179761,136.884629
+    distance: 約430m
+  - name: "公衆トイレ"
+    location: 35.176046,136.882377
+    distance: 約480m
+  - name: "亀島ふれあい公園 ﾊﾞﾘｱﾌﾘｰトイレ"
+    location: 35.176537,136.876237
+    distance: 約500m
 date_added: 2026-07-26
 day_assigned:
 duration: 1-2小時

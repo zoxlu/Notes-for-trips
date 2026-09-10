@@ -22,6 +22,16 @@ raw_note: ["2026-07-18 手工啤酒原創菜餚"]
 source_url: https://www.nagoya-info.jp/zhtw/gourmet/detail/79/
 official_url: https://craftbeer.nagoya/
 source_label: 名古屋觀光官方網站的手工啤酒餐廳介紹頁
+nearby_restrooms:
+  - name: "大東海ビル 地下1階トイレ"
+    location: 35.172464,136.887889
+    distance: 約180m
+  - name: "女性用公衆トイレ"
+    location: 35.170553,136.885945
+    distance: 約310m
+  - name: "女性用公衆トイレ"
+    location: 35.170382,136.884906
+    distance: 約410m
 date_added: 2026-07-18
 day_assigned:
 tags:

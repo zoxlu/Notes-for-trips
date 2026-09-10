@@ -16,6 +16,22 @@ raw_note: ["2026-07-18 名古屋三井花園飯店 premier", "2026-07-29 三井�
 source_url: https://sillycoupleblog.tw/japan-nagoya-accommodation-mghnp-2606/
 official_url: https://www.gardenhotels.co.jp/nagoya-premier/
 source_label: 名古屋三井花園飯店Premier住宿心得部落格
+nearby_restrooms:
+  - name: "女性用公衆トイレ"
+    location: 35.170553,136.885945
+    distance: 約100m
+  - name: "女性用公衆トイレ"
+    location: 35.170382,136.884906
+    distance: 約170m
+  - name: "大東海ビル 地下1階トイレ"
+    location: 35.172464,136.887889
+    distance: 約300m
+  - name: "女子トイレ"
+    location: 35.169187,136.883428
+    distance: 約310m
+  - name: "男子トイレ"
+    location: 35.169188,136.883391
+    distance: 約310m
 date_added: 2026-07-18
 day_assigned:
 nights:

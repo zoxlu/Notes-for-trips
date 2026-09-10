@@ -17,6 +17,13 @@ raw_note:
 source_url:
 official_url: https://www.super-yamanaka.co.jp/shop/shop005
 source_label:
+nearby_restrooms:
+  - name: "亀島ふれあい公園 ﾊﾞﾘｱﾌﾘｰトイレ"
+    location: 35.176537,136.876237
+    distance: 約410m
+  - name: "則武公園公衆トイレ"
+    location: 35.171284,136.875412
+    distance: 約490m
 date_added: 2026-08-01
 day_assigned:
 opening_hours: 9:30-21:30

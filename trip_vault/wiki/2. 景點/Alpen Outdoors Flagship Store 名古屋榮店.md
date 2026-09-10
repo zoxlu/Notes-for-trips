@@ -19,6 +19,22 @@ raw_note: ["2026-07-24 之前找到的一些資料補充"]
 source_url: https://store.alpen-group.jp/Form/RealShop/ShopDetail.aspx?rsid=5502
 official_url: https://store.alpen-group.jp/Form/RealShop/ShopDetail.aspx?rsid=5502
 source_label: Alpen Group官方門市頁面
+nearby_restrooms:
+  - name: "バリアフリートイレ"
+    location: 35.165051,136.905469
+    distance: 約50m
+  - name: "久屋広場西トイレ"
+    location: 35.164578,136.908728
+    distance: 約290m
+  - name: "公衆トイレ"
+    location: 35.162846,136.907153
+    distance: 約320m
+  - name: "若宮大通り公園公衆トイレ"
+    location: 35.162501,136.905313
+    distance: 約330m
+  - name: "久屋大通公園 公衆トイレ"
+    location: 35.164547,136.909340
+    distance: 約350m
 date_added: 2026-07-24
 day_assigned:
 tags:

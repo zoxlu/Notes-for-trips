@@ -19,6 +19,22 @@ raw_note: ["2026-07-20 波比", "2026-07-20 名古屋慢旅：別再說它無聊
 source_url: https://bobbytravel.tw/nagoya-travel/
 official_url: https://www.nagoya-tv-tower.co.jp/
 source_label: 波比看世界的名古屋旅遊攻略部落格
+nearby_restrooms:
+  - name: "中部電力 MIRAI TOWER下 公衆トイレ"
+    location: 35.172345,136.908338
+    distance: 約0m
+  - name: "久屋大通公園 公衆トイレ"
+    location: 35.172536,136.908642
+    distance: 約30m
+  - name: "公衆トイレ"
+    location: 35.171728,136.909550
+    distance: 約130m
+  - name: "栄町駅 バリアフリートイレ"
+    location: 35.170823,136.908835
+    distance: 約180m
+  - name: "ツルシゲ通り1 公衆トイレ"
+    location: 35.172394,136.905325
+    distance: 約270m
 date_added: 2026-07-20
 day_assigned:
 tags:

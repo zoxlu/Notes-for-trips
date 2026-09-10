@@ -25,6 +25,22 @@ raw_note:
 source_url: https://www.youtube.com/watch?v=lbncwqZanFY#t=1:23
 official_url: https://www.katuretumatumura.jp/
 source_label: YouTube頻道「Nick」的名古屋美食精選介紹影片
+nearby_restrooms:
+  - name: "女性用公衆トイレ"
+    location: 35.170382,136.884906
+    distance: 約190m
+  - name: "女性用公衆トイレ"
+    location: 35.170553,136.885945
+    distance: 約210m
+  - name: "女性用公衆トイレ"
+    location: 35.171698,136.882084
+    distance: 約220m
+  - name: "公衆トイレ"
+    location: 35.170356,136.882110
+    distance: 約290m
+  - name: "大東海ビル 地下1階トイレ"
+    location: 35.172464,136.887889
+    distance: 約310m
 date_added: 2026-07-31
 day_assigned:
 tags:

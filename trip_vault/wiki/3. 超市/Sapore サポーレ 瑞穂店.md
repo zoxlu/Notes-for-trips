@@ -17,6 +17,10 @@ raw_note:
 source_url:
 official_url: https://www.sapore-nagoya.com/
 source_label:
+nearby_restrooms:
+  - name: "田辺公園公衆トイレ"
+    location: 35.128949,136.944430
+    distance: 約360m
 date_added: 2026-08-01
 day_assigned:
 opening_hours: 10:00-21:00

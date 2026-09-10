@@ -23,6 +23,22 @@ raw_note: ["2026-07-31 名古屋美食精選", "2026-08-04 美食以及三井開
 source_url: https://www.youtube.com/watch?v=lbncwqZanFY#t=5:36
 official_url: https://www.harbs.co.jp/
 source_label: YouTube頻道「Nick」的名古屋美食精選介紹影片
+nearby_restrooms:
+  - name: "中部電力 MIRAI TOWER下 公衆トイレ"
+    location: 35.172345,136.908338
+    distance: 約80m
+  - name: "久屋大通公園 公衆トイレ"
+    location: 35.172536,136.908642
+    distance: 約110m
+  - name: "栄町駅 バリアフリートイレ"
+    location: 35.170823,136.908835
+    distance: 約150m
+  - name: "公衆トイレ"
+    location: 35.171728,136.909550
+    distance: 約170m
+  - name: "ツルシゲ通り1 公衆トイレ"
+    location: 35.172394,136.905325
+    distance: 約230m
 date_added: 2026-07-31
 day_assigned:
 tags:

@@ -24,6 +24,22 @@ raw_note:
 source_url: https://www.youtube.com/watch?v=3uXk6OyoKbo
 official_url: https://www.suzunami.co.jp/
 source_label: YouTube頻道「Nick's Snaps / Travel in Japan」的名古屋美食精選影片
+nearby_restrooms:
+  - name: "バリアフリートイレ"
+    location: 35.165051,136.905469
+    distance: 約220m
+  - name: "トイレ"
+    location: 35.168135,136.908596
+    distance: 約250m
+  - name: "久屋広場西トイレ"
+    location: 35.164578,136.908728
+    distance: 約340m
+  - name: "久屋大通公園 公衆トイレ"
+    location: 35.169612,136.908276
+    distance: 約350m
+  - name: "久屋大通公園 公衆トイレ"
+    location: 35.164547,136.909340
+    distance: 約380m
 date_added: 2026-09-09
 day_assigned:
 tags:

@@ -29,6 +29,16 @@ floormap_images:
   - label: 3F
     file: 04-Attachments/floormap-lalaport-3f.webp
 floormap_source: 來自官網 mitsui-shopping-park.com
+nearby_restrooms:
+  - name: "港北公園 公衆トイレ"
+    location: 35.107253,136.883650
+    distance: 約190m
+  - name: "トイレ"
+    location: 35.107737,136.885597
+    distance: 約310m
+  - name: "港北公園 (東園) 公衆トイレ"
+    location: 35.107159,136.886787
+    distance: 約430m
 date_added: 2026-07-24
 day_assigned:
 tags:

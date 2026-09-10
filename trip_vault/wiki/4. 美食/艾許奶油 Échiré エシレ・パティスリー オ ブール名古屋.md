@@ -22,6 +22,22 @@ raw_note: ["2026-08-04 美食以及三井開箱"]
 source_url: https://www.youtube.com/watch?v=Q8_dA6z1F1k#t=7:58
 official_url: https://www.kataoka.com/echire/patisserieaubeurre/nagoya/
 source_label: YouTube頻道「名古屋美食特輯」影片說明所附的地點清單
+nearby_restrooms:
+  - name: "公衆トイレ"
+    location: 35.170356,136.882110
+    distance: 約130m
+  - name: "女性用公衆トイレ"
+    location: 35.170382,136.884906
+    distance: 約140m
+  - name: "女性用公衆トイレ"
+    location: 35.171698,136.882084
+    distance: 約160m
+  - name: "うまいもん通り広小路口 多機能トイレ"
+    location: 35.169209,136.883368
+    distance: 約170m
+  - name: "男子トイレ"
+    location: 35.169188,136.883391
+    distance: 約170m
 date_added: 2026-08-04
 day_assigned:
 tags:

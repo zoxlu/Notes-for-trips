@@ -21,6 +21,22 @@ raw_note: ["2026-07-28 瑪茲一的影片值得看！", "2026-07-31 榮", "2026-
 source_url: https://www.youtube.com/watch?v=hHiLjCJQtKA
 official_url: https://rhp.nagoya/
 source_label: 瑪茲一（Matsui）名古屋景點介紹YouTube影片
+nearby_restrooms:
+  - name: "トイレ"
+    location: 35.168135,136.908596
+    distance: 約90m
+  - name: "久屋大通公園 公衆トイレ"
+    location: 35.169612,136.908276
+    distance: 約250m
+  - name: "原内科クリニック"
+    location: 35.167725,136.911934
+    distance: 約290m
+  - name: "久屋広場西トイレ"
+    location: 35.164578,136.908728
+    distance: 約310m
+  - name: "久屋大通公園 公衆トイレ"
+    location: 35.164547,136.909340
+    distance: 約320m
 date_added: 2026-07-28
 day_assigned:
 tags:

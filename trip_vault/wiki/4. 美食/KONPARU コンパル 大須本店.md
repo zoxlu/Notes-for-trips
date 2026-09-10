@@ -22,6 +22,22 @@ raw_note: ["2026-07-20 10 Must visit spot in Nagoya"]
 source_url: https://www.youtube.com/watch?v=VwphIyvKQ9s
 official_url: https://www.konparu.co.jp/
 source_label: 10個名古屋必去景點介紹影片（含大須、名古屋城、榮商圈等時間軸）
+nearby_restrooms:
+  - name: "第1アメ横ビル 2Fトイレ"
+    location: 35.159750,136.905377
+    distance: 約70m
+  - name: "裏門前公園公衆トイレ"
+    location: 35.161342,136.903833
+    distance: 約230m
+  - name: "公衆トイレ"
+    location: 35.162218,136.904082
+    distance: 約320m
+  - name: "那古野古墳前 公衆トイレ"
+    location: 35.159637,136.901104
+    distance: 約330m
+  - name: "若宮大通り公園公衆トイレ"
+    location: 35.162501,136.905313
+    distance: 約350m
 date_added: 2026-07-20
 day_assigned:
 tags:

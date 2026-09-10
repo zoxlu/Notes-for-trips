@@ -25,6 +25,22 @@ floormap_images:
   - label: B1F（連通榮地下街）
     file: 04-Attachments/floormap-haera-2.png
 floormap_source: 來自官網 haera.parco.jp
+nearby_restrooms:
+  - name: "久屋大通公園 公衆トイレ"
+    location: 35.169612,136.908276
+    distance: 約100m
+  - name: "トイレ"
+    location: 35.168135,136.908596
+    distance: 約190m
+  - name: "栄町駅 バリアフリートイレ"
+    location: 35.170823,136.908835
+    distance: 約210m
+  - name: "公衆トイレ"
+    location: 35.171728,136.909550
+    distance: 約330m
+  - name: "中部電力 MIRAI TOWER下 公衆トイレ"
+    location: 35.172345,136.908338
+    distance: 約340m
 date_added: 2026-08-07
 day_assigned:
 duration: 1-2小時

@@ -16,6 +16,16 @@ raw_note: ["2026-07-31 名古屋美食精選"]
 source_url: https://www.youtube.com/watch?v=lbncwqZanFY#t=10:09
 official_url: https://www.daiwaroynet.jp/nayabashi/
 source_label: YouTube頻道「Nick」的名古屋美食精選介紹影片
+nearby_restrooms:
+  - name: "仲ノ町公園 公衆トイレ"
+    location: 35.164180,136.895480
+    distance: 約310m
+  - name: "下園公園公衆トイレ"
+    location: 35.169902,136.895199
+    distance: 約430m
+  - name: "公衆トイレ"
+    location: 35.162153,136.894367
+    distance: 約470m
 date_added: 2026-07-31
 day_assigned:
 nights:

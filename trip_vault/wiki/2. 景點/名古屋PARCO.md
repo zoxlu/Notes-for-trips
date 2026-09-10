@@ -19,6 +19,22 @@ official_url: https://nagoya.parco.jp/
 source_label: 名古屋PARCO官方網站
 restroom_info: 多目的トイレ（無障礙廁所）位於西館7F與南館2F，南館2F並配備オストメイト（造口者）對應設備，任何人皆可自由使用。一般廁所詳細位置請參照官網樓層地圖。
 floormap_url: https://nagoya.parco.jp/info/?gcd=facilities
+nearby_restrooms:
+  - name: "公衆トイレ"
+    location: 35.162846,136.907153
+    distance: 約100m
+  - name: "はぐくみ側 公衆トイレ"
+    location: 35.163774,136.909105
+    distance: 約160m
+  - name: "久屋広場西トイレ"
+    location: 35.164578,136.908728
+    distance: 約160m
+  - name: "久屋大通公園 公衆トイレ"
+    location: 35.164547,136.909340
+    distance: 約200m
+  - name: "若宮大通り公園公衆トイレ"
+    location: 35.162501,136.905313
+    distance: 約230m
 date_added: 2026-08-07
 day_assigned:
 duration: 1-2小時

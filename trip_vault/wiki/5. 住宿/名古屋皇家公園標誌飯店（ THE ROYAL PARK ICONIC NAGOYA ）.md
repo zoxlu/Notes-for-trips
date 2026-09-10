@@ -16,6 +16,22 @@ raw_note: ["2026-07-23 名古屋皇家公園標誌飯店", "2026-07-28 波妞實
 source_url: https://www.royalparkhotels.co.jp/ic/nagoya/
 official_url: https://www.royalparkhotels.co.jp/ic/nagoya/
 source_label: THE ROYAL PARK ICONIC NAGOYA 飯店官網
+nearby_restrooms:
+  - name: "トイレ"
+    location: 35.168135,136.908596
+    distance: 約120m
+  - name: "久屋大通公園 公衆トイレ"
+    location: 35.169612,136.908276
+    distance: 約130m
+  - name: "栄町駅 バリアフリートイレ"
+    location: 35.170823,136.908835
+    distance: 約220m
+  - name: "原内科クリニック"
+    location: 35.167725,136.911934
+    distance: 約260m
+  - name: "公衆トイレ"
+    location: 35.171728,136.909550
+    distance: 約310m
 date_added: 2026-07-23
 day_assigned:
 nights:

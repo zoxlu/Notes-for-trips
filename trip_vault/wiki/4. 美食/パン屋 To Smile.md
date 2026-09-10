@@ -24,6 +24,22 @@ raw_note:
 source_url: https://www.youtube.com/watch?v=3uXk6OyoKbo
 official_url:
 source_label: YouTube頻道「Nick's Snaps / Travel in Japan」的名古屋美食精選影片
+nearby_restrooms:
+  - name: "白川公園 公衆トイレ"
+    location: 35.164314,136.898949
+    distance: 約210m
+  - name: "白川公園北川公衆トイレ"
+    location: 35.165138,136.901235
+    distance: 約270m
+  - name: "伏見駅 公衆トイレ"
+    location: 35.169158,136.897911
+    distance: 約340m
+  - name: "仲ノ町公園 公衆トイレ"
+    location: 35.164180,136.895480
+    distance: 約360m
+  - name: "白川公園 公衆トイレ"
+    location: 35.163189,136.900646
+    distance: 約380m
 date_added: 2026-09-09
 day_assigned:
 tags:

@@ -20,6 +20,22 @@ raw_note: ["2026-07-28 瑪茲一的影片值得看！"]
 source_url: https://www.youtube.com/watch?v=hHiLjCJQtKA
 official_url: https://sunshine-sakae.jp/
 source_label: 瑪茲一（Matsui）名古屋景點介紹YouTube影片
+nearby_restrooms:
+  - name: "久屋大通公園 公衆トイレ"
+    location: 35.169612,136.908276
+    distance: 約190m
+  - name: "栄町駅 バリアフリートイレ"
+    location: 35.170823,136.908835
+    distance: 約280m
+  - name: "トイレ"
+    location: 35.168135,136.908596
+    distance: 約280m
+  - name: "ツルシゲ通り1 公衆トイレ"
+    location: 35.172394,136.905325
+    distance: 約310m
+  - name: "中部電力 MIRAI TOWER下 公衆トイレ"
+    location: 35.172345,136.908338
+    distance: 約360m
 date_added: 2026-07-28
 day_assigned:
 tags:

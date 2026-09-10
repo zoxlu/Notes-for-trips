@@ -23,6 +23,19 @@ raw_note: ["2026-07-28 波妞實境秀"]
 source_url: https://www.youtube.com/watch?v=GUXefNDp9rA
 official_url: https://tsubamepan.jp/shop/amagasaka.html
 source_label: 波妞（YouTube旅遊頻道）名古屋實境秀VLOG
+nearby_restrooms:
+  - name: "尼ヶ坂公園公衆トイレ"
+    location: 35.187621,136.919060
+    distance: 約140m
+  - name: "大杉公園 公衆トイレ"
+    location: 35.189430,136.917149
+    distance: 約240m
+  - name: "清水駅公衆トイレ"
+    location: 35.187078,136.913602
+    distance: 約370m
+  - name: "西杉公園公衆トイレ"
+    location: 35.189705,136.914192
+    distance: 約410m
 date_added: 2026-07-28
 day_assigned:
 tags:

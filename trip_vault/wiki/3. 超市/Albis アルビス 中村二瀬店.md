@@ -17,6 +17,10 @@ raw_note:
 source_url:
 official_url: https://www.albis.co.jp/home/shop/detail?shopCd=840
 source_label:
+nearby_restrooms:
+  - name: "鴨付公園 公衆トイレ"
+    location: 35.161244,136.845622
+    distance: 約440m
 date_added: 2026-08-01
 day_assigned:
 opening_hours: 9:00-21:45

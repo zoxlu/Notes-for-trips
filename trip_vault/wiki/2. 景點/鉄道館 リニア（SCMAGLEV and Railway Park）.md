@@ -25,6 +25,16 @@ floormap_images:
   - label: 1F・2F
     file: 04-Attachments/floormap-linia.webp
 floormap_source: 來自官網 museum.jr-central.co.jp
+nearby_restrooms:
+  - name: "公衆トイレ"
+    location: 35.049985,136.850883
+    distance: 約100m
+  - name: "金城ふ頭中央緑地 公衆トイレ"
+    location: 35.046953,136.847078
+    distance: 約430m
+  - name: "トイレ メイカーズピア内"
+    location: 35.051444,136.846979
+    distance: 約450m
 date_added: 2026-07-20
 day_assigned:
 tags:

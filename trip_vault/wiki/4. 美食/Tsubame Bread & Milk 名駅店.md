@@ -23,6 +23,22 @@ raw_note: ["2026-07-20 10 Must visit spot in Nagoya", "2026-09-09 更多美食�
 source_url: https://www.youtube.com/watch?v=VwphIyvKQ9s
 official_url: https://tsubamepan.jp/
 source_label: 10個名古屋必去景點介紹影片（含大須、名古屋城、榮商圈等時間軸）
+nearby_restrooms:
+  - name: "女性用公衆トイレ"
+    location: 35.170553,136.885945
+    distance: 約180m
+  - name: "女性用公衆トイレ"
+    location: 35.170382,136.884906
+    distance: 約240m
+  - name: "女子トイレ"
+    location: 35.169187,136.883428
+    distance: 約330m
+  - name: "男子トイレ"
+    location: 35.169188,136.883391
+    distance: 約340m
+  - name: "うまいもん通り広小路口 多機能トイレ"
+    location: 35.169209,136.883368
+    distance: 約340m
 date_added: 2026-07-20
 day_assigned:
 tags:

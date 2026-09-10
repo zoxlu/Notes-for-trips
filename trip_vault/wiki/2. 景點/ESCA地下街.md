@@ -25,6 +25,22 @@ floormap_images:
   - label: 全區樓層圖
     file: 04-Attachments/floormap-esca.webp
 floormap_source: 來自官網 esca-sc.com
+nearby_restrooms:
+  - name: "新幹線名古屋駅改札内トイレ"
+    location: 35.169733,136.881538
+    distance: 約170m
+  - name: "公衆トイレ"
+    location: 35.170356,136.882110
+    distance: 約210m
+  - name: "女性用公衆トイレ"
+    location: 35.171698,136.882084
+    distance: 約260m
+  - name: "牧野公園 公衆トイレ"
+    location: 35.168335,136.877756
+    distance: 約290m
+  - name: "うまいもん通り広小路口 多機能トイレ"
+    location: 35.169209,136.883368
+    distance: 約340m
 date_added: 2026-07-28
 day_assigned:
 tags:

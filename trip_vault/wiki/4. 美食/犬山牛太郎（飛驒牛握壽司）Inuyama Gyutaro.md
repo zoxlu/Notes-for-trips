@@ -25,6 +25,22 @@ raw_note:
 source_url:
 official_url: https://www.instagram.com/inuyama18group/
 source_label:
+nearby_restrooms:
+  - name: "公衆トイレ"
+    location: 35.381214,136.939475
+    distance: 約180m
+  - name: "トイレ"
+    location: 35.381066,136.939460
+    distance: 約200m
+  - name: "針綱神社公衆トイレ"
+    location: 35.386486,136.939775
+    distance: 約410m
+  - name: "内田防災公園 公衆トイレ"
+    location: 35.386233,136.942391
+    distance: 約440m
+  - name: "犬山丸の内緑地公衆トイレ"
+    location: 35.386235,136.936939
+    distance: 約470m
 date_added: 2026-08-12
 day_assigned:
 tags:

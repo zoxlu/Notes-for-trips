@@ -17,6 +17,22 @@ raw_note:
 source_url:
 official_url: https://corp.saisonfactory.co.jp/store/store016_matsuzakaya_nagoya.html
 source_label:
+nearby_restrooms:
+  - name: "久屋広場西トイレ"
+    location: 35.164578,136.908728
+    distance: 約70m
+  - name: "久屋大通公園 公衆トイレ"
+    location: 35.164547,136.909340
+    distance: 約120m
+  - name: "はぐくみ側 公衆トイレ"
+    location: 35.163774,136.909105
+    distance: 約170m
+  - name: "バリアフリートイレ"
+    location: 35.165051,136.905469
+    distance: 約250m
+  - name: "公衆トイレ"
+    location: 35.162846,136.907153
+    distance: 約270m
 date_added: 2026-08-01
 day_assigned:
 opening_hours: 10:00-20:00

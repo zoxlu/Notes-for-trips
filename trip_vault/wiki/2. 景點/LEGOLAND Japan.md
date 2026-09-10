@@ -25,6 +25,16 @@ floormap_images:
   - label: 園區地圖
     file: 04-Attachments/floormap-legoland.webp
 floormap_source: 來自官網 legoland.jp
+nearby_restrooms:
+  - name: "公衆トイレ"
+    location: 35.051215,136.844935
+    distance: 約160m
+  - name: "公衆トイレ"
+    location: 35.049924,136.845418
+    distance: 約200m
+  - name: "トイレ メイカーズピア内"
+    location: 35.051444,136.846979
+    distance: 約350m
 date_added: 2026-07-20
 day_assigned:
 tags:
