@@ -19,6 +19,10 @@ official_url: https://www.tcmit.org/
 source_label: 水嫂分享的名古屋景點影片（國泰航空、Toyota產業技術記念館、犬山城等）
 restroom_info: 館內共9處多目的トイレ（多功能廁所），其中1處備有オストメイト（造口者）設備，2處配置完整嬰兒床，部分男廁也設有嬰兒椅。另設有哺乳室（授乳室），備熱水設備與嬰兒床，可用窗簾隔開供2組家庭同時使用。
 floormap_url: https://www.tcmit.org/enjoy/quickguide
+floormap_images:
+  - label: 館內設備圖
+    file: 04-Attachments/floormap-toyota.webp
+floormap_source: 來自官網 tcmit.org
 date_added: 2026-07-18
 day_assigned:
 duration: 2-3小時
