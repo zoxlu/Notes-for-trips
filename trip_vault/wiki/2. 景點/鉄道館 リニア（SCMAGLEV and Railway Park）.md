@@ -21,6 +21,10 @@ official_url: https://museum.jr-central.co.jp/
 source_label: 波比看世界的名古屋旅遊攻略部落格
 restroom_info:
 floormap_url: https://museum.jr-central.co.jp/floormap/
+floormap_images:
+  - label: 1F・2F
+    file: 04-Attachments/floormap-linia.webp
+floormap_source: 來自官網 museum.jr-central.co.jp
 date_added: 2026-07-20
 day_assigned:
 tags:
@@ -49,9 +53,6 @@ JR東海營運的鐵道博物館，展示39輛實體列車，鐵道迷天堂，�
 
 ## 費用/門票
 大人1,000円／國高中小學生500円／3歲以上未就學兒童200円。
-
-## ⚠️ 待確認
-- 廁所文字位置待補：官網「館内のみどころ」頁（即官方floormap頁面）未提供廁所位置文字說明；已將該頁連結補進`floormap_url`，可自行查看展區配置，或詢問館內服務台。
 
 ## 相關筆記
 - [[LEGOLAND Japan]]

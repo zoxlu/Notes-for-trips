@@ -21,6 +21,10 @@ official_url: https://www.esca-sc.com/
 source_label: 瑪茲一（Matsui）名古屋景點介紹YouTube影片
 restroom_info:
 floormap_url: https://www.esca-sc.com/esca_allshopmap.pdf
+floormap_images:
+  - label: 全區樓層圖
+    file: 04-Attachments/floormap-esca.webp
+floormap_source: 來自官網 esca-sc.com
 date_added: 2026-07-28
 day_assigned:
 tags:
@@ -56,7 +60,6 @@ aliases:
 ## ⚠️ 待確認
 - 本則來源 YouTube 影片《瑪茲一的影片值得看！》經重新確認（已用登入cookies＋更新版yt-dlp），該影片完全沒有任何字幕（無自動字幕、也無人工上傳字幕），並非環境或限流問題；分享者原始素材僅為影片章節時間軸列表，以下內容為獨立查證公開觀光資訊整理，並非影片逐字內容，如需影片實際口述重點需使用者手動補充。
 - 座標為名古屋站太閤通口位置（地下街入口鄰近此處），非地下街範圍精確座標。
-- 廁所文字位置待補：官網僅提及廁所已導入節水馬桶、自動水栓等設備更新，未提供具體位置文字說明；已補上官方全店舖地圖PDF連結（`floormap_url`），可自行查看地圖上的廁所標示。
 
 ## 相關筆記
 

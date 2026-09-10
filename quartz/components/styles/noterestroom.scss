@@ -31,6 +31,42 @@
   color: var(--dark);
 }
 
+.note-restroom-maps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.note-restroom-map {
+  margin: 0;
+  width: 150px;
+
+  img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    object-position: top center;
+    background: var(--light);
+    border: 1px solid var(--lightgray);
+    border-radius: 3px;
+    display: block;
+  }
+
+  figcaption {
+    margin-top: 0.15rem;
+    text-align: center;
+    font-size: 0.82rem;
+    color: var(--darkgray);
+  }
+}
+
+.note-restroom-caption {
+  margin-top: 0.35rem !important;
+  font-size: 0.82rem;
+  color: var(--gray);
+}
+
 .note-restroom-nearby {
   list-style: none;
   margin: 0.1rem 0 0;
