@@ -8,7 +8,7 @@ region: nagoya-city
 station: 名古屋站
 lines: [JR東海道線, JR中央線, 名鐵名古屋本線, 地下鐵東山線, 地下鐵櫻通線, あおなみ線]
 district: 名駅
-location: 35.1692,136.8871
+location: 35.168589,136.886916
 place_id: ChIJJX5mDJx3A2ARRkSisgKVHXU
 meal_slot: breakfast
 cuisine: 麵包／牛奶吐司專門店
@@ -27,23 +27,23 @@ source_label: 10個名古屋必去景點介紹影片（含大須、名古屋城�
 nearby_restrooms:
   - name: "女性用公衆トイレ"
     location: 35.170553,136.885945
-    distance: 約180m
+    distance: 約240m
     place_id: ChIJVcVnS9x2A2ARmOFJnkUhmwY
   - name: "女性用公衆トイレ"
     location: 35.170382,136.884906
-    distance: 約240m
+    distance: 約270m
     place_id: ChIJVVWwvN12A2ARASHo6zzzIrg
   - name: "女子トイレ"
     location: 35.169187,136.883428
-    distance: 約330m
+    distance: 約320m
     place_id: ChIJVVX-X-d2A2AR5kqi3xq7hvY
   - name: "男子トイレ"
     location: 35.169188,136.883391
-    distance: 約340m
+    distance: 約330m
     place_id: ChIJVVUIYOd2A2ARpWxvZmKIpBk
   - name: "うまいもん通り広小路口 多機能トイレ"
     location: 35.169209,136.883368
-    distance: 約340m
+    distance: 約330m
     place_id: ChIJE_ZJTSt3A2AR2DlAvrjbN0M
 date_added: 2026-07-20
 day_assigned:
@@ -75,7 +75,7 @@ aliases:
 名古屋站步行約4分鐘（名駅地下街出口約1分鐘）。
 
 ## ⚠️ 待確認
-- 座標為街廓中心點近似值，非店面精確位置。
+- 座標已於 2026-09-10 改用 Google Places 收錄的店家官方代表點，不再是街廓中心點近似值。
 
 ## 相關筆記
 - [[名古屋鄉土美食 票選TOP20（總覽）]]

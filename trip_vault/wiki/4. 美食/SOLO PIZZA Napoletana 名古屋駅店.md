@@ -8,7 +8,7 @@ region: nagoya-city
 station: 名古屋站
 lines: [JR東海道線, JR中央線, 名鐵名古屋本線, 地下鐵東山線, 地下鐵櫻通線, あおなみ線]
 district: 名駅
-location: 35.171711,136.88443
+location: 35.172394,136.884891
 place_id: ChIJ8fBHOd12A2AR7A6dQ0tVwkU
 meal_slot: dinner
 cuisine: 那不勒斯披薩
@@ -28,24 +28,24 @@ source_label: YouTube頻道「Nick's Snaps / Travel in Japan」的名古屋美�
 nearby_restrooms:
   - name: "女性用公衆トイレ"
     location: 35.170382,136.884906
-    distance: 約150m
+    distance: 約220m
     place_id: ChIJVVWwvN12A2ARASHo6zzzIrg
   - name: "女性用公衆トイレ"
     location: 35.170553,136.885945
-    distance: 約190m
+    distance: 約230m
     place_id: ChIJVcVnS9x2A2ARmOFJnkUhmwY
   - name: "女性用公衆トイレ"
     location: 35.171698,136.882084
-    distance: 約210m
+    distance: 約270m
     place_id: ChIJVVV-3ud2A2AR2IvYgSaMSRs
+  - name: "大東海ビル 地下1階トイレ"
+    location: 35.172464,136.887889
+    distance: 約270m
+    place_id: ChIJ_SuNdAB3A2ARnLaLIzkAlmE
   - name: "公衆トイレ"
     location: 35.170356,136.882110
-    distance: 約260m
+    distance: 約340m
     place_id: ChIJb8GnAAB3A2ARkDkkC3r_4Tc
-  - name: "うまいもん通り広小路口 多機能トイレ"
-    location: 35.169209,136.883368
-    distance: 約290m
-    place_id: ChIJE_ZJTSt3A2AR2DlAvrjbN0M
 date_added: 2026-09-09
 day_assigned:
 tags:

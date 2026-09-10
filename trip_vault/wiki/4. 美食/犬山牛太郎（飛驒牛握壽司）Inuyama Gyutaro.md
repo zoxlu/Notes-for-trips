@@ -9,7 +9,7 @@ region: inuyama
 station: 犬山站（名鐵）
 lines: [名鐵犬山線, 名鐵小牧線]
 district: 犬山城下町
-location: 35.382805,136.939957
+location: 35.381910,136.939420
 place_id: ChIJCb4HLYoOA2ARi3jX6CK2ipo
 image: https://inuyamania.jp/wp-content/uploads/2020/11/FDCAA48F-C159-48F2-8985-987C12406C91.jpg
 image_source: 來自旅遊部落格 いぬやまにあ（inuyamania.jp）
@@ -29,24 +29,12 @@ source_label:
 nearby_restrooms:
   - name: "公衆トイレ"
     location: 35.381214,136.939475
-    distance: 約180m
+    distance: 約80m
     place_id: ChIJG5E8LgAPA2ARTGf5HgVnMjE
   - name: "トイレ"
     location: 35.381066,136.939460
-    distance: 約200m
+    distance: 約90m
     place_id: ChIJyaQGwnUPA2ARChcpFWV7LI4
-  - name: "針綱神社公衆トイレ"
-    location: 35.386486,136.939775
-    distance: 約410m
-    place_id: ChIJ89kcGk8PA2AR5HMGgBqAq-I
-  - name: "内田防災公園 公衆トイレ"
-    location: 35.386233,136.942391
-    distance: 約440m
-    place_id: ChIJ657NWo4PA2ARL5Lk9o51AOg
-  - name: "犬山丸の内緑地公衆トイレ"
-    location: 35.386235,136.936939
-    distance: 約470m
-    place_id: ChIJSddLT9oPA2ARMKFZ9hcs0O4
 date_added: 2026-08-12
 day_assigned:
 tags:
@@ -83,6 +71,7 @@ aliases:
 
 ## ⚠️ 待確認
 - 地址在不同來源間略有出入：家人分享為「犬山東古券70」，另查到「犬山東古券75」（與70座標相同）、「犬山東古券662」兩種寫法。經比對日本國土地理院（GSI）地址查詢服務的座標，「662」與同一條本町通上已知座標的[[犬山ぐーまる（栗子蒙布朗）]]（僅距62公尺）、[[山田五平餅店]]（僅距102公尺）都非常接近，且距犬山站的直線距離（約555公尺）也最貼近食べログ標示的「距犬山站593公尺」，故採用「662」的座標；「70/75」離這幾間店較遠（150-300公尺），且距犬山站僅約503公尺，較不吻合。門牌本身仍建議實地核對。
+- 補充：2026-09-10 已改用 Google Places 收錄的「犬山牛太郎」官方代表點作為座標（與先前依「662」門牌推定的位置相差約110公尺），門牌號碼的疑問不影響現在的定位。
 - 價格資訊略有出入：家人分享「一份700日元」，但查到的部落格資料為「2貫600円」，可能是價格調整或分店/口味差異，建議實地確認。
 
 ## 相關筆記

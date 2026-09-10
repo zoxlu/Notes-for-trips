@@ -8,7 +8,7 @@ region: nagoya-city
 station: 榮站（地下鐵東山線・名城線）
 lines: [地下鐵東山線, 地下鐵名城線]
 district: 榮
-location: 35.168533,136.908096
+location: 35.169401,136.909008
 place_id: ChIJOcmQdQpxA2ARsSOQu5xc_Do
 meal_slot: breakfast
 cuisine: 喫茶店（名古屋早餐文化）
@@ -25,26 +25,26 @@ source_url: https://www.youtube.com/watch?v=GUXefNDp9rA
 official_url: https://www.konparu.co.jp/
 source_label: 波妞（YouTube旅遊頻道）名古屋實境秀VLOG
 nearby_restrooms:
-  - name: "トイレ"
-    location: 35.168135,136.908596
-    distance: 約60m
-    place_id: ChIJtYVcTQBxA2AR5GZfqOPgQ7M
   - name: "久屋大通公園 公衆トイレ"
     location: 35.169612,136.908276
-    distance: 約120m
+    distance: 約70m
     place_id: ChIJYWM5mgFxA2AR1I9_ZOgomqE
+  - name: "トイレ"
+    location: 35.168135,136.908596
+    distance: 約150m
+    place_id: ChIJtYVcTQBxA2AR5GZfqOPgQ7M
   - name: "栄町駅 バリアフリートイレ"
     location: 35.170823,136.908835
-    distance: 約260m
+    distance: 約160m
     place_id: ChIJPUZTdwBxA2ARY8NMDKrUCSE
-  - name: "原内科クリニック"
-    location: 35.167725,136.911934
-    distance: 約360m
-    place_id: ChIJFyufQ_Z3A2ARNWN-qPqqcKM
   - name: "公衆トイレ"
     location: 35.171728,136.909550
-    distance: 約380m
+    distance: 約260m
     place_id: ChIJ0e97yAVxA2AR8ATM7qM3p2k
+  - name: "原内科クリニック"
+    location: 35.167725,136.911934
+    distance: 約320m
+    place_id: ChIJFyufQ_Z3A2ARNWN-qPqqcKM
 date_added: 2026-07-28
 day_assigned:
 tags:
@@ -77,7 +77,7 @@ aliases:
 - 傳統老字號喫茶店氛圍，未特別劃分吸菸區（網站：4travel.jp）
 
 ## ⚠️ 待確認
-- 座標已改用日本國土地理院（GSI）地址查詢服務，依店址「栄3-5-12」重新定位（原先為「榮」站位置的近似值）；OpenStreetMap查無此分店個別標記。
+- 座標已於 2026-09-10 改用 Google Places 收錄的「コンパル 栄東店」官方代表點（與先前依地址用日本國土地理院查到的位置相差約130公尺）。
 
 ## 相關筆記
 - [[KONPARU コンパル 大須本店]]

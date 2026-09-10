@@ -7,7 +7,7 @@ region: nagoya-city
 station: 名古屋站
 lines: [JR東海道線, JR中央線, 名鐵名古屋本線, 地下鐵東山線, 地下鐵櫻通線, あおなみ線]
 district: 名駅
-location: 35.17075,136.883423
+location: 35.171423,136.882779
 place_id: ChIJMQwNmBt3A2AR-N6J1myWfik
 meal_slot: snack
 cuisine: 法國エシレ發酵奶油甜點、奶油夾心酥餅（サブレサンド）
@@ -24,26 +24,26 @@ source_url: https://www.youtube.com/watch?v=Q8_dA6z1F1k#t=7:58
 official_url: https://www.kataoka.com/echire/patisserieaubeurre/nagoya/
 source_label: YouTube頻道「名古屋美食特輯」影片說明所附的地點清單
 nearby_restrooms:
+  - name: "女性用公衆トイレ"
+    location: 35.171698,136.882084
+    distance: 約70m
+    place_id: ChIJVVV-3ud2A2AR2IvYgSaMSRs
   - name: "公衆トイレ"
     location: 35.170356,136.882110
     distance: 約130m
     place_id: ChIJb8GnAAB3A2ARkDkkC3r_4Tc
+  - name: "新幹線名古屋駅改札内トイレ"
+    location: 35.169733,136.881538
+    distance: 約220m
+    place_id: ChIJ8YVG_BR3A2ARBXOrccSKSdo
   - name: "女性用公衆トイレ"
     location: 35.170382,136.884906
-    distance: 約140m
+    distance: 約230m
     place_id: ChIJVVWwvN12A2ARASHo6zzzIrg
-  - name: "女性用公衆トイレ"
-    location: 35.171698,136.882084
-    distance: 約160m
-    place_id: ChIJVVV-3ud2A2AR2IvYgSaMSRs
   - name: "うまいもん通り広小路口 多機能トイレ"
     location: 35.169209,136.883368
-    distance: 約170m
+    distance: 約250m
     place_id: ChIJE_ZJTSt3A2AR2DlAvrjbN0M
-  - name: "男子トイレ"
-    location: 35.169188,136.883391
-    distance: 約170m
-    place_id: ChIJVVUIYOd2A2ARpWxvZmKIpBk
 date_added: 2026-08-04
 day_assigned:
 tags:

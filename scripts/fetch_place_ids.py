@@ -142,6 +142,9 @@ def query_all():
                 "place_id": p.get("id", ""),
                 "matched_name": (p.get("displayName") or {}).get("text", ""),
                 "dist_m": d,
+                # 一併存下 Google 的代表點座標，之後要稽核筆記 location 準不準就不用再打 API
+                "lat": plat,
+                "lng": plng,
             }
             if best is None or d < best["dist_m"]:
                 best = cand
@@ -154,6 +157,10 @@ def query_all():
             "place_id": best["place_id"] if best else "",
             "matched_name": best["matched_name"] if best else "",
             "dist_m": best["dist_m"] if best else None,
+            "note_lat": n["lat"],
+            "note_lng": n["lng"],
+            "matched_lat": best["lat"] if best else None,
+            "matched_lng": best["lng"] if best else None,
         }
         if ok:
             print(f"  [{i:3d}] ✓ {n['title'][:26]:28s} → {best['matched_name'][:24]:26s} {best['dist_m']:5.0f}m")
