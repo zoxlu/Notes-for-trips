@@ -92,10 +92,28 @@ function openOverlay(group: Slide[], start: number) {
   })
 
   // 平面圖字很小，只「縮到符合螢幕」在手機上根本看不清廁所圖示，
-  // 所以點圖可以切換成原始尺寸，這時覆蓋層本身可以捲動來看細節
-  img.addEventListener("click", () => {
-    overlay!.classList.toggle("zoomed")
-    if (!overlay!.classList.contains("zoomed")) overlay!.scrollTo({ top: 0, left: 0 })
+  // 所以點圖可以切換成原始尺寸，這時覆蓋層本身可以捲動來看細節。
+  // 放大時要以「點擊的那個位置」為中心，否則畫面會跳到左上角，
+  // 使用者點地圖右下角卻被丟到完全不同的地方，很容易迷失。
+  img.addEventListener("click", (e) => {
+    const box = overlay!
+    if (box.classList.contains("zoomed")) {
+      box.classList.remove("zoomed")
+      box.scrollTo({ top: 0, left: 0 })
+    } else {
+      // 先記下點擊點在圖片裡的相對位置（0~1）
+      const rect = img.getBoundingClientRect()
+      const fx = (e.clientX - rect.left) / rect.width
+      const fy = (e.clientY - rect.top) / rect.height
+      box.classList.add("zoomed")
+      // 換成原始尺寸後版面才重算，下一影格再把該點捲到畫面中央
+      requestAnimationFrame(() => {
+        box.scrollTo({
+          left: fx * img.offsetWidth - box.clientWidth / 2,
+          top: fy * img.offsetHeight - box.clientHeight / 2,
+        })
+      })
+    }
     updateCaption()
   })
 

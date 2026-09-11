@@ -13,6 +13,8 @@
   // 上下留白要讓得開固定在角落的關閉鈕與底部說明文字
   padding: 3.4rem 1rem;
   overflow: auto;
+  // 捲到邊界時不要把底下的頁面一起帶動（手機上的下拉刷新也一併擋掉）
+  overscroll-behavior: contain;
   animation: restroom-lightbox-in 0.18s ease-out;
 
   img {
@@ -28,14 +30,19 @@
   }
 
   // 放大到原始尺寸：改用捲動看細節，內容靠左上對齊才不會被裁掉
+  // 放大到原始尺寸：改用捲動看細節
   &.zoomed {
     display: block;
+    // 交給瀏覽器原生處理平移，比 JS 介入順
+    touch-action: pan-x pan-y;
 
     img {
       max-width: none;
       max-height: none;
       cursor: zoom-out;
       animation: none;
+      // 圖片若比畫面窄（或矮），讓它置中而不是黏在左上角
+      margin: auto;
     }
   }
 }
