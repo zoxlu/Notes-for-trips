@@ -2,6 +2,8 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 import { resolveImagePath } from "../util/path"
 // @ts-ignore
 import styles from "./styles/noterestroom.scss"
+// @ts-ignore
+import script from "./scripts/restroommap.inline"
 
 // nearby_restrooms 由 Places API 批次腳本寫進 frontmatter，欄位可能不齊全，全部當選填處理
 type NearbyRestroom = {
@@ -60,8 +62,12 @@ const NoteRestroom: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
               const label = trimmedString(m.label)
               return (
                 <figure class="note-restroom-map">
-                  {/* 點圖直接開原圖，手機上才放得大看清楚廁所圖示 */}
-                  <a href={src} target="_blank" rel="noopener noreferrer">
+                  {/* 點圖用燈箱原地放大（見 scripts/restroommap.inline.ts）。
+                      data-router-ignore 是必要的：Quartz 的 SPA 路由在 window 層攔截點擊，
+                      而它的 target="_blank" 防護檢查的是 event.target（這裡是 <img>）而不是
+                      外層的 <a>，所以不加這個屬性的話它會無視我們的 preventDefault 逕自導航。
+                      JS 失效時 <a> 仍可正常開圖。 */}
+                  <a href={src} target="_blank" rel="noopener noreferrer" data-router-ignore>
                     <img src={src} alt={`${fm.title as string} ${label} 平面圖`} loading="lazy" />
                   </a>
                   {label && <figcaption>{label}</figcaption>}
@@ -70,7 +76,7 @@ const NoteRestroom: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
             })}
           </div>
           <p class="note-restroom-caption">
-            點圖可開啟原圖放大
+            點圖放大
             {floormapSource && `（平面圖${floormapSource}）`}
           </p>
         </>
@@ -83,8 +89,10 @@ const NoteRestroom: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
         </p>
       )}
       {nearby.length > 0 && (
-        <>
-          <p class="note-restroom-subheading">附近公廁</p>
+        // 預設收合：這段是最佔版面、也最不獨特的資料（現場直接用 Google Maps
+        // 搜「トイレ」更即時），平面圖與文字說明則維持展開確保家人看得到
+        <details class="note-restroom-details">
+          <summary>附近公廁（{nearby.length}）</summary>
           <ul class="note-restroom-nearby">
             {nearby.map((r) => {
               const name = trimmedString(r.name)
@@ -109,12 +117,14 @@ const NoteRestroom: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
               )
             })}
           </ul>
-        </>
+        </details>
       )}
     </section>
   )
 }
 
 NoteRestroom.css = styles
+// @ts-ignore
+NoteRestroom.afterDOMLoaded = script
 
 export default (() => NoteRestroom) satisfies QuartzComponentConstructor

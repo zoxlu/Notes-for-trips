@@ -61,26 +61,163 @@
   }
 }
 
-.note-restroom-caption {
-  margin-top: 0.35rem !important;
-  font-size: 0.82rem;
-  color: var(--gray);
-}
+.note-restroom-details {
+  margin-top: 0.45rem;
 
-.note-restroom-nearby {
-  list-style: none;
-  margin: 0.1rem 0 0;
-  padding: 0;
+  summary {
+    cursor: pointer;
+    color: var(--dark);
+    list-style: none;
 
-  li {
-    margin: 0.1rem 0;
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::before {
+      content: "▸ ";
+      color: var(--gray);
+    }
+  }
+
+  &[open] summary::before {
+    content: "▾ ";
   }
 }
 
-.note-restroom-distance {
-  color: var(--gray);
+// 平面圖燈箱：點縮圖時原地放大，不離開頁面
+.restroom-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(24, 18, 16, 0.82);
+  backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // 上下留白要讓得開固定在角落的關閉鈕與底部說明文字
+  padding: 3.4rem 1rem;
+  overflow: auto;
+  animation: restroom-lightbox-in 0.18s ease-out;
 
-  &::before {
-    content: " · ";
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55);
+    cursor: zoom-in;
+    animation: restroom-lightbox-pop 0.22s cubic-bezier(0.2, 0.8, 0.3, 1);
+  }
+
+  // 放大到原始尺寸：改用捲動看細節，內容靠左上對齊才不會被裁掉
+  &.zoomed {
+    display: block;
+
+    img {
+      max-width: none;
+      max-height: none;
+      cursor: zoom-out;
+      animation: none;
+    }
+  }
+}
+
+@keyframes restroom-lightbox-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes restroom-lightbox-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+}
+
+// 關閉鈕與左右翻頁鈕共用的圓潤玻璃質感
+.restroom-lightbox-close,
+.restroom-lightbox-nav {
+  position: fixed;
+  z-index: 1;
+  font-family: inherit;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.15s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.26);
+    border-color: var(--tertiary);
+  }
+
+  &:active {
+    transform: scale(0.94);
+  }
+}
+
+.restroom-lightbox-close {
+  top: 0.85rem;
+  right: 0.85rem;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.92rem;
+  border-radius: 999px;
+}
+
+.restroom-lightbox-nav {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.75rem;
+  height: 2.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
+  line-height: 1;
+  padding-bottom: 0.18rem; // ‹ › 字型基線偏下，補正視覺置中
+  border-radius: 50%;
+
+  &:active {
+    transform: translateY(-50%) scale(0.94);
+  }
+
+  &.prev {
+    left: 0.85rem;
+  }
+
+  &.next {
+    right: 0.85rem;
+  }
+}
+
+// 固定在底部，不跟圖片搶 flex 空間——否則圖片吃滿高度後會把說明文字擠出畫面
+.restroom-lightbox-caption {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 !important;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.88rem;
+  letter-spacing: 0.02em;
+  background: linear-gradient(to top, rgba(24, 18, 16, 0.9), rgba(24, 18, 16, 0));
+  pointer-events: none;
+}
+
+// 尊重系統的「減少動態效果」設定
+@media (prefers-reduced-motion: reduce) {
+  .restroom-lightbox,
+  .restroom-lightbox img {
+    animation: none;
   }
 }

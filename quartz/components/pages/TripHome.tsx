@@ -19,6 +19,8 @@ import noteRestroomStyles from "../styles/noterestroom.scss"
 import noteMapStyles from "../styles/notemap.scss"
 // @ts-ignore
 import noteMapScript from "../scripts/notemap.inline"
+// @ts-ignore
+import noteRestroomScript from "../scripts/restroommap.inline"
 
 const NotePropertiesComp = NotePropertiesConstructor()
 const NoteRestroomComp = NoteRestroomConstructor()
@@ -234,6 +236,6 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
 //TripHome.css = styles
 TripHome.css = [styles, notePropertiesStyles, noteRestroomStyles, noteMapStyles]
 // @ts-ignore
-TripHome.afterDOMLoaded = [tripCardsScript, noteMapScript]
+TripHome.afterDOMLoaded = [tripCardsScript, noteMapScript, noteRestroomScript]
 
 export default (() => TripHome) satisfies QuartzComponentConstructor
