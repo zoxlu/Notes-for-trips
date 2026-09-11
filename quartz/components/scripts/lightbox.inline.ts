@@ -122,22 +122,50 @@ function openOverlay(group: Slide[], start: number) {
     if (e.target === overlay) closeOverlay()
   })
 
-  // 手機滑動翻頁；放大檢視時滑動要留給捲動用，所以不攔截
+  // 手機滑動翻頁。三個必要的防呆，少一個都會誤翻頁：
+  //   1. 多指手勢（雙指縮放）完全不算：捏合時 touchstart 只記到第一根手指，
+  //      放開時某一次 touchend 的座標會跟起點差很多，很容易被誤判成往左滑
+  //   2. 放大檢視時不攔截，滑動要留給平移看細節用
+  //   3. 橫向位移要明顯大於縱向，否則單純上下捲動也會翻頁
   let touchX: number | null = null
+  let touchY: number | null = null
+  let multiTouch = false
+
+  const resetTouch = () => {
+    touchX = null
+    touchY = null
+  }
+
   overlay.addEventListener(
     "touchstart",
     (e) => {
+      if (e.touches.length > 1) {
+        multiTouch = true
+        resetTouch()
+        return
+      }
+      multiTouch = false
       touchX = e.changedTouches[0]?.clientX ?? null
+      touchY = e.changedTouches[0]?.clientY ?? null
     },
     { passive: true },
   )
   overlay.addEventListener(
     "touchend",
     (e) => {
-      if (touchX === null || overlay!.classList.contains("zoomed") || slides.length < 2) return
-      const dx = (e.changedTouches[0]?.clientX ?? touchX) - touchX
-      if (Math.abs(dx) > 50) show(dx < 0 ? index + 1 : index - 1)
-      touchX = null
+      const startX = touchX
+      const startY = touchY
+      resetTouch()
+
+      if (multiTouch || startX === null || startY === null) return
+      if (overlay!.classList.contains("zoomed") || slides.length < 2) return
+      if (e.touches.length > 0) return // 還有手指在畫面上，代表是多指手勢的中途
+
+      const dx = (e.changedTouches[0]?.clientX ?? startX) - startX
+      const dy = (e.changedTouches[0]?.clientY ?? startY) - startY
+      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+        show(dx < 0 ? index + 1 : index - 1)
+      }
     },
     { passive: true },
   )
