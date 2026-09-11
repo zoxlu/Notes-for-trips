@@ -2,8 +2,6 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 import { resolveImagePath } from "../util/path"
 // @ts-ignore
 import styles from "./styles/noterestroom.scss"
-// @ts-ignore
-import script from "./scripts/restroommap.inline"
 
 // nearby_restrooms 由 Places API 批次腳本寫進 frontmatter，欄位可能不齊全，全部當選填處理
 type NearbyRestroom = {
@@ -62,7 +60,7 @@ const NoteRestroom: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
               const label = trimmedString(m.label)
               return (
                 <figure class="note-restroom-map">
-                  {/* 點圖用燈箱原地放大（見 scripts/restroommap.inline.ts）。
+                  {/* 點圖用燈箱原地放大（見 scripts/lightbox.inline.ts）。
                       data-router-ignore 是必要的：Quartz 的 SPA 路由在 window 層攔截點擊，
                       而它的 target="_blank" 防護檢查的是 event.target（這裡是 <img>）而不是
                       外層的 <a>，所以不加這個屬性的話它會無視我們的 preventDefault 逕自導航。
@@ -124,7 +122,5 @@ const NoteRestroom: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
 }
 
 NoteRestroom.css = styles
-// @ts-ignore
-NoteRestroom.afterDOMLoaded = script
 
 export default (() => NoteRestroom) satisfies QuartzComponentConstructor

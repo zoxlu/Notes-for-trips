@@ -20,7 +20,9 @@ import noteMapStyles from "../styles/notemap.scss"
 // @ts-ignore
 import noteMapScript from "../scripts/notemap.inline"
 // @ts-ignore
-import noteRestroomScript from "../scripts/restroommap.inline"
+import lightboxStyles from "../styles/lightbox.scss"
+// @ts-ignore
+import lightboxScript from "../scripts/lightbox.inline"
 
 const NotePropertiesComp = NotePropertiesConstructor()
 const NoteRestroomComp = NoteRestroomConstructor()
@@ -77,11 +79,16 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
         <NoteRestroomComp {...props} />
         {image ? (
           <div class="note-media-row">
-            <img
-              src={resolveImagePath(image, fileData.slug!)}
-              alt={fileData.frontmatter?.title as string}
-              class="note-cover-image"
-            />
+            {/* 封面圖是 object-fit: cover 裁切過的，家人常看不出來可以點開看完整版，
+                所以加一個常駐提示標籤（不能只靠 hover，手機上沒有 hover） */}
+            <div class="note-cover">
+              <img
+                src={resolveImagePath(image, fileData.slug!)}
+                alt={fileData.frontmatter?.title as string}
+                class="note-cover-image"
+              />
+              <span class="note-cover-hint">⤢ 點圖看完整</span>
+            </div>
             <NoteMapComp {...props} />
           </div>
         ) : (
@@ -234,8 +241,8 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
 }
 
 //TripHome.css = styles
-TripHome.css = [styles, notePropertiesStyles, noteRestroomStyles, noteMapStyles]
+TripHome.css = [styles, notePropertiesStyles, noteRestroomStyles, noteMapStyles, lightboxStyles]
 // @ts-ignore
-TripHome.afterDOMLoaded = [tripCardsScript, noteMapScript, noteRestroomScript]
+TripHome.afterDOMLoaded = [tripCardsScript, noteMapScript, lightboxScript]
 
 export default (() => TripHome) satisfies QuartzComponentConstructor

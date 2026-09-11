@@ -1,8 +1,11 @@
-// 廁所平面圖的燈箱：點縮圖時原地開一個覆蓋層放大，不離開頁面，
-// 才不用按瀏覽器的上一頁回來。JS 失效時 <a> 仍會照原本的方式開新分頁。
+// 通用圖片燈箱：點圖時原地開一個覆蓋層放大，不離開頁面，不用按瀏覽器的上一頁回來。
 //
-// 同一則筆記的平面圖會被收成一組（例如名古屋市科學館 7 層、LACHIC 9 層），
-// 在燈箱裡可以用左右箭頭／方向鍵／手機滑動直接翻頁，不用關掉再點開。
+// 套用對象有三種，各自成一組、組內可翻頁：
+//   1. 廁所平面圖（.note-restroom-maps，圖包在 <a> 裡）
+//   2. 筆記封面圖（.note-cover-image，被 object-fit: cover 裁切過，
+//      家人常看不出來可以點開看完整版，所以另外加了提示標籤）
+//   3. 內文圖片（article 裡的 <img>）
+// 前者的 <a> 在 JS 失效時仍可正常開圖；後兩者本來就只是 <img>。
 
 type Slide = { src: string; caption: string }
 
@@ -127,30 +130,54 @@ function openOverlay(group: Slide[], start: number) {
   show(index)
 }
 
+function bindGroup(imgs: HTMLImageElement[], hrefOf: (el: HTMLImageElement) => string) {
+  if (imgs.length === 0) return
+  const group: Slide[] = imgs.map((el) => ({
+    src: hrefOf(el),
+    caption: el.closest("figure")?.querySelector("figcaption")?.textContent?.trim() || el.alt || "",
+  }))
+
+  imgs.forEach((el, i) => {
+    // 圖片包在 <a> 裡（廁所平面圖）就綁在 <a> 上，否則綁在 <img> 本身
+    const target: HTMLElement = el.closest("a") ?? el
+    if (target.dataset.lightboxBound === "true") return
+    target.dataset.lightboxBound = "true"
+    target.classList.add("lightbox-zoomable")
+    target.addEventListener("click", (e) => {
+      // 使用者若刻意要開新分頁（Ctrl/⌘+點擊、中鍵）就不攔截
+      if (e.metaKey || e.ctrlKey || e.shiftKey || (e as MouseEvent).button !== 0) return
+      e.preventDefault()
+      // 連 window 層的 SPA 路由都不要收到這個事件（另一道保險是 <a> 上的
+      // data-router-ignore），否則它會自己導航到圖片網址
+      e.stopPropagation()
+      openOverlay(group, i)
+    })
+  })
+}
+
 function setup() {
   // 換頁時把殘留的燈箱收掉（Quartz 是 SPA 導航）
   closeOverlay()
 
+  // 1. 廁所平面圖：同一區塊的各樓層算一組
   document.querySelectorAll<HTMLDivElement>(".note-restroom-maps").forEach((container) => {
-    const links = Array.from(container.querySelectorAll<HTMLAnchorElement>(".note-restroom-map a"))
-    const group: Slide[] = links.map((a) => ({
-      src: a.getAttribute("href") ?? "",
-      caption: a.closest("figure")?.querySelector("figcaption")?.textContent?.trim() ?? "",
-    }))
+    const imgs = Array.from(container.querySelectorAll<HTMLImageElement>(".note-restroom-map img"))
+    bindGroup(imgs, (el) => el.closest("a")?.getAttribute("href") ?? el.src)
+  })
 
-    links.forEach((a, i) => {
-      if (a.dataset.lightboxBound === "true") return
-      a.dataset.lightboxBound = "true"
-      a.addEventListener("click", (e) => {
-        // 使用者若刻意要開新分頁（Ctrl/⌘+點擊、中鍵）就不攔截
-        if (e.metaKey || e.ctrlKey || e.shiftKey || (e as MouseEvent).button !== 0) return
-        e.preventDefault()
-        // 連 window 層的 SPA 路由都不要收到這個事件（另一道保險是 <a> 上的
-        // data-router-ignore），否則它會自己導航到圖片網址
-        e.stopPropagation()
-        openOverlay(group, i)
-      })
+  // 2. 封面圖：自成一組
+  document.querySelectorAll<HTMLImageElement>(".note-cover-image").forEach((el) => {
+    bindGroup([el], (i) => i.src)
+  })
+
+  // 3. 內文圖片：整篇算一組，可直接左右翻
+  document.querySelectorAll<HTMLElement>("article").forEach((article) => {
+    const imgs = Array.from(article.querySelectorAll<HTMLImageElement>("img")).filter((el) => {
+      const a = el.closest("a")
+      // 圖片若被包在「連到別處」的連結裡（例如外部網站），維持原本的連結行為
+      return !a || a.getAttribute("href") === el.getAttribute("src")
     })
+    bindGroup(imgs, (el) => el.src)
   })
 }
 
