@@ -19,7 +19,49 @@ source_url: https://nagoya.parco.jp/
 official_url: https://nagoya.parco.jp/
 source_label: 名古屋PARCO官方網站
 restroom_info: 多目的トイレ（無障礙廁所）位於西館7F與南館2F，南館2F並配備オストメイト（造口者）對應設備，任何人皆可自由使用。一般廁所詳細位置請參照官網樓層地圖。
-floormap_url: https://nagoya.parco.jp/info/?gcd=facilities
+floormap_url: https://nagoya.parco.jp/floor/
+floormap_images:
+  - label: 東館2F
+    file: 04-Attachments/floormap-parco-east-2f.webp
+  - label: 東館4F
+    file: 04-Attachments/floormap-parco-east-4f.webp
+  - label: 西館B1F
+    file: 04-Attachments/floormap-parco-west-b1f.webp
+  - label: 西館1F
+    file: 04-Attachments/floormap-parco-west-1f.webp
+  - label: 西館2F
+    file: 04-Attachments/floormap-parco-west-2f.webp
+  - label: 西館3F
+    file: 04-Attachments/floormap-parco-west-3f.webp
+  - label: 西館4F
+    file: 04-Attachments/floormap-parco-west-4f.webp
+  - label: 西館5F
+    file: 04-Attachments/floormap-parco-west-5f.webp
+  - label: 西館6F
+    file: 04-Attachments/floormap-parco-west-6f.webp
+  - label: 西館7F
+    file: 04-Attachments/floormap-parco-west-7f.webp
+  - label: 西館8F
+    file: 04-Attachments/floormap-parco-west-8f.webp
+  - label: 南館B1F
+    file: 04-Attachments/floormap-parco-south-b1f.webp
+  - label: 南館2F（女廁）
+    file: 04-Attachments/floormap-parco-south-2f.webp
+  - label: 南館3F（男廁）
+    file: 04-Attachments/floormap-parco-south-3f.webp
+  - label: 南館4F
+    file: 04-Attachments/floormap-parco-south-4f.webp
+  - label: 南館5F（男廁）
+    file: 04-Attachments/floormap-parco-south-5f.webp
+  - label: 南館6F
+    file: 04-Attachments/floormap-parco-south-6f.webp
+  - label: 南館8F
+    file: 04-Attachments/floormap-parco-south-8f.webp
+  - label: 南館10F
+    file: 04-Attachments/floormap-parco-south-10f.webp
+  - label: midi館（1F-2F夾層）
+    file: 04-Attachments/floormap-parco-midi.webp
+floormap_source: 使用者提供官網樓層店家地圖網址（nagoya.parco.jp/floor/），逐層下載後篩選出有男女／無障礙廁所圖示的樓層
 nearby_restrooms:
   - name: "公衆トイレ"
     location: 35.162846,136.907153
@@ -95,6 +137,10 @@ aliases:
 > 來源檔案：2026-08-07 繃皮蛇的手寫筆記 01
 >
 > [[繃皮蛇]]：（原始素材為手寫筆記，記錄名古屋PARCO東西南三館各樓層店家分布，見上方樓層簡介。）
+
+> 來源：使用者於對話中提供官網樓層地圖網址（nagoya.parco.jp/floor/），非raw/素材
+>
+> 逐一檢查東館（B1F、1F-8F）、西館（B1F、1F-8F）、南館（B1F、1F-10F）、midi館（1F-3F）共32個樓層頁面，篩選出圖上真的有畫男女或無障礙廁所圖示的20層收錄進 `floormap_images`；南館2F、5F、3F官方圖上只畫了單一性別圖示（2F僅女廁、3F與5F僅男廁），已在樓層標籤註明。
 
 ## 📝 我的備註
 
