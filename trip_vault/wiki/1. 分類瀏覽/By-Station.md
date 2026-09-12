@@ -97,6 +97,7 @@ tags: [index]
 - [[スギモト 本店 Sugimoto]] — 8號出口徒步約3分，百年精肉老店（榮, nice-to-have）
 - [[咖哩烏龍麵 うどん錦]] — 徒步約5分，濃郁咖哩烏龍麵老店（錦, nice-to-have）
 - [[甘味喫茶 おかげ庵 栄広小路店]] — 錦三丁目，和風甜點喫茶（榮, nice-to-have）
+- [[風来坊 栄店]] — 榮站附近，中日大樓周邊（榮, nice-to-have）
 
 ## 矢場町站（地下鐵名城線）
 - [[Alpen Outdoors Flagship Store 名古屋榮店]] — 徒步約4分，位於納迪亞公園內（榮, nice-to-have）

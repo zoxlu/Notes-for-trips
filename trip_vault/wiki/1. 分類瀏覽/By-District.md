@@ -120,6 +120,7 @@ tags: [index]
 - [[CHOCOLATERIE TAKASU 本店]] — 名古屋發跡巧克力專門店（nice-to-have）
 - [[雀おどり總本店]] — 創業170年和菓子甘味老店（nice-to-have）
 - [[パン屋 To Smile]] — 無添加手作麵包，招牌スマイルクロワッサン（nice-to-have）
+- [[風来坊 栄店]] — 名古屋名物手羽先（nice-to-have）
 
 ## 港區金城ふ頭
 - [[LEGOLAND Japan]] — 樂高主題樂園（nice-to-have）
