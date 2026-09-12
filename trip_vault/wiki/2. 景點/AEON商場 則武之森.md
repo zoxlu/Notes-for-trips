@@ -19,6 +19,14 @@ official_url: https://nagoya-noritake-garden.aeonmall.jp/
 source_label: Google Maps 地點連結
 restroom_info:
 floormap_url: https://nagoya-noritake-garden.aeonmall.jp/floormap
+floormap_images:
+  - label: 1F
+    file: 04-Attachments/floormap-aeon-noritake-1f.webp
+  - label: 2F
+    file: 04-Attachments/floormap-aeon-noritake-2f.webp
+  - label: 3F
+    file: 04-Attachments/floormap-aeon-noritake-3f.webp
+floormap_source: 來自官網互動樓層地圖 nagoya-noritake-garden.aeonmall.jp/floormap（逐層截圖）
 nearby_restrooms:
   - name: "トイレ"
     location: 35.182430,136.879955
@@ -79,7 +87,6 @@ aliases:
 
 ## ⚠️ 待確認
 - 座標來自分享的 Google Maps 連結。
-- 廁所文字位置待補：官網樓層地圖為互動式介面，無法透過工具擷取文字內容；已將該互動地圖頁面連結補進`floormap_url`，可自行在官網地圖上查詢廁所位置。
 
 ## 相關筆記
 - [[則武之森（ ノリタケの森 ）]]
@@ -94,6 +101,10 @@ aliases:
 > 來源檔案：2026-07-31 名古屋私藏景點
 >
 > [[繃皮蛇]]：永旺商場可以吃東京來的日式漢堡排（小丸子的最愛），逛蔦屋書店。（原始素材為YouTube影片，分享者在這個商場逛街、吃晚餐，介紹了UNIQLO、蔦屋書店、切手社與美食街。）
+
+> 來源：使用者於對話中提供官網互動樓層地圖網址，非raw/素材
+>
+> 官網樓層地圖是Canvas互動介面（非靜態圖片），改用瀏覽器自動化工具實際渲染頁面後截圖，取得1F、2F、3F三層清晰地圖，圖上都有清楚標示男女廁及無障礙廁所圖示，已收錄進`floormap_images`。
 
 ## 📝 我的備註
 
