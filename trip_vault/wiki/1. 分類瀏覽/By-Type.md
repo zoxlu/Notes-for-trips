@@ -42,6 +42,7 @@ tags: [index]
 - [[SAKAE NOVA・スカイル・メルサ]] — 榮，LOFT／GU／Uniqlo等老牌商場群（nice-to-have）
 - [[名古屋PARCO]] — 榮，東西南三館大型百貨（nice-to-have）
 - [[LACHIC]] — 榮，流行服飾與人氣餐廳複合商場（nice-to-have）
+- [[m.m.d.（瀨戶燒選品店）]] — 榮／久屋大通，瀨戶燒選品店，不用跑一趟瀨戶市（optional）
 
 ## 自然漫步
 - [[熱田神宮]] — 熱田，日本三大神宮之一（nice-to-have）
