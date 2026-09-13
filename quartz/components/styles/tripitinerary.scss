@@ -1,0 +1,115 @@
+// 行程頁面（wiki/0. 行程/）專用的排版樣式，只在 frontmatter 有 cssclasses: [trip-itinerary]
+// 的頁面上生效，靠這個 class 把樣式限定在行程頁，不影響其他筆記頁面的表格外觀。
+.trip-itinerary {
+  > p:first-of-type {
+    color: var(--darkgray);
+    font-style: italic;
+  }
+
+  // 頂部「快速跳到某一天」導覽列，直接沿用首頁篩選按鈕的 .trip-chip 樣式，
+  // 視覺語言跟首頁一致；連結本身是同頁錨點（#day1日 等），不會觸發 SPA 換頁。
+  .trip-day-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.25rem 0 1.75rem;
+  }
+
+  h2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    background: linear-gradient(
+      to right,
+      var(--highlight),
+      color-mix(in srgb, var(--highlight) 20%, transparent)
+    );
+    border-left: 4px solid var(--secondary);
+    border-radius: 8px;
+    padding: 0.7rem 1.1rem;
+    margin-top: 3rem;
+  }
+
+  h2[id^="day"]::before {
+    content: "🗓️";
+    flex: 0 0 auto;
+  }
+
+  // 其他兩個區塊（📋 預約清單／⚠️ 待確認）維持圖示，不用數字徽章
+  h2:not([id^="day"])::before {
+    content: "📌";
+    flex: 0 0 auto;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px dashed var(--lightgray);
+    margin: 1.75rem 0;
+  }
+
+  .table-container {
+    border: 1px solid var(--lightgray);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin: 0.75rem 0 1.5rem;
+
+    table {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  th {
+    background: var(--lightgray);
+    border-bottom: none;
+    font-weight: 600;
+    padding: 0.65rem 1rem;
+  }
+
+  td {
+    padding: 0.75rem 1rem;
+    vertical-align: top;
+  }
+
+  tr {
+    border-bottom: 1px solid var(--lightgray);
+    transition: background 0.15s ease;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    // 淡淡的斑馬紋，不用 hover 也看得出行的分隔
+    &:nth-child(even) td {
+      background: color-mix(in srgb, var(--lightgray) 35%, transparent);
+    }
+
+    &:hover td {
+      background: var(--highlight);
+    }
+  }
+
+  td:first-child {
+    white-space: nowrap;
+    font-weight: 600;
+    color: var(--secondary);
+  }
+
+  a.internal {
+    display: inline-block;
+    background: var(--highlight);
+    color: var(--secondary);
+    padding: 0.1em 0.6em;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.15s ease, color 0.15s ease;
+
+    &:hover {
+      background: var(--secondary);
+      color: var(--light);
+    }
+  }
+}

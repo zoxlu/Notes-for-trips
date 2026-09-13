@@ -31,6 +31,10 @@ function cardMatchesCondition(card: HTMLAnchorElement, condition: FilterConditio
     // lines 陣列比對（data-lines 逗號分隔）
     return (card.getAttribute("data-lines") ?? "").split(",").filter(Boolean).includes(value)
   }
+  if (key === "day") {
+    // day_assigned 陣列比對（data-days 逗號分隔）
+    return (card.getAttribute("data-days") ?? "").split(",").filter(Boolean).includes(value)
+  }
   // 其他 key（type/district/score）維持單值比對
   return card.getAttribute(`data-${key}`) === value
 }

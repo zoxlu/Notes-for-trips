@@ -44,7 +44,7 @@ nearby_restrooms:
     distance: 約430m
     place_id: ChIJCUOuxRl5A2ARhRIyk6r2svw
 date_added: 2026-07-24
-day_assigned:
+day_assigned: [Day4]
 tags:
   - type/place
   - place_category/逛街尋寶
@@ -54,6 +54,7 @@ tags:
   - district/港區
   - status/researching
   - priority/nice-to-have
+  - day/Day4
 aliases:
   - ららぽーと名古屋みなとアクルス
   - みなとアクルス

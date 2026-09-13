@@ -49,7 +49,7 @@ nearby_restrooms:
     distance: 約500m
     place_id: ChIJzcIDDql3A2ARpS4ULlN5jgo
 date_added: 2026-07-26
-day_assigned:
+day_assigned: [Day3]
 duration: 1-2小時
 opening_hours: 專門店10:00-21:00；美食街／餐廳11:00-22:00
 tags:
@@ -61,6 +61,7 @@ tags:
   - district/則武新町
   - status/researching
   - priority/nice-to-have
+  - day/Day3
 aliases:
   - AEON商場
   - イオンモール Nagoya Noritake Garden

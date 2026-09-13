@@ -45,7 +45,7 @@ nearby_restrooms:
     distance: 約350m
     place_id: ChIJFyvTrnRxA2AR9-hJ8v3sR-o
 date_added: 2026-07-20
-day_assigned:
+day_assigned: [Day6]
 tags:
   - type/food
   - food_category/點心輕食
@@ -56,6 +56,7 @@ tags:
   - meal/breakfast
   - status/researching
   - priority/nice-to-have
+  - day/Day6
 aliases:
   - コンパル 大須本店
 興致指數: 5

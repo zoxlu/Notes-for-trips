@@ -47,7 +47,7 @@ nearby_restrooms:
     distance: 約310m
     place_id: ChIJ0e97yAVxA2AR8ATM7qM3p2k
 date_added: 2026-07-31
-day_assigned:
+day_assigned: [Day1]
 tags:
   - type/food
   - food_category/名古屋鄉土限定
@@ -59,6 +59,7 @@ tags:
   - meal/lunch
   - status/researching
   - priority/nice-to-have
+  - day/Day1
 aliases:
   - MATUMURA bis
   - 松むら bis

@@ -38,7 +38,7 @@ nearby_restrooms:
     distance: 約480m
     place_id: ChIJU7Yf6fF3A2ARlRrkgd66Cyg
 date_added: 2026-07-18
-day_assigned:
+day_assigned: [Day3]
 duration: 2-3小時
 opening_hours: 9:30-17:00（最終入館16:30）／週一休（遇假日順延）、年末年始休
 tags:
@@ -51,6 +51,7 @@ tags:
   - district/則武新町
   - status/researching
   - priority/nice-to-have
+  - day/Day3
 aliases:
   - Toyota Techno Museum
   - 豐田產業技術紀念館

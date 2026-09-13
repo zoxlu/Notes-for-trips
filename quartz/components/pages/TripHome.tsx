@@ -12,6 +12,8 @@ import tripCardsScript from "../scripts/tripcards.inline"
 // @ts-ignore
 import styles from "../styles/tripcards.scss"
 // @ts-ignore
+import tripItineraryStyles from "../styles/tripitinerary.scss"
+// @ts-ignore
 import notePropertiesStyles from "../styles/noteproperties.scss"
 // @ts-ignore
 import noteRestroomStyles from "../styles/noterestroom.scss"
@@ -54,6 +56,18 @@ const PRIORITY_LABEL: Record<string, string> = {
 }
 
 const SCORE_VALUES = ["5", "4", "3", "2", "1", "0"]
+
+// 天數篩選按鈕顯示用的對照表：資料值維持 Day1~Day7，只有顯示文字帶日期，
+// 之後日期異動只要改這裡，不用動所有筆記的 frontmatter
+const DAY_LABEL: Record<string, string> = {
+  Day1: "Day1 (日)",
+  Day2: "Day2 (一)",
+  Day3: "Day3 (二)",
+  Day4: "Day4 (三)",
+  Day5: "Day5 (四)",
+  Day6: "Day6 (五)",
+  Day7: "Day7 (六)",
+}
 
 /*
 const STATUS_LABEL: Record<string, string> = {
@@ -115,12 +129,20 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
   const districts = Array.from(
     new Set(tripPages.map((f) => f.frontmatter?.district as string).filter(Boolean)),
   ).sort()
+  const days = Array.from(
+    new Set(
+      tripPages.flatMap((f) =>
+        Array.isArray(f.frontmatter?.day_assigned) ? (f.frontmatter.day_assigned as string[]) : [],
+      ),
+    ),
+  ).sort()
   /*
   const statuses = Array.from(
     new Set(tripPages.map((f) => f.frontmatter?.status as string).filter(Boolean)),
   ).sort()
   */
   const CATEGORY_TABS = [
+    { key: "day", label: "行程" },
     { key: "type", label: "類型" },
     { key: "line", label: "捷運線" },
     { key: "station", label: "車站" },
@@ -148,7 +170,14 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
 
         <div class="trip-active-filters" hidden></div>
 
-        <div class="trip-chip-panel" data-category-panel="type">
+        <div class="trip-chip-panel" data-category-panel="day">
+          {days.map((d) => (
+            <button class="trip-chip" data-filter-key="day" data-filter-value={d}>
+              {DAY_LABEL[d] ?? d}
+            </button>
+          ))}
+        </div>
+        <div class="trip-chip-panel" data-category-panel="type" hidden>
           {CATEGORY_CHIPS.map((c) => (
             <button class="trip-chip" data-filter-key={c.filterKey} data-filter-value={c.value}>
               {c.icon} {c.label}
@@ -200,6 +229,7 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
             ...((Array.isArray(fm.food_category) ? fm.food_category : []) as string[]),
           ].join(",")
           const cardLines = (Array.isArray(fm.lines) ? fm.lines : []) as string[]
+          const cardDays = (Array.isArray(fm.day_assigned) ? fm.day_assigned : []) as string[]
           return (
             <a
               class="trip-card"
@@ -207,6 +237,7 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
               data-type={type}
               data-station={station}
               data-lines={cardLines.join(",")}
+              data-days={cardDays.join(",")}
               data-district={district}
               data-status={status}
               data-score={score}
@@ -241,7 +272,14 @@ const TripHome: QuartzComponent = (props: QuartzComponentProps) => {
 }
 
 //TripHome.css = styles
-TripHome.css = [styles, notePropertiesStyles, noteRestroomStyles, noteMapStyles, lightboxStyles]
+TripHome.css = [
+  styles,
+  tripItineraryStyles,
+  notePropertiesStyles,
+  noteRestroomStyles,
+  noteMapStyles,
+  lightboxStyles,
+]
 // @ts-ignore
 TripHome.afterDOMLoaded = [tripCardsScript, noteMapScript, lightboxScript]
 

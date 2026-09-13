@@ -36,9 +36,10 @@ nearby_restrooms:
     distance: 約90m
     place_id: ChIJyaQGwnUPA2ARChcpFWV7LI4
 date_added: 2026-08-12
-day_assigned:
+day_assigned: [Day5]
 tags:
   - type/food
+  - day/Day5
   - food_category/美食名店
   - food_category/點心輕食
   - region/inuyama

@@ -78,7 +78,7 @@ source_url:
 official_url:       # 官方網站網址，處理素材時主動搜尋這個地點/店家的官網並填入
 source_label:       # source_url 的簡短可讀描述，例如「波比看世界的名古屋旅遊攻略部落格」，格式跟「資訊來源清單」裡的描述方式一致
 date_added:
-day_assigned:       # 9-10月排行程時才填，例如 Day2
+day_assigned: []    # 排行程後才填，陣列格式，例如 [Day3]。同一個地點如果安排在不只一天（例如榮商圈同時排在 Day3 和 Day5），全部列出來：[Day3, Day5]
 tags: []
 aliases: []        # 這個地點/人物的其他常見稱呼，供交叉連結比對用，例如「大須觀音」的 aliases 可以是 [大須觀音站]
 興致指數: # 0-5 這部份由使用者手動填寫
@@ -277,6 +277,7 @@ Tag 要跟 frontmatter 欄位對應，方便 Obsidian 標籤面板也能篩選�
 - `#meal/lunch`、`#meal/dinner`（僅美食筆記）
 - `#type/place`、`#type/food`、`#type/supermarket` 等
 - `#status/researching`、`#status/confirmed`
+- `#day/Day1`、`#day/Day3` 等（排行程後才加，可多選多個 tag）
 - `#place_category/文化古蹟`、`#place_category/逛街尋寶`、`#place_category/自然漫步`、`#place_category/知性趣味`（僅 `place` 筆記，可多選多個 tag）
 - `#food_category/名古屋鄉土限定`、`#food_category/美食名店`、`#food_category/點心輕食`、`#food_category/必吃清單`（僅 `food` 筆記，可多選多個 tag）
 
@@ -296,6 +297,11 @@ Tag 要跟 frontmatter 欄位對應，方便 Obsidian 標籤面板也能篩選�
 - `待確認清單.md` — 掃描 `wiki/` 裡所有帶有「⚠️ 待確認」callout 的筆記，依待確認的原因分組（「圖片待補」「座標待補」「資訊衝突」「廁所資訊待補」等），每組底下列出符合的筆記連結。這份清單讓使用者不用一則則翻筆記，就能一眼看到目前還有哪些項目待補齊，方便之後一次性下指令請 Claude Code 重新處理。frontmatter 有 `hide-nav` tag。
 
 每個清單項目建議格式：`- [[筆記標題]] — 一句話摘要（district, priority）`
+
+**不適用整份重寫的例外**：`wiki/0. 行程/` 底下的行程頁面**不列入**上述自動重寫
+範圍。那份頁面包含使用者手動排定的時間、交通銜接、預約狀態等內容，自動重寫會把
+這些手寫內容洗掉。行程頁面只在使用者明確要求時才更新，且更新時採局部修改（改動
+哪一天就只改那一天的區塊），不整份重生。
 
 ### 側邊欄顯示/隱藏（`hide-nav` tag）
 
@@ -319,7 +325,9 @@ Tag 要跟 frontmatter 欄位對應，方便 Obsidian 標籤面板也能篩選�
 
 1. 統計 `wiki/` 裡所有 `status: confirmed` 的筆記
 2. 依 `region`（先 nagoya-city 再 kiso-valley）、地理位置相近程度、`priority` 分配到 Day1-Day7
-3. 在 `outputs/Day-by-Day-Itinerary.md` 產出完整每日行程，每個項目用 wikilink 連回 wiki 裡的原始筆記（保留細節，不要重複貼落一次全部內容）
+3. 在 `wiki/0. 行程/名古屋七日行程.md` 產出完整每日行程（放在 `wiki/` 底下而不是
+   `outputs/`，因為 `outputs/` 不會同步進 Quartz 網站，家人在網站上看不到），每個
+   項目用 wikilink 連回 wiki 裡的原始筆記（保留細節，不要重複貼一次全部內容）
 4. 對於 `status` 還是 `researching` 或 `shortlisted` 的項目，主動詢問使用者是否要納入或捨棄，不要自己擅自決定
 
 ## 語言與風格
