@@ -367,6 +367,54 @@
     ]
   },
   {
+    "name": "LEGOLAND",
+    "title": "LEGOLAND Japan",
+    "position": [
+      136.84333,
+      35.05056
+    ],
+    "type": "place",
+    "interest": 2,
+    "category": "知性趣味",
+    "district": "港區金城ふ頭",
+    "station": "金城ふ頭站（あおなみ線）",
+    "lines": [
+      "あおなみ線"
+    ],
+    "duration": "半天至一天（4-6小時）",
+    "status": "researching",
+    "priority": "nice-to-have",
+    "image": "https://www.legoland.jp/media/chmftlft/top-fb1200.jpg",
+    "official_url": "https://www.legoland.jp/",
+    "days": [],
+    "restrooms": [
+      {
+        "name": "公衆トイレ",
+        "position": [
+          136.844935,
+          35.051215
+        ],
+        "distance": "約160m"
+      },
+      {
+        "name": "公衆トイレ",
+        "position": [
+          136.845418,
+          35.049924
+        ],
+        "distance": "約200m"
+      },
+      {
+        "name": "トイレ メイカーズピア内",
+        "position": [
+          136.846979,
+          35.051444
+        ],
+        "distance": "約350m"
+      }
+    ]
+  },
+  {
     "name": "LaLaport 名古屋港",
     "title": "LaLaport 名古屋港（ みなとアクルス ）",
     "position": [
