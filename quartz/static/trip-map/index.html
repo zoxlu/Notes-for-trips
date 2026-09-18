@@ -120,6 +120,10 @@ const TYPE_COLORS = {
 };
 const TYPE_LABELS = { 'place': '景點', 'food': '美食', 'supermarket': '超市' };
 const RESTROOM_COLOR = [150, 100, 190];
+// 總覽模式的路線:七天共用同一個顏色,不編碼是哪一天。
+// 淡暖沙色,跟網站主題的暖色調一致;飽和度刻意壓低,讓路線是「底層的脈絡」
+// 而不是跟景點搶注意力的主角。
+const OVERVIEW_ARC_COLOR = [206, 154, 120, 175];
 
 // ── 狀態 ──
 // filter 可能是: 'all' | 'planned' | 'Day1' ... 'Day7'
@@ -147,40 +151,169 @@ function isVisible(d) {
   return true;                            // 單日模式:其他點淡化但保留(當作候選參考)
 }
 
+// 標籤去重:把候選點投影到螢幕座標,同一塊區域只留一個標籤,
+// 興致指數高的優先。每次視角改變後重算 —— 拉近會自動浮出更多標籤。
+// 標籤是扁的(寬 >> 高),所以用橢圓判定而不是圓形 —— 用圓形會過度懲罰
+// 垂直方向,把上下錯開、其實看得清楚的標籤也砍掉。
+const LABEL_GAP_X = 72;
+const LABEL_GAP_Y = 24;
+
+function pickLabels() {
+  if (!map) return [];
+  const candidates = allSpots.filter(isVisible).filter(isActive);
+  const byPriority = [...candidates].sort((a, b) => (b.interest ?? 0) - (a.interest ?? 0));
+
+  const kept = [];
+  const placed = [];
+  for (const d of byPriority) {
+    const p = map.project(d.position);
+    const clear = placed.every(q =>
+      Math.hypot((p.x - q.x) / LABEL_GAP_X, (p.y - q.y) / LABEL_GAP_Y) >= 1
+    );
+    if (clear) {
+      placed.push(p);
+      kept.push(d);
+    }
+  }
+  return kept;
+}
+
+// 最近鄰居法推算某一天的環路:飯店 → 最近的未造訪點 → ... → 飯店
+function buildDayRoute(day) {
+  const dayPoints = allSpots.filter(d => d.days?.includes(day));
+  if (dayPoints.length === 0) return [];
+
+  const dist = (a, b) => Math.hypot(
+    a.position[0] - b.position[0],
+    a.position[1] - b.position[1]
+  );
+  const remaining = [...dayPoints];
+  let current = HOME;
+  const route = [HOME];
+
+  while (remaining.length > 0) {
+    let nearestIdx = 0, nearestDist = Infinity;
+    remaining.forEach((p, i) => {
+      const d = dist(current, p);
+      if (d < nearestDist) { nearestDist = d; nearestIdx = i; }
+    });
+    current = remaining.splice(nearestIdx, 1)[0];
+    route.push(current);
+  }
+  // 回傳封閉迴圈的頂點,尾端不重複 HOME(閉合由後面的幾何處理負責)
+  return route;
+}
+
+// ── 把折線變成有弧度的迴圈 ──
+// 1. 每段的中點往「行進方向的左側」推出去,讓來回的兩段自然分開成一個透鏡形
+// 2. 用樣條穿過「景點 → 外推中點 → 景點」,把轉角磨圓但仍精準通過每個景點
+// 沒有第 1 步的話,像 Day2 那種「去程/回程同一條路」的行程會疊成一條直線。
+const LOOP_BOW = 0.15;      // 外推幅度,相對於該段長度
+const CURVE_SAMPLES = 12;   // 每個控制點之間取樣幾個點
+
+function bowedVertices(waypoints) {
+  const verts = [];
+  const legs = [];
+  for (let i = 0; i < waypoints.length; i++) {
+    const a = waypoints[i].position;
+    const b = waypoints[(i + 1) % waypoints.length].position;
+    const dx = b[0] - a[0], dy = b[1] - a[1];
+    const len = Math.hypot(dx, dy);
+
+    verts.push(a);
+    legs.push(i);
+    if (len > 0) {
+      const nx = -dy / len, ny = dx / len;   // 左側法向量
+      verts.push([
+        (a[0] + b[0]) / 2 + nx * len * LOOP_BOW,
+        (a[1] + b[1]) / 2 + ny * len * LOOP_BOW
+      ]);
+      legs.push(i);
+    }
+  }
+  return { verts, legs };
+}
+
+// 向心 Catmull-Rom(alpha = 0.5)。用內插型樣條而不是 Chaikin 這類切角演算法,
+// 因為切角不會通過控制點 —— 路線會從景點旁邊繞過去,看起來像沒連到。
+// 選向心參數化是因為各段長度差距極大(市區 300m vs 犬山 25km),
+// 均勻參數化在這種情況下會在短的那一段打結或大幅超衝。
+function crSegment(p0, p1, p2, p3, samples) {
+  const knot = (ti, a, b) => ti + Math.sqrt(Math.hypot(b[0] - a[0], b[1] - a[1]));
+  const t0 = 0, t1 = knot(t0, p0, p1), t2 = knot(t1, p1, p2), t3 = knot(t2, p2, p3);
+
+  const out = [];
+  // 有重疊點時參數會退化,退回線性內插
+  if (!(t1 > t0 && t2 > t1 && t3 > t2)) {
+    for (let s = 0; s < samples; s++) {
+      const t = s / samples;
+      out.push([p1[0] + (p2[0] - p1[0]) * t, p1[1] + (p2[1] - p1[1]) * t]);
+    }
+    return out;
+  }
+
+  const lerp = (a, b, ta, tb, t) => {
+    const w = (tb - t) / (tb - ta);
+    return [a[0] * w + b[0] * (1 - w), a[1] * w + b[1] * (1 - w)];
+  };
+
+  for (let s = 0; s < samples; s++) {
+    const t = t1 + (t2 - t1) * (s / samples);
+    const A1 = lerp(p0, p1, t0, t1, t);
+    const A2 = lerp(p1, p2, t1, t2, t);
+    const A3 = lerp(p2, p3, t2, t3, t);
+    const B1 = lerp(A1, A2, t0, t2, t);
+    const B2 = lerp(A2, A3, t1, t3, t);
+    out.push(lerp(B1, B2, t1, t2, t));
+  }
+  return out;
+}
+
+function smoothClosed(verts, legs) {
+  const n = verts.length;
+  const out = [], outLegs = [];
+  for (let i = 0; i < n; i++) {
+    const seg = crSegment(
+      verts[(i - 1 + n) % n], verts[i], verts[(i + 1) % n], verts[(i + 2) % n],
+      CURVE_SAMPLES
+    );
+    for (const p of seg) { out.push(p); outLegs.push(legs[i]); }
+  }
+  return { verts: out, legs: outLegs };
+}
+
+// 產生某一天的平滑迴圈,依「第幾段」切成多條 path,
+// 這樣單日模式才能保留黃→紅的時序漸層(PathLayer 的顏色是一條 path 一個值)。
+function loopPaths(day) {
+  const waypoints = buildDayRoute(day);
+  if (waypoints.length < 2) return [];
+
+  const bowed = bowedVertices(waypoints);
+  const { verts, legs } = smoothClosed(bowed.verts, bowed.legs);
+
+  const legCount = waypoints.length;
+  const paths = [];
+  for (let step = 0; step < legCount; step++) {
+    const path = verts.filter((_, i) => legs[i] === step);
+    if (path.length < 2) continue;
+    // 接上下一段的起點,段與段之間才不會有縫
+    const nextStart = verts[legs.findIndex(l => l === (step + 1) % legCount)];
+    if (nextStart) path.push(nextStart);
+    paths.push({ path, step, legCount, day });
+  }
+  return paths;
+}
+
 function buildLayers() {
   const data = allSpots.filter(isVisible);
 
   // ── 路線推算 ──
-  const arcs = [];
-  if (showArcs && filter !== 'all' && filter !== 'planned') {
-    const dayPoints = allSpots.filter(d => d.days?.includes(filter));
-
-    if (dayPoints.length > 0) {
-      const dist = (a, b) => Math.hypot(
-        a.position[0] - b.position[0],
-        a.position[1] - b.position[1]
-      );
-      const remaining = [...dayPoints];
-      let current = HOME;
-      const route = [HOME];
-
-      while (remaining.length > 0) {
-        let nearestIdx = 0, nearestDist = Infinity;
-        remaining.forEach((p, i) => {
-          const d = dist(current, p);
-          if (d < nearestDist) { nearestDist = d; nearestIdx = i; }
-        });
-        current = remaining.splice(nearestIdx, 1)[0];
-        route.push(current);
-      }
-      route.push(HOME);
-
-      for (let i = 0; i < route.length - 1; i++) {
-        arcs.push({ from: route[i], to: route[i + 1], step: i });
-      }
-    }
+  // 總覽模式(全部/已排)畫七天所有環路,單日模式只畫那一天。
+  const isOverview = filter === 'all' || filter === 'planned';
+  let routes = [];
+  if (showArcs) {
+    routes = isOverview ? days.flatMap(loopPaths) : loopPaths(filter);
   }
-  const arcCount = Math.max(arcs.length, 1);
 
   // ── 廁所:從目前顯示的點裡收集,並去重 ──
   const restrooms = [];
@@ -197,26 +330,23 @@ function buildLayers() {
   }
 
   return [
-    new deck.ArcLayer({
-      id: 'arcs',
-      data: arcs,
-      getSourcePosition: d => d.from.position,
-      getTargetPosition: d => d.to.position,
-      getSourceColor: d => {
-        const t = d.step / arcCount;
-        return [255, Math.round(210 * (1 - t)), 60, 210];
+    new deck.PathLayer({
+      id: 'routes',
+      data: routes,
+      getPath: d => d.path,
+      getColor: d => {
+        if (isOverview) return OVERVIEW_ARC_COLOR;
+        const t = d.step / d.legCount;
+        return [255, Math.round(210 * (1 - t)), 60, 215];
       },
-      getTargetColor: d => {
-        const t = (d.step + 1) / arcCount;
-        return [255, Math.round(210 * (1 - t)), 60, 210];
-      },
-      getWidth: 3,
-      getHeight: 0.35,
+      getWidth: isOverview ? 3.5 : 3,
+      widthUnits: 'pixels',
+      widthMinPixels: 2,
+      jointRounded: true,
+      capRounded: true,
       updateTriggers: {
-        getSourcePosition: [filter, showArcs],
-        getTargetPosition: [filter, showArcs],
-        getSourceColor: [filter, showArcs],
-        getTargetColor: [filter, showArcs]
+        getPath: [filter, showArcs],
+        getColor: [filter, showArcs]
       }
     }),
 
@@ -276,7 +406,7 @@ function buildLayers() {
 
     new deck.TextLayer({
       id: 'labels',
-      data: data.filter(isActive),
+      data: pickLabels(),
       getPosition: d => d.position,
       getText: d => d.name,
       getColor: [35, 35, 35, 255],
@@ -400,6 +530,7 @@ function buildLegend() {
     ).join('') +
     `<div><span class="swatch" style="background:rgb(${RESTROOM_COLOR.join(',')});width:9px;height:9px;"></span>公廁</div>` +
     `<div class="hint">實心 = 目前選取<br/>淡色 = 其他<br/>
+       <span style="color:rgb(206,154,120);font-weight:700;">─</span> 七天環路概覽<br/>(單日模式改依時序 黃→紅)<br/>
        <span class="keys">0 全部 · 空白 已排 · 1-7 天數<br/>A 路線 · R 廁所 · H 對焦</span>
      </div>`;
 }
@@ -444,6 +575,12 @@ async function init() {
     }
   });
   map.addControl(overlay);
+
+  // 縮放/平移後要重算標籤去重(同一批點在不同縮放下,擠得下的數量不同)。
+  // 'load' 是保險:確保初次繪製時 map.project() 已經可用。
+  const refresh = () => overlay.setProps({ layers: buildLayers() });
+  map.on('load', refresh);
+  map.on('moveend', refresh);
 
   buildButtons();
   updateButtons();
