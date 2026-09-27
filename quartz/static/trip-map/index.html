@@ -124,6 +124,8 @@ const RESTROOM_COLOR = [150, 100, 190];
 // 淡暖沙色,跟網站主題的暖色調一致;飽和度刻意壓低,讓路線是「底層的脈絡」
 // 而不是跟景點搶注意力的主角。
 const OVERVIEW_ARC_COLOR = [206, 154, 120, 175];
+const ARC_LIFT = 900;  
+const COLUMN_SCALE = 180;
 
 // ── 狀態 ──
 // filter 可能是: 'all' | 'planned' | 'Day1' ... 'Day7'
@@ -155,23 +157,39 @@ function isVisible(d) {
 // 興致指數高的優先。每次視角改變後重算 —— 拉近會自動浮出更多標籤。
 // 標籤是扁的(寬 >> 高),所以用橢圓判定而不是圓形 —— 用圓形會過度懲罰
 // 垂直方向,把上下錯開、其實看得清楚的標籤也砍掉。
-const LABEL_GAP_X = 72;
-const LABEL_GAP_Y = 24;
+// 坑 20 的橢圓版遺跡,已被逐標籤矩形取代
+//const LABEL_GAP_X = 42;
+//const LABEL_GAP_Y = 18;
+
+// 標籤實際字級:sizeUnits 是 meters,所以像素大小隨縮放變動
+function labelFontPx() {
+  const lat = map.getCenter().lat;
+  const mpp = 156543.03392 * Math.cos(lat * Math.PI / 180) / Math.pow(2, map.getZoom());
+  return Math.min(17, Math.max(10, 120 / mpp));   // 對應 getSize:120 與 min/max
+}
 
 function pickLabels() {
   if (!map) return [];
+  const fontPx = labelFontPx();
   const candidates = allSpots.filter(isVisible).filter(isActive);
   const byPriority = [...candidates].sort((a, b) => (b.interest ?? 0) - (a.interest ?? 0));
 
   const kept = [];
-  const placed = [];
+  const boxes = [];
   for (const d of byPriority) {
-    const p = map.project(d.position);
-    const clear = placed.every(q =>
-      Math.hypot((p.x - q.x) / LABEL_GAP_X, (p.y - q.y) / LABEL_GAP_Y) >= 1
+    const p = map.project(topPosition(d));
+
+    // 全形字寬約等於字級,半形約 0.55 倍
+    const cjk = (d.name.match(/[\u3000-\u9fff\uff00-\uffef]/g) || []).length;
+    const w = cjk * fontPx + (d.name.length - cjk) * fontPx * 0.55 + 12;
+    const h = fontPx + 8;
+
+    const clear = boxes.every(b =>
+      Math.abs(p.x - b.x) > (w + b.w) / 2 ||
+      Math.abs(p.y - b.y) > (h + b.h) / 2
     );
     if (clear) {
-      placed.push(p);
+      boxes.push({ x: p.x, y: p.y, w, h });
       kept.push(d);
     }
   }
@@ -209,7 +227,7 @@ function buildDayRoute(day) {
 // 2. 用樣條穿過「景點 → 外推中點 → 景點」,把轉角磨圓但仍精準通過每個景點
 // 沒有第 1 步的話,像 Day2 那種「去程/回程同一條路」的行程會疊成一條直線。
 const LOOP_BOW = 0.15;      // 外推幅度,相對於該段長度
-const CURVE_SAMPLES = 12;   // 每個控制點之間取樣幾個點
+const CURVE_SAMPLES = 24;   // 每個控制點之間取樣幾個點
 
 function bowedVertices(waypoints) {
   const verts = [];
@@ -294,27 +312,63 @@ function loopPaths(day) {
   const legCount = waypoints.length;
   const paths = [];
   for (let step = 0; step < legCount; step++) {
-    const path = verts.filter((_, i) => legs[i] === step);
-    if (path.length < 2) continue;
+    const flat = verts.filter((_, i) => legs[i] === step);
+    if (flat.length < 2) continue;
+
     // 接上下一段的起點,段與段之間才不會有縫
     const nextStart = verts[legs.findIndex(l => l === (step + 1) % legCount)];
-    if (nextStart) path.push(nextStart);
+    if (nextStart) flat.push(nextStart);
+
+    // 每段拱成一個弧:兩端貼地,中間抬起
+    const path = flat.map((p, i) => {
+      const t = i / (flat.length - 1);
+      return [p[0], p[1], Math.sin(Math.PI * t) * ARC_LIFT];
+    });
+
     paths.push({ path, step, legCount, day });
   }
   return paths;
 }
+
+
+
+let routeCache = null;
+let routeCacheKey = '';
+
+function getRoutes() {
+  const key = `${filter}|${showArcs}`;
+  if (routeCacheKey === key) return routeCache;
+  const isOverview = filter === 'all' || filter === 'planned';
+  routeCache = showArcs
+    ? (isOverview ? days.flatMap(loopPaths) : loopPaths(filter))
+    : [];
+  routeCacheKey = key;
+  return routeCache;
+}
+
+function topPosition(d) {
+  return [
+    d.position[0],
+    d.position[1],
+    (d.interest ?? 1) * COLUMN_SCALE + 120
+  ];
+}
+
 
 function buildLayers() {
   const data = allSpots.filter(isVisible);
 
   // ── 路線推算 ──
   // 總覽模式(全部/已排)畫七天所有環路,單日模式只畫那一天。
+  
   const isOverview = filter === 'all' || filter === 'planned';
+  /*
   let routes = [];
   if (showArcs) {
     routes = isOverview ? days.flatMap(loopPaths) : loopPaths(filter);
   }
-
+  */
+  const routes = getRoutes();
   // ── 廁所:從目前顯示的點裡收集,並去重 ──
   const restrooms = [];
   if (showRestrooms) {
@@ -344,6 +398,7 @@ function buildLayers() {
       widthMinPixels: 2,
       jointRounded: true,
       capRounded: true,
+      billboard: true,
       updateTriggers: {
         getPath: [filter, showArcs],
         getColor: [filter, showArcs]
@@ -390,6 +445,25 @@ function buildLayers() {
       }
     }),
 
+    new deck.ColumnLayer({
+      id: 'columns',
+      data: data.filter(isActive),
+      getPosition: d => d.position,
+      //getElevation: d => (d.interest ?? 1) * 300,
+      //getElevation: d => (d.interest ?? 1) * 180, 
+      getElevation: d => (d.interest ?? 1) * COLUMN_SCALE,
+      getFillColor: d => {
+        const c = TYPE_COLORS[d.type] ?? [120, 120, 120];
+        return [...c, 230];
+      },
+      radius: 120,
+      diskResolution: 12,
+      extruded: true,
+      pickable: true,
+      transitions: { getElevation: 300 },
+      updateTriggers: { getElevation: filter, getFillColor: filter }
+    }),
+
     new deck.ScatterplotLayer({
       id: 'home',
       data: [HOME],
@@ -407,7 +481,13 @@ function buildLayers() {
     new deck.TextLayer({
       id: 'labels',
       data: pickLabels(),
-      getPosition: d => d.position,
+      getPosition: topPosition,
+      /*getPosition: d => [
+        d.position[0],
+        d.position[1],
+        (d.interest ?? 1) * 300 + 150     // 柱高 + 一點空隙
+      ],*/
+      //getPosition: d => d.position,
       getText: d => d.name,
       getColor: [35, 35, 35, 255],
       getPixelOffset: [0, -16],
@@ -551,7 +631,10 @@ async function init() {
     container: 'map',
     style: 'https://basemaps.cartocdn.com/gl/positron-gl-style/style.json',
     center: [136.9066, 35.1755],
-    zoom: 12
+    zoom: 12,
+    // 改變相機視角？
+    pitch: 40,        // 相機俯角,0 = 正上方,60 = 很斜
+    bearing: -15      // 水平旋轉
   });
 
   overlay = new deck.MapboxOverlay({
