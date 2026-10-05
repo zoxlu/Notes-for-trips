@@ -6348,9 +6348,7 @@
     "booking_required": true,
     "image": "https://www.kani-honke.co.jp/img/locations/sakae.jpg",
     "official_url": "https://www.kani-honke.co.jp/tc/",
-    "days": [
-      "Day3"
-    ],
+    "days": [],
     "restrooms": [
       {
         "name": "バリアフリートイレ",
@@ -6421,7 +6419,9 @@
     "booking_required": true,
     "image": "https://www.kani-honke.co.jp/img/locations/meieki.jpg",
     "official_url": "https://www.kani-honke.co.jp/tc/location_meieki.html",
-    "days": []
+    "days": [
+      "Day3"
+    ]
   },
   {
     "name": "柳橋 海鮮早餐",
